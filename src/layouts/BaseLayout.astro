@@ -1,0 +1,51 @@
+---
+import "../styles/global.css";
+
+const {
+	title = "Frontend Patterns",
+	description = "Quick starter for Astro + Tailwind",
+} = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{title}</title>
+    <!-- Privacy-friendly analytics by Plausible -->
+    <script async src="https://plausible.io/js/pa-cvSABpjchlKjQNETBgwyO.js"></script>
+    <script>
+      window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+      plausible.init()
+    </script>
+
+  </head>
+  <body class="min-h-screen bg-slate-950 text-slate-100 antialiased">
+    <main class="mx-auto flex w-full max-w-4xl flex-col gap-12 px-6 py-16 sm:px-10">
+      <header class="space-y-3 text-balance">
+        <p class="text-sm font-medium uppercase tracking-[0.3em] text-sky-300">
+          Frontend Patterns
+        </p>
+        <h1 class="text-4xl font-semibold leading-tight sm:text-5xl">
+          A comprehensive, living pattern library for modern frontend architecture.
+        </h1>
+        <p class="max-w-2xl text-lg text-slate-300">
+          Curated by <a href="https://denodell.com" target="_blank">Den Odell</a>.
+        </p>
+      </header>
+
+      <form>
+        <input type="search" name="s" class="bg-slate-700 text-slate-100 border-slate-100 rounded-full text-base px-2 py-1 w-sm" />
+        <button type="submit" class="p-2 bg-slate-700 text-slate-100 border-slate-100 rounded-full text-base px-2 py-1 w-sm">Search</button>
+      </form>
+
+      <slot />
+      <footer class="border-t border-slate-800 pt-8 text-sm text-slate-400">
+        © {new Date().getFullYear()} <a href="https://denodell.com" target="_blank">Den Odell</a>.
+      </footer>
+    </main>
+  </body>
+</html>
