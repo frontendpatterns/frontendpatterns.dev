@@ -1,14 +1,19 @@
 ---
+import { getCollection } from "astro:content";
 import Card from "../components/Card.astro";
 import Search from "../components/Search.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
+import RecentUpdates from "../components/RecentUpdates.astro";
+
+const patterns = await getCollection("patterns", ({ data }) => {
+  return data.draft !== true;
+});
 ---
 
 <BaseLayout showHeader={false}>
   <header class="space-y-3 text-balance">
     <h1
       class="text-xl font-bold uppercase tracking-[0.2em] text-sky-700 dark:text-sky-300 pb-3"
-      view-transition="header-title"
     >
       Frontend Patterns
     </h1>
@@ -17,9 +22,9 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     </p>
 
     <p class="text-base md:text-lg">
-      The comprehensive frontend pattern library. 150+ patterns across
-      components, performance, testing, accessibility, security, and scaling,
-      with implementations for React, Vue, and Svelte.
+      The comprehensive frontend architecture pattern library. 150+ patterns
+      across components, performance, testing, accessibility, security, and
+      scaling, with implementations for React, Vue, and Svelte.
     </p>
   </header>
 
@@ -63,6 +68,18 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     </div>
   </section>
 
+  <section class="space-y-6">
+    <div class="flex items-center justify-between">
+      <h2
+        class="text-2xl font-semibold tracking-tight text-slate-900 dark:text-slate-100"
+      >
+        Recent updates
+      </h2>
+    </div>
+
+    <RecentUpdates patterns={patterns} />
+  </section>
+
   <section>
     <h2
       class="text-2xl font-semibold tracking-tight text-slate-900 dark:text-slate-100 pb-5"
@@ -71,8 +88,11 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     </h2>
 
     <p class="text-slate-700 dark:text-slate-300 pb-10">
-      Start experimenting with component-driven UI using only the essentials.
-      Add integrations, content collections, or frameworks as you grow.
+      A pattern is a reusable solution to a common problem in software design.
+      Patterns provide a template for how to solve a problem in a way that has
+      been proven to be effective. They are not specific implementations, but
+      rather general concepts that can be adapted to fit different contexts and
+      requirements.
     </p>
 
     <h2
@@ -82,8 +102,17 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     </h2>
 
     <p class="text-slate-700 dark:text-slate-300">
-      Start experimenting with component-driven UI using only the essentials.
-      Add integrations, content collections, or frameworks as you grow.
+      As frontend development becomes increasingly complex, with a myriad of
+      frameworks, libraries, and tools available, developers face challenges in
+      choosing the right approaches for building scalable, maintainable, and
+      efficient applications. A definitive pattern library serves as a
+      centralized resource that consolidates best practices and proven
+      solutions, helping developers navigate this complexity. It promotes
+      consistency across projects, facilitates knowledge sharing within the
+      community, and aids in onboarding new team members by providing clear
+      guidelines. Ultimately, such a library empowers developers to make
+      informed decisions, leading to higher-quality software and more efficient
+      development processes.
     </p>
   </section>
 </BaseLayout>

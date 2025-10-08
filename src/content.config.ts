@@ -9,6 +9,7 @@ const patterns = defineCollection({
       title: z.string(),
 			type: z.string().optional(),
 			added: z.date(),
+			draft: z.boolean().optional(),
 		}),
 });
 

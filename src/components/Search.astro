@@ -1,3 +1,8 @@
+---
+const { variant } = Astro.props;
+const svgSizeClasses = variant === "small" ? "w-4 h-4" : "w-5 h-5";
+---
+
 <form class="max-w-md">
   <label for="default-search" class="sr-only">Search for a pattern</label>
   <div class="relative">
@@ -5,7 +10,7 @@
       class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"
     >
       <svg
-        class="w-4 h-4 text-gray-500"
+        class={`${svgSizeClasses} text-gray-500`}
         aria-hidden="true"
         xmlns="http://www.w3.org/2000/svg"
         fill="none"

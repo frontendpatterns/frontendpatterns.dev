@@ -1,8 +1,15 @@
-<header class="space-y-3 text-balance">
+---
+import Search from "./Search.astro";
+---
+
+<header
+  class="space-y-3 w-full flex justify-between text-balance sticky top-0 bg-slate-50 dark:bg-slate-950 py-5"
+>
   <h1
     class="text-base font-medium uppercase tracking-[0.2em] text-sky-700 dark:text-sky-300"
-    view-transition="header-title"
   >
-    Frontend Patterns
+    <a href="/">Frontend Patterns</a>
   </h1>
+
+  <Search variant="small" />
 </header>
