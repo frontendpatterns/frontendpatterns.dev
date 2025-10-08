@@ -5,7 +5,7 @@ const patterns = defineCollection({
 	loader: glob({ pattern: "**/[^_]*.md", base: "./src/content" }),
 	schema: () =>
 		z.object({
-			id: z.string(),
+			id: z.number(),
       title: z.string(),
 		}),
 });
