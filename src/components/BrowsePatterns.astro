@@ -1,0 +1,19 @@
+---
+import { getCollection } from "astro:content";
+import Card from "./Card.astro";
+
+const categories = await getCollection("categories");
+categories.sort((a, b) => a.data.id - b.data.id);
+---
+
+<div
+  class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 auto-rows-[minmax(0,auto)]"
+>
+  {
+    categories.map((category) => (
+      <Card title={category.data.title} href={`/patterns/${category.id}`}>
+        {category.data.description}
+      </Card>
+    ))
+  }
+</div>

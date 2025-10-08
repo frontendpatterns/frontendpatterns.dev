@@ -1,11 +1,21 @@
 ---
 id: 1
 title: Compound Components
-type: Component
-added: 2025-10-08T13:00:00Z
+category: Component
+added: 2025-10-08T00:00:00Z
 ---
 
 # Compound Components
+
+## Context
+
+You're building:
+- A component library or design system for multiple teams
+- Complex UI components (Select, Modal, Tabs, Accordion, Dropdown)
+- Components that will be used in many different ways
+- Components where new features are frequently requested
+
+The component starts with 3-4 props, but over time grows to 15-20 props as teams request more customization. Adding props becomes painful, and the component's API becomes confusing.
 
 ## Problem
 
@@ -196,12 +206,13 @@ const handleClick = () => {
 ```javascript
 <!-- Select.svelte -->
 <script>
-  import { setContext } from 'svelte';
+  import { setContext, createEventDispatcher } from 'svelte';
   import { writable } from 'svelte/store';
-  
+
   export let value = null;
   
   const isOpen = writable(false);
+  const dispatch = createEventDispatcher();
   
   // Share state via context
   setContext('select', {
@@ -303,3 +314,58 @@ class CompoundSelect extends HTMLElement {
 
 customElements.define('compound-select', CompoundSelect);
 ```
+
+## When to Use
+
+- Building reusable component libraries or design systems
+- Components with complex internal state (modals, selects, tabs, accordions)
+- When you need flexibility in how components are composed
+- Multiple teams will consume the component (flexibility prevents breaking changes)
+- The component has 5+ configuration options
+
+## When to Avoid
+
+- Simple components with 1-3 props (compound pattern is overkill)
+- One-off components used in a single place
+- Components with no internal state to share
+- When team is unfamiliar with advanced React patterns (learning curve)
+- Performance-critical components (context can cause re-renders if not memoized)
+
+## Consequences
+
+### Benefits
+- **Flexibility**: Users compose exactly the UI they need
+- **Maintainability**: Adding features doesn't require new props
+- **Type safety**: Sub-components have specific, focused prop types
+- **Separation of concerns**: Each sub-component has single responsibility
+- **Backwards compatibility**: New sub-components don't break existing usage
+
+### Tradeoffs
+- **Complexity**: More components to understand and maintain
+- **Learning curve**: Teams need to understand implicit state sharing
+- **Context overhead**: Every sub-component re-renders when context changes (unless memoized)
+- **Discovery**: Harder to see all available options (vs one component with props)
+- **Verbosity**: More code to write vs single component with props
+
+## Real-World Examples
+
+This pattern is used extensively in popular libraries:
+
+- **Radix UI**: All components use compound pattern ([Select](https://www.radix-ui.com/primitives/docs/components/select), Accordion, Dialog, Dropdown)
+- **Headless UI**: Tabs, Disclosure, Menu components
+- **Reach UI**: Tabs, Accordion, Menu
+- **React Router**: Routes component with nested Route children
+- **HTML native**: `<select>` with `<option>` children
+
+## Related Patterns
+
+**Complements:**
+- Pattern [X]: Provider Pattern (prerequisite understanding)
+- Pattern [Y]: Render Props (alternative approach for flexibility)
+
+**Alternatives:**
+- Pattern [Z]: Higher-Order Components (older approach to composition)
+- Simple Props (when compound pattern is overkill)
+
+**Learn next:**
+- Pattern [N]: State Reducer Pattern (for more control over state changes)

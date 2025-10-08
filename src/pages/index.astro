@@ -4,6 +4,7 @@ import Card from "../components/Card.astro";
 import Search from "../components/Search.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import RecentUpdates from "../components/RecentUpdates.astro";
+import BrowsePatterns from "../components/BrowsePatterns.astro";
 
 const patterns = await getCollection("patterns", ({ data }) => {
   return data.draft !== true;
@@ -37,35 +38,7 @@ const patterns = await getCollection("patterns", ({ data }) => {
       Browse Patterns
     </h2>
 
-    <div
-      class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 auto-rows-[minmax(0,auto)]"
-    >
-      <Card title="Component Patterns">
-        How to structure, compose, and organize UI components.
-      </Card>
-
-      <Card title="Performance Patterns">
-        Making apps fast: loading, rendering, runtime performance.
-      </Card>
-
-      <Card title="State Management Patterns">
-        Where state lives, how it flows, how to manage it.
-      </Card>
-
-      <Card title="Accessibility Patterns">
-        Making apps usable for everyone
-      </Card>
-
-      <Card title="Testing Patterns"> How to test effectively at scale. </Card>
-
-      <Card title="Data Fetching Patterns">
-        Getting data from APIs, caching, synchronization.
-      </Card>
-
-      <Card title="Security Patterns">
-        Protecting users and applications.
-      </Card>
-    </div>
+    <BrowsePatterns />
   </section>
 
   <section class="space-y-6">

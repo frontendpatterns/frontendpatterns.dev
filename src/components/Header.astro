@@ -1,16 +1,6 @@
 ---
 import Nav from "./Nav.astro";
 import Search from "./Search.astro";
-
-const patternCategories = [
-  { label: "Component Patterns", href: "/patterns/component" },
-  { label: "Performance Patterns", href: "/patterns/performance" },
-  { label: "State Management Patterns", href: "/patterns/state-management" },
-  { label: "Accessibility Patterns", href: "/patterns/accessibility" },
-  { label: "Testing Patterns", href: "/patterns/testing" },
-  { label: "Data Fetching Patterns", href: "/patterns/data-fetching" },
-  { label: "Security Patterns", href: "/patterns/security" },
-];
 ---
 
 <header
@@ -25,7 +15,7 @@ const patternCategories = [
       <a href="/">Frontend Patterns</a>
     </h1>
 
-    <Nav patternCategories={patternCategories} class="mr-12" />
+    <Nav class="mr-12" />
 
     <div class="absolute end-0 -top-1">
       <Search variant="small" />
