@@ -7,6 +7,7 @@ const patterns = defineCollection({
 		z.object({
 			id: z.number(),
       title: z.string(),
+			type: z.string().optional()
 		}),
 });
 

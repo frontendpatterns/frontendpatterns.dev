@@ -1,7 +1,7 @@
 ---
 id: 1
-title: Compound Components
-type: Component
+title: "Compound Components"
+type: "Component"
 ---
 
 # Problem

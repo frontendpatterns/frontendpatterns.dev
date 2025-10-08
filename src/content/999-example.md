@@ -1,6 +1,6 @@
 ---
 id: 999
-title: [Pattern Name]
+title: "[Pattern Name]"
 ---
 # Pattern [X]: [Pattern Name]
 
