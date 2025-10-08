@@ -2,7 +2,7 @@
 id: 1
 title: Compound Components
 type: Component
-added: 2025-06-11T13:00:00Z
+added: 2025-10-08T13:00:00Z
 ---
 
 # Compound Components
