@@ -1,17 +1,90 @@
 ---
 import Search from "./Search.astro";
+
+const patternCategories = [
+  { label: "Component Patterns", href: "/?category=component" },
+  { label: "Performance Patterns", href: "/?category=performance" },
+  { label: "State Management Patterns", href: "/?category=state-management" },
+  { label: "Accessibility Patterns", href: "/?category=accessibility" },
+  { label: "Testing Patterns", href: "/?category=testing" },
+  { label: "Data Fetching Patterns", href: "/?category=data-fetching" },
+  { label: "Security Patterns", href: "/?category=security" },
+];
 ---
 
 <header
-  class="relative w-full flex justify-between content-center text-balance sticky top-0 bg-slate-50 dark:bg-slate-950 py-0 md:py-5"
+  class="relative w-full flex flex-wrap items-center justify-between gap-y-2 text-balance sticky top-0 bg-slate-50 dark:bg-slate-950 py-2 md:py-5"
 >
-  <h1
-    class="text-sm md:text-base font-medium uppercase tracking-[0.2em] text-sky-700 dark:text-sky-300"
-  >
-    <a href="/">Frontend Patterns</a>
-  </h1>
+  <div class="flex items-center gap-4 pr-16 md:pr-0">
+    <h1
+      class="text-sm md:text-base font-medium uppercase tracking-[0.2em] text-sky-800 dark:text-sky-200 py-2 md:py-0"
+    >
+      <a href="/">Frontend Patterns</a>
+    </h1>
 
-  <div class="absolute end-0 -top-3 md:top-2">
+    <nav class="hidden md:block">
+      <details data-browse-menu class="group relative">
+        <summary
+          class="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white/60 px-3 py-1.5 text-sm font-medium text-slate-600 shadow-sm transition hover:border-sky-200 hover:bg-white hover:text-sky-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-500 dark:border-slate-800 dark:bg-slate-900/60 dark:text-slate-200 dark:shadow-none dark:hover:border-sky-400 dark:hover:bg-slate-900 dark:hover:text-sky-200 [&::-webkit-details-marker]:hidden"
+        >
+          Browse
+          <svg
+            class="h-3 w-3 transition group-open:-rotate-180"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            aria-hidden="true"
+          >
+            <path
+              d="m6 9 6 6 6-6"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"></path>
+          </svg>
+        </summary>
+
+        <ul
+          class="pointer-events-none absolute right-0 z-10 mt-2 min-w-[14rem] overflow-hidden rounded-xl border border-slate-200 bg-white/95 shadow-lg shadow-slate-900/10 opacity-0 transition group-open:pointer-events-auto group-open:opacity-100 group-open:translate-y-1 dark:border-slate-800 dark:bg-slate-900/95 dark:shadow-slate-950/40"
+        >
+          {
+            patternCategories.map((category) => (
+              <li>
+                <a
+                  class="block px-4 py-2 text-sm text-slate-700 transition hover:bg-slate-100 hover:text-slate-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-sky-500 dark:text-slate-200 dark:hover:bg-slate-800 dark:hover:text-slate-100"
+                  href={category.href}
+                >
+                  {category.label}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </details>
+    </nav>
+  </div>
+
+  <div class="absolute end-0 top-1 md:top-3">
     <Search variant="small" />
   </div>
 </header>
+
+<script>
+  const menu = document.querySelector("[data-browse-menu]");
+
+  if (menu) {
+    const handleDocumentClick = (event) => {
+      if (!menu.open) return;
+      if (menu.contains(event.target)) return;
+      menu.removeAttribute("open");
+    };
+
+    document.addEventListener("click", handleDocumentClick);
+
+    document.addEventListener(
+      "astro:before-swap",
+      () => document.removeEventListener("click", handleDocumentClick),
+      { once: true },
+    );
+  }
+</script>
