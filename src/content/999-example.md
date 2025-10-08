@@ -1,6 +1,7 @@
 ---
 id: 999
 title: "[Pattern Name]"
+added: 2025-06-11T13:00:00Z
 ---
 # Pattern [X]: [Pattern Name]
 

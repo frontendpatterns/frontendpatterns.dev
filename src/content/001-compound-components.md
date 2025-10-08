@@ -1,18 +1,21 @@
 ---
 id: 1
-title: "Compound Components"
-type: "Component"
+title: Compound Components
+type: Component
+added: 2025-06-11T13:00:00Z
 ---
 
-# Problem
+# Compound Components
+
+## Problem
 
 When building complex UI components, you face a choice: expose dozens of props (configuration hell), or make the component inflexible. Neither scales well. Teams need components that are both powerful and simple to use.
 
-# Solution
+## Solution
 
 Split complex components into multiple cooperating sub-components that share implicit state. Parent component manages state; child components access it without explicit prop drilling. Users compose sub-components to create the UI they need.
 
-# Core principle
+## Core principle
 
 Instead of: 
 
@@ -43,7 +46,9 @@ Allow:
 
 Sub-components implicitly access parent state (selected value, open/closed, etc.) without prop drilling.
 
-# Implementation: React
+## Implementation
+
+### Implementation: React
 
 ```javascript
 // Using Context API for implicit state sharing
@@ -107,7 +112,7 @@ Select.Option = function SelectOption({ value, children }) {
 </Select>
 ```
 
-# Implementation: Vue 3
+### Implementation: Vue 3
 
 ```javascript
 <!-- Select.vue - Parent Component -->
@@ -186,7 +191,7 @@ const handleClick = () => {
 </Select>
 ```
 
-# Implementation: Svelte
+### Implementation: Svelte
 
 ```javascript
 <!-- Select.svelte -->
@@ -262,7 +267,7 @@ const handleClick = () => {
 </Select>
 ```
 
-# Implementation: Vanilla JavaScript (Web Components)
+### Implementation: Vanilla JavaScript (Web Components)
 
 ```javascript
 // For patterns where Web Components make sense
