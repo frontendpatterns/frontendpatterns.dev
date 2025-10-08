@@ -1,58 +1,89 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-
-const features = [
-  {
-    title: 'Batteries Included',
-    description: 'Astro ships with file-based routing, Markdown/MDX support, and fast island architecture.',
-  },
-  {
-    title: 'Utility-First Styling',
-    description: 'Tailwind CSS keeps styling expressive and composable without leaving your markup.',
-  },
-  {
-    title: 'Ship Performance',
-    description: 'Astro renders most of your UI to static HTML by default, making performance easy.',
-  },
-];
+import Card from "../components/Card.astro";
+import Search from "../components/Search.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout>
-  <section class="grid gap-6 rounded-3xl border border-slate-800 bg-slate-900/50 p-8 backdrop-blur">
-    <h2 class="text-2xl font-semibold tracking-tight text-slate-100 sm:text-3xl">
-      Why this stack works
-    </h2>
-    <p class="text-slate-300">
-      Start experimenting with component-driven UI using only the essentials. Add integrations, content
-      collections, or frameworks as you grow.
+  <header class="space-y-3 text-balance">
+    <h1
+      class="text-xl font-bold uppercase tracking-[0.2em] text-sky-700 dark:text-sky-300 pb-3"
+      view-transition="header-title"
+    >
+      Frontend Patterns
+    </h1>
+    <p class="text-4xl md:text-5xl font-semibold leading-tight pb-10">
+      The definitive pattern catalog for modern web development.
     </p>
-    <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-      {features.map((feature) => (
-        <article class="rounded-2xl border border-slate-800 bg-slate-900/40 p-5 shadow-lg shadow-sky-950/20">
-          <h3 class="text-lg font-semibold text-slate-100">{feature.title}</h3>
-          <p class="mt-2 text-sm text-slate-300">
-            {feature.description}
-          </p>
-        </article>
-      ))}
+
+    <p class="text-base md:text-lg">
+      The comprehensive frontend pattern library. 150+ patterns across
+      components, performance, testing, accessibility, security, and scaling,
+      with implementations for React, Vue, and Svelte.
+    </p>
+  </header>
+
+  <Search />
+
+  <section>
+    <h2
+      class="text-3xl md:text-2xl font-semibold tracking-tight text-slate-900 dark:text-slate-100 pb-5"
+    >
+      Browse Patterns
+    </h2>
+
+    <div
+      class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 auto-rows-[minmax(0,auto)]"
+    >
+      <Card title="Component Patterns">
+        How to structure, compose, and organize UI components.
+      </Card>
+
+      <Card title="Performance Patterns">
+        Making apps fast: loading, rendering, runtime performance.
+      </Card>
+
+      <Card title="State Management Patterns">
+        Where state lives, how it flows, how to manage it.
+      </Card>
+
+      <Card title="Accessibility Patterns">
+        Making apps usable for everyone
+      </Card>
+
+      <Card title="Testing Patterns"> How to test effectively at scale. </Card>
+
+      <Card title="Data Fetching Patterns">
+        Getting data from APIs, caching, synchronization.
+      </Card>
+
+      <Card title="Security Patterns">
+        Protecting users and applications.
+      </Card>
     </div>
-    <div class="flex flex-wrap gap-3">
-      <a
-        class="inline-flex items-center justify-center rounded-full bg-sky-400 px-4 py-2 text-sm font-semibold text-slate-950 transition hover:bg-sky-300"
-        href="https://docs.astro.build"
-        target="_blank"
-        rel="noreferrer"
-      >
-        Astro Docs
-      </a>
-      <a
-        class="inline-flex items-center justify-center rounded-full border border-slate-700 px-4 py-2 text-sm font-semibold text-slate-200 transition hover:border-slate-500 hover:text-slate-100"
-        href="https://tailwindcss.com/docs"
-        target="_blank"
-        rel="noreferrer"
-      >
-        Tailwind Docs
-      </a>
-    </div>
+  </section>
+
+  <section>
+    <h2
+      class="text-2xl font-semibold tracking-tight text-slate-900 dark:text-slate-100 pb-5"
+    >
+      What is a pattern?
+    </h2>
+
+    <p class="text-slate-700 dark:text-slate-300 pb-10">
+      Start experimenting with component-driven UI using only the essentials.
+      Add integrations, content collections, or frameworks as you grow.
+    </p>
+
+    <h2
+      class="text-2xl font-semibold tracking-tight text-slate-900 dark:text-slate-100 pb-5"
+    >
+      Why is a definitive frontend architecture pattern library needed?
+    </h2>
+
+    <p class="text-slate-700 dark:text-slate-300">
+      Start experimenting with component-driven UI using only the essentials.
+      Add integrations, content collections, or frameworks as you grow.
+    </p>
   </section>
 </BaseLayout>
