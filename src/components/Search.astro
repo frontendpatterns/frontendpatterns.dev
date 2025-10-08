@@ -1,42 +1,94 @@
 ---
 const { variant } = Astro.props;
-const svgSizeClasses = variant === "small" ? "w-4 h-4" : "w-5 h-5";
+const isSmall = variant === "small";
+const svgSizeClasses = isSmall ? "w-4 h-4" : "w-5 h-5";
+const inputId = `pattern-search-${Math.random().toString(36).slice(2, 8)}`;
 ---
 
-<form class="max-w-md">
-  <label for="default-search" class="sr-only">Search for a pattern</label>
-  <div class="relative">
-    <div
-      class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"
-    >
-      <svg
-        class={`${svgSizeClasses} text-gray-500`}
-        aria-hidden="true"
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 20 20"
+{
+  isSmall ? (
+    <form class="group relative inline-flex items-center gap-0 rounded-full border border-transparent bg-transparent px-1.5 py-1 transition-all focus-within:border-sky-400 focus-within:bg-white focus-within:shadow-sm group-focus-within:gap-2 dark:border-transparent dark:bg-transparent dark:focus-within:border-sky-300 dark:focus-within:bg-slate-900/80">
+      <label for={inputId} class="sr-only">
+        Search for a pattern
+      </label>
+      <button
+        type="button"
+        class="inline-flex h-8 w-8 items-center justify-center rounded-full text-slate-500 transition-colors hover:text-sky-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-500 dark:text-slate-300 dark:hover:text-sky-300"
+        aria-label="Open search"
+        onclick={`document.getElementById('${inputId}')?.focus()`}
       >
-        <path
-          stroke="currentColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"></path>
-      </svg>
-    </div>
+        <svg
+          class={`${svgSizeClasses}`}
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 20 20"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+          />
+        </svg>
+      </button>
 
-    <input
-      type="search"
-      name="s"
-      id="default-search"
-      class={`block w-full ${variant === "small" ? "p-2 ps-8" : "p-4 ps-10"} text-sm text-gray-900 dark:text-gray-100 border border-slate-400 dark:border-slate-600 bg-slate-100/50 dark:bg-slate-900/50 rounded-full placeholder-slate-600 dark:placeholder-slate-400`}
-      placeholder={`Search${variant === "small" ? "" : " 150+"} patterns...`}
-      required
-    />
-    <button
-      type="submit"
-      class={`absolute ${variant === "small" ? "end-1 bottom-1.5" : "end-2.5 bottom-2.5"} inline-flex items-center justify-center rounded-full bg-sky-600 dark:bg-sky-400 ${variant === "small" ? "px-2" : "px-4"} ${variant === "small" ? "py-1" : "py-2"} text-sm font-semibold text-slate-50 dark:text-slate-950 transition hover:bg-sky-700 hover:dark:bg-sky-300`}
-      aria-label="Search">{variant === "small" ? "Go" : "Search"}</button
-    >
-  </div>
-</form>
+      <input
+        type="search"
+        name="s"
+        id={inputId}
+        class="w-0 shrink-0 border-0 bg-transparent px-0 text-sm text-slate-900 opacity-0 outline-none transition-all duration-200 ease-out placeholder:text-slate-500 focus:outline-none group-focus-within:w-52 group-focus-within:px-2 group-focus-within:opacity-100 group-focus-within:placeholder:text-slate-500 sm:group-focus-within:w-64 dark:text-slate-100 dark:placeholder:text-slate-400"
+        placeholder="Search 150+ patterns..."
+        required
+      />
+      <button
+        type="submit"
+        class="hidden items-center justify-center rounded-full bg-sky-600 px-3 py-1 text-xs font-semibold text-white transition-colors hover:bg-sky-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-500 group-focus-within:inline-flex dark:bg-sky-400 dark:text-slate-950 dark:hover:bg-sky-300"
+      >
+        Search
+      </button>
+    </form>
+  ) : (
+    <form class="max-w-md">
+      <label for={inputId} class="sr-only">
+        Search for a pattern
+      </label>
+      <div class="relative">
+        <div class="pointer-events-none absolute inset-y-0 start-0 flex items-center ps-3">
+          <svg
+            class={`${svgSizeClasses} text-gray-500`}
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 20 20"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+            />
+          </svg>
+        </div>
+
+        <input
+          type="search"
+          name="s"
+          id={inputId}
+          class={`block w-full ${isSmall ? "p-2 ps-8" : "p-4 ps-10"} text-sm text-gray-900 dark:text-gray-100 border border-slate-400 dark:border-slate-600 bg-slate-100/50 dark:bg-slate-900/50 rounded-full placeholder-slate-600 dark:placeholder-slate-400`}
+          placeholder={`Search${isSmall ? "" : " 150+"} patterns...`}
+          required
+        />
+        <button
+          type="submit"
+          class={`absolute ${isSmall ? "end-1 bottom-1.5" : "end-2.5 bottom-2.5"} inline-flex items-center justify-center rounded-full bg-sky-600 dark:bg-sky-400 ${isSmall ? "px-2" : "px-4"} ${isSmall ? "py-1" : "py-2"} text-sm font-semibold text-slate-50 dark:text-slate-950 transition hover:bg-sky-700 hover:dark:bg-sky-300`}
+          aria-label="Search"
+        >
+          {isSmall ? "Go" : "Search"}
+        </button>
+      </div>
+    </form>
+  )
+}

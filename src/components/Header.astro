@@ -3,7 +3,7 @@ import Search from "./Search.astro";
 ---
 
 <header
-  class="w-full flex justify-between text-balance sticky top-0 bg-slate-50 dark:bg-slate-950 py-0 md:py-5"
+  class="relative w-full flex justify-between content-center text-balance sticky top-0 bg-slate-50 dark:bg-slate-950 py-0 md:py-5"
 >
   <h1
     class="text-sm md:text-base font-medium uppercase tracking-[0.2em] text-sky-700 dark:text-sky-300"
@@ -11,5 +11,7 @@ import Search from "./Search.astro";
     <a href="/">Frontend Patterns</a>
   </h1>
 
-  <Search variant="small" />
+  <div class="absolute end-0 -top-3 md:top-2">
+    <Search variant="small" />
+  </div>
 </header>
