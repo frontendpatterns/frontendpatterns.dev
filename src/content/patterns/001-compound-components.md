@@ -13,6 +13,12 @@ metaDescription: Learn the Compound Components pattern for building flexible, re
 
 # Compound Components
 
+## Problem
+
+When building complex UI components, you face a choice: expose dozens of props (configuration hell), or make the component inflexible. Neither scales well. Teams need components that are both powerful and simple to use.
+
+---
+
 ## Context
 
 You're building:
@@ -23,9 +29,7 @@ You're building:
 
 The component starts with 3-4 props, but over time grows to 15-20 props as teams request more customization. Adding props becomes painful, and the component's API becomes confusing.
 
-## Problem
-
-When building complex UI components, you face a choice: expose dozens of props (configuration hell), or make the component inflexible. Neither scales well. Teams need components that are both powerful and simple to use.
+---
 
 ## Solution
 
@@ -61,6 +65,8 @@ Allow:
 ```
 
 Sub-components implicitly access parent state (selected value, open/closed, etc.) without prop drilling.
+
+---
 
 ## Implementation
 
@@ -127,6 +133,8 @@ Select.Option = function SelectOption({ value, children }) {
   </Select.Options>
 </Select>
 ```
+
+---
 
 ### Implementation: Vue 3
 
@@ -207,6 +215,8 @@ const handleClick = () => {
 </Select>
 ```
 
+---
+
 ### Implementation: Svelte
 
 ```javascript
@@ -284,6 +294,8 @@ const handleClick = () => {
 </Select>
 ```
 
+---
+
 ### Implementation: Vanilla JavaScript (Web Components)
 
 ```javascript
@@ -321,21 +333,7 @@ class CompoundSelect extends HTMLElement {
 customElements.define('compound-select', CompoundSelect);
 ```
 
-## When to Use
-
-- Building reusable component libraries or design systems
-- Components with complex internal state (modals, selects, tabs, accordions)
-- When you need flexibility in how components are composed
-- Multiple teams will consume the component (flexibility prevents breaking changes)
-- The component has 5+ configuration options
-
-## When to Avoid
-
-- Simple components with 1-3 props (compound pattern is overkill)
-- One-off components used in a single place
-- Components with no internal state to share
-- When team is unfamiliar with advanced React patterns (learning curve)
-- Performance-critical components (context can cause re-renders if not memoized)
+---
 
 ## Consequences
 
@@ -353,6 +351,28 @@ customElements.define('compound-select', CompoundSelect);
 - **Discovery**: Harder to see all available options (vs one component with props)
 - **Verbosity**: More code to write vs single component with props
 
+---
+
+## When to Use
+
+- Building reusable component libraries or design systems
+- Components with complex internal state (modals, selects, tabs, accordions)
+- When you need flexibility in how components are composed
+- Multiple teams will consume the component (flexibility prevents breaking changes)
+- The component has 5+ configuration options
+
+---
+
+## When to Avoid
+
+- Simple components with 1-3 props (compound pattern is overkill)
+- One-off components used in a single place
+- Components with no internal state to share
+- When team is unfamiliar with advanced React patterns (learning curve)
+- Performance-critical components (context can cause re-renders if not memoized)
+
+---
+
 ## Real-World Examples
 
 This pattern is used extensively in popular libraries:
@@ -362,6 +382,8 @@ This pattern is used extensively in popular libraries:
 - **Reach UI**: Tabs, Accordion, Menu
 - **React Router**: Routes component with nested Route children
 - **HTML native**: `<select>` with `<option>` children
+
+---
 
 ## Related Patterns
 
