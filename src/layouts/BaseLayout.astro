@@ -7,7 +7,7 @@ import { ClientRouter } from "astro:transitions";
 const {
   showHeader = true,
   title,
-  metaDescription = "A comprehensive, living pattern library for modern frontend architecture.",
+  metaDescription = "The comprehensive frontend pattern library. Learn proven solutions for React, Vue, and Svelte covering components, performance, testing, accessibility, and scaling.",
 } = Astro.props;
 ---
 
@@ -23,6 +23,20 @@ const {
     </title>
     <PlausibleAnalytics />
     <ClientRouter />
+    <script is:inline type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Frontend Patterns",
+        "url": "https://frontendpatterns.dev",
+        "description": "The comprehensive frontend pattern library for modern web development",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://frontendpatterns.dev/search?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
   </head>
   <body
     class="min-h-screen bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 antialiased"
