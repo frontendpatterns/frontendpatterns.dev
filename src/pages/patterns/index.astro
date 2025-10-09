@@ -2,6 +2,7 @@
 import { getCollection } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import Search from "../../components/Search.astro";
+import EmailSignup from "../../components/EmailSignup.astro";
 
 const patterns = (
   await getCollection("patterns", ({ data }) => data.draft !== true)
@@ -41,24 +42,32 @@ const patternRows = patterns.map((pattern) => {
 
 <BaseLayout>
   <header class="space-y-3 pt-10 text-balance">
-    <p class="text-sm font-semibold uppercase tracking-[0.25em] text-slate-500 dark:text-slate-400">
+    <p
+      class="text-sm font-semibold uppercase tracking-[0.25em] text-slate-500 dark:text-slate-400"
+    >
       Catalog
     </p>
-    <h1 class="text-4xl font-bold tracking-tight text-slate-900 dark:text-slate-100 md:text-5xl">
+    <h1
+      class="text-4xl font-bold tracking-tight text-slate-900 dark:text-slate-100 md:text-5xl"
+    >
       All patterns
     </h1>
     <p class="text-base text-slate-600 dark:text-slate-300">
-      Browse {patternRows.length} battle-tested architecture patterns covering components, state, performance, accessibility, security, and more.
+      Browse {patternRows.length} battle-tested architecture patterns covering components,
+      state, performance, accessibility, security, and more.
     </p>
   </header>
 
-  <div class="flex flex-col gap-4 rounded-2xl border border-slate-200 bg-white/80 p-5 shadow-lg shadow-slate-900/10 dark:border-slate-800 dark:bg-slate-900/70 dark:shadow-none sm:flex-row sm:items-center sm:justify-between">
+  <div
+    class="flex flex-col gap-4 rounded-2xl border border-slate-200 bg-white/80 p-5 shadow-lg shadow-slate-900/10 dark:border-slate-800 dark:bg-slate-900/70 dark:shadow-none sm:flex-row sm:items-center sm:justify-between"
+  >
     <div>
       <h2 class="text-lg font-semibold text-slate-900 dark:text-slate-100">
         Looking for something specific?
       </h2>
       <p class="text-sm text-slate-600 dark:text-slate-400">
-        Use quick search or skim the table to jump straight to a pattern detail page.
+        Use quick search or skim the table to jump straight to a pattern detail
+        page.
       </p>
     </div>
     <div class="w-full sm:w-auto">
@@ -81,45 +90,41 @@ const patternRows = patterns.map((pattern) => {
             </tr>
           </thead>
           <tbody class="divide-y divide-slate-200 text-sm dark:divide-slate-800">
-            {
-              patternRows.map((pattern) => (
-                <tr class="transition-colors hover:bg-slate-50 dark:hover:bg-slate-800/60">
-                  <td class="px-3 py-3 font-mono text-xs font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400 md:px-6">
-                    #{pattern.number.toString().padStart(3, "0")}
-                  </td>
-                  <td class="px-3 py-3 md:px-6">
+            {patternRows.map((pattern) => (
+              <tr class="transition-colors hover:bg-slate-50 dark:hover:bg-slate-800/60">
+                <td class="px-3 py-3 font-mono text-xs font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400 md:px-6">
+                  #{pattern.number.toString().padStart(3, "0")}
+                </td>
+                <td class="px-3 py-3 md:px-6">
+                  <a
+                    href={`/pattern/${pattern.slug}`}
+                    class="font-semibold text-slate-900 underline decoration-slate-200 decoration-2 underline-offset-4 transition hover:text-sky-700 hover:decoration-sky-500 dark:text-slate-100 dark:decoration-slate-700 dark:hover:text-sky-300 dark:hover:decoration-sky-400"
+                  >
+                    {pattern.title}
+                    {pattern.isNew ? (
+                      <span class="ml-2 inline-block rounded-full bg-sky-100 px-2 py-0.5 text-xs font-semibold text-sky-800 dark:bg-sky-800/20 dark:text-sky-200">
+                        NEW
+                      </span>
+                    ) : null}
+                  </a>
+                </td>
+                <td class="px-3 py-3 text-slate-600 dark:text-slate-300 md:px-6">
+                  {pattern.categoryHref ? (
                     <a
-                      href={`/pattern/${pattern.slug}`}
-                      class="font-semibold text-slate-900 underline decoration-slate-200 decoration-2 underline-offset-4 transition hover:text-sky-700 hover:decoration-sky-500 dark:text-slate-100 dark:decoration-slate-700 dark:hover:text-sky-300 dark:hover:decoration-sky-400"
+                      href={pattern.categoryHref}
+                      class="underline decoration-slate-200 decoration-2 underline-offset-4 transition hover:text-sky-700 hover:decoration-sky-500 dark:text-slate-200 dark:decoration-slate-700 dark:hover:text-sky-300 dark:hover:decoration-sky-400"
                     >
-                      {pattern.title}
-                      {pattern.isNew ? (
-                        <span class="ml-2 inline-block rounded-full bg-sky-100 px-2 py-0.5 text-xs font-semibold text-sky-800 dark:bg-sky-800/20 dark:text-sky-200">
-                          NEW
-                        </span>
-                      ) : null}
+                      {pattern.category}
                     </a>
-                  </td>
-                  <td class="px-3 py-3 text-slate-600 dark:text-slate-300 md:px-6">
-                    {
-                      pattern.categoryHref ? (
-                        <a
-                          href={pattern.categoryHref}
-                          class="underline decoration-slate-200 decoration-2 underline-offset-4 transition hover:text-sky-700 hover:decoration-sky-500 dark:text-slate-200 dark:decoration-slate-700 dark:hover:text-sky-300 dark:hover:decoration-sky-400"
-                        >
-                          {pattern.category}
-                        </a>
-                      ) : (
-                        pattern.category
-                      )
-                    }
-                  </td>
-                  <td class="px-3 py-3 text-right text-slate-500 dark:text-slate-400 md:px-6">
-                    {pattern.addedDisplay}
-                  </td>
-                </tr>
-              ))
-            }
+                  ) : (
+                    pattern.category
+                  )}
+                </td>
+                <td class="px-3 py-3 text-right text-slate-500 dark:text-slate-400 md:px-6">
+                  {pattern.addedDisplay}
+                </td>
+              </tr>
+            ))}
           </tbody>
         </table>
       </div>
@@ -129,4 +134,5 @@ const patternRows = patterns.map((pattern) => {
       </p>
     )
   }
+  <EmailSignup />
 </BaseLayout>

@@ -9,6 +9,9 @@ const patterns = defineCollection({
       title: z.string(),
 			category: z.string().optional(),
 			added: z.date(),
+			difficulty: z.enum(["Beginner", "Intermediate", "Advanced"]).optional(),
+			framework: z.array(z.enum(["React", "Vue", "Svelte"])).optional(),
+			metaDescription: z.string().optional(),
 			draft: z.boolean().optional(),
 		}),
 });

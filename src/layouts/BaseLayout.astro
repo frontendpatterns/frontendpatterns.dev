@@ -4,7 +4,11 @@ import PlausibleAnalytics from "../components/PlausibleAnalytics.astro";
 import Header from "../components/Header.astro";
 import { ClientRouter } from "astro:transitions";
 
-const { showHeader = true } = Astro.props;
+const {
+  showHeader = true,
+  title,
+  metaDescription = "A comprehensive, living pattern library for modern frontend architecture.",
+} = Astro.props;
 ---
 
 <!doctype html>
@@ -12,12 +16,11 @@ const { showHeader = true } = Astro.props;
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="A comprehensive, living pattern library for modern frontend architecture."
-    />
+    <meta name="description" content={metaDescription} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <title>Frontend Patterns</title>
+    <title>
+      {title ? title + " - Frontend Patterns" : "Frontend Patterns"}
+    </title>
     <PlausibleAnalytics />
     <ClientRouter />
   </head>

@@ -2,6 +2,7 @@
 import { getCollection } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { render } from "astro:content";
+import EmailSignup from "../../components/EmailSignup.astro";
 
 const { slug } = Astro.params;
 
@@ -39,6 +40,16 @@ const patterns = (
     >
       {category.data.title}
     </h1>
+
+    <section>
+      <a
+        href="/patterns"
+        class="inline-flex items-center text-sm font-semibold text-sky-700 underline-offset-4 transition hover:text-sky-900 hover:underline dark:text-sky-300 dark:hover:text-sky-200"
+      >
+        ← Back to all patterns
+      </a>
+    </section>
+
     <article class="prose prose-slate max-w-none dark:prose-invert">
       <Content />
     </article>
@@ -113,12 +124,6 @@ const patterns = (
       )
     }
   </section>
-  <section class="pt-10">
-    <a
-      href="/patterns"
-      class="inline-flex items-center text-sm font-semibold text-sky-700 underline-offset-4 transition hover:text-sky-900 hover:underline dark:text-sky-300 dark:hover:text-sky-200"
-    >
-      ← Back to all patterns
-    </a>
-  </section>
+
+  <EmailSignup />
 </BaseLayout>

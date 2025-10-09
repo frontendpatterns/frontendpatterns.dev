@@ -3,6 +3,12 @@ id: 1
 title: Compound Components
 category: Component
 added: 2025-10-08T00:00:00Z
+difficulty: Intermediate
+framework:
+  - React
+  - Vue
+  - Svelte
+metaDescription: Learn the Compound Components pattern for building flexible, reusable React, Vue, and Svelte components. Complete guide with code examples and best practices.
 ---
 
 # Compound Components
