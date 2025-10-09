@@ -47,7 +47,11 @@ const patterns = (
               </a>
             </td>
             <td class="px-3 py-2 md:px-6 md:py-4 text-slate-600 dark:text-slate-300">
-              {pattern.data.category}
+              <a
+                href={`/patterns/${pattern.data.category?.toLocaleLowerCase().replace(/\s/g, "-")}`}
+              >
+                {pattern.data.category}
+              </a>
             </td>
             <td class="px-3 py-2 md:px-6 md:py-4 text-right text-slate-500 dark:text-slate-400">
               {new Date(pattern.data.added).toLocaleDateString("en-GB", {
