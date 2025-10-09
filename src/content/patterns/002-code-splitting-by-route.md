@@ -13,6 +13,32 @@ metaDescription: Learn how to split JavaScript bundles by route in React, Vue, a
 
 # Code Splitting By Route
 
+:::tldr
+## TL;DR
+
+Split JavaScript bundles by route so users only download code for the page they're visiting.
+
+**Why:** 60-80% smaller initial bundle, 3-5× faster load times, better Core Web Vitals.
+
+**How:** Use dynamic imports (`import()`) with lazy loading in your router.
+
+**When to use:**
+- App has 3+ distinct routes
+- Initial bundle >200KB (gzipped)
+- Routes have different dependencies (charts, forms, maps)
+
+**Impact:** Typical reduction: 487KB → 78KB bundle, 6.2s → 1.9s Time to Interactive.
+
+**Quick example:**
+```jsx
+const Dashboard = lazy(() => import('./Dashboard'));
+
+<Route path="/dashboard" element={<Dashboard />} />
+```
+:::
+
+---
+
 ## Problem
 
 As your application grows, the initial JavaScript bundle becomes massive. Users download hundreds of kilobytes (or megabytes) of code just to see the landing page, including code for routes they may never visit. This results in slow initial page loads, poor Core Web Vitals scores, and frustrated users who bounce before your app finishes loading.
@@ -81,6 +107,8 @@ admin.chunk.js (70KB) - Loaded when user visits /admin
 
 ## Implementation
 
+:::tabs name="framework"
+::::tab label="React"
 ### Implementation: React
 
 ```jsx
@@ -150,9 +178,8 @@ settings.chunk.js         98.7 KB
 profile.chunk.js          82.4 KB
 admin.chunk.js            71.2 KB
 ```
-
----
-
+::::
+::::tab label="Vue 3"
 ### Implementation: Vue 3
 
 ```vue
@@ -252,9 +279,8 @@ const Dashboard = defineAsyncComponent({
   timeout: 10000, // Error after 10s
 });
 ```
-
----
-
+::::
+::::tab label="Svelte (SvelteKit)"
 ### Implementation: Svelte (SvelteKit)
 
 ```svelte
@@ -318,9 +344,8 @@ src/routes/
 ```
 
 When user hovers over link, SvelteKit preloads the dashboard chunk in the background. Click is instant.
-
----
-
+::::
+::::tab label="Vanilla JS (with Vite)"
 ### Implementation: Vanilla JavaScript (with Vite)
 
 ```javascript
@@ -382,7 +407,8 @@ export function render(container) {
   `;
 }
 ```
-
+::::
+:::
 ---
 
 ## Consequences

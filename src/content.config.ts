@@ -1,8 +1,15 @@
 import { defineCollection, z } from "astro:content";
 import { glob } from "astro/loaders";
+import remarkDirective from "remark-directive";
+import remarkDirectiveContainers from "./plugins/remark-directives.js";
+
+const markdownOptions = {
+	remarkPlugins: [remarkDirective, remarkDirectiveContainers],
+};
 
 const patterns = defineCollection({
 	loader: glob({ pattern: "**/[^_]*.md", base: "./src/content/patterns" }),
+	markdown: markdownOptions,
 	schema: () =>
 		z.object({
 			id: z.number(),
@@ -18,6 +25,7 @@ const patterns = defineCollection({
 
 const categories = defineCollection({
 	loader: glob({ pattern: "**/[^_]*.md", base: "./src/content/categories" }),
+	markdown: markdownOptions,
 	schema: () =>
 		z.object({
 			id: z.number(),

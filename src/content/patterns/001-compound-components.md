@@ -13,6 +13,35 @@ metaDescription: Learn the Compound Components pattern for building flexible, re
 
 # Compound Components
 
+:::tldr
+## TL;DR
+
+**What:** Split complex components into sub-components that share implicit state via `Context`/`provide`/`inject`.
+
+**Why:** Avoid 15-20 prop components, increase flexibility, easier to style, maintain and extend.
+
+**How:** Parent manages state, children access via context, no prop drilling.
+
+**When to use:**
+- Building reusable component libraries
+- Components with 5+ configuration options
+- Need flexibility without API complexity
+
+**Impact:** Prop count drops from 15-20 to 2-3, cleaner API, happier consumers.
+
+**Quick example:**
+```jsx
+<Select value={selected} onChange={setSelected}>
+  <Select.Trigger />
+  <Select.Options>
+    <Select.Option value="1">Option 1</Select.Option>
+  </Select.Options>
+</Select>
+```
+:::
+
+---
+
 ## Problem
 
 When building complex UI components, you face a choice: expose dozens of props (configuration hell), or make the component inflexible. Neither scales well. Teams need components that are both powerful and simple to use.
@@ -70,6 +99,8 @@ Sub-components implicitly access parent state (selected value, open/closed, etc.
 
 ## Implementation
 
+:::tabs name="framework"
+::::tab label="React"
 ### Implementation: React
 
 ```javascript
@@ -133,9 +164,9 @@ Select.Option = function SelectOption({ value, children }) {
   </Select.Options>
 </Select>
 ```
+::::
 
----
-
+::::tab label="Vue 3"
 ### Implementation: Vue 3
 
 ```javascript
@@ -214,9 +245,9 @@ const handleClick = () => {
   </SelectOptions>
 </Select>
 ```
+::::
 
----
-
+::::tab label="Svelte"
 ### Implementation: Svelte
 
 ```javascript
@@ -293,9 +324,9 @@ const handleClick = () => {
   </SelectOptions>
 </Select>
 ```
+::::
 
----
-
+::::tab label="Vanilla JS (Web Components)"
 ### Implementation: Vanilla JavaScript (Web Components)
 
 ```javascript
@@ -332,7 +363,8 @@ class CompoundSelect extends HTMLElement {
 
 customElements.define('compound-select', CompoundSelect);
 ```
-
+::::
+:::
 ---
 
 ## Consequences
