@@ -5,6 +5,7 @@ import Search from "../components/Search.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import RecentUpdates from "../components/RecentUpdates.astro";
 import BrowsePatterns from "../components/BrowsePatterns.astro";
+import EmailSignup from "../components/EmailSignup.astro";
 
 const patterns = await getCollection("patterns", ({ data }) => {
   return data.draft !== true;
@@ -59,6 +60,15 @@ const patterns = await getCollection("patterns", ({ data }) => {
     </div>
 
     <RecentUpdates patterns={patterns} />
+  </section>
+
+  <section class="space-y-6">
+    <h2
+      class="text-2xl font-semibold tracking-tight text-slate-900 dark:text-slate-100"
+    >
+      Get new patterns in your inbox
+    </h2>
+    <EmailSignup />
   </section>
 
   <section>
