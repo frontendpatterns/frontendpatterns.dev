@@ -8,7 +8,7 @@ framework:
   - React
   - Vue
   - Svelte
-metaDescription: Learn the Compound Components pattern for building flexible, reusable React, Vue, and Svelte components. Complete guide with code examples and best practices.
+metaDescription: Server state (from APIs) and client state (UI toggles) have different characteristics. Learn to manage them separately in React, Vue, Svelte. Reduce bugs, eliminate cache boilerplate.
 ---
 
 # Server State vs Client State

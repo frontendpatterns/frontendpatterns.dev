@@ -3,7 +3,7 @@ id: 1
 title: Compound Components
 category: Component
 added: 2025-10-08T00:00:00Z
-difficulty: Intermediate
+difficulty: Advanced
 framework:
   - React
   - Vue
