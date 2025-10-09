@@ -22,7 +22,8 @@ const patterns = (
   await getCollection("patterns", (pattern) => {
     if (pattern.data.draft) return false;
     return (
-      pattern.data.category?.toLocaleLowerCase() === slug.toLocaleLowerCase()
+      pattern.data.category?.toLocaleLowerCase()?.replace(/\s/g, "-") ===
+      slug.toLocaleLowerCase()
     );
   })
 ).sort((a, b) => a.data.id - a.data.id);
@@ -88,7 +89,7 @@ const patterns = (
                   <td class="px-4 py-3">
                     <a
                       class="font-semibold text-sky-700 underline-offset-2 transition hover:text-sky-900 hover:underline dark:text-sky-300 dark:hover:text-sky-200"
-                      href={`/pattern/${pattern.id}`}
+                      href={`/p/${pattern.id}`}
                     >
                       #{pattern.data.id.toString().padStart(3, "0")}:{" "}
                       {pattern.data.title}

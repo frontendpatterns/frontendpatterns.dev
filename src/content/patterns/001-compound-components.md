@@ -40,13 +40,9 @@ Split complex components into sub-components that share implicit state via `Cont
 ```
 :::
 
----
-
 ## Problem
 
 When building complex UI components, you face a choice: expose dozens of props (configuration hell), or make the component inflexible. Neither scales well. Teams need components that are both powerful and simple to use.
-
----
 
 ## Context
 
@@ -57,8 +53,6 @@ You're building:
 - Components where new features are frequently requested
 
 The component starts with 3-4 props, but over time grows to 15-20 props as teams request more customization. Adding props becomes painful, and the component's API becomes confusing.
-
----
 
 ## Solution
 
@@ -94,8 +88,6 @@ Allow:
 ```
 
 Sub-components implicitly access parent state (selected value, open/closed, etc.) without prop drilling.
-
----
 
 ## Implementation
 
@@ -365,7 +357,6 @@ customElements.define('compound-select', CompoundSelect);
 ```
 ::::
 :::
----
 
 ## Consequences
 
@@ -383,8 +374,6 @@ customElements.define('compound-select', CompoundSelect);
 - **Discovery**: Harder to see all available options (vs one component with props)
 - **Verbosity**: More code to write vs single component with props
 
----
-
 ## When to Use
 
 - Building reusable component libraries or design systems
@@ -393,8 +382,6 @@ customElements.define('compound-select', CompoundSelect);
 - Multiple teams will consume the component (flexibility prevents breaking changes)
 - The component has 5+ configuration options
 
----
-
 ## When to Avoid
 
 - Simple components with 1-3 props (compound pattern is overkill)
@@ -402,8 +389,6 @@ customElements.define('compound-select', CompoundSelect);
 - Components with no internal state to share
 - When team is unfamiliar with advanced React patterns (learning curve)
 - Performance-critical components (context can cause re-renders if not memoized)
-
----
 
 ## Real-World Examples
 
@@ -414,8 +399,6 @@ This pattern is used extensively in popular libraries:
 - **Reach UI**: Tabs, Accordion, Menu
 - **React Router**: Routes component with nested Route children
 - **HTML native**: `<select>` with `<option>` children
-
----
 
 ## Related Patterns
 

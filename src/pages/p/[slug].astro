@@ -63,7 +63,9 @@ const structuredData = JSON.stringify({
     <p
       class="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500 dark:text-slate-400 pb-5"
     >
-      <a href={`/patterns/${post.data.category?.toLocaleLowerCase()}`}
+      <a
+        href={`/patterns/${post.data.category?.toLocaleLowerCase()?.replace(/\s/g, "-")}`}
+        class="hover:text-sky-700 dark:hover:text-sky-300"
         >{post.data.category} Pattern</a
       >
     </p>
@@ -227,5 +229,4 @@ const structuredData = JSON.stringify({
       return `Tab ${panelIndex + 1}`;
     }
   </script>
-
 </BaseLayout>

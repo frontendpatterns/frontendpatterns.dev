@@ -2,7 +2,7 @@
 id: 2
 title: Code Splitting By Route
 category: Performance
-added: 2025-10-08T00:00:00Z
+added: 2025-10-09T00:00:00Z
 difficulty: Intermediate
 framework:
   - React
@@ -37,15 +37,11 @@ const Dashboard = lazy(() => import('./Dashboard'));
 ```
 :::
 
----
-
 ## Problem
 
 As your application grows, the initial JavaScript bundle becomes massive. Users download hundreds of kilobytes (or megabytes) of code just to see the landing page, including code for routes they may never visit. This results in slow initial page loads, poor Core Web Vitals scores, and frustrated users who bounce before your app finishes loading.
 
 A 500KB bundle means 5+ seconds on slow 3G connections. Users don't wait, they leave.
-
----
 
 ## Context
 
@@ -66,8 +62,6 @@ Your app has reached a size where:
 - Lighthouse scores are dropping
 - Time to Interactive (TTI) exceeds 5 seconds
 - Users are complaining about slow loading
-
----
 
 ## Solution
 
@@ -102,8 +96,6 @@ admin.chunk.js (70KB) - Loaded when user visits /admin
 2. **Dynamic imports** - Routes are imported using `import()` syntax (lazy loading)
 3. **Automatic loading** - Framework router detects route change, loads required chunk
 4. **Caching** - Once loaded, chunks are cached (subsequent visits are instant)
-
----
 
 ## Implementation
 
@@ -409,7 +401,6 @@ export function render(container) {
 ```
 ::::
 :::
----
 
 ## Consequences
 
@@ -433,8 +424,6 @@ export function render(container) {
 - **Cache management** - Need cache-busting strategy for updates  
 - **Failed chunk loads** - Network issues can cause routes to fail (need error handling)
 
----
-
 ## When to Use
 
 - **Your app has multiple distinct routes** (>3 pages)  
@@ -445,8 +434,6 @@ export function render(container) {
 - **Not all users visit all routes** (e.g., admin section rarely accessed)  
 - **Mobile users are significant portion** of traffic
 
----
-
 ## When NOT to Use
 
 - **Single-page application with 1-2 routes** (overhead not worth it)  
@@ -455,8 +442,6 @@ export function render(container) {
 - **Navigation needs to be instant** (no tolerance for loading states)  
 - **Server-side rendered with hydration** (consider streaming SSR instead)  
 - **Users typically visit all routes** in a session (pre-loading makes more sense)
-
----
 
 ## Advanced Techniques
 
@@ -556,8 +541,6 @@ class ChunkErrorBoundary extends React.Component {
 }
 ```
 
----
-
 ## Measuring Impact
 
 ### Before Code Splitting
@@ -582,8 +565,6 @@ Additional chunks (lazy loaded):
 ```
 
 **Result:** 84% reduction in initial bundle, 69% faster TTI.
-
----
 
 ## Real-World Examples
 
@@ -611,8 +592,6 @@ Additional chunks (lazy loaded):
 - **Vue Router documentation**: Each doc page is separate chunk
 - **SvelteKit examples**: File-based routing = automatic splitting
 
----
-
 ## Related Patterns
 
 **Complements:**
@@ -633,8 +612,6 @@ Additional chunks (lazy loaded):
 **Learn Next:**
 - Pattern [N]: Prefetching Strategies (eliminate navigation delay)
 - Pattern [M]: Bundle Analysis (identify optimization opportunities)
-
----
 
 ## Common Pitfalls
 
@@ -658,8 +635,6 @@ Additional chunks (lazy loaded):
 **Problem:** Every chunk includes React/Vue/Svelte  
 **Solution:** Configure bundler to extract common dependencies into vendor chunk
 
----
-
 ## Implementation Checklist
 
 Before implementing route-based code splitting:
@@ -674,8 +649,6 @@ Before implementing route-based code splitting:
 - Monitor Core Web Vitals impact (LCP, FID, CLS)
 - Set up bundle size monitoring in CI
 - Consider prefetching for likely next routes
-
----
 
 ## Further Reading
 
