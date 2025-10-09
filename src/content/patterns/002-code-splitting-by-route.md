@@ -15,9 +15,9 @@ metaDescription: Learn how to split JavaScript bundles by route in React, Vue, a
 
 ## Problem
 
-As your application grows, the initial JavaScript bundle becomes massive. Users download hundreds of kilobytes (or megabytes) of code just to see the landing page—including code for routes they may never visit. This results in slow initial page loads, poor Core Web Vitals scores, and frustrated users who bounce before your app finishes loading.
+As your application grows, the initial JavaScript bundle becomes massive. Users download hundreds of kilobytes (or megabytes) of code just to see the landing page, including code for routes they may never visit. This results in slow initial page loads, poor Core Web Vitals scores, and frustrated users who bounce before your app finishes loading.
 
-A 500KB bundle means 5+ seconds on slow 3G connections. Users don't wait—they leave.
+A 500KB bundle means 5+ seconds on slow 3G connections. Users don't wait, they leave.
 
 ---
 
@@ -140,7 +140,7 @@ export default function App() {
 2. User clicks "Dashboard" → Browser downloads `dashboard.chunk.js` (200KB)
 3. While loading, `<LoadingSpinner />` displays
 4. Once loaded, Dashboard renders
-5. Chunk is cached—future visits are instant
+5. Chunk is cached, future visits are instant
 
 **Build output:**
 ```
