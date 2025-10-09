@@ -16,7 +16,7 @@ metaDescription: Learn the Compound Components pattern for building flexible, re
 :::tldr
 ## TL;DR
 
-**What:** Split complex components into sub-components that share implicit state via `Context`/`provide`/`inject`.
+Split complex components into sub-components that share implicit state via `Context`/`provide`/`inject`.
 
 **Why:** Avoid 15-20 prop components, increase flexibility, easier to style, maintain and extend.
 
