@@ -1,11 +1,11 @@
 ---
-title: "Virtual Scrolling Pattern"
+title: "Virtual Scrolling"
 added: 2025-10-10T00:00:00Z
-category: Performance
+tags: Performance
 difficulty: Advanced
 description: "Render only visible list items in the viewport to handle massive datasets efficiently."
 ---
-# Virtual Scrolling Pattern
+# Virtual Scrolling
 
 Render only visible list items in the viewport to handle massive datasets efficiently.
 

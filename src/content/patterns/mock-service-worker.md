@@ -1,11 +1,11 @@
 ---
-title: "Mock Service Worker Pattern"
+title: "Mock Service Worker"
 added: 2025-10-10T00:00:00Z
-category: Testing
+tags: Testing
 difficulty: Intermediate
 description: "Intercept network requests at the service worker level for realistic testing."
 ---
-# Mock Service Worker Pattern
+# Mock Service Worker
 
 Intercept network requests at the service worker level for realistic testing.
 

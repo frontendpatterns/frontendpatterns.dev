@@ -1,11 +1,11 @@
 ---
-title: "Dynamic Route Pattern"
+title: "Dynamic Route"
 added: 2025-10-10T00:00:00Z
-category: Routing and Navigation
+tags: Routing and Navigation
 difficulty: Intermediate
 description: "Generate routes programmatically based on data or configuration."
 ---
-# Dynamic Route Pattern
+# Dynamic Route
 
 Generate routes programmatically based on data or configuration.
 

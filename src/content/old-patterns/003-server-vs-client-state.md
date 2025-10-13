@@ -1,7 +1,7 @@
 ---
 id: 3
 title: Server State vs Client State
-category: State Management
+tags: State Management
 added: 2025-10-10T00:00:00Z
 difficulty: Intermediate
 framework:

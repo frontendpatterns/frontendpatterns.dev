@@ -1,7 +1,7 @@
 ---
 id: 1
 title: Compound Components
-category: Component
+tags: Component
 added: 2025-10-08T00:00:00Z
 difficulty: Advanced
 framework:

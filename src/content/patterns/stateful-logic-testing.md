@@ -1,11 +1,11 @@
 ---
-title: "Stateful Logic Testing Pattern"
+title: "Stateful Logic Testing"
 added: 2025-10-10T00:00:00Z
-category: Testing
+tags: Testing
 difficulty: Intermediate
 description: "Test state management logic independently from presentation."
 ---
-# Stateful Logic Testing Pattern
+# Stateful Logic Testing
 
 Test state management logic independently from presentation.
 

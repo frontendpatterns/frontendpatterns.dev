@@ -1,11 +1,11 @@
 ---
-title: "Controlled vs. Uncontrolled Components Pattern"
+title: "Controlled vs. Uncontrolled Components"
 added: 2025-10-10T00:00:00Z
-category: Component
+tags: Component
 difficulty: Beginner
 description: "Choose between parent-managed state or component-internal state for form inputs."
 ---
-# Controlled vs. Uncontrolled Components Pattern
+# Controlled vs. Uncontrolled Components
 
 Choose between parent-managed state or component-internal state for form inputs.
 

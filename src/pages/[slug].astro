@@ -1,0 +1,241 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { render } from "astro:content";
+import EmailSignup from "../components/EmailSignup.astro";
+
+const { slug } = Astro.params;
+
+export async function getStaticPaths() {
+  const posts = await getCollection("patterns", ({ data }) => {
+    return data.draft !== true;
+  });
+  return posts.map((post) => ({
+    params: { slug: post.id },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+
+const addedDate =
+  post.data.added instanceof Date
+    ? post.data.added
+    : new Date(post.data.added ?? Date.now());
+
+const structuredData = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  headline: `${post.data.title} Pattern`,
+  description:
+    post.data.metaDescription ??
+    "Frontend architecture pattern from frontendpatterns.dev.",
+  author: {
+    "@type": "Person",
+    name: "Den Odell",
+  },
+  datePublished: addedDate.toISOString(),
+  programmingLanguage: ["JavaScript", "TypeScript"],
+});
+---
+
+<BaseLayout title={post.data.title} metaDescription={post.data.metaDescription}>
+  <script is:inline type="application/ld+json" set:html={structuredData} />
+
+  <section class="space-y-3 pt-10 text-balance">
+    <nav
+      aria-label="Breadcrumb"
+      class="text-xs font-semibold uppercase tracking-[0.15em] text-slate-500 dark:text-slate-400"
+    >
+      <ol class="flex flex-wrap items-center gap-1">
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li aria-hidden="true">/</li>
+        <li aria-current="page">
+          <span>{post.data.title}</span>
+        </li>
+      </ol>
+    </nav>
+
+    <h1
+      class="text-5xl md:text-6xl font-bold tracking-tight text-slate-900 dark:text-slate-100"
+    >
+      {post.data.title}
+    </h1>
+
+    <article
+      class="prose prose-slate max-w-none dark:prose-invert prose-h1:hidden"
+    >
+      <h1>{post.data.title}</h1>
+      <p>{post.data.description}</p>
+    </article>
+
+    <div class="flex flex-wrap items-center gap-3 pt-2">
+      <a
+        href={`/t/${post.data.tags?.toLocaleLowerCase()?.replace(/\s/g, "-")}`}
+        class="inline-flex items-center rounded-full border border-sky-200 bg-sky-50 px-3 py-1.5 text-sm font-semibold uppercase tracking-wider text-sky-700 transition-colors hover:bg-sky-100 dark:border-sky-900 dark:bg-sky-950/50 dark:text-sky-300 dark:hover:bg-sky-900/70"
+      >
+        {post.data.tags}
+      </a>
+      {
+        post.data.difficulty && (
+          <span class="inline-flex items-center rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-sm font-medium text-slate-600 dark:border-slate-700 dark:bg-slate-900/50 dark:text-slate-300">
+            {post.data.difficulty}
+          </span>
+        )
+      }
+    </div>
+  </section>
+
+  <article
+    class="prose prose-slate max-w-none dark:prose-invert prose-h1:hidden prose-headings:font-semibold prose-headings:text-slate-900 dark:prose-headings:text-slate-100 prose-a:text-sky-700 hover:prose-a:text-sky-800 dark:prose-a:text-sky-300 dark:hover:prose-a:text-sky-200"
+  >
+    <Content />
+  </article>
+
+  <hr />
+
+  <div>
+    <h2
+      class="text-2xl pb-5 font-semibold tracking-tight text-slate-900 dark:text-slate-100"
+    >
+      Get new patterns in your inbox
+    </h2>
+    <EmailSignup />
+  </div>
+
+  <script is:inline>
+    document.addEventListener("DOMContentLoaded", () => {
+      const tabGroups = document.querySelectorAll(".prose .tab-group");
+
+      tabGroups.forEach((group, groupIndex) => {
+        if (group.dataset.tabsHydrated === "true") {
+          return;
+        }
+
+        const panels = Array.from(
+          group.querySelectorAll(":scope > .tab-panel"),
+        );
+
+        if (panels.length <= 1) {
+          return;
+        }
+
+        group.dataset.tabsHydrated = "true";
+
+        const tablist = document.createElement("div");
+        tablist.className = "tab-list";
+        tablist.setAttribute("role", "tablist");
+
+        const panelContainer = document.createElement("div");
+        panelContainer.className = "tab-panels";
+
+        const buttons = [];
+
+        panels.forEach((panel, panelIndex) => {
+          const tabId = `tab-${groupIndex}-${panelIndex}`;
+          const panelId = `tab-panel-${groupIndex}-${panelIndex}`;
+          const label = getPanelLabel(panel, panelIndex);
+
+          const button = document.createElement("button");
+          button.type = "button";
+          button.className = "tab-trigger";
+          button.setAttribute("role", "tab");
+          button.setAttribute("id", tabId);
+          button.setAttribute("aria-controls", panelId);
+          button.setAttribute("tabindex", "-1");
+          button.textContent = label;
+
+          tablist.appendChild(button);
+          buttons.push(button);
+
+          panel.setAttribute("role", "tabpanel");
+          panel.setAttribute("id", panelId);
+          panel.setAttribute("aria-labelledby", tabId);
+          panel.setAttribute("tabindex", "0");
+          panel.hidden = true;
+
+          panelContainer.appendChild(panel);
+        });
+
+        const activateTab = (activeIndex) => {
+          buttons.forEach((button, index) => {
+            const isActive = index === activeIndex;
+            button.setAttribute("aria-selected", isActive ? "true" : "false");
+            button.setAttribute("tabindex", isActive ? "0" : "-1");
+            button.classList.toggle("is-active", isActive);
+
+            panels[index].hidden = !isActive;
+            panels[index].classList.toggle("is-active", isActive);
+          });
+        };
+
+        const focusTab = (index) => {
+          buttons[index]?.focus();
+        };
+
+        const clampIndex = (index) => {
+          if (index < 0) return buttons.length - 1;
+          if (index >= buttons.length) return 0;
+          return index;
+        };
+
+        buttons.forEach((button, index) => {
+          button.addEventListener("click", () => {
+            activateTab(index);
+            focusTab(index);
+          });
+
+          button.addEventListener("keydown", (event) => {
+            const { key } = event;
+            if (key === "ArrowRight" || key === "ArrowDown") {
+              event.preventDefault();
+              const next = clampIndex(index + 1);
+              activateTab(next);
+              focusTab(next);
+            } else if (key === "ArrowLeft" || key === "ArrowUp") {
+              event.preventDefault();
+              const prev = clampIndex(index - 1);
+              activateTab(prev);
+              focusTab(prev);
+            } else if (key === "Home") {
+              event.preventDefault();
+              activateTab(0);
+              focusTab(0);
+            } else if (key === "End") {
+              event.preventDefault();
+              activateTab(buttons.length - 1);
+              focusTab(buttons.length - 1);
+            }
+          });
+        });
+
+        group.replaceChildren(tablist, panelContainer);
+        activateTab(0);
+      });
+    });
+
+    function getPanelLabel(panel, panelIndex) {
+      const datasetLabel = panel.dataset.tabLabel;
+      if (datasetLabel && datasetLabel.trim().length > 0) {
+        return datasetLabel.trim();
+      }
+
+      const heading = panel.querySelector("h1, h2, h3, h4, h5, h6");
+      if (heading) {
+        const text = heading.textContent?.trim() ?? "";
+        if (text) {
+          const colonIndex = text.indexOf(":");
+          if (colonIndex !== -1 && colonIndex < text.length - 1) {
+            return text.slice(colonIndex + 1).trim();
+          }
+          return text;
+        }
+      }
+
+      return `Tab ${panelIndex + 1}`;
+    }
+  </script>
+</BaseLayout>

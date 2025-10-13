@@ -1,11 +1,11 @@
 ---
-title: "Web Component Wrapper Pattern"
+title: "Web Component Wrapper"
 added: 2025-10-10T00:00:00Z
-category: Developer Experience
+tags: Developer Experience
 difficulty: Intermediate
 description: "Wrap framework components as web components for cross-framework interoperability."
 ---
-# Web Component Wrapper Pattern
+# Web Component Wrapper
 
 Wrap framework components as web components for cross-framework interoperability.
 

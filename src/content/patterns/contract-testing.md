@@ -1,11 +1,11 @@
 ---
-title: "Contract Testing Pattern"
+title: "Contract Testing"
 added: 2025-10-10T00:00:00Z
-category: Type Safety and Contracts
+tags: Type Safety and Contracts
 difficulty: Advanced
 description: "Verify that components and APIs adhere to their defined interfaces."
 ---
-# Contract Testing Pattern
+# Contract Testing
 
 Verify that components and APIs adhere to their defined interfaces.
 

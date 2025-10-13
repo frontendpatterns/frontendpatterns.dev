@@ -1,11 +1,11 @@
 ---
-title: "Runtime Validation Pattern"
+title: "Runtime Validation"
 added: 2025-10-10T00:00:00Z
-category: Type Safety and Contracts
+tags: Type Safety and Contracts
 difficulty: Advanced
 description: "Validate data at runtime to ensure it matches expected schemas."
 ---
-# Runtime Validation Pattern
+# Runtime Validation
 
 Validate data at runtime to ensure it matches expected schemas.
 

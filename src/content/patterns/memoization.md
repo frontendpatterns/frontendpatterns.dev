@@ -1,11 +1,11 @@
 ---
-title: "Memoization Pattern"
+title: "Memoization"
 added: 2025-10-10T00:00:00Z
-category: Performance
+tags: Performance
 difficulty: Advanced
 description: "Cache expensive computation results to avoid recalculating with identical inputs."
 ---
-# Memoization Pattern
+# Memoization
 
 Cache expensive computation results to avoid recalculating with identical inputs.
 

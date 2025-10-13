@@ -1,11 +1,11 @@
 ---
-title: "Public API Pattern"
-category: Project Structure
+title: "Public API"
+tags: Project Structure
 added: 2025-10-10T00:00:00Z
 difficulty: Beginner
 description: "Expose only necessary interfaces while keeping implementation details private and flexible."
 ---
-# Public API Pattern
+# Public API
 
 Expose only necessary interfaces while keeping implementation details private and flexible.
 

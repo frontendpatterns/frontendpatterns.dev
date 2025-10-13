@@ -1,11 +1,11 @@
 ---
-title: "Route Parameter Pattern"
+title: "Route Parameter"
 added: 2025-10-10T00:00:00Z
-category: Routing and Navigation
+tags: Routing and Navigation
 difficulty: Intermediate
 description: "Pass dynamic values through URL paths to load specific resources."
 ---
-# Route Parameter Pattern
+# Route Parameter
 
 Pass dynamic values through URL paths to load specific resources.
 

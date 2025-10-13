@@ -1,11 +1,11 @@
 ---
-title: "Utility Type Pattern"
+title: "Utility Type"
 added: 2025-10-10T00:00:00Z
-category: Type Safety and Contracts
+tags: Type Safety and Contracts
 difficulty: Advanced
 description: "Leverage built-in or custom utility types to transform and manipulate types."
 ---
-# Utility Type Pattern
+# Utility Type
 
 Leverage built-in or custom utility types to transform and manipulate types.
 

@@ -1,6 +1,6 @@
 ---
 id: 5
-title: Data Fetching Patterns
+title: Data Fetching
 description: Getting data from APIs, caching, synchronization.
 ---
 

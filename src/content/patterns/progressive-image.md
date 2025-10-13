@@ -1,11 +1,11 @@
 ---
-title: "Progressive Image Pattern"
+title: "Progressive Image"
 added: 2025-10-10T00:00:00Z
-category: Performance
+tags: Performance
 difficulty: Advanced
 description: "Load low-quality image placeholders first, then replacing with high-quality versions."
 ---
-# Progressive Image Pattern
+# Progressive Image
 
 Load low-quality image placeholders first, then replacing with high-quality versions.
 

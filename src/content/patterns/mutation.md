@@ -1,11 +1,11 @@
 ---
-title: "Mutation Pattern"
+title: "Mutation"
 added: 2025-10-10T00:00:00Z
-category: Data Fetching
+tags: Data Fetching
 difficulty: Advanced
 description: "Handle create, update, and delete operations with proper cache synchronization."
 ---
-# Mutation Pattern
+# Mutation
 
 Handle create, update, and delete operations with proper cache synchronization.
 

@@ -1,11 +1,11 @@
 ---
-title: "Query String Pattern"
+title: "Query String"
 added: 2025-10-10T00:00:00Z
-category: Routing and Navigation
+tags: Routing and Navigation
 difficulty: Intermediate
 description: "Use URL query parameters for optional filters, search, and pagination state."
 ---
-# Query String Pattern
+# Query String
 
 Use URL query parameters for optional filters, search, and pagination state.
 

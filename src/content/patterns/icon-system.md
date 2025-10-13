@@ -1,11 +1,11 @@
 ---
-title: "Icon System Pattern"
+title: "Icon System"
 added: 2025-10-10T00:00:00Z
-category: Performance
+tags: Performance
 difficulty: Advanced
 description: "Manage icons as a cohesive system using SVG sprites, icon fonts, or component libraries."
 ---
-# Icon System Pattern
+# Icon System
 
 Manage icons as a cohesive system using SVG sprites, icon fonts, or component libraries.
 

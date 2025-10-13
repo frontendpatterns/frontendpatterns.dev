@@ -1,11 +1,11 @@
 ---
-title: "Trusted Types Pattern"
+title: "Trusted Types"
 added: 2025-10-10T00:00:00Z
-category: Security and Privacy
+tags: Security and Privacy
 difficulty: Advanced
 description: "Use browser APIs to enforce type checking on dangerous sinks like innerHTML to eliminate DOM-based XSS vulnerabilities."
 ---
-# Trusted Types Pattern
+# Trusted Types
 
 Use browser APIs to enforce type checking on dangerous sinks like innerHTML to eliminate DOM-based XSS vulnerabilities.
 

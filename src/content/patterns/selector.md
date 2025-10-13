@@ -1,11 +1,11 @@
 ---
-title: "Selector Pattern"
+title: "Selector"
 added: 2025-10-10T00:00:00Z
-category: State Management
+tags: State Management
 difficulty: Intermediate
 description: "Compute derived data from state and memoizing results to optimize re-renders."
 ---
-# Selector Pattern
+# Selector
 
 Compute derived data from state and memoizing results to optimize re-renders.
 

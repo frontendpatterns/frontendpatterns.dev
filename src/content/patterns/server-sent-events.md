@@ -1,11 +1,11 @@
 ---
-title: "Server-Sent Events Pattern"
+title: "Server-Sent Events"
 added: 2025-10-10T00:00:00Z
-category: Data Fetching
+tags: Data Fetching
 difficulty: Advanced
 description: "Receive server-pushed updates over HTTP for one-way real-time data streams."
 ---
-# Server-Sent Events Pattern
+# Server-Sent Events
 
 Receive server-pushed updates over HTTP for one-way real-time data streams.
 

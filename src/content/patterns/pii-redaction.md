@@ -1,11 +1,11 @@
 ---
-title: "PII Redaction Pattern"
+title: "PII Redaction"
 added: 2025-10-10T00:00:00Z
-category: Security and Privacy
+tags: Security and Privacy
 difficulty: Advanced
 description: "Remove or mask personally identifiable information systematically from logs, analytics, and error reports."
 ---
-# PII Redaction Pattern
+# PII Redaction
 
 Remove or mask personally identifiable information systematically from logs, analytics, and error reports.
 

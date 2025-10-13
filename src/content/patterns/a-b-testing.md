@@ -1,11 +1,11 @@
 ---
-title: "A/B Testing Pattern"
+title: "A/B Testing"
 added: 2025-10-10T00:00:00Z
-category: Developer Experience
+tags: Developer Experience
 difficulty: Intermediate
 description: "Run controlled experiments to compare different implementations and measure impact."
 ---
-# A/B Testing Pattern
+# A/B Testing
 
 Run controlled experiments to compare different implementations and measure impact.
 

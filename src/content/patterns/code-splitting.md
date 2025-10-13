@@ -1,11 +1,11 @@
 ---
-title: "Code Splitting Pattern"
+title: "Code Splitting"
 added: 2025-10-10T00:00:00Z
-category: Performance
+tags: Performance
 difficulty: Advanced
 description: "Break application code into smaller bundles loaded on demand to reduce initial load time."
 ---
-# Code Splitting Pattern
+# Code Splitting
 
 Break application code into smaller bundles loaded on demand to reduce initial load time.
 

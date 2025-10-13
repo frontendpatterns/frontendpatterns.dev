@@ -1,11 +1,11 @@
 ---
-title: "Content Security Policy (CSP) Pattern"
+title: "Content Security Policy (CSP)"
 added: 2025-10-10T00:00:00Z
-category: Security and Privacy
+tags: Security and Privacy
 difficulty: Advanced
 description: "Define allowed sources for scripts, styles, and resources through HTTP headers to prevent XSS and injection attacks."
 ---
-# Content Security Policy (CSP) Pattern
+# Content Security Policy (CSP)
 
 Define allowed sources for scripts, styles, and resources through HTTP headers to prevent XSS and injection attacks.
 

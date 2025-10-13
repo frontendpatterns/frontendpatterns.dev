@@ -1,11 +1,11 @@
 ---
-title: "Font Loading Strategy Pattern"
+title: "Font Loading Strategy"
 added: 2025-10-10T00:00:00Z
-category: Performance
+tags: Performance
 difficulty: Advanced
 description: "Control how and when web fonts load to prevent layout shifts and invisible text."
 ---
-# Font Loading Strategy Pattern
+# Font Loading Strategy
 
 Control how and when web fonts load to prevent layout shifts and invisible text.
 

@@ -1,11 +1,11 @@
 ---
-title: "Separation of Concerns Pattern"
-category: Project Structure
+title: "Separation of Concerns"
+tags: Project Structure
 added: 2025-10-10T00:00:00Z
 difficulty: Beginner
 description: "Divide code into distinct sections for logic, presentation, and styling to improve maintainability."
 ---
-# Separation of Concerns Pattern
+# Separation of Concerns
 
 Divide code into distinct sections for logic, presentation, and styling to improve maintainability.
 

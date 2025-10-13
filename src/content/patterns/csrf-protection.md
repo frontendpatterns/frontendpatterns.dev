@@ -1,11 +1,11 @@
 ---
-title: "CSRF Protection Pattern"
+title: "CSRF Protection"
 added: 2025-10-10T00:00:00Z
-category: Security and Privacy
+tags: Security and Privacy
 difficulty: Advanced
 description: "Implement anti-CSRF tokens or SameSite cookies to prevent cross-site request forgery attacks."
 ---
-# CSRF Protection Pattern
+# CSRF Protection
 
 Implement anti-CSRF tokens or SameSite cookies to prevent cross-site request forgery attacks.
 

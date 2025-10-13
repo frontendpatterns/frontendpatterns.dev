@@ -1,11 +1,11 @@
 ---
-title: "GraphQL Query Pattern"
+title: "GraphQL Query"
 added: 2025-10-10T00:00:00Z
-category: Data Fetching
+tags: Data Fetching
 difficulty: Advanced
 description: "Request precisely the data needed using GraphQL's declarative query language."
 ---
-# GraphQL Query Pattern
+# GraphQL Query
 
 Request precisely the data needed using GraphQL's declarative query language.
 

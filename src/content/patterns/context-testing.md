@@ -1,11 +1,11 @@
 ---
-title: "Context Testing Pattern"
+title: "Context Testing"
 added: 2025-10-10T00:00:00Z
-category: Testing
+tags: Testing
 difficulty: Intermediate
 description: "Verify that components correctly consume and provide context values."
 ---
-# Context Testing Pattern
+# Context Testing
 
 Verify that components correctly consume and provide context values.
 

@@ -1,11 +1,11 @@
 ---
-title: "Pagination Pattern"
+title: "Pagination"
 added: 2025-10-10T00:00:00Z
-category: Data Fetching
+tags: Data Fetching
 difficulty: Advanced
 description: "Load large datasets in discrete pages to manage memory and network usage."
 ---
-# Pagination Pattern
+# Pagination
 
 Load large datasets in discrete pages to manage memory and network usage.
 

@@ -1,11 +1,11 @@
 ---
-title: "ARIA Pattern"
+title: "ARIA"
 added: 2025-10-10T00:00:00Z
-category: Accessibility
+tags: Accessibility
 difficulty: Beginner
 description: "Use ARIA attributes to provide semantic information to assistive technologies when HTML semantics are insufficient."
 ---
-# ARIA Pattern
+# ARIA
 
 Use ARIA attributes to provide semantic information to assistive technologies when HTML semantics are insufficient.
 

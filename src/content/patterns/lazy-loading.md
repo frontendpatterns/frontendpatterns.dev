@@ -1,11 +1,11 @@
 ---
-title: "Lazy Loading Pattern"
+title: "Lazy Loading"
 added: 2025-10-10T00:00:00Z
-category: Performance
+tags: Performance
 difficulty: Advanced
 description: "Defer loading of non-critical resources until they're needed."
 ---
-# Lazy Loading Pattern
+# Lazy Loading
 
 Defer loading of non-critical resources until they're needed.
 

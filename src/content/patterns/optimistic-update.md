@@ -1,11 +1,11 @@
 ---
-title: "Optimistic Update Pattern"
+title: "Optimistic Update"
 added: 2025-10-10T00:00:00Z
-category: Data Fetching
+tags: Data Fetching
 difficulty: Advanced
 description: "Update UI immediately with expected results before server confirmation for perceived speed."
 ---
-# Optimistic Update Pattern
+# Optimistic Update
 
 Update UI immediately with expected results before server confirmation for perceived speed.
 

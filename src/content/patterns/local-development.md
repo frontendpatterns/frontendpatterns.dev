@@ -1,11 +1,11 @@
 ---
-title: "Local Development Pattern"
+title: "Local Development"
 added: 2025-10-10T00:00:00Z
-category: Developer Experience
+tags: Developer Experience
 difficulty: Intermediate
 description: "Optimize the developer experience with fast builds, hot reload, and debugging tools."
 ---
-# Local Development Pattern
+# Local Development
 
 Optimize the developer experience with fast builds, hot reload, and debugging tools.
 

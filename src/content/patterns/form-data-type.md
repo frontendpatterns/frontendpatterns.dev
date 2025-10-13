@@ -1,11 +1,11 @@
 ---
-title: "Form Data Type Pattern"
+title: "Form Data Type"
 added: 2025-10-10T00:00:00Z
-category: Type Safety and Contracts
+tags: Type Safety and Contracts
 difficulty: Advanced
 description: "Type form data structures strongly to prevent validation errors."
 ---
-# Form Data Type Pattern
+# Form Data Type
 
 Type form data structures strongly to prevent validation errors.
 

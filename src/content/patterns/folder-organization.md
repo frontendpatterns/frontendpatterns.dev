@@ -1,6 +1,6 @@
 ---
 title: "Folder Organization Strategy"
-category: Project Structure
+tags: Project Structure
 added: 2025-10-10T00:00:00Z
 difficulty: Beginner
 description: "Choose between shallow folder structures for simplicity or deep nesting for organization based on project scale."

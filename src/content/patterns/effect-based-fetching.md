@@ -1,11 +1,11 @@
 ---
-title: "Effect-Based Fetching Pattern"
+title: "Effect-Based Fetching"
 added: 2025-10-10T00:00:00Z
-category: Data Fetching
+tags: Data Fetching
 difficulty: Advanced
 description: "Trigger data fetches as side effects when components mount or dependencies change."
 ---
-# Effect-Based Fetching Pattern
+# Effect-Based Fetching
 
 Trigger data fetches as side effects when components mount or dependencies change.
 

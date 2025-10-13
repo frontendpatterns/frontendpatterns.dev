@@ -1,11 +1,11 @@
 ---
-title: "Telemetry Pattern"
+title: "Telemetry"
 added: 2025-10-10T00:00:00Z
-category: Developer Experience
+tags: Developer Experience
 difficulty: Intermediate
 description: "Collect usage analytics and performance metrics to inform product decisions."
 ---
-# Telemetry Pattern
+# Telemetry
 
 Collect usage analytics and performance metrics to inform product decisions.
 

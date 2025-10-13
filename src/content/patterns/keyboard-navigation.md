@@ -1,11 +1,11 @@
 ---
-title: "Keyboard Navigation Pattern"
+title: "Keyboard Navigation"
 added: 2025-10-10T00:00:00Z
-category: Accessibility
+tags: Accessibility
 difficulty: Beginner
 description: "Support full keyboard interaction for users who can't or don't use pointing devices."
 ---
-# Keyboard Navigation Pattern
+# Keyboard Navigation
 
 Support full keyboard interaction for users who can't or don't use pointing devices.
 

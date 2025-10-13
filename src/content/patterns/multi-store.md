@@ -1,11 +1,11 @@
 ---
-title: "Multi-Store Pattern"
+title: "Multi-Store"
 added: 2025-10-10T00:00:00Z
-category: State Management
+tags: State Management
 difficulty: Intermediate
 description: "Divide application state into multiple independent stores for better separation of concerns."
 ---
-# Multi-Store Pattern
+# Multi-Store
 
 Divide application state into multiple independent stores for better separation of concerns.
 

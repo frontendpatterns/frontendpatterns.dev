@@ -1,7 +1,7 @@
 ---
 id: 4
 title: Keyboard Navigation
-category: Accessibility
+tags: Accessibility
 difficulty: Intermediate
 framework:
   - React

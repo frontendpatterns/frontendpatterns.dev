@@ -1,11 +1,11 @@
 ---
-title: "Multi-Step Form Pattern"
+title: "Multi-Step Form"
 added: 2025-10-10T00:00:00Z
-category: State Management
+tags: State Management
 difficulty: Intermediate
 description: "Break long forms into sequential steps with progress tracking and navigation."
 ---
-# Multi-Step Form Pattern
+# Multi-Step Form
 
 Break long forms into sequential steps with progress tracking and navigation.
 

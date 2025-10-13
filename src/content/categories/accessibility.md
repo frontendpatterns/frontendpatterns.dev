@@ -1,6 +1,6 @@
 ---
 id: 9
-title: Accessibility Patterns
+title: Accessibility
 description: Making apps usable for everyone.
 ---
 

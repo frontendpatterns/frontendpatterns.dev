@@ -1,11 +1,11 @@
 ---
-title: "State Batching Pattern"
+title: "State Batching"
 added: 2025-10-10T00:00:00Z
-category: State Management
+tags: State Management
 difficulty: Intermediate
 description: "Group multiple state updates together to minimize re-renders and improve performance."
 ---
-# State Batching Pattern
+# State Batching
 
 Group multiple state updates together to minimize re-renders and improve performance.
 

@@ -1,11 +1,11 @@
 ---
-title: "Event Handler Contract Pattern"
+title: "Event Handler Contract"
 added: 2025-10-10T00:00:00Z
-category: Type Safety and Contracts
+tags: Type Safety and Contracts
 difficulty: Advanced
 description: "Type event handlers to ensure type-safe event handling."
 ---
-# Event Handler Contract Pattern
+# Event Handler Contract
 
 Type event handlers to ensure type-safe event handling.
 

@@ -1,11 +1,11 @@
 ---
-title: "WebSocket Integration Pattern"
+title: "WebSocket Integration"
 added: 2025-10-10T00:00:00Z
-category: Data Fetching
+tags: Data Fetching
 difficulty: Advanced
 description: "Establish persistent connections for real-time bidirectional communication."
 ---
-# WebSocket Integration Pattern
+# WebSocket Integration
 
 Establish persistent connections for real-time bidirectional communication.
 

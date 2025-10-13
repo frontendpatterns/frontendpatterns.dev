@@ -1,11 +1,11 @@
 ---
-title: "CSS Modules & Scoped Styles Pattern"
+title: "CSS Modules & Scoped Styles"
 added: 2025-10-10T00:00:00Z
-category: Styling
+tags: Styling
 difficulty: Beginner
 description: "Scope CSS automatically to specific components to prevent global style conflicts."
 ---
-# CSS Modules & Scoped Styles Pattern
+# CSS Modules & Scoped Styles
 
 Scope CSS automatically to specific components to prevent global style conflicts.
 

@@ -1,11 +1,11 @@
 ---
-title: "Accessible Animation Pattern"
+title: "Accessible Animation"
 added: 2025-10-10T00:00:00Z
-category: Accessibility
+tags: Accessibility
 difficulty: Beginner
 description: "Combine motion preferences with safe easing curves and timing to create animations that work for all users."
 ---
-# Accessible Animation Pattern
+# Accessible Animation
 
 Combine motion preferences with safe easing curves and timing to create animations that work for all users.
 

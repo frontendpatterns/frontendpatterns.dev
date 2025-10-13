@@ -1,11 +1,11 @@
 ---
-title: "Catch-All Route Pattern"
+title: "Catch-All Route"
 added: 2025-10-10T00:00:00Z
-category: Routing and Navigation
+tags: Routing and Navigation
 difficulty: Intermediate
 description: "Define fallback routes to handle unmatched URLs gracefully."
 ---
-# Catch-All Route Pattern
+# Catch-All Route
 
 Define fallback routes to handle unmatched URLs gracefully.
 

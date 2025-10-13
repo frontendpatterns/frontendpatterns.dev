@@ -1,11 +1,11 @@
 ---
-title: "Pure Component Pattern"
+title: "Pure Component"
 added: 2025-10-10T00:00:00Z
-category: Component
+tags: Component
 difficulty: Beginner
 description: "Create components that render the same output for the same inputs without side effects."
 ---
-# Pure Component Pattern
+# Pure Component
 
 Create components that render the same output for the same inputs without side effects.
 

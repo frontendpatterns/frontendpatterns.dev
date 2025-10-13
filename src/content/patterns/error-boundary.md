@@ -1,11 +1,11 @@
 ---
-title: "Error Boundary Pattern"
+title: "Error Boundary"
 added: 2025-10-10T00:00:00Z
-category: Performance
+tags: Performance
 difficulty: Advanced
 description: "Catch JavaScript errors in component trees and displaying fallback UI gracefully."
 ---
-# Error Boundary Pattern
+# Error Boundary
 
 Catch JavaScript errors in component trees and displaying fallback UI gracefully.
 

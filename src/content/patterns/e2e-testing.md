@@ -1,11 +1,11 @@
 ---
-title: "E2E Testing Pattern"
+title: "E2E Testing"
 added: 2025-10-10T00:00:00Z
-category: Testing
+tags: Testing
 difficulty: Intermediate
 description: "Test complete user flows through the application in a browser environment."
 ---
-# E2E Testing Pattern
+# E2E Testing
 
 Test complete user flows through the application in a browser environment.
 

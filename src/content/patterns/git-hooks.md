@@ -1,11 +1,11 @@
 ---
-title: "Git Hooks Pattern"
+title: "Git Hooks"
 added: 2025-10-10T00:00:00Z
-category: Developer Experience
+tags: Developer Experience
 difficulty: Intermediate
 description: "Run automated checks before commits or pushes to catch issues early."
 ---
-# Git Hooks Pattern
+# Git Hooks
 
 Run automated checks before commits or pushes to catch issues early.
 

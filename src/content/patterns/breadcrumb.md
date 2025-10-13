@@ -1,11 +1,11 @@
 ---
-title: "Breadcrumb Pattern"
+title: "Breadcrumb"
 added: 2025-10-10T00:00:00Z
-category: Routing and Navigation
+tags: Routing and Navigation
 difficulty: Intermediate
 description: "Display hierarchical navigation trail showing user's location in the application."
 ---
-# Breadcrumb Pattern
+# Breadcrumb
 
 Display hierarchical navigation trail showing user's location in the application.
 

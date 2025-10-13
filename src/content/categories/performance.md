@@ -1,6 +1,6 @@
 ---
 id: 6
-title: Performance Patterns
+title: Performance
 description: "Making apps fast: loading, rendering, runtime performance."
 ---
 

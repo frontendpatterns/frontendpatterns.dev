@@ -1,11 +1,11 @@
 ---
-title: "Performance Profiling Pattern"
+title: "Performance Profiling"
 added: 2025-10-10T00:00:00Z
-category: Developer Experience
+tags: Developer Experience
 difficulty: Intermediate
 description: "Use browser DevTools to identify performance bottlenecks and memory leaks."
 ---
-# Performance Profiling Pattern
+# Performance Profiling
 
 Use browser DevTools to identify performance bottlenecks and memory leaks.
 

@@ -1,11 +1,11 @@
 ---
-title: "SameSite Cookie Pattern"
+title: "SameSite Cookie"
 added: 2025-10-10T00:00:00Z
-category: Security and Privacy
+tags: Security and Privacy
 difficulty: Advanced
 description: "Configure cookie SameSite attributes to control cross-site cookie behavior and prevent CSRF attacks."
 ---
-# SameSite Cookie Pattern
+# SameSite Cookie
 
 Configure cookie SameSite attributes to control cross-site cookie behavior and prevent CSRF attacks.
 

@@ -1,11 +1,11 @@
 ---
-title: "Subresource Integrity Pattern"
+title: "Subresource Integrity"
 added: 2025-10-10T00:00:00Z
-category: Security and Privacy
+tags: Security and Privacy
 difficulty: Advanced
 description: "Use integrity hashes on external scripts and stylesheets to ensure resources haven't been tampered with."
 ---
-# Subresource Integrity Pattern
+# Subresource Integrity
 
 Use integrity hashes on external scripts and stylesheets to ensure resources haven't been tampered with.
 

@@ -1,11 +1,11 @@
 ---
-title: "Route Transition Pattern"
+title: "Route Transition"
 added: 2025-10-10T00:00:00Z
-category: Routing and Navigation
+tags: Routing and Navigation
 difficulty: Intermediate
 description: "Animate between route changes for polished user experiences."
 ---
-# Route Transition Pattern
+# Route Transition
 
 Animate between route changes for polished user experiences.
 

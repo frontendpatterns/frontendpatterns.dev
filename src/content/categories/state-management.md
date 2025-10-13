@@ -1,6 +1,6 @@
 ---
 id: 4
-title: State Management Patterns
+title: State Management
 description: Where state lives, how it flows, how to manage it.
 ---
 

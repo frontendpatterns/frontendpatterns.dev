@@ -1,11 +1,11 @@
 ---
-title: "Secure Token Storage Pattern"
+title: "Secure Token Storage"
 added: 2025-10-10T00:00:00Z
-category: Security and Privacy
+tags: Security and Privacy
 difficulty: Advanced
 description: "Store authentication tokens safely using httpOnly cookies, secure flags, or encrypted storage to prevent token theft."
 ---
-# Secure Token Storage Pattern
+# Secure Token Storage
 
 Store authentication tokens safely using httpOnly cookies, secure flags, or encrypted storage to prevent token theft.
 

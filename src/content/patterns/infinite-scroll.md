@@ -1,11 +1,11 @@
 ---
-title: "Infinite Scroll Pattern"
+title: "Infinite Scroll"
 added: 2025-10-10T00:00:00Z
-category: Data Fetching
+tags: Data Fetching
 difficulty: Advanced
 description: "Load more content automatically as users scroll to create seamless browsing experiences."
 ---
-# Infinite Scroll Pattern
+# Infinite Scroll
 
 Load more content automatically as users scroll to create seamless browsing experiences.
 

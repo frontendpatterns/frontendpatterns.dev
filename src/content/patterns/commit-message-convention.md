@@ -1,11 +1,11 @@
 ---
-title: "Commit Message Convention Pattern"
+title: "Commit Message Convention"
 added: 2025-10-10T00:00:00Z
-category: Developer Experience
+tags: Developer Experience
 difficulty: Intermediate
 description: "Standardize commit messages for clear history and automated changelog generation."
 ---
-# Commit Message Convention Pattern
+# Commit Message Convention
 
 Standardize commit messages for clear history and automated changelog generation.
 

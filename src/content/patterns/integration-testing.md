@@ -1,11 +1,11 @@
 ---
-title: "Integration Testing Pattern"
+title: "Integration Testing"
 added: 2025-10-10T00:00:00Z
-category: Testing
+tags: Testing
 difficulty: Intermediate
 description: "Test multiple components working together as a cohesive unit."
 ---
-# Integration Testing Pattern
+# Integration Testing
 
 Test multiple components working together as a cohesive unit.
 

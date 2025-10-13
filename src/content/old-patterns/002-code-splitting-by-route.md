@@ -1,7 +1,7 @@
 ---
 id: 2
 title: Code Splitting By Route
-category: Performance
+tags: Performance
 added: 2025-10-09T00:00:00Z
 difficulty: Intermediate
 framework:

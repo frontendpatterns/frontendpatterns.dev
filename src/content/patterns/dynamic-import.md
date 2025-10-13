@@ -1,11 +1,11 @@
 ---
-title: "Dynamic Import Pattern"
+title: "Dynamic Import"
 added: 2025-10-10T00:00:00Z
-category: Performance
+tags: Performance
 difficulty: Advanced
 description: "Load modules asynchronously at runtime rather than bundling everything upfront."
 ---
-# Dynamic Import Pattern
+# Dynamic Import
 
 Load modules asynchronously at runtime rather than bundling everything upfront.
 

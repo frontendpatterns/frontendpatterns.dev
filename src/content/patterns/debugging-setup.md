@@ -1,11 +1,11 @@
 ---
-title: "Debugging Setup Pattern"
+title: "Debugging Setup"
 added: 2025-10-10T00:00:00Z
-category: Developer Experience
+tags: Developer Experience
 difficulty: Intermediate
 description: "Set up debugging tools and breakpoints for efficient problem solving."
 ---
-# Debugging Setup Pattern
+# Debugging Setup
 
 Set up debugging tools and breakpoints for efficient problem solving.
 

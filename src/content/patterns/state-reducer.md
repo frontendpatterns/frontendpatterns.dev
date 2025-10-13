@@ -1,11 +1,11 @@
 ---
-title: "State Reducer Pattern"
+title: "State Reducer"
 added: 2025-10-10T00:00:00Z
-category: State Management
+tags: State Management
 difficulty: Intermediate
 description: "Use reducer functions to handle complex state transitions with predictable logic."
 ---
-# State Reducer Pattern
+# State Reducer
 
 Use reducer functions to handle complex state transitions with predictable logic.
 

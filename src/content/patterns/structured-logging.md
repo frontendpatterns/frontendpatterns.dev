@@ -1,11 +1,11 @@
 ---
-title: "Structured Logging Pattern"
+title: "Structured Logging"
 added: 2025-10-10T00:00:00Z
-category: Developer Experience
+tags: Developer Experience
 difficulty: Intermediate
 description: "Implement consistent, searchable logging for production debugging and monitoring."
 ---
-# Structured Logging Pattern
+# Structured Logging
 
 Implement consistent, searchable logging for production debugging and monitoring.
 

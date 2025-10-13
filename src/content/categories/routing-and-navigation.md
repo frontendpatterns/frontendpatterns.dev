@@ -1,6 +1,6 @@
 ---
 id: 8
-title: Routing and Navigation Patterns
+title: Routing and Navigation
 description: The flow through an app.
 ---
 

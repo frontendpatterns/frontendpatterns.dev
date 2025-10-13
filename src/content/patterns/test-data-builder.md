@@ -1,11 +1,11 @@
 ---
-title: "Test Data Builder Pattern"
+title: "Test Data Builder"
 added: 2025-10-10T00:00:00Z
-category: Testing
+tags: Testing
 difficulty: Intermediate
 description: "Create reusable factories for generating test data with sensible defaults."
 ---
-# Test Data Builder Pattern
+# Test Data Builder
 
 Create reusable factories for generating test data with sensible defaults.
 

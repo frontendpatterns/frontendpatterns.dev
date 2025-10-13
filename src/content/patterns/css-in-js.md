@@ -1,11 +1,11 @@
 ---
-title: "CSS-in-JS Pattern"
+title: "CSS-in-JS"
 added: 2025-10-10T00:00:00Z
-category: Styling
+tags: Styling
 difficulty: Beginner
 description: "Write styles in JavaScript to enable dynamic styling and component co-location."
 ---
-# CSS-in-JS Pattern
+# CSS-in-JS
 
 Write styles in JavaScript to enable dynamic styling and component co-location.
 

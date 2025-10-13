@@ -1,11 +1,11 @@
 ---
-title: "Responsive Design Pattern"
+title: "Responsive Design"
 added: 2025-10-10T00:00:00Z
-category: Styling
+tags: Styling
 difficulty: Beginner
 description: "Create layouts that adapt gracefully to different screen sizes and devices."
 ---
-# Responsive Design Pattern
+# Responsive Design
 
 Create layouts that adapt gracefully to different screen sizes and devices.
 

@@ -1,6 +1,6 @@
 ---
 id: 12
-title: Security and Privacy Patterns
+title: Security and Privacy
 description: Protecting users and applications.
 ---
 

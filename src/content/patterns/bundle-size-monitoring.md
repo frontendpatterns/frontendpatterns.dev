@@ -1,11 +1,11 @@
 ---
-title: "Bundle Size Monitoring Pattern"
+title: "Bundle Size Monitoring"
 added: 2025-10-10T00:00:00Z
-category: Performance
+tags: Performance
 difficulty: Advanced
 description: "Track JavaScript bundle sizes over time to prevent performance regressions."
 ---
-# Bundle Size Monitoring Pattern
+# Bundle Size Monitoring
 
 Track JavaScript bundle sizes over time to prevent performance regressions.
 

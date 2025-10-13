@@ -1,11 +1,11 @@
 ---
-title: "Focus Management Pattern"
+title: "Focus Management"
 added: 2025-10-10T00:00:00Z
-category: Accessibility
+tags: Accessibility
 difficulty: Beginner
 description: "Control focus flow for modal dialogs, route changes, and dynamic content insertion."
 ---
-# Focus Management Pattern
+# Focus Management
 
 Control focus flow for modal dialogs, route changes, and dynamic content insertion.
 

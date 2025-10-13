@@ -1,11 +1,11 @@
 ---
-title: "Stable Reference Pattern"
+title: "Stable Reference"
 added: 2025-10-10T00:00:00Z
-category: Performance
+tags: Performance
 difficulty: Advanced
 description: "Maintain consistent object and function references across renders to prevent unnecessary updates."
 ---
-# Stable Reference Pattern
+# Stable Reference
 
 Maintain consistent object and function references across renders to prevent unnecessary updates.
 

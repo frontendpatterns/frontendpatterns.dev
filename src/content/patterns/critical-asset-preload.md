@@ -1,11 +1,11 @@
 ---
-title: "Critical Asset Preload Pattern"
+title: "Critical Asset Preload"
 added: 2025-10-10T00:00:00Z
-category: Performance
+tags: Performance
 difficulty: Advanced
 description: "Instruct browsers to prioritize loading essential resources for faster initial renders."
 ---
-# Critical Asset Preload Pattern
+# Critical Asset Preload
 
 Instruct browsers to prioritize loading essential resources for faster initial renders.
 

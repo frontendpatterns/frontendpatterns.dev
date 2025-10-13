@@ -1,11 +1,11 @@
 ---
-title: "Focus Trap Pattern"
+title: "Focus Trap"
 added: 2025-10-10T00:00:00Z
-category: Accessibility
+tags: Accessibility
 difficulty: Beginner
 description: "Constrain keyboard focus within modal dialogs and overlays to prevent focus from escaping to background content."
 ---
-# Focus Trap Pattern
+# Focus Trap
 
 Constrain keyboard focus within modal dialogs and overlays to prevent focus from escaping to background content.
 

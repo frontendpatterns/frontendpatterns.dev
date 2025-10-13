@@ -1,11 +1,11 @@
 ---
-title: "API Schema Pattern"
+title: "API Schema"
 added: 2025-10-10T00:00:00Z
-category: Type Safety and Contracts
+tags: Type Safety and Contracts
 difficulty: Advanced
 description: "Define and enforcing contracts for API request and response structures."
 ---
-# API Schema Pattern
+# API Schema
 
 Define and enforcing contracts for API request and response structures.
 

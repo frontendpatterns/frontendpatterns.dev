@@ -1,11 +1,11 @@
 ---
-title: "Skip Links Pattern"
+title: "Skip Links"
 added: 2025-10-10T00:00:00Z
-category: Accessibility
+tags: Accessibility
 difficulty: Beginner
 description: "Allow keyboard users to bypass repetitive navigation elements and jump to main content."
 ---
-# Skip Links Pattern
+# Skip Links
 
 Allow keyboard users to bypass repetitive navigation elements and jump to main content.
 

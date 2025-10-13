@@ -1,11 +1,11 @@
 ---
-title: "Polling Pattern"
+title: "Polling"
 added: 2025-10-10T00:00:00Z
-category: Data Fetching
+tags: Data Fetching
 difficulty: Advanced
 description: "Fetch data repeatedly at regular intervals to keep information current."
 ---
-# Polling Pattern
+# Polling
 
 Fetch data repeatedly at regular intervals to keep information current.
 

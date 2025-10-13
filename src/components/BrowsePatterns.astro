@@ -10,9 +10,9 @@ categories.sort((a, b) => a.data.title.localeCompare(b.data.title));
   class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 auto-rows-[minmax(0,auto)]"
 >
   {
-    categories.map((category) => (
-      <Card title={category.data.title} href={`/patterns/${category.id}`}>
-        {category.data.description}
+    categories.map((tags) => (
+      <Card title={tags.data.title} href={`/t/${tags.id}`}>
+        {tags.data.description}
       </Card>
     ))
   }

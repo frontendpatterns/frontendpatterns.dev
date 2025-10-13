@@ -1,11 +1,11 @@
 ---
-title: "Branded Type Pattern"
+title: "Branded Type"
 added: 2025-10-10T00:00:00Z
-category: Type Safety and Contracts
+tags: Type Safety and Contracts
 difficulty: Advanced
 description: "Create distinct types from primitives to prevent mixing incompatible values."
 ---
-# Branded Type Pattern
+# Branded Type
 
 Create distinct types from primitives to prevent mixing incompatible values.
 

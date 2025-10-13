@@ -6,8 +6,15 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import RecentUpdates from "../components/RecentUpdates.astro";
 import BrowsePatterns from "../components/BrowsePatterns.astro";
 import EmailSignup from "../components/EmailSignup.astro";
+import BrowseGuides from "../components/BrowseGuides.astro";
 
 const patterns = await getCollection("patterns", ({ data }) => {
+  return data.draft !== true;
+});
+const guides = await getCollection("guides", ({ data }) => {
+  return data.draft !== true;
+});
+const categories = await getCollection("categories", ({ data }) => {
   return data.draft !== true;
 });
 ---
@@ -15,12 +22,12 @@ const patterns = await getCollection("patterns", ({ data }) => {
 <BaseLayout showHeader={false}>
   <header class="space-y-3 pt-16 text-balance">
     <h1
-      class="text-xl font-bold uppercase tracking-[0.2em] text-sky-700 dark:text-sky-300 pb-3"
+      class="text-xl font-bold uppercase tracking-[0.2em] text-sky-700 dark:text-sky-300"
     >
       Frontend Patterns
     </h1>
-    <p class="text-4xl md:text-5xl font-semibold leading-tight">
-      The definitive pattern catalog for modern web development.
+    <p class="text-5xl md:text-6xl font-semibold pb-3">
+      The Complete Frontend Architecture Reference
     </p>
 
     <p class="pb-10">
@@ -31,10 +38,14 @@ const patterns = await getCollection("patterns", ({ data }) => {
       </span>
     </p>
 
-    <p class="text-base md:text-lg">
-      The comprehensive frontend architecture pattern library. Over 170 patterns
-      across components, performance, testing, accessibility, security, and
-      scaling, with implementations for React, Vue, and Svelte.
+    <p class="text-base md:text-lg pb-5">
+      {patterns.length}+ production-ready patterns and guides covering every
+      aspect of modern frontend development. From UI components to performance
+      optimization.
+    </p>
+    <p class="text-xs md:text-sm">
+      {patterns.length} Patterns | {guides.length} Guides | {categories.length} Categories
+      | Updated Weekly | Framework-Agnostic
     </p>
   </header>
 
@@ -51,15 +62,16 @@ const patterns = await getCollection("patterns", ({ data }) => {
   </section>
 
   <section class="space-y-6">
-    <div class="flex items-center justify-between">
+    <div class="flex flex-col gap-2">
       <h2
         class="text-2xl font-semibold tracking-tight text-slate-900 dark:text-slate-100"
       >
-        Recent updates
+        Decision Guides
       </h2>
+      <p>Not sure which pattern to use? Start with a guide:</p>
     </div>
 
-    <RecentUpdates patterns={patterns} />
+    <BrowseGuides />
   </section>
 
   <section class="space-y-6">

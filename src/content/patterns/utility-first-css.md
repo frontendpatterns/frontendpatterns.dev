@@ -1,11 +1,11 @@
 ---
-title: "Utility-First CSS Pattern"
+title: "Utility-First CSS"
 added: 2025-10-10T00:00:00Z
-category: Styling
+tags: Styling
 difficulty: Beginner
 description: "Build interfaces using small, single-purpose utility classes rather than semantic class names."
 ---
-# Utility-First CSS Pattern
+# Utility-First CSS
 
 Build interfaces using small, single-purpose utility classes rather than semantic class names.
 

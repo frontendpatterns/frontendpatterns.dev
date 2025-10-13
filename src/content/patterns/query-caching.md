@@ -1,11 +1,11 @@
 ---
-title: "Query Caching Pattern"
+title: "Query Caching"
 added: 2025-10-10T00:00:00Z
-category: Data Fetching
+tags: Data Fetching
 difficulty: Advanced
 description: "Store fetched data to avoid redundant network requests and improve performance."
 ---
-# Query Caching Pattern
+# Query Caching
 
 Store fetched data to avoid redundant network requests and improve performance.
 

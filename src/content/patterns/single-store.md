@@ -1,11 +1,11 @@
 ---
-title: "Single Store Pattern"
+title: "Single Store"
 added: 2025-10-10T00:00:00Z
-category: State Management
+tags: State Management
 difficulty: Intermediate
 description: "Centralize all application state in one location for predictable updates."
 ---
-# Single Store Pattern
+# Single Store
 
 Centralize all application state in one location for predictable updates.
 

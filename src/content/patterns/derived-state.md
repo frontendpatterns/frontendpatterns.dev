@@ -1,11 +1,11 @@
 ---
-title: "Derived State Pattern"
+title: "Derived State"
 added: 2025-10-10T00:00:00Z
-category: State Management
+tags: State Management
 difficulty: Intermediate
 description: "Compute values from existing state rather than storing redundant data."
 ---
-# Derived State Pattern
+# Derived State
 
 Compute values from existing state rather than storing redundant data.
 

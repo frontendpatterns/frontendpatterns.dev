@@ -1,11 +1,11 @@
 ---
-title: "Higher-Order Component Pattern"
+title: "Higher-Order Component"
 added: 2025-10-10T00:00:00Z
-category: Component
+tags: Component
 difficulty: Beginner
 description: "Wrap components with additional functionality through function composition."
 ---
-# Higher-Order Component Pattern
+# Higher-Order Component
 
 Wrap components with additional functionality through function composition.
 

@@ -1,6 +1,6 @@
 ---
 id: 10
-title: Testing Patterns
+title: Testing
 description: How to test effectively at scale.
 ---
 

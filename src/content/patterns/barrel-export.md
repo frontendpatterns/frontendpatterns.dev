@@ -1,11 +1,11 @@
 ---
-title: "Barrel Export Pattern"
-category: Project Structure
+title: "Barrel Export"
+tags: Project Structure
 added: 2025-10-10T00:00:00Z
 difficulty: Beginner
 description: "Aggregate multiple exports into a single entry point using index files to create clean public APIs and simplify import paths."
 ---
-# Barrel Export Pattern
+# Barrel Export
 
 Aggregate multiple exports into a single entry point using index files to create clean public APIs and simplify import paths.
 

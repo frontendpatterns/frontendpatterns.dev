@@ -1,11 +1,11 @@
 ---
-title: "Tree Shaking Pattern"
+title: "Tree Shaking"
 added: 2025-10-10T00:00:00Z
-category: Performance
+tags: Performance
 difficulty: Advanced
 description: "Eliminate unused code from bundles during the build process."
 ---
-# Tree Shaking Pattern
+# Tree Shaking
 
 Eliminate unused code from bundles during the build process.
 

@@ -1,11 +1,11 @@
 ---
-title: "Prefetching Pattern"
+title: "Prefetching"
 added: 2025-10-10T00:00:00Z
-category: Data Fetching
+tags: Data Fetching
 difficulty: Advanced
 description: "Load data before it's needed based on predicted user actions."
 ---
-# Prefetching Pattern
+# Prefetching
 
 Load data before it's needed based on predicted user actions.
 

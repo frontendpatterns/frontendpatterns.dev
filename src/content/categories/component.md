@@ -1,6 +1,6 @@
 ---
 id: 2
-title: Component Patterns
+title: Component
 description: How to structure, compose, and organize UI components.
 ---
 

@@ -1,11 +1,11 @@
 ---
-title: "Style Isolation Pattern"
+title: "Style Isolation"
 added: 2025-10-10T00:00:00Z
-category: Styling
+tags: Styling
 difficulty: Beginner
 description: "Prevent style leakage between components through encapsulation techniques."
 ---
-# Style Isolation Pattern
+# Style Isolation
 
 Prevent style leakage between components through encapsulation techniques.
 

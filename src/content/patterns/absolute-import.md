@@ -1,11 +1,11 @@
 ---
-title: "Absolute Import Pattern"
-category: Project Structure
+title: "Absolute Import"
+tags: Project Structure
 added: 2025-10-10T00:00:00Z
 difficulty: Beginner
 description: "Configure absolute imports from a base directory to avoid complex relative path navigation."
 ---
-# Absolute Import Pattern
+# Absolute Import
 
 Configure absolute imports from a base directory to avoid complex relative path navigation.
 

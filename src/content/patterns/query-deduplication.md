@@ -1,11 +1,11 @@
 ---
-title: "Query Deduplication Pattern"
+title: "Query Deduplication"
 added: 2025-10-10T00:00:00Z
-category: Data Fetching
+tags: Data Fetching
 difficulty: Advanced
 description: "Prevent duplicate network requests when multiple components simultaneously request the same data."
 ---
-# Query Deduplication Pattern
+# Query Deduplication
 
 Prevent duplicate network requests when multiple components simultaneously request the same data.
 

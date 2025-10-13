@@ -1,11 +1,11 @@
 ---
-title: "Environment Configuration Pattern"
+title: "Environment Configuration"
 added: 2025-10-10T00:00:00Z
-category: Developer Experience
+tags: Developer Experience
 difficulty: Intermediate
 description: "Configure applications differently across development, staging, and production environments."
 ---
-# Environment Configuration Pattern
+# Environment Configuration
 
 Configure applications differently across development, staging, and production environments.
 

@@ -1,11 +1,11 @@
 ---
-title: "Conflict Resolution Pattern"
+title: "Conflict Resolution"
 added: 2025-10-10T00:00:00Z
-category: State Management
+tags: State Management
 difficulty: Intermediate
 description: "Handle concurrent updates and data conflicts in distributed systems with last-write-wins, operational transforms, or CRDTs."
 ---
-# Conflict Resolution Pattern
+# Conflict Resolution
 
 Handle concurrent updates and data conflicts in distributed systems with last-write-wins, operational transforms, or CRDTs.
 

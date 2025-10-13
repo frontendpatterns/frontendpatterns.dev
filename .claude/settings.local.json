@@ -4,7 +4,14 @@
       "Bash(bash:*)",
       "Bash(do sed -i '' '/^id: [0-9]*$/d' \"$file\")",
       "Bash(echo \"Updated: $file\")",
-      "Bash(npm run build)"
+      "Bash(npm run build)",
+      "Bash(chmod:*)",
+      "Bash(/Users/denodell/Code/frontendpatterns.dev/remove_pattern_suffix.sh:*)",
+      "Bash(do if ! grep -q '^title:' \"$file\")",
+      "Bash(! grep -q '^# ' \"$file\")",
+      "Bash(then echo \"Potential issue with: $file\")",
+      "Bash(fi)",
+      "Bash(cat:*)"
     ],
     "deny": [],
     "ask": []

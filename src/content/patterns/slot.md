@@ -1,11 +1,11 @@
 ---
-title: "Slot Pattern"
+title: "Slot"
 added: 2025-10-10T00:00:00Z
-category: Component
+tags: Component
 difficulty: Beginner
 description: "Allow parent components to inject content into designated areas of child components."
 ---
-# Slot Pattern
+# Slot
 
 Allow parent components to inject content into designated areas of child components.
 

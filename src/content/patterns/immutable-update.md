@@ -1,11 +1,11 @@
 ---
-title: "Immutable Update Pattern"
+title: "Immutable Update"
 added: 2025-10-10T00:00:00Z
-category: State Management
+tags: State Management
 difficulty: Intermediate
 description: "Treat state as immutable and creating new copies when making changes for predictability."
 ---
-# Immutable Update Pattern
+# Immutable Update
 
 Treat state as immutable and creating new copies when making changes for predictability.
 

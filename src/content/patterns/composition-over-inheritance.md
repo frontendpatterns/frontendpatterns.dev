@@ -1,11 +1,11 @@
 ---
-title: "Composition over Inheritance Pattern"
+title: "Composition over Inheritance"
 added: 2025-10-10T00:00:00Z
-category: Component
+tags: Component
 difficulty: Beginner
 description: "Build complex components by combining simpler ones rather than using class hierarchies."
 ---
-# Composition over Inheritance Pattern
+# Composition over Inheritance
 
 Build complex components by combining simpler ones rather than using class hierarchies.
 

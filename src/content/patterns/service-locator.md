@@ -1,11 +1,11 @@
 ---
-title: "Service Locator Pattern"
+title: "Service Locator"
 added: 2025-10-10T00:00:00Z
-category: State Management
+tags: State Management
 difficulty: Intermediate
 description: "Provide a centralized registry for accessing shared services throughout the application."
 ---
-# Service Locator Pattern
+# Service Locator
 
 Provide a centralized registry for accessing shared services throughout the application.
 

@@ -1,11 +1,11 @@
 ---
-title: "CSS Custom Properties Pattern"
+title: "CSS Custom Properties"
 added: 2025-10-10T00:00:00Z
-category: Styling
+tags: Styling
 difficulty: Beginner
 description: "Use CSS variables for dynamic styling and easy theme customization."
 ---
-# CSS Custom Properties Pattern
+# CSS Custom Properties
 
 Use CSS variables for dynamic styling and easy theme customization.
 

@@ -1,11 +1,11 @@
 ---
-title: "Query Strategy Pattern"
+title: "Query Strategy"
 added: 2025-10-10T00:00:00Z
-category: Testing
+tags: Testing
 difficulty: Intermediate
 description: "Select DOM elements using accessible queries that mirror user interaction."
 ---
-# Query Strategy Pattern
+# Query Strategy
 
 Select DOM elements using accessible queries that mirror user interaction.
 

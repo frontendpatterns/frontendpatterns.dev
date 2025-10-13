@@ -1,11 +1,11 @@
 ---
-title: "Component Deprecation Strategy Pattern"
+title: "Component Deprecation Strategy"
 added: 2025-10-10T00:00:00Z
-category: Developer Experience
+tags: Developer Experience
 difficulty: Intermediate
 description: "Retire outdated components gracefully with warnings, codemods, and migration guides to move consumers to newer alternatives."
 ---
-# Component Deprecation Strategy Pattern
+# Component Deprecation Strategy
 
 Retire outdated components gracefully with warnings, codemods, and migration guides to move consumers to newer alternatives.
 

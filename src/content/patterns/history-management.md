@@ -1,11 +1,11 @@
 ---
-title: "History Management Pattern"
+title: "History Management"
 added: 2025-10-10T00:00:00Z
-category: Routing and Navigation
+tags: Routing and Navigation
 difficulty: Intermediate
 description: "Control browser history programmatically for custom back/forward behavior."
 ---
-# History Management Pattern
+# History Management
 
 Control browser history programmatically for custom back/forward behavior.
 

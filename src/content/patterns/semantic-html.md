@@ -1,11 +1,11 @@
 ---
-title: "Semantic HTML Pattern"
+title: "Semantic HTML"
 added: 2025-10-10T00:00:00Z
-category: Accessibility
+tags: Accessibility
 difficulty: Beginner
 description: "Use correct HTML elements to convey meaning and structure before reaching for ARIA attributes."
 ---
-# Semantic HTML Pattern
+# Semantic HTML
 
 Use correct HTML elements to convey meaning and structure before reaching for ARIA attributes.
 

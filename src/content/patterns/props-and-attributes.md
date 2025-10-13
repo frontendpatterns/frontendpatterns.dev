@@ -1,11 +1,11 @@
 ---
-title: "Props and Attributes Pattern"
+title: "Props and Attributes"
 added: 2025-10-10T00:00:00Z
-category: Component
+tags: Component
 difficulty: Beginner
 description: "Pass data and configuration into components through properties or attributes."
 ---
-# Props and Attributes Pattern
+# Props and Attributes
 
 Pass data and configuration into components through properties or attributes.
 

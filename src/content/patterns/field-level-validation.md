@@ -1,11 +1,11 @@
 ---
-title: "Field-Level Validation Pattern"
+title: "Field-Level Validation"
 added: 2025-10-10T00:00:00Z
-category: State Management
+tags: State Management
 difficulty: Intermediate
 description: "Validate individual form fields as users interact with them for immediate feedback."
 ---
-# Field-Level Validation Pattern
+# Field-Level Validation
 
 Validate individual form fields as users interact with them for immediate feedback.
 

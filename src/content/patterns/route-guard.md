@@ -1,11 +1,11 @@
 ---
-title: "Route Guard Pattern"
+title: "Route Guard"
 added: 2025-10-10T00:00:00Z
-category: Routing and Navigation
+tags: Routing and Navigation
 difficulty: Intermediate
 description: "Protect routes with authentication, authorization, or validation checks before rendering."
 ---
-# Route Guard Pattern
+# Route Guard
 
 Protect routes with authentication, authorization, or validation checks before rendering.
 

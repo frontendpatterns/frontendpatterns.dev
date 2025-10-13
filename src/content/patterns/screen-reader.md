@@ -1,11 +1,11 @@
 ---
-title: "Screen Reader Pattern"
+title: "Screen Reader"
 added: 2025-10-10T00:00:00Z
-category: Accessibility
+tags: Accessibility
 difficulty: Beginner
 description: "Optimize content structure and announcements for screen reader users."
 ---
-# Screen Reader Pattern
+# Screen Reader
 
 Optimize content structure and announcements for screen reader users.
 

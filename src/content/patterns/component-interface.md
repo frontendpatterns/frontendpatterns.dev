@@ -1,11 +1,11 @@
 ---
-title: "Component Interface Pattern"
+title: "Component Interface"
 added: 2025-10-10T00:00:00Z
-category: Type Safety and Contracts
+tags: Type Safety and Contracts
 difficulty: Advanced
 description: "Define clear contracts for component inputs and outputs."
 ---
-# Component Interface Pattern
+# Component Interface
 
 Define clear contracts for component inputs and outputs.
 

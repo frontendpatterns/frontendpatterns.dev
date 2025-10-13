@@ -1,11 +1,11 @@
 ---
-title: "Component Lifecycle Pattern"
+title: "Component Lifecycle"
 added: 2025-10-10T00:00:00Z
-category: Component
+tags: Component
 difficulty: Beginner
 description: "Manage setup, updates, and cleanup phases of component existence."
 ---
-# Component Lifecycle Pattern
+# Component Lifecycle
 
 Manage setup, updates, and cleanup phases of component existence.
 

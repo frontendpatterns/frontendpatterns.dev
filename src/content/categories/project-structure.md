@@ -1,6 +1,6 @@
 ---
 id: 1
-title: Project Structure Patterns
+title: Project Structure
 description: Organize folders and files within a project.
 ---
 

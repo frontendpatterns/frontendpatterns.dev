@@ -1,11 +1,11 @@
 ---
-title: "Request Cancellation Pattern"
+title: "Request Cancellation"
 added: 2025-10-10T00:00:00Z
-category: Data Fetching
+tags: Data Fetching
 difficulty: Advanced
 description: "Abort in-flight requests when components unmount or dependencies change."
 ---
-# Request Cancellation Pattern
+# Request Cancellation
 
 Abort in-flight requests when components unmount or dependencies change.
 

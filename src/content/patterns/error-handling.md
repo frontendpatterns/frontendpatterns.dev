@@ -1,11 +1,11 @@
 ---
-title: "Error Handling Pattern"
+title: "Error Handling"
 added: 2025-10-10T00:00:00Z
-category: Data Fetching
+tags: Data Fetching
 difficulty: Advanced
 description: "Manage and displaying errors gracefully from failed API requests."
 ---
-# Error Handling Pattern
+# Error Handling
 
 Manage and displaying errors gracefully from failed API requests.
 

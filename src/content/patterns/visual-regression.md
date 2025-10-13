@@ -1,11 +1,11 @@
 ---
-title: "Visual Regression Pattern"
+title: "Visual Regression"
 added: 2025-10-10T00:00:00Z
-category: Testing
+tags: Testing
 difficulty: Intermediate
 description: "Compare screenshots to detect unintended visual changes automatically."
 ---
-# Visual Regression Pattern
+# Visual Regression
 
 Compare screenshots to detect unintended visual changes automatically.
 

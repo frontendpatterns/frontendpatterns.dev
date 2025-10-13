@@ -1,11 +1,11 @@
 ---
-title: "Stale-While-Revalidate Pattern"
+title: "Stale-While-Revalidate"
 added: 2025-10-10T00:00:00Z
-category: Data Fetching
+tags: Data Fetching
 difficulty: Advanced
 description: "Show cached data immediately while fetching fresh data in the background."
 ---
-# Stale-While-Revalidate Pattern
+# Stale-While-Revalidate
 
 Show cached data immediately while fetching fresh data in the background.
 

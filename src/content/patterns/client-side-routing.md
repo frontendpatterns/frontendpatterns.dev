@@ -1,11 +1,11 @@
 ---
-title: "Client-Side Routing Pattern"
+title: "Client-Side Routing"
 added: 2025-10-10T00:00:00Z
-category: Routing and Navigation
+tags: Routing and Navigation
 difficulty: Intermediate
 description: "Handle navigation without full page reloads for seamless single-page application experiences."
 ---
-# Client-Side Routing Pattern
+# Client-Side Routing
 
 Handle navigation without full page reloads for seamless single-page application experiences.
 

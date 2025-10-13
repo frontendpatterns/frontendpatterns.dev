@@ -1,11 +1,11 @@
 ---
-title: "Link Preloading Pattern"
+title: "Link Preloading"
 added: 2025-10-10T00:00:00Z
-category: Routing and Navigation
+tags: Routing and Navigation
 difficulty: Intermediate
 description: "Detect hover or focus on links to preload destinations before clicks."
 ---
-# Link Preloading Pattern
+# Link Preloading
 
 Detect hover or focus on links to preload destinations before clicks.
 

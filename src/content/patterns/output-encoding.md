@@ -1,11 +1,11 @@
 ---
-title: "Output Encoding Pattern"
+title: "Output Encoding"
 added: 2025-10-10T00:00:00Z
-category: Security and Privacy
+tags: Security and Privacy
 difficulty: Advanced
 description: "Escape data properly when rendering to prevent XSS by ensuring user input is treated as data, not executable code."
 ---
-# Output Encoding Pattern
+# Output Encoding
 
 Escape data properly when rendering to prevent XSS by ensuring user input is treated as data, not executable code.
 

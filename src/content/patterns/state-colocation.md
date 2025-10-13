@@ -1,11 +1,11 @@
 ---
-title: "State Colocation Pattern"
+title: "State Colocation"
 added: 2025-10-10T00:00:00Z
-category: State Management
+tags: State Management
 difficulty: Intermediate
 description: "Keep state as close as possible to where it's used to reduce complexity. (See also: Colocation Pattern)"
 ---
-# State Colocation Pattern
+# State Colocation
 
 Keep state as close as possible to where it's used to reduce complexity. (See also: Colocation Pattern)
 

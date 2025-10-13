@@ -1,11 +1,11 @@
 ---
-title: "Normalized State Pattern"
+title: "Normalized State"
 added: 2025-10-10T00:00:00Z
-category: State Management
+tags: State Management
 difficulty: Intermediate
 description: "Structure state as flat lookup tables to avoid data duplication and simplify updates."
 ---
-# Normalized State Pattern
+# Normalized State
 
 Structure state as flat lookup tables to avoid data duplication and simplify updates.
 

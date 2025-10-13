@@ -1,4 +1,9 @@
 ---
+import { getCollection } from "astro:content";
+
+const patterns = await getCollection("patterns", ({ data }) => {
+  return data.draft !== true;
+});
 const { variant } = Astro.props;
 const isSmall = variant === "small";
 const svgSizeClasses = isSmall ? "w-4 h-4" : "w-5 h-5";
@@ -39,7 +44,7 @@ const inputId = `pattern-search-${Math.random().toString(36).slice(2, 8)}`;
         name="s"
         id={inputId}
         class="w-0 shrink-0 border-0 bg-transparent px-0 text-sm text-slate-900 opacity-0 outline-none transition-all duration-200 ease-out placeholder:text-slate-500 focus:outline-none group-focus-within:w-52 group-focus-within:px-2 group-focus-within:opacity-100 group-focus-within:placeholder:text-slate-500 sm:group-focus-within:w-64 dark:text-slate-100 dark:placeholder:text-slate-400"
-        placeholder="Search 170+ patterns..."
+        placeholder={`Search ${patterns.length}+ patterns and guides...`}
         required
       />
       <button
@@ -79,7 +84,7 @@ const inputId = `pattern-search-${Math.random().toString(36).slice(2, 8)}`;
           name="s"
           id={inputId}
           class={`block w-full ${isSmall ? "p-2 ps-8" : "p-4 ps-10"} text-sm text-gray-900 dark:text-gray-100 border border-slate-400 dark:border-slate-600 bg-slate-100/50 dark:bg-slate-900/50 rounded-full placeholder-slate-600 dark:placeholder-slate-400`}
-          placeholder={`Search${isSmall ? "" : " 170+"} patterns...`}
+          placeholder={`Search${isSmall ? "" : ` ${patterns.length}+`} patterns and guides...`}
           required
         />
         <button

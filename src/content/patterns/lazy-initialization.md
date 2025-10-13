@@ -1,11 +1,11 @@
 ---
-title: "Lazy Initialization Pattern"
+title: "Lazy Initialization"
 added: 2025-10-10T00:00:00Z
-category: State Management
+tags: State Management
 difficulty: Intermediate
 description: "Defer expensive state calculations until the first render when they're needed."
 ---
-# Lazy Initialization Pattern
+# Lazy Initialization
 
 Defer expensive state calculations until the first render when they're needed.
 

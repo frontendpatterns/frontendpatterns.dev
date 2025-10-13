@@ -1,11 +1,11 @@
 ---
-title: "Scroll Restoration Pattern"
+title: "Scroll Restoration"
 added: 2025-10-10T00:00:00Z
-category: Routing and Navigation
+tags: Routing and Navigation
 difficulty: Intermediate
 description: "Remember and restore scroll positions when navigating backward."
 ---
-# Scroll Restoration Pattern
+# Scroll Restoration
 
 Remember and restore scroll positions when navigating backward.
 

@@ -1,11 +1,11 @@
 ---
-title: "Type Guard Pattern"
+title: "Type Guard"
 added: 2025-10-10T00:00:00Z
-category: Type Safety and Contracts
+tags: Type Safety and Contracts
 difficulty: Advanced
 description: "Write functions that narrow types at runtime for safe type assertions."
 ---
-# Type Guard Pattern
+# Type Guard
 
 Write functions that narrow types at runtime for safe type assertions.
 

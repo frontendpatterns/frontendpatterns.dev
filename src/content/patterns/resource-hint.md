@@ -1,11 +1,11 @@
 ---
-title: "Resource Hint Pattern"
+title: "Resource Hint"
 added: 2025-10-10T00:00:00Z
-category: Performance
+tags: Performance
 difficulty: Advanced
 description: "Use preload, prefetch, and preconnect to optimize resource loading timing."
 ---
-# Resource Hint Pattern
+# Resource Hint
 
 Use preload, prefetch, and preconnect to optimize resource loading timing.
 

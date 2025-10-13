@@ -1,11 +1,11 @@
 ---
-title: "SVG Optimization Pattern"
+title: "SVG Optimization"
 added: 2025-10-10T00:00:00Z
-category: Performance
+tags: Performance
 difficulty: Advanced
 description: "Remove unnecessary metadata and simplify paths to reduce SVG file sizes."
 ---
-# SVG Optimization Pattern
+# SVG Optimization
 
 Remove unnecessary metadata and simplify paths to reduce SVG file sizes.
 

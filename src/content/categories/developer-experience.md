@@ -1,6 +1,6 @@
 ---
 id: 11
-title: Developer Experience Patterns
+title: Developer Experience
 description: Making life easier for your team.
 ---
 

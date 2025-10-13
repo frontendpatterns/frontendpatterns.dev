@@ -1,11 +1,11 @@
 ---
-title: "Observer Pattern"
+title: "Observer"
 added: 2025-10-10T00:00:00Z
-category: State Management
+tags: State Management
 difficulty: Intermediate
 description: "Allow multiple components to subscribe and react to state changes automatically."
 ---
-# Observer Pattern
+# Observer
 
 Allow multiple components to subscribe and react to state changes automatically.
 

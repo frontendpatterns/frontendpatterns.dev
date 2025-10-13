@@ -1,11 +1,11 @@
 ---
-title: "Presentational vs. Container Pattern"
+title: "Presentational vs. Container"
 added: 2025-10-10T00:00:00Z
-category: Component
+tags: Component
 difficulty: Beginner
 description: "Separate components that handle UI rendering from those that manage data and business logic."
 ---
-# Presentational vs. Container Pattern
+# Presentational vs. Container
 
 Separate components that handle UI rendering from those that manage data and business logic.
 

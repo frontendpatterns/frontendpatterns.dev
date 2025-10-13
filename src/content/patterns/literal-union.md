@@ -1,11 +1,11 @@
 ---
-title: "Literal Union Pattern"
+title: "Literal Union"
 added: 2025-10-10T00:00:00Z
-category: Type Safety and Contracts
+tags: Type Safety and Contracts
 difficulty: Advanced
 description: "Restrict values to specific strings or numbers for compile-time validation."
 ---
-# Literal Union Pattern
+# Literal Union
 
 Restrict values to specific strings or numbers for compile-time validation.
 

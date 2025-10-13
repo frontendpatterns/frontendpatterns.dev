@@ -1,11 +1,11 @@
 ---
-title: "Theme Provider Pattern"
+title: "Theme Provider"
 added: 2025-10-10T00:00:00Z
-category: Styling
+tags: Styling
 difficulty: Beginner
 description: "Centralize design tokens and enabling runtime theme switching across an application."
 ---
-# Theme Provider Pattern
+# Theme Provider
 
 Centralize design tokens and enabling runtime theme switching across an application.
 

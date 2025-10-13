@@ -1,11 +1,11 @@
 ---
-title: "Parallel Request Pattern"
+title: "Parallel Request"
 added: 2025-10-10T00:00:00Z
-category: Data Fetching
+tags: Data Fetching
 difficulty: Advanced
 description: "Execute multiple independent API calls simultaneously to reduce total load time."
 ---
-# Parallel Request Pattern
+# Parallel Request
 
 Execute multiple independent API calls simultaneously to reduce total load time.
 

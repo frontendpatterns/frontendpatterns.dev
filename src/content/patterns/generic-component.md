@@ -1,11 +1,11 @@
 ---
-title: "Generic Component Pattern"
+title: "Generic Component"
 added: 2025-10-10T00:00:00Z
-category: Type Safety and Contracts
+tags: Type Safety and Contracts
 difficulty: Advanced
 description: "Create reusable components that work with multiple data types."
 ---
-# Generic Component Pattern
+# Generic Component
 
 Create reusable components that work with multiple data types.
 

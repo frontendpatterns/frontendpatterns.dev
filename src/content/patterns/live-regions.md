@@ -1,11 +1,11 @@
 ---
-title: "Live Regions Pattern"
+title: "Live Regions"
 added: 2025-10-10T00:00:00Z
-category: Accessibility
+tags: Accessibility
 difficulty: Beginner
 description: "Announce dynamic content updates to screen readers using ARIA live regions without disrupting user flow."
 ---
-# Live Regions Pattern
+# Live Regions
 
 Announce dynamic content updates to screen readers using ARIA live regions without disrupting user flow.
 

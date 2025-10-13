@@ -1,11 +1,11 @@
 ---
-title: "Render Function Pattern"
+title: "Render Function"
 added: 2025-10-10T00:00:00Z
-category: Component
+tags: Component
 difficulty: Beginner
 description: "Use functions to dynamically generate component output based on state and props."
 ---
-# Render Function Pattern
+# Render Function
 
 Use functions to dynamically generate component output based on state and props.
 

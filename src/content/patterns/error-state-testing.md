@@ -1,11 +1,11 @@
 ---
-title: "Error State Testing Pattern"
+title: "Error State Testing"
 added: 2025-10-10T00:00:00Z
-category: Testing
+tags: Testing
 difficulty: Intermediate
 description: "Test explicitly how components handle errors and edge cases."
 ---
-# Error State Testing Pattern
+# Error State Testing
 
 Test explicitly how components handle errors and edge cases.
 

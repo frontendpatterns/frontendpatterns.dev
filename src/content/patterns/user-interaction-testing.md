@@ -1,11 +1,11 @@
 ---
-title: "User Interaction Testing Pattern"
+title: "User Interaction Testing"
 added: 2025-10-10T00:00:00Z
-category: Testing
+tags: Testing
 difficulty: Intermediate
 description: "Simulate user events like clicks and typing to test real-world behavior."
 ---
-# User Interaction Testing Pattern
+# User Interaction Testing
 
 Simulate user events like clicks and typing to test real-world behavior.
 

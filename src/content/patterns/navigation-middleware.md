@@ -1,11 +1,11 @@
 ---
-title: "Navigation Middleware Pattern"
+title: "Navigation Middleware"
 added: 2025-10-10T00:00:00Z
-category: Routing and Navigation
+tags: Routing and Navigation
 difficulty: Intermediate
 description: "Execute logic before, during, or after navigation events."
 ---
-# Navigation Middleware Pattern
+# Navigation Middleware
 
 Execute logic before, during, or after navigation events.
 

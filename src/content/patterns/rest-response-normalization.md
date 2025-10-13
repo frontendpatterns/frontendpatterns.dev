@@ -1,11 +1,11 @@
 ---
-title: "REST Response Normalization Pattern"
+title: "REST Response Normalization"
 added: 2025-10-10T00:00:00Z
-category: Data Fetching
+tags: Data Fetching
 difficulty: Advanced
 description: "Transform nested API responses into flat, relational structures for efficient updates."
 ---
-# REST Response Normalization Pattern
+# REST Response Normalization
 
 Transform nested API responses into flat, relational structures for efficient updates.
 

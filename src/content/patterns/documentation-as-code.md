@@ -1,11 +1,11 @@
 ---
-title: "Documentation as Code Pattern"
+title: "Documentation as Code"
 added: 2025-10-10T00:00:00Z
-category: Developer Experience
+tags: Developer Experience
 difficulty: Intermediate
 description: "Maintain documentation alongside code with version control and automated publishing workflows."
 ---
-# Documentation as Code Pattern
+# Documentation as Code
 
 Maintain documentation alongside code with version control and automated publishing workflows.
 

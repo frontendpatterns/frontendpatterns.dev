@@ -1,11 +1,11 @@
 ---
-title: "Reduced Motion Pattern"
+title: "Reduced Motion"
 added: 2025-10-10T00:00:00Z
-category: Accessibility
+tags: Accessibility
 difficulty: Beginner
 description: "Respect user preferences for reduced animations and motion effects."
 ---
-# Reduced Motion Pattern
+# Reduced Motion
 
 Respect user preferences for reduced animations and motion effects.
 

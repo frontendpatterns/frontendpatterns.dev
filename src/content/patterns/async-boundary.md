@@ -1,11 +1,11 @@
 ---
-title: "Async Boundary Pattern"
+title: "Async Boundary"
 added: 2025-10-10T00:00:00Z
-category: Performance
+tags: Performance
 difficulty: Advanced
 description: "Define fallback UI to show while asynchronous components or data are loading."
 ---
-# Async Boundary Pattern
+# Async Boundary
 
 Define fallback UI to show while asynchronous components or data are loading.
 

@@ -1,11 +1,11 @@
 ---
-title: "Linting Pattern"
+title: "Linting"
 added: 2025-10-10T00:00:00Z
-category: Developer Experience
+tags: Developer Experience
 difficulty: Intermediate
 description: "Enforce code quality and consistency rules automatically during development."
 ---
-# Linting Pattern
+# Linting
 
 Enforce code quality and consistency rules automatically during development.
 

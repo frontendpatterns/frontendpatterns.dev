@@ -1,11 +1,11 @@
 ---
-title: "Snapshot Testing Pattern"
+title: "Snapshot Testing"
 added: 2025-10-10T00:00:00Z
-category: Testing
+tags: Testing
 difficulty: Intermediate
 description: "Capture component output and detecting unintended changes over time."
 ---
-# Snapshot Testing Pattern
+# Snapshot Testing
 
 Capture component output and detecting unintended changes over time.
 

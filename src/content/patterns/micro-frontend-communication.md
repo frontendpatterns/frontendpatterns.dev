@@ -1,11 +1,11 @@
 ---
-title: "Micro-Frontend Communication Pattern"
+title: "Micro-Frontend Communication"
 added: 2025-10-10T00:00:00Z
-category: Developer Experience
+tags: Developer Experience
 difficulty: Intermediate
 description: "Establish communication protocols between independently deployed frontend applications."
 ---
-# Micro-Frontend Communication Pattern
+# Micro-Frontend Communication
 
 Establish communication protocols between independently deployed frontend applications.
 

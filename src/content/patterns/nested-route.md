@@ -1,11 +1,11 @@
 ---
-title: "Nested Route Pattern"
+title: "Nested Route"
 added: 2025-10-10T00:00:00Z
-category: Routing and Navigation
+tags: Routing and Navigation
 difficulty: Intermediate
 description: "Compose routes hierarchically to match UI component structure."
 ---
-# Nested Route Pattern
+# Nested Route
 
 Compose routes hierarchically to match UI component structure.
 

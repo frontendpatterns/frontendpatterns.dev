@@ -1,11 +1,11 @@
 ---
-title: "Mobile-First Pattern"
+title: "Mobile-First"
 added: 2025-10-10T00:00:00Z
-category: Styling
+tags: Styling
 difficulty: Beginner
 description: "Design for small screens first, then progressively enhancing for larger viewports."
 ---
-# Mobile-First Pattern
+# Mobile-First
 
 Design for small screens first, then progressively enhancing for larger viewports.
 

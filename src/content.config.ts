@@ -14,8 +14,25 @@ const patterns = defineCollection({
 		z.object({
 			title: z.string(),
 			description: z.string(),
-			category: z.string().optional(),
+			tags: z.string().optional(),
 			added: z.date(),
+			difficulty: z.enum(["Beginner", "Intermediate", "Advanced"]).optional(),
+			framework: z.array(z.enum(["React", "Vue", "Svelte"])).optional(),
+			metaDescription: z.string().optional(),
+			draft: z.boolean().optional(),
+		}),
+});
+
+const guides = defineCollection({
+	loader: glob({ pattern: "**/[^_]*.md", base: "./src/content/guides" }),
+	markdown: markdownOptions,
+	schema: () =>
+		z.object({
+			title: z.string(),
+			description: z.string(),
+			tags: z.string().optional(),
+			publishedAt: z.date(),
+			relatedPatterns: z.array(z.string()).optional(),
 			difficulty: z.enum(["Beginner", "Intermediate", "Advanced"]).optional(),
 			framework: z.array(z.enum(["React", "Vue", "Svelte"])).optional(),
 			metaDescription: z.string().optional(),
@@ -34,4 +51,4 @@ const categories = defineCollection({
 		}),
 });
 
-export const collections = { patterns, categories };
+export const collections = { patterns, guides, categories };

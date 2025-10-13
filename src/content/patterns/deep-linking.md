@@ -1,11 +1,11 @@
 ---
-title: "Deep Linking Pattern"
+title: "Deep Linking"
 added: 2025-10-10T00:00:00Z
-category: Routing and Navigation
+tags: Routing and Navigation
 difficulty: Intermediate
 description: "Enable URLs that point directly to specific application states for shareability."
 ---
-# Deep Linking Pattern
+# Deep Linking
 
 Enable URLs that point directly to specific application states for shareability.
 

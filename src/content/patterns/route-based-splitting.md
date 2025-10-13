@@ -1,11 +1,11 @@
 ---
-title: "Route-Based Splitting Pattern"
+title: "Route-Based Splitting"
 added: 2025-10-10T00:00:00Z
-category: Performance
+tags: Performance
 difficulty: Advanced
 description: "Split code automatically at route boundaries for natural loading chunks."
 ---
-# Route-Based Splitting Pattern
+# Route-Based Splitting
 
 Split code automatically at route boundaries for natural loading chunks.
 

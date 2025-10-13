@@ -1,11 +1,11 @@
 ---
-title: "Component State Pattern"
+title: "Component State"
 added: 2025-10-10T00:00:00Z
-category: State Management
+tags: State Management
 difficulty: Intermediate
 description: "Manage data that only affects a single component internally."
 ---
-# Component State Pattern
+# Component State
 
 Manage data that only affects a single component internally.
 

@@ -1,11 +1,11 @@
 ---
-title: "Color Contrast Pattern"
+title: "Color Contrast"
 added: 2025-10-10T00:00:00Z
-category: Accessibility
+tags: Accessibility
 difficulty: Beginner
 description: "Ensure sufficient contrast ratios between text and backgrounds for readability."
 ---
-# Color Contrast Pattern
+# Color Contrast
 
 Ensure sufficient contrast ratios between text and backgrounds for readability.
 

@@ -1,11 +1,11 @@
 ---
-title: "Form Library Integration Pattern"
+title: "Form Library Integration"
 added: 2025-10-10T00:00:00Z
-category: State Management
+tags: State Management
 difficulty: Intermediate
 description: "Leverage third-party form libraries to handle complex validation and submission logic."
 ---
-# Form Library Integration Pattern
+# Form Library Integration
 
 Leverage third-party form libraries to handle complex validation and submission logic.
 

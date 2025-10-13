@@ -1,11 +1,11 @@
 ---
-title: "Image Optimization Pattern"
+title: "Image Optimization"
 added: 2025-10-10T00:00:00Z
-category: Performance
+tags: Performance
 difficulty: Advanced
 description: "Compressing, resizing, and serving images in modern formats to reduce bandwidth usage."
 ---
-# Image Optimization Pattern
+# Image Optimization
 
 Compressing, resizing, and serving images in modern formats to reduce bandwidth usage.
 

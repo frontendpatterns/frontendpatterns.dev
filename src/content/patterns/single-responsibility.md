@@ -1,11 +1,11 @@
 ---
-title: "Single Responsibility Pattern"
-category: Project Structure
+title: "Single Responsibility"
+tags: Project Structure
 added: 2025-10-10T00:00:00Z
 difficulty: Beginner
 description: "Ensure each component, module, or function has one clear purpose and reason to change."
 ---
-# Single Responsibility Pattern
+# Single Responsibility
 
 Ensure each component, module, or function has one clear purpose and reason to change.
 

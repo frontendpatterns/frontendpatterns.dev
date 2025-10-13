@@ -1,11 +1,11 @@
 ---
-title: "Accessibility Testing Pattern"
+title: "Accessibility Testing"
 added: 2025-10-10T00:00:00Z
-category: Testing
+tags: Testing
 difficulty: Intermediate
 description: "Verify that interfaces work with assistive technologies and meet WCAG standards."
 ---
-# Accessibility Testing Pattern
+# Accessibility Testing
 
 Verify that interfaces work with assistive technologies and meet WCAG standards.
 

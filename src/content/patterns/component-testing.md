@@ -1,11 +1,11 @@
 ---
-title: "Component Testing Pattern"
+title: "Component Testing"
 added: 2025-10-10T00:00:00Z
-category: Testing
+tags: Testing
 difficulty: Intermediate
 description: "Test components in isolation to verify their behavior and output."
 ---
-# Component Testing Pattern
+# Component Testing
 
 Test components in isolation to verify their behavior and output.
 

@@ -1,11 +1,11 @@
 ---
-title: "Pub/Sub Pattern"
+title: "Pub/Sub"
 added: 2025-10-10T00:00:00Z
-category: State Management
+tags: State Management
 difficulty: Intermediate
 description: "Decouple components through event-based communication without direct references."
 ---
-# Pub/Sub Pattern
+# Pub/Sub
 
 Decouple components through event-based communication without direct references.
 

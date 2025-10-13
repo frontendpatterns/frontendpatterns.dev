@@ -1,11 +1,11 @@
 ---
-title: "Design Token Pattern"
+title: "Design Token"
 added: 2025-10-10T00:00:00Z
-category: Styling
+tags: Styling
 difficulty: Beginner
 description: "Define visual design decisions as reusable variables for consistency across platforms."
 ---
-# Design Token Pattern
+# Design Token
 
 Define visual design decisions as reusable variables for consistency across platforms.
 

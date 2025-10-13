@@ -1,11 +1,11 @@
 ---
-title: "Dependent Query Pattern"
+title: "Dependent Query"
 added: 2025-10-10T00:00:00Z
-category: Data Fetching
+tags: Data Fetching
 difficulty: Advanced
 description: "Chain API requests where subsequent calls depend on previous results."
 ---
-# Dependent Query Pattern
+# Dependent Query
 
 Chain API requests where subsequent calls depend on previous results.
 

@@ -1,11 +1,11 @@
 ---
-title: "Props Contract Pattern"
+title: "Props Contract"
 added: 2025-10-10T00:00:00Z
-category: Type Safety and Contracts
+tags: Type Safety and Contracts
 difficulty: Advanced
 description: "Specify required and optional properties with their expected types."
 ---
-# Props Contract Pattern
+# Props Contract
 
 Specify required and optional properties with their expected types.
 

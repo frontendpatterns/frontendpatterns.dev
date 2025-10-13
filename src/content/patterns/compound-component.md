@@ -1,11 +1,11 @@
 ---
-title: "Compound Component Pattern"
+title: "Compound Component"
 added: 2025-10-10T00:00:00Z
-category: Component
+tags: Component
 difficulty: Beginner
 description: "Create components that work together implicitly through shared context to manage complex interactions."
 ---
-# Compound Component Pattern
+# Compound Component
 
 Create components that work together implicitly through shared context to manage complex interactions.
 

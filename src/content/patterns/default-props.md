@@ -1,11 +1,11 @@
 ---
-title: "Default Props Pattern"
+title: "Default Props"
 added: 2025-10-10T00:00:00Z
-category: Component
+tags: Component
 difficulty: Beginner
 description: "Define fallback values for optional component inputs to ensure predictable behavior."
 ---
-# Default Props Pattern
+# Default Props
 
 Define fallback values for optional component inputs to ensure predictable behavior.
 

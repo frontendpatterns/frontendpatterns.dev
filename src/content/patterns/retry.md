@@ -1,11 +1,11 @@
 ---
-title: "Retry Pattern"
+title: "Retry"
 added: 2025-10-10T00:00:00Z
-category: Data Fetching
+tags: Data Fetching
 difficulty: Advanced
 description: "Re-attempt failed requests automatically with exponential backoff strategies."
 ---
-# Retry Pattern
+# Retry
 
 Re-attempt failed requests automatically with exponential backoff strategies.
 

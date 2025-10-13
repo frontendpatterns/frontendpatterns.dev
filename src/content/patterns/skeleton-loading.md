@@ -1,11 +1,11 @@
 ---
-title: "Skeleton Loading Pattern"
+title: "Skeleton Loading"
 added: 2025-10-10T00:00:00Z
-category: Performance
+tags: Performance
 difficulty: Advanced
 description: "Show placeholder content that mimics the layout of incoming data for perceived performance."
 ---
-# Skeleton Loading Pattern
+# Skeleton Loading
 
 Show placeholder content that mimics the layout of incoming data for perceived performance.
 

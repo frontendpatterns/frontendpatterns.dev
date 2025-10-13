@@ -1,11 +1,11 @@
 ---
-title: "Cache Invalidation Pattern"
+title: "Cache Invalidation"
 added: 2025-10-10T00:00:00Z
-category: Data Fetching
+tags: Data Fetching
 difficulty: Advanced
 description: "Clear or update cached data strategically when underlying information changes."
 ---
-# Cache Invalidation Pattern
+# Cache Invalidation
 
 Clear or update cached data strategically when underlying information changes.
 

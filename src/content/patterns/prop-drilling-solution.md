@@ -1,11 +1,11 @@
 ---
-title: "Prop Drilling Solution Pattern"
+title: "Prop Drilling Solution"
 added: 2025-10-10T00:00:00Z
-category: Component
+tags: Component
 difficulty: Beginner
 description: "Avoid passing props through many intermediate components unnecessarily using context or state management."
 ---
-# Prop Drilling Solution Pattern
+# Prop Drilling Solution
 
 Avoid passing props through many intermediate components unnecessarily using context or state management.
 

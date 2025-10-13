@@ -1,11 +1,11 @@
 ---
-title: "Coverage Strategy Pattern"
+title: "Coverage Strategy"
 added: 2025-10-10T00:00:00Z
-category: Testing
+tags: Testing
 difficulty: Intermediate
 description: "Define meaningful code coverage targets that reflect actual risk areas."
 ---
-# Coverage Strategy Pattern
+# Coverage Strategy
 
 Define meaningful code coverage targets that reflect actual risk areas.
 

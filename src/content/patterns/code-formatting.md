@@ -1,11 +1,11 @@
 ---
-title: "Code Formatting Pattern"
+title: "Code Formatting"
 added: 2025-10-10T00:00:00Z
-category: Developer Experience
+tags: Developer Experience
 difficulty: Intermediate
 description: "Format code automatically to eliminate style debates and merge conflicts."
 ---
-# Code Formatting Pattern
+# Code Formatting
 
 Format code automatically to eliminate style debates and merge conflicts.
 

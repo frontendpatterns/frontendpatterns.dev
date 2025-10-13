@@ -1,11 +1,11 @@
 ---
-title: "API Mocking Pattern"
+title: "API Mocking"
 added: 2025-10-10T00:00:00Z
-category: Testing
+tags: Testing
 difficulty: Intermediate
 description: "Replace real API calls with controlled responses for predictable testing."
 ---
-# API Mocking Pattern
+# API Mocking
 
 Replace real API calls with controlled responses for predictable testing.
 

@@ -1,11 +1,11 @@
 ---
-title: "BEM Class Naming Pattern"
+title: "BEM Class Naming"
 added: 2025-10-10T00:00:00Z
-category: Styling
+tags: Styling
 difficulty: Beginner
 description: "Structure CSS class names with Block, Element, Modifier methodology for clarity and reusability."
 ---
-# BEM Class Naming Pattern
+# BEM Class Naming
 
 Structure CSS class names with Block, Element, Modifier methodology for clarity and reusability.
 

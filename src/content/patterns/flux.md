@@ -1,11 +1,11 @@
 ---
-title: "Flux Pattern"
+title: "Flux"
 added: 2025-10-10T00:00:00Z
-category: State Management
+tags: State Management
 difficulty: Intermediate
 description: "Implement unidirectional data flow architecture with actions, dispatchers, stores, and views."
 ---
-# Flux Pattern
+# Flux
 
 Implement unidirectional data flow architecture with actions, dispatchers, stores, and views.
 

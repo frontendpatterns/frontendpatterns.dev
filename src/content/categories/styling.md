@@ -1,6 +1,6 @@
 ---
 id: 3
-title: Styling Patterns
+title: Styling
 description: Making apps look their best.
 ---
 

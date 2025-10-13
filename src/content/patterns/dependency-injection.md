@@ -1,11 +1,11 @@
 ---
-title: "Dependency Injection Pattern"
+title: "Dependency Injection"
 added: 2025-10-10T00:00:00Z
-category: State Management
+tags: State Management
 difficulty: Intermediate
 description: "Provide dependencies from the outside rather than creating them internally for better testability."
 ---
-# Dependency Injection Pattern
+# Dependency Injection
 
 Provide dependencies from the outside rather than creating them internally for better testability.
 

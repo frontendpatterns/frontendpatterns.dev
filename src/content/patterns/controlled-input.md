@@ -1,11 +1,11 @@
 ---
-title: "Controlled Input Pattern"
+title: "Controlled Input"
 added: 2025-10-10T00:00:00Z
-category: State Management
+tags: State Management
 difficulty: Intermediate
 description: "Synchronize form inputs with component state for full programmatic control."
 ---
-# Controlled Input Pattern
+# Controlled Input
 
 Synchronize form inputs with component state for full programmatic control.
 

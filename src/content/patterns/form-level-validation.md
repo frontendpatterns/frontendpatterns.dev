@@ -1,11 +1,11 @@
 ---
-title: "Form-Level Validation Pattern"
+title: "Form-Level Validation"
 added: 2025-10-10T00:00:00Z
-category: State Management
+tags: State Management
 difficulty: Intermediate
 description: "Validate entire forms on submission to check cross-field rules and constraints."
 ---
-# Form-Level Validation Pattern
+# Form-Level Validation
 
 Validate entire forms on submission to check cross-field rules and constraints.
 

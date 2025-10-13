@@ -1,11 +1,11 @@
 ---
-title: "State Lifting Pattern"
+title: "State Lifting"
 added: 2025-10-10T00:00:00Z
-category: State Management
+tags: State Management
 difficulty: Intermediate
 description: "Move state up the component tree to share it between sibling components."
 ---
-# State Lifting Pattern
+# State Lifting
 
 Move state up the component tree to share it between sibling components.
 

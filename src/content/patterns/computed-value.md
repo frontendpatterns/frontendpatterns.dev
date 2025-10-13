@@ -1,11 +1,11 @@
 ---
-title: "Computed Value Pattern"
+title: "Computed Value"
 added: 2025-10-10T00:00:00Z
-category: Performance
+tags: Performance
 difficulty: Advanced
 description: "Derive values from state only when dependencies change rather than on every render."
 ---
-# Computed Value Pattern
+# Computed Value
 
 Derive values from state only when dependencies change rather than on every render.
 

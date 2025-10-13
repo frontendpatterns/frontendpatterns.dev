@@ -1,11 +1,11 @@
 ---
-title: "State Synchronization Pattern"
+title: "State Synchronization"
 added: 2025-10-10T00:00:00Z
-category: State Management
+tags: State Management
 difficulty: Intermediate
 description: "Keep component state in sync with external data sources or other components."
 ---
-# State Synchronization Pattern
+# State Synchronization
 
 Keep component state in sync with external data sources or other components.
 

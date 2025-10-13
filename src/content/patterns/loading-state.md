@@ -1,11 +1,11 @@
 ---
-title: "Loading State Pattern"
+title: "Loading State"
 added: 2025-10-10T00:00:00Z
-category: Data Fetching
+tags: Data Fetching
 difficulty: Advanced
 description: "Show loading indicators while asynchronous operations are in progress."
 ---
-# Loading State Pattern
+# Loading State
 
 Show loading indicators while asynchronous operations are in progress.
 

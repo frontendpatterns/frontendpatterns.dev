@@ -1,11 +1,11 @@
 ---
-title: "Server State vs Client State Pattern"
+title: "Server State vs Client State"
 added: 2025-10-10T00:00:00Z
-category: State Management
+tags: State Management
 difficulty: Intermediate
 description: "Distinguish between data owned by the server (cached temporarily) and local UI state for proper management strategies."
 ---
-# Server State vs Client State Pattern
+# Server State vs Client State
 
 Distinguish between data owned by the server (cached temporarily) and local UI state for proper management strategies.
 
