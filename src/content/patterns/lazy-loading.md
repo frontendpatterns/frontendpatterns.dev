@@ -1,0 +1,22 @@
+---
+title: "Lazy Loading Pattern"
+added: 2025-10-10T00:00:00Z
+category: Performance
+difficulty: Advanced
+description: "Defer loading of non-critical resources until they're needed."
+---
+# Lazy Loading Pattern
+
+Defer loading of non-critical resources until they're needed.
+
+## Problem
+
+Without this pattern, the premise that deferring loading of non-critical resources until they're needed falls apart, and small changes trigger cascading regressions.
+
+## Context
+
+Use it whenever you're working on performance concerns in a codebase that multiple engineers touch daily.
+
+## Solution
+
+Apply the Lazy Loading pattern by deferring loading of non-critical resources until they're needed, and reinforce it with concise examples or tests. For example, memoize the transformed dataset before rendering a 500-row analytics grid so scrolling stays smooth.

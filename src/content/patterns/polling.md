@@ -1,0 +1,22 @@
+---
+title: "Polling Pattern"
+added: 2025-10-10T00:00:00Z
+category: Data Fetching
+difficulty: Advanced
+description: "Fetch data repeatedly at regular intervals to keep information current."
+---
+# Polling Pattern
+
+Fetch data repeatedly at regular intervals to keep information current.
+
+## Problem
+
+Without this pattern, the premise that repeatedly fetching data at regular intervals to keep information current falls apart, and small changes trigger cascading regressions.
+
+## Context
+
+Use it whenever you're working on data fetching concerns in a codebase that multiple engineers touch daily.
+
+## Solution
+
+Apply the Polling pattern by repeatedly fetching data at regular intervals to keep information current, and reinforce it with concise examples or tests. For example, let a `useOrders` hook own the network call while an `OrdersTable` component simply renders rows.

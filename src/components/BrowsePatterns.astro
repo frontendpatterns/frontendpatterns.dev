@@ -3,7 +3,7 @@ import { getCollection } from "astro:content";
 import Card from "./Card.astro";
 
 const categories = await getCollection("categories");
-categories.sort((a, b) => a.data.id - b.data.id);
+categories.sort((a, b) => a.data.title.localeCompare(b.data.title));
 ---
 
 <div

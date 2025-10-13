@@ -7,7 +7,7 @@ import EmailSignup from "../../components/EmailSignup.astro";
 const patterns = (
   await getCollection("patterns", ({ data }) => data.draft !== true)
 ).sort((a, b) => {
-  return a.data.id - b.data.id;
+  return a.data.title.localeCompare(b.data.title);
 });
 
 const now = Date.now();
@@ -24,7 +24,6 @@ const patternRows = patterns.map((pattern) => {
 
   return {
     slug: pattern.id,
-    number: pattern.data.id,
     title: pattern.data.title,
     category,
     categoryHref: categorySlug
@@ -82,7 +81,6 @@ const patternRows = patterns.map((pattern) => {
         <table class="w-full border-collapse text-left">
           <thead class="bg-slate-100/80 text-xs uppercase tracking-wide text-slate-600 dark:bg-slate-800 dark:text-slate-300">
             <tr>
-              <th class="px-3 py-2 font-semibold md:px-6 md:py-3">ID</th>
               <th class="px-3 py-2 font-semibold md:px-6 md:py-3">Pattern</th>
               <th class="px-3 py-2 font-semibold md:px-6 md:py-3">Category</th>
               <th class="px-3 py-2 font-semibold text-right md:px-6 md:py-3">
@@ -93,9 +91,6 @@ const patternRows = patterns.map((pattern) => {
           <tbody class="divide-y divide-slate-200 text-sm dark:divide-slate-800">
             {patternRows.map((pattern) => (
               <tr class="transition-colors hover:bg-slate-50 dark:hover:bg-slate-800/60">
-                <td class="px-3 py-3 font-mono text-xs font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400 md:px-6">
-                  #{pattern.number.toString().padStart(3, "0")}
-                </td>
                 <td class="px-3 py-3 md:px-6">
                   <a
                     href={`/p/${pattern.slug}`}

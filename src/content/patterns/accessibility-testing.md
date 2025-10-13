@@ -1,0 +1,22 @@
+---
+title: "Accessibility Testing Pattern"
+added: 2025-10-10T00:00:00Z
+category: Testing
+difficulty: Intermediate
+description: "Verify that interfaces work with assistive technologies and meet WCAG standards."
+---
+# Accessibility Testing Pattern
+
+Verify that interfaces work with assistive technologies and meet WCAG standards.
+
+## Problem
+
+Without this pattern, the premise that verifying that interfaces work with assistive technologies and meet WCAG standards falls apart, and small changes trigger cascading regressions.
+
+## Context
+
+Use it whenever you're working on testing concerns in a codebase that multiple engineers touch daily.
+
+## Solution
+
+Apply the Accessibility Testing pattern by verifying that interfaces work with assistive technologies and meet WCAG standards, and reinforce it with concise examples or tests. For example, run an integration test that fills the checkout form, submits it, and asserts on the rendered receipt.

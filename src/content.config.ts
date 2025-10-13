@@ -12,8 +12,8 @@ const patterns = defineCollection({
 	markdown: markdownOptions,
 	schema: () =>
 		z.object({
-			id: z.number(),
-      title: z.string(),
+			title: z.string(),
+			description: z.string(),
 			category: z.string().optional(),
 			added: z.date(),
 			difficulty: z.enum(["Beginner", "Intermediate", "Advanced"]).optional(),
@@ -28,8 +28,7 @@ const categories = defineCollection({
 	markdown: markdownOptions,
 	schema: () =>
 		z.object({
-			id: z.number(),
-      title: z.string(),
+			title: z.string(),
 			description: z.string().optional(),
 			draft: z.boolean().optional(),
 		}),

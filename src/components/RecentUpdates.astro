@@ -36,7 +36,6 @@ const patterns = (
                 href={`/p/${pattern.id}`}
                 class="text-slate-900 underline decoration-slate-200 decoration-2 underline-offset-4 transition-colors hover:text-sky-700 hover:decoration-sky-500 dark:text-slate-100 dark:decoration-slate-700 dark:hover:text-sky-300 dark:hover:decoration-sky-400"
               >
-                #{pattern.data.id.toString().padStart(3, "0")}:{" "}
                 {pattern.data.title}
                 {new Date() - new Date(pattern.data.added) <
                 30 * 24 * 60 * 60 * 1000 ? (

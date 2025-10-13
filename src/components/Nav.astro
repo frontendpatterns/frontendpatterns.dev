@@ -4,7 +4,7 @@ import { getCollection } from "astro:content";
 const categories = await getCollection("categories", ({ data }) => {
   return data.draft !== true;
 });
-categories.sort((a, b) => a.data.id - b.data.id);
+categories.sort((a, b) => a.data.title.localeCompare(b.data.title));
 ---
 
 <nav class={Astro.props["class"]}>

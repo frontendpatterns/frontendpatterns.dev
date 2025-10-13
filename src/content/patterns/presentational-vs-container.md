@@ -1,0 +1,22 @@
+---
+title: "Presentational vs. Container Pattern"
+added: 2025-10-10T00:00:00Z
+category: Component
+difficulty: Beginner
+description: "Separate components that handle UI rendering from those that manage data and business logic."
+---
+# Presentational vs. Container Pattern
+
+Separate components that handle UI rendering from those that manage data and business logic.
+
+## Problem
+
+Without this pattern, the premise that separating components that handle UI rendering from those that manage data and business logic falls apart, and small changes trigger cascading regressions.
+
+## Context
+
+Use it whenever you're working on component concerns in a codebase that multiple engineers touch daily.
+
+## Solution
+
+Apply the Presentational vs. Container pattern by separating components that handle UI rendering from those that manage data and business logic, and reinforce it with concise examples or tests. For example, keep a `UserCard` component focused on presentation while a `useUserCard` hook fetches and normalizes its data.
