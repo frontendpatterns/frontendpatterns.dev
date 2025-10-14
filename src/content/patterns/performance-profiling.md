@@ -7,8 +7,6 @@ description: "Use browser DevTools to identify performance bottlenecks and memor
 ---
 # Performance Profiling
 
-Use browser DevTools to identify performance bottlenecks and memory leaks.
-
 ## Problem
 
 Without this pattern, the premise that using browser DevTools to identify performance bottlenecks and memory leaks falls apart, and small changes trigger cascading regressions.

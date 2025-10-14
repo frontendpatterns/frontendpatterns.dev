@@ -7,8 +7,6 @@ description: "Write functions that narrow types at runtime for safe type asserti
 ---
 # Type Guard
 
-Write functions that narrow types at runtime for safe type assertions.
-
 ## Problem
 
 Without this pattern, the premise that writing functions that narrow types at runtime for safe type assertions falls apart, and small changes trigger cascading regressions.

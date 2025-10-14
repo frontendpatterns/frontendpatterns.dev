@@ -7,8 +7,6 @@ description: "Handle navigation without full page reloads for seamless single-pa
 ---
 # Client-Side Routing
 
-Handle navigation without full page reloads for seamless single-page application experiences.
-
 ## Problem
 
 Without this pattern, the premise that handling navigation without full page reloads for seamless single-page application experiences falls apart, and small changes trigger cascading regressions.

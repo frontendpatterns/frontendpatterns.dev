@@ -7,8 +7,6 @@ description: "Catch JavaScript errors in component trees and displaying fallback
 ---
 # Error Boundary
 
-Catch JavaScript errors in component trees and displaying fallback UI gracefully.
-
 ## Problem
 
 Without this pattern, the premise that catching JavaScript errors in component trees and displaying fallback UI gracefully falls apart, and small changes trigger cascading regressions.

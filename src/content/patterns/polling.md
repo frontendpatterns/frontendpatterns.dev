@@ -7,8 +7,6 @@ description: "Fetch data repeatedly at regular intervals to keep information cur
 ---
 # Polling
 
-Fetch data repeatedly at regular intervals to keep information current.
-
 ## Problem
 
 Without this pattern, the premise that repeatedly fetching data at regular intervals to keep information current falls apart, and small changes trigger cascading regressions.

@@ -7,8 +7,6 @@ description: "Load data before it's needed based on predicted user actions."
 ---
 # Prefetching
 
-Load data before it's needed based on predicted user actions.
-
 ## Problem
 
 Without this pattern, the premise that loading data before it's needed based on predicted user actions falls apart, and small changes trigger cascading regressions.

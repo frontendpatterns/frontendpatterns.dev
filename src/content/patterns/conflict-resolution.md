@@ -7,8 +7,6 @@ description: "Handle concurrent updates and data conflicts in distributed system
 ---
 # Conflict Resolution
 
-Handle concurrent updates and data conflicts in distributed systems with last-write-wins, operational transforms, or CRDTs.
-
 ## Problem
 
 Without this pattern, the premise that handling concurrent updates and data conflicts in distributed systems with last-write-wins, operational transforms, or CRDTs falls apart, and small changes trigger cascading regressions.

@@ -7,8 +7,6 @@ description: "Wrap components with additional functionality through function com
 ---
 # Higher-Order Component
 
-Wrap components with additional functionality through function composition.
-
 ## Problem
 
 Without this pattern, the premise that wrapping components with additional functionality through function composition falls apart, and small changes trigger cascading regressions.

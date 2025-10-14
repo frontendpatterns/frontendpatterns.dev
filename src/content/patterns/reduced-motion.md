@@ -7,8 +7,6 @@ description: "Respect user preferences for reduced animations and motion effects
 ---
 # Reduced Motion
 
-Respect user preferences for reduced animations and motion effects.
-
 ## Problem
 
 Without this pattern, the premise that respecting user preferences for reduced animations and motion effects falls apart, and small changes trigger cascading regressions.

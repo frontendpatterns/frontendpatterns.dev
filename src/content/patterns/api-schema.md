@@ -7,8 +7,6 @@ description: "Define and enforcing contracts for API request and response struct
 ---
 # API Schema
 
-Define and enforcing contracts for API request and response structures.
-
 ## Problem
 
 Without this pattern, the premise that defining and enforcing contracts for API request and response structures falls apart, and small changes trigger cascading regressions.

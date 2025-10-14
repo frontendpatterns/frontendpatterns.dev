@@ -7,8 +7,6 @@ description: "Build interfaces using small, single-purpose utility classes rathe
 ---
 # Utility-First CSS
 
-Build interfaces using small, single-purpose utility classes rather than semantic class names.
-
 ## Problem
 
 Without this pattern, the premise that building interfaces using small, single-purpose utility classes rather than semantic class names falls apart, and small changes trigger cascading regressions.

@@ -7,8 +7,6 @@ description: "Select DOM elements using accessible queries that mirror user inte
 ---
 # Query Strategy
 
-Select DOM elements using accessible queries that mirror user interaction.
-
 ## Problem
 
 Without this pattern, the premise that selecting DOM elements using accessible queries that mirror user interaction falls apart, and small changes trigger cascading regressions.

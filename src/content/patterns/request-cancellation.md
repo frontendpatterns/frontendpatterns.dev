@@ -7,8 +7,6 @@ description: "Abort in-flight requests when components unmount or dependencies c
 ---
 # Request Cancellation
 
-Abort in-flight requests when components unmount or dependencies change.
-
 ## Problem
 
 Without this pattern, the premise that aborting in-flight requests when components unmount or dependencies change falls apart, and small changes trigger cascading regressions.

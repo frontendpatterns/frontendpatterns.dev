@@ -7,8 +7,6 @@ description: "Use preload, prefetch, and preconnect to optimize resource loading
 ---
 # Resource Hint
 
-Use preload, prefetch, and preconnect to optimize resource loading timing.
-
 ## Problem
 
 Without this pattern, the premise that using preload, prefetch, and preconnect to optimize resource loading timing falls apart, and small changes trigger cascading regressions.

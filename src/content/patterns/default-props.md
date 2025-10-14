@@ -7,8 +7,6 @@ description: "Define fallback values for optional component inputs to ensure pre
 ---
 # Default Props
 
-Define fallback values for optional component inputs to ensure predictable behavior.
-
 ## Problem
 
 Without this pattern, the premise that defining fallback values for optional component inputs to ensure predictable behavior falls apart, and small changes trigger cascading regressions.

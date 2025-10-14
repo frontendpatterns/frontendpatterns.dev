@@ -7,8 +7,6 @@ description: "Configure applications differently across development, staging, an
 ---
 # Environment Configuration
 
-Configure applications differently across development, staging, and production environments.
-
 ## Problem
 
 Without this pattern, the premise that configuring applications differently across development, staging, and production environments falls apart, and small changes trigger cascading regressions.

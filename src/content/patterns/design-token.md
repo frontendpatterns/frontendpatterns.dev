@@ -7,8 +7,6 @@ description: "Define visual design decisions as reusable variables for consisten
 ---
 # Design Token
 
-Define visual design decisions as reusable variables for consistency across platforms.
-
 ## Problem
 
 Without this pattern, the premise that defining visual design decisions as reusable variables for consistency across platforms falls apart, and small changes trigger cascading regressions.

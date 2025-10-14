@@ -7,8 +7,6 @@ description: "Choose between shallow folder structures for simplicity or deep ne
 ---
 # Folder Organization Strategy
 
-Choose between shallow folder structures for simplicity or deep nesting for organization based on project scale.
-
 ## Problem
 
 Without this pattern, the premise that choosing between shallow folder structures for simplicity or deep nesting for organization based on project scale falls apart, and small changes trigger cascading regressions.

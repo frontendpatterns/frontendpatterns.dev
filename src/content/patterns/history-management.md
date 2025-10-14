@@ -7,8 +7,6 @@ description: "Control browser history programmatically for custom back/forward b
 ---
 # History Management
 
-Control browser history programmatically for custom back/forward behavior.
-
 ## Problem
 
 Without this pattern, the premise that programmatically controlling browser history for custom back/forward behavior falls apart, and small changes trigger cascading regressions.

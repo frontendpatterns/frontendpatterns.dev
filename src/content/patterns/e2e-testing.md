@@ -7,8 +7,6 @@ description: "Test complete user flows through the application in a browser envi
 ---
 # E2E Testing
 
-Test complete user flows through the application in a browser environment.
-
 ## Problem
 
 Critical user journeys like checkout, signup, or data submission break in production despite passing unit tests. Network timing issues, browser-specific quirks, or third-party service failures cause workflows to fail in ways that isolated tests can't detect.

@@ -7,8 +7,6 @@ description: "Receive server-pushed updates over HTTP for one-way real-time data
 ---
 # Server-Sent Events
 
-Receive server-pushed updates over HTTP for one-way real-time data streams.
-
 ## Problem
 
 Without this pattern, the premise that receiving server-pushed updates over HTTP for one-way real-time data streams falls apart, and small changes trigger cascading regressions.

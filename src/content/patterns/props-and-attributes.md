@@ -7,8 +7,6 @@ description: "Pass data and configuration into components through properties or 
 ---
 # Props and Attributes
 
-Pass data and configuration into components through properties or attributes.
-
 ## Problem
 
 Without this pattern, the premise that passing data and configuration into components through properties or attributes falls apart, and small changes trigger cascading regressions.

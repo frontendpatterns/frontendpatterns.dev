@@ -7,8 +7,6 @@ description: "Use tagged unions to model mutually exclusive state variants safel
 ---
 # Discriminated Union
 
-Use tagged unions to model mutually exclusive state variants safely.
-
 ## Problem
 
 Without this pattern, the premise that using tagged unions to model mutually exclusive state variants safely falls apart, and small changes trigger cascading regressions.

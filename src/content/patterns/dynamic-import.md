@@ -7,8 +7,6 @@ description: "Load modules asynchronously at runtime rather than bundling everyt
 ---
 # Dynamic Import
 
-Load modules asynchronously at runtime rather than bundling everything upfront.
-
 ## Problem
 
 Without this pattern, the premise that loading modules asynchronously at runtime rather than bundling everything upfront falls apart, and small changes trigger cascading regressions.

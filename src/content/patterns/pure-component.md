@@ -7,8 +7,6 @@ description: "Create components that render the same output for the same inputs 
 ---
 # Pure Component
 
-Create components that render the same output for the same inputs without side effects.
-
 ## Problem
 
 Without this pattern, the premise that creating components that render the same output for the same inputs without side effects falls apart, and small changes trigger cascading regressions.

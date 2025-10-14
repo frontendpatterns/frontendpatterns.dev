@@ -7,8 +7,6 @@ description: "Prevent duplicate network requests when multiple components simult
 ---
 # Query Deduplication
 
-Prevent duplicate network requests when multiple components simultaneously request the same data.
-
 ## Problem
 
 Without this pattern, the premise that preventing duplicate network requests when multiple components simultaneously request the same data falls apart, and small changes trigger cascading regressions.

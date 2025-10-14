@@ -7,8 +7,6 @@ description: "Support full keyboard interaction for users who can't or don't use
 ---
 # Keyboard Navigation
 
-Support full keyboard interaction for users who can't or don't use pointing devices.
-
 ## Problem
 
 Keyboard users get trapped in modal dialogs or can't reach interactive elements. Custom dropdowns, accordions, and menus ignore Tab key navigation. Power users who prefer keyboard shortcuts are forced to use a mouse, significantly slowing them down.

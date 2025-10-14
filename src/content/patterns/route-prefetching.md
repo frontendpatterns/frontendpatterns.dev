@@ -7,8 +7,6 @@ description: "Load route code and data before users navigate for instant transit
 ---
 # Route Prefetching
 
-Load route code and data before users navigate for instant transitions.
-
 ## Problem
 
 Without this pattern, the premise that loading route code and data before users navigate for instant transitions falls apart, and small changes trigger cascading regressions.

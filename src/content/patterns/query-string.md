@@ -7,8 +7,6 @@ description: "Use URL query parameters for optional filters, search, and paginat
 ---
 # Query String
 
-Use URL query parameters for optional filters, search, and pagination state.
-
 ## Problem
 
 Without this pattern, the premise that using URL query parameters for optional filters, search, and pagination state falls apart, and small changes trigger cascading regressions.

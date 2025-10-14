@@ -7,8 +7,6 @@ description: "Use libraries like Zod, Yup, or JSON Schema to validate data again
 ---
 # Schema Validation
 
-Use libraries like Zod, Yup, or JSON Schema to validate data against schemas.
-
 ## Problem
 
 Without this pattern, the premise that using libraries like Zod, Yup, or JSON Schema to validate data against schemas falls apart, and small changes trigger cascading regressions.

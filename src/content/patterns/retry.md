@@ -7,8 +7,6 @@ description: "Re-attempt failed requests automatically with exponential backoff 
 ---
 # Retry
 
-Re-attempt failed requests automatically with exponential backoff strategies.
-
 ## Problem
 
 Without this pattern, the premise that automatically re-attempting failed requests with exponential backoff strategies falls apart, and small changes trigger cascading regressions.

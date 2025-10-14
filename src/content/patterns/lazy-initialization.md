@@ -7,8 +7,6 @@ description: "Defer expensive state calculations until the first render when the
 ---
 # Lazy Initialization
 
-Defer expensive state calculations until the first render when they're needed.
-
 ## Problem
 
 Without this pattern, the premise that deferring expensive state calculations until the first render when they're needed falls apart, and small changes trigger cascading regressions.

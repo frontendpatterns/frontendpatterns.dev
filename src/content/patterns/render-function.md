@@ -7,8 +7,6 @@ description: "Use functions to dynamically generate component output based on st
 ---
 # Render Function
 
-Use functions to dynamically generate component output based on state and props.
-
 ## Problem
 
 Without this pattern, the premise that using functions to dynamically generate component output based on state and props falls apart, and small changes trigger cascading regressions.

@@ -7,8 +7,6 @@ description: "Create reusable factories for generating test data with sensible d
 ---
 # Test Data Builder
 
-Create reusable factories for generating test data with sensible defaults.
-
 ## Problem
 
 Without this pattern, the premise that creating reusable factories for generating test data with sensible defaults falls apart, and small changes trigger cascading regressions.

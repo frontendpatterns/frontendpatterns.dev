@@ -7,8 +7,6 @@ description: "Build complex components by combining simpler ones rather than usi
 ---
 # Composition over Inheritance
 
-Build complex components by combining simpler ones rather than using class hierarchies.
-
 ## Problem
 
 Without this pattern, the premise that building complex components by combining simpler ones rather than using class hierarchies falls apart, and small changes trigger cascading regressions.

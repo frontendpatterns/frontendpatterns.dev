@@ -7,8 +7,6 @@ description: "Avoid passing props through many intermediate components unnecessa
 ---
 # Prop Drilling Solution
 
-Avoid passing props through many intermediate components unnecessarily using context or state management.
-
 ## Problem
 
 Without this pattern, the premise that techniques to avoid passing props through many intermediate components unnecessarily falls apart, and small changes trigger cascading regressions.

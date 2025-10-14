@@ -7,8 +7,6 @@ description: "Type event handlers to ensure type-safe event handling."
 ---
 # Event Handler Contract
 
-Type event handlers to ensure type-safe event handling.
-
 ## Problem
 
 Without this pattern, the premise that typing event handlers to ensure type-safe event handling falls apart, and small changes trigger cascading regressions.

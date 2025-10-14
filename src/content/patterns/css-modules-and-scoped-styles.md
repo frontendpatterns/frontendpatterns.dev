@@ -7,8 +7,6 @@ description: "Scope CSS automatically to specific components to prevent global s
 ---
 # CSS Modules & Scoped Styles
 
-Scope CSS automatically to specific components to prevent global style conflicts.
-
 ## Problem
 
 Without this pattern, the premise that automatically scoping CSS to specific components to prevent global style conflicts falls apart, and small changes trigger cascading regressions.

@@ -7,8 +7,6 @@ description: "Allow multiple components to subscribe and react to state changes 
 ---
 # Observer
 
-Allow multiple components to subscribe and react to state changes automatically.
-
 ## Problem
 
 Components need to manually check for state changes through polling or prop drilling, missing updates. Parent components must explicitly pass callbacks down to children for every possible state change. Adding new subscribers requires modifying existing code. When state updates, there's no clean way to notify all interested parties without tight coupling.

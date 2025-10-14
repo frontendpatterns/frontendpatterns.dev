@@ -7,8 +7,6 @@ description: "Retire outdated components gracefully with warnings, codemods, and
 ---
 # Component Deprecation Strategy
 
-Retire outdated components gracefully with warnings, codemods, and migration guides to move consumers to newer alternatives.
-
 ## Problem
 
 Without this pattern, the premise that gracefully retiring outdated components with warnings, codemods, and migration guides to move consumers to newer alternatives falls apart, and small changes trigger cascading regressions.

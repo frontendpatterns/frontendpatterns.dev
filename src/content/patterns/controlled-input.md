@@ -7,8 +7,6 @@ description: "Synchronize form inputs with component state for full programmatic
 ---
 # Controlled Input
 
-Synchronize form inputs with component state for full programmatic control.
-
 ## Problem
 
 Without this pattern, the premise that synchronizing form inputs with component state for full programmatic control falls apart, and small changes trigger cascading regressions.

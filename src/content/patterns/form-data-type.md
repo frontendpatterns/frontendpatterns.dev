@@ -7,8 +7,6 @@ description: "Type form data structures strongly to prevent validation errors."
 ---
 # Form Data Type
 
-Type form data structures strongly to prevent validation errors.
-
 ## Problem
 
 Without this pattern, the premise that strongly typing form data structures to prevent validation errors falls apart, and small changes trigger cascading regressions.

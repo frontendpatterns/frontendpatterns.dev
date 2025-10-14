@@ -7,8 +7,6 @@ description: "Track JavaScript bundle sizes over time to prevent performance reg
 ---
 # Bundle Size Monitoring
 
-Track JavaScript bundle sizes over time to prevent performance regressions.
-
 ## Problem
 
 Without this pattern, the premise that tracking JavaScript bundle sizes over time to prevent performance regressions falls apart, and small changes trigger cascading regressions.

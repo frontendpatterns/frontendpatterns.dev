@@ -7,8 +7,6 @@ description: "Verify that components and APIs adhere to their defined interfaces
 ---
 # Contract Testing
 
-Verify that components and APIs adhere to their defined interfaces.
-
 ## Problem
 
 Frontend and backend teams evolve interfaces independently, causing runtime failures when APIs change. Components expect fields that no longer exist, or type mismatches between what the API returns and what the frontend expects go undetected until production.

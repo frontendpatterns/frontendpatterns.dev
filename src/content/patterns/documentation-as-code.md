@@ -7,8 +7,6 @@ description: "Maintain documentation alongside code with version control and aut
 ---
 # Documentation as Code
 
-Maintain documentation alongside code with version control and automated publishing workflows.
-
 ## Problem
 
 Without this pattern, the premise that maintaining documentation alongside code with version control and automated publishing workflows falls apart, and small changes trigger cascading regressions.

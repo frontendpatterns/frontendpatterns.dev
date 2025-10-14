@@ -7,8 +7,6 @@ description: "Validate data at runtime to ensure it matches expected schemas."
 ---
 # Runtime Validation
 
-Validate data at runtime to ensure it matches expected schemas.
-
 ## Problem
 
 Without this pattern, the premise that validating data at runtime to ensure it matches expected schemas falls apart, and small changes trigger cascading regressions.

@@ -7,8 +7,6 @@ description: "Display hierarchical navigation trail showing user's location in t
 ---
 # Breadcrumb
 
-Display hierarchical navigation trail showing user's location in the application.
-
 ## Problem
 
 Without this pattern, the premise that displaying hierarchical navigation trail showing user's location in the application falls apart, and small changes trigger cascading regressions.

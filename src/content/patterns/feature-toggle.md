@@ -7,8 +7,6 @@ description: "Enable or disabling features conditionally without code deployment
 ---
 # Feature Toggle
 
-Enable or disabling features conditionally without code deployments.
-
 ## Problem
 
 Without this pattern, the premise that conditionally enabling or disabling features without code deployments falls apart, and small changes trigger cascading regressions.

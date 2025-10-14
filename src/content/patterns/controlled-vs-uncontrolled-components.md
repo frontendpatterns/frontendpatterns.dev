@@ -7,8 +7,6 @@ description: "Choose between parent-managed state or component-internal state fo
 ---
 # Controlled vs. Uncontrolled Components
 
-Choose between parent-managed state or component-internal state for form inputs.
-
 ## Problem
 
 Without this pattern, the premise that choosing between parent-managed state or component-internal state for form inputs falls apart, and small changes trigger cascading regressions.

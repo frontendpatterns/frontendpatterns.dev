@@ -7,8 +7,6 @@ description: "Constrain keyboard focus within modal dialogs and overlays to prev
 ---
 # Focus Trap
 
-Constrain keyboard focus within modal dialogs and overlays to prevent focus from escaping to background content.
-
 ## Problem
 
 Without this pattern, the premise that constraining keyboard focus within modal dialogs and overlays to prevent focus from escaping to background content falls apart, and small changes trigger cascading regressions.

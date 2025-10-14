@@ -7,8 +7,6 @@ description: "Run controlled experiments to compare different implementations an
 ---
 # A/B Testing
 
-Run controlled experiments to compare different implementations and measure impact.
-
 ## Problem
 
 Without this pattern, the premise that running controlled experiments to compare different implementations and measure impact falls apart, and small changes trigger cascading regressions.

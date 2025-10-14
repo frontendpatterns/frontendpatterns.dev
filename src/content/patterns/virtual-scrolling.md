@@ -7,8 +7,6 @@ description: "Render only visible list items in the viewport to handle massive d
 ---
 # Virtual Scrolling
 
-Render only visible list items in the viewport to handle massive datasets efficiently.
-
 ## Problem
 
 Without this pattern, the premise that rendering only visible list items in the viewport to handle massive datasets efficiently falls apart, and small changes trigger cascading regressions.

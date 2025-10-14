@@ -7,8 +7,6 @@ description: "Load more content automatically as users scroll to create seamless
 ---
 # Infinite Scroll
 
-Load more content automatically as users scroll to create seamless browsing experiences.
-
 ## Problem
 
 Without this pattern, the premise that automatically loading more content as users scroll to create seamless browsing experiences falls apart, and small changes trigger cascading regressions.

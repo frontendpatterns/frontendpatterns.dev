@@ -7,8 +7,6 @@ description: "Separate components that handle UI rendering from those that manag
 ---
 # Presentational vs. Container
 
-Separate components that handle UI rendering from those that manage data and business logic.
-
 ## Problem
 
 Without this pattern, the premise that separating components that handle UI rendering from those that manage data and business logic falls apart, and small changes trigger cascading regressions.

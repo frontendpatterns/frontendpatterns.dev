@@ -7,8 +7,6 @@ description: "Pass dynamic values through URL paths to load specific resources."
 ---
 # Route Parameter
 
-Pass dynamic values through URL paths to load specific resources.
-
 ## Problem
 
 Without this pattern, the premise that passing dynamic values through URL paths to load specific resources falls apart, and small changes trigger cascading regressions.

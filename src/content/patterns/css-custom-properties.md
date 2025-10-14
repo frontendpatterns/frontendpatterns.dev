@@ -7,8 +7,6 @@ description: "Use CSS variables for dynamic styling and easy theme customization
 ---
 # CSS Custom Properties
 
-Use CSS variables for dynamic styling and easy theme customization.
-
 ## Problem
 
 Without this pattern, the premise that using CSS variables for dynamic styling and easy theme customization falls apart, and small changes trigger cascading regressions.

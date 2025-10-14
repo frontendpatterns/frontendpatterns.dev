@@ -7,8 +7,6 @@ description: "Divide application state into multiple independent stores for bett
 ---
 # Multi-Store
 
-Divide application state into multiple independent stores for better separation of concerns.
-
 ## Problem
 
 A monolithic store becomes an unmaintainable mess as the application grows. Unrelated state changes trigger re-renders across the entire app. Team members conflict when editing the same massive state file. Authentication state, UI state, and business data are tangled together, making it hard to reason about each domain independently.

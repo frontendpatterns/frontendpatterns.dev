@@ -7,8 +7,6 @@ description: "Create distinct types from primitives to prevent mixing incompatib
 ---
 # Branded Type
 
-Create distinct types from primitives to prevent mixing incompatible values.
-
 ## Problem
 
 Without this pattern, the premise that creating distinct types from primitives to prevent mixing incompatible values falls apart, and small changes trigger cascading regressions.

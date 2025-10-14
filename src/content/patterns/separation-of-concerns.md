@@ -7,8 +7,6 @@ description: "Divide code into distinct sections for logic, presentation, and st
 ---
 # Separation of Concerns
 
-Divide code into distinct sections for logic, presentation, and styling to improve maintainability.
-
 ## Problem
 
 Without this pattern, the premise that dividing code into distinct sections for logic, presentation, and styling to improve maintainability falls apart, and small changes trigger cascading regressions.

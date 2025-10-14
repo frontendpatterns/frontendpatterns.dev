@@ -7,8 +7,6 @@ description: "Implement consistent, searchable logging for production debugging 
 ---
 # Structured Logging
 
-Implement consistent, searchable logging for production debugging and monitoring.
-
 ## Problem
 
 Without this pattern, the premise that implementing consistent, searchable logging for production debugging and monitoring falls apart, and small changes trigger cascading regressions.

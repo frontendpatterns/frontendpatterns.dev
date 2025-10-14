@@ -7,8 +7,6 @@ description: "Instruct browsers to prioritize loading essential resources for fa
 ---
 # Critical Asset Preload
 
-Instruct browsers to prioritize loading essential resources for faster initial renders.
-
 ## Problem
 
 Without this pattern, the premise that instructing browsers to prioritize loading essential resources for faster initial renders falls apart, and small changes trigger cascading regressions.

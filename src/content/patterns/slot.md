@@ -7,8 +7,6 @@ description: "Allow parent components to inject content into designated areas of
 ---
 # Slot
 
-Allow parent components to inject content into designated areas of child components.
-
 ## Problem
 
 Without this pattern, the premise that allowing parent components to inject content into designated areas of child components falls apart, and small changes trigger cascading regressions.

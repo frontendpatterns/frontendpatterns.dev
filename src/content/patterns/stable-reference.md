@@ -7,8 +7,6 @@ description: "Maintain consistent object and function references across renders 
 ---
 # Stable Reference
 
-Maintain consistent object and function references across renders to prevent unnecessary updates.
-
 ## Problem
 
 Without this pattern, the premise that maintaining consistent object and function references across renders to prevent unnecessary updates falls apart, and small changes trigger cascading regressions.

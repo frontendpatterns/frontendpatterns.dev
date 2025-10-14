@@ -7,8 +7,6 @@ description: "Implement anti-CSRF tokens or SameSite cookies to prevent cross-si
 ---
 # CSRF Protection
 
-Implement anti-CSRF tokens or SameSite cookies to prevent cross-site request forgery attacks.
-
 ## Problem
 
 Attackers trick authenticated users into performing unwanted actions by embedding malicious requests in external sites. Users unknowingly transfer money, change passwords, or delete data simply by clicking a link or visiting a compromised page while logged in.

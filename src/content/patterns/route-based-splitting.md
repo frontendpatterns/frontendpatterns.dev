@@ -7,8 +7,6 @@ description: "Split code automatically at route boundaries for natural loading c
 ---
 # Route-Based Splitting
 
-Split code automatically at route boundaries for natural loading chunks.
-
 ## Problem
 
 Without this pattern, the premise that automatically splitting code at route boundaries for natural loading chunks falls apart, and small changes trigger cascading regressions.

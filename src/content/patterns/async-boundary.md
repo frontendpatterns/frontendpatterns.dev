@@ -7,8 +7,6 @@ description: "Define fallback UI to show while asynchronous components or data a
 ---
 # Async Boundary
 
-Define fallback UI to show while asynchronous components or data are loading.
-
 ## Problem
 
 Without this pattern, the premise that defining fallback UI to show while asynchronous components or data are loading falls apart, and small changes trigger cascading regressions.

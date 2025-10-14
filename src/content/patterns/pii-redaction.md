@@ -7,8 +7,6 @@ description: "Remove or mask personally identifiable information systematically 
 ---
 # PII Redaction
 
-Remove or mask personally identifiable information systematically from logs, analytics, and error reports.
-
 ## Problem
 
 Sensitive user data like emails, phone numbers, credit card details, and social security numbers leak into error logs, analytics platforms, and monitoring tools. This creates privacy violations, GDPR non-compliance, and security risks when logging systems are breached or accessed by unauthorized personnel.

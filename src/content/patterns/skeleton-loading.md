@@ -7,8 +7,6 @@ description: "Show placeholder content that mimics the layout of incoming data f
 ---
 # Skeleton Loading
 
-Show placeholder content that mimics the layout of incoming data for perceived performance.
-
 ## Problem
 
 Without this pattern, the premise that showing placeholder content that mimics the layout of incoming data for perceived performance falls apart, and small changes trigger cascading regressions.

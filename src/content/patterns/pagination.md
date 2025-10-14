@@ -7,8 +7,6 @@ description: "Load large datasets in discrete pages to manage memory and network
 ---
 # Pagination
 
-Load large datasets in discrete pages to manage memory and network usage.
-
 ## Problem
 
 Without this pattern, the premise that loading large datasets in discrete pages to manage memory and network usage falls apart, and small changes trigger cascading regressions.

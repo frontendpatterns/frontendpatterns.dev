@@ -7,8 +7,6 @@ description: "Show loading indicators while asynchronous operations are in progr
 ---
 # Loading State
 
-Show loading indicators while asynchronous operations are in progress.
-
 ## Problem
 
 Without this pattern, the premise that showing loading indicators while asynchronous operations are in progress falls apart, and small changes trigger cascading regressions.

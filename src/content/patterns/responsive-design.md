@@ -7,8 +7,6 @@ description: "Create layouts that adapt gracefully to different screen sizes and
 ---
 # Responsive Design
 
-Create layouts that adapt gracefully to different screen sizes and devices.
-
 ## Problem
 
 Without this pattern, the premise that creating layouts that adapt gracefully to different screen sizes and devices falls apart, and small changes trigger cascading regressions.

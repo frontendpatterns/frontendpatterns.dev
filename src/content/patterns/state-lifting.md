@@ -7,8 +7,6 @@ description: "Move state up the component tree to share it between sibling compo
 ---
 # State Lifting
 
-Move state up the component tree to share it between sibling components.
-
 ## Problem
 
 Sibling components that need to share data have no way to communicate. Developers resort to duplicating state in multiple places, leading to sync issues where one component shows outdated values while another updates. Props drilling or global state become the only options.

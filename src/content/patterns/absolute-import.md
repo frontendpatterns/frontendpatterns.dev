@@ -7,8 +7,6 @@ description: "Configure absolute imports from a base directory to avoid complex 
 ---
 # Absolute Import
 
-Configure absolute imports from a base directory to avoid complex relative path navigation.
-
 ## Problem
 
 Without this pattern, the premise that configuring absolute imports from a base directory to avoid complex relative path navigation falls apart, and small changes trigger cascading regressions.

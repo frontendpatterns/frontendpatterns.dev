@@ -7,8 +7,6 @@ description: "Show cached data immediately while fetching fresh data in the back
 ---
 # Stale-While-Revalidate
 
-Show cached data immediately while fetching fresh data in the background.
-
 ## Problem
 
 Without this pattern, the premise that showing cached data immediately while fetching fresh data in the background falls apart, and small changes trigger cascading regressions.

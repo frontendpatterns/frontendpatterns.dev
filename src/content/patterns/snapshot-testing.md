@@ -7,8 +7,6 @@ description: "Capture component output and detecting unintended changes over tim
 ---
 # Snapshot Testing
 
-Capture component output and detecting unintended changes over time.
-
 ## Problem
 
 Component refactoring accidentally changes output structure, breaking downstream consumers or causing subtle rendering differences. Developers don't realize a "harmless" change altered the DOM structure, class names, or data attributes that other code depends on.

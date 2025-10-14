@@ -7,8 +7,6 @@ description: "Write styles in JavaScript to enable dynamic styling and component
 ---
 # CSS-in-JS
 
-Write styles in JavaScript to enable dynamic styling and component co-location.
-
 ## Problem
 
 Without this pattern, the premise that writing styles in JavaScript to enable dynamic styling and component co-location falls apart, and small changes trigger cascading regressions.

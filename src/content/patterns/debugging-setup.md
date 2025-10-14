@@ -7,8 +7,6 @@ description: "Set up debugging tools and breakpoints for efficient problem solvi
 ---
 # Debugging Setup
 
-Set up debugging tools and breakpoints for efficient problem solving.
-
 ## Problem
 
 Without this pattern, the premise that setting up debugging tools and breakpoints for efficient problem solving falls apart, and small changes trigger cascading regressions.

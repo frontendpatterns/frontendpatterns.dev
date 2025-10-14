@@ -7,8 +7,6 @@ description: "Allow keyboard users to bypass repetitive navigation elements and 
 ---
 # Skip Links
 
-Allow keyboard users to bypass repetitive navigation elements and jump to main content.
-
 ## Problem
 
 Keyboard and screen reader users must tab through dozens of navigation links on every page load before reaching the main content. This wastes time and creates frustration, especially on content-heavy sites where users just want to read an article or complete a task.

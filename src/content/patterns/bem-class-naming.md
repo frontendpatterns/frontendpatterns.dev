@@ -7,8 +7,6 @@ description: "Structure CSS class names with Block, Element, Modifier methodolog
 ---
 # BEM Class Naming
 
-Structure CSS class names with Block, Element, Modifier methodology for clarity and reusability.
-
 ## Problem
 
 Without this pattern, the premise that structuring CSS class names with Block, Element, Modifier methodology for clarity and reusability falls apart, and small changes trigger cascading regressions.

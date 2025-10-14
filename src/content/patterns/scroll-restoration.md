@@ -7,8 +7,6 @@ description: "Remember and restore scroll positions when navigating backward."
 ---
 # Scroll Restoration
 
-Remember and restore scroll positions when navigating backward.
-
 ## Problem
 
 Without this pattern, the premise that remembering and restoring scroll positions when navigating backward falls apart, and small changes trigger cascading regressions.

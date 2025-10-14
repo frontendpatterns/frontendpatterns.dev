@@ -7,8 +7,6 @@ description: "Restrict values to specific strings or numbers for compile-time va
 ---
 # Literal Union
 
-Restrict values to specific strings or numbers for compile-time validation.
-
 ## Problem
 
 Without this pattern, the premise that restricting values to specific strings or numbers for compile-time validation falls apart, and small changes trigger cascading regressions.

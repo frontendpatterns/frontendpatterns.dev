@@ -7,8 +7,6 @@ description: "Trigger data fetches as side effects when components mount or depe
 ---
 # Effect-Based Fetching
 
-Trigger data fetches as side effects when components mount or dependencies change.
-
 ## Problem
 
 Without this pattern, the premise that triggering data fetches as side effects when components mount or dependencies change falls apart, and small changes trigger cascading regressions.

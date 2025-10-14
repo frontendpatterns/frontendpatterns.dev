@@ -7,8 +7,6 @@ description: "Keep state as close as possible to where it's used to reduce compl
 ---
 # State Colocation
 
-Keep state as close as possible to where it's used to reduce complexity. (See also: Colocation Pattern)
-
 ## Problem
 
 State stored far from where it's actually used creates unnecessary coupling and complexity. Global stores fill up with UI-specific state like modal visibility or form input values. Components re-render unnecessarily when unrelated state changes, and debugging becomes difficult because state mutations can come from anywhere in the application.

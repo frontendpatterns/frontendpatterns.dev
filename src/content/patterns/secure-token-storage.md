@@ -7,8 +7,6 @@ description: "Store authentication tokens safely using httpOnly cookies, secure 
 ---
 # Secure Token Storage
 
-Store authentication tokens safely using httpOnly cookies, secure flags, or encrypted storage to prevent token theft.
-
 ## Problem
 
 Authentication tokens stored in localStorage or sessionStorage are accessible to any JavaScript code, including malicious scripts from XSS attacks. Stolen tokens allow attackers to impersonate users, access protected resources, and maintain persistent access even after the original session ends.

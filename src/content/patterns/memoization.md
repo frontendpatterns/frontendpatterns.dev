@@ -7,8 +7,6 @@ description: "Cache expensive computation results to avoid recalculating with id
 ---
 # Memoization
 
-Cache expensive computation results to avoid recalculating with identical inputs.
-
 ## Problem
 
 Without this pattern, the premise that caching expensive computation results to avoid recalculating with identical inputs falls apart, and small changes trigger cascading regressions.

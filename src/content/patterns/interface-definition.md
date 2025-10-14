@@ -7,8 +7,6 @@ description: "Describe object shapes with interfaces for documentation and type 
 ---
 # Interface Definition
 
-Describe object shapes with interfaces for documentation and type checking.
-
 ## Problem
 
 Without this pattern, the premise that describing object shapes with interfaces for documentation and type checking falls apart, and small changes trigger cascading regressions.

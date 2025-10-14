@@ -7,8 +7,6 @@ description: "Expose only necessary interfaces while keeping implementation deta
 ---
 # Public API
 
-Expose only necessary interfaces while keeping implementation details private and flexible.
-
 ## Problem
 
 Without this pattern, the premise that exposing only necessary interfaces while keeping implementation details private and flexible falls apart, and small changes trigger cascading regressions.

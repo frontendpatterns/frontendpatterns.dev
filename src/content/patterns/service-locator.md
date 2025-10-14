@@ -7,8 +7,6 @@ description: "Provide a centralized registry for accessing shared services throu
 ---
 # Service Locator
 
-Provide a centralized registry for accessing shared services throughout the application.
-
 ## Problem
 
 Without this pattern, the premise that centralized registry for accessing shared services throughout the application falls apart, and small changes trigger cascading regressions.

@@ -7,8 +7,6 @@ description: "Compute derived data from state and memoizing results to optimize 
 ---
 # Selector
 
-Compute derived data from state and memoizing results to optimize re-renders.
-
 ## Problem
 
 Components re-render unnecessarily when accessing derived data from state, even when the specific slice they need hasn't changed. Transforming store data in render functions repeats expensive computations. Every state update triggers recalculations across all subscribed components. Components can't efficiently subscribe to just the portion of state they actually need.

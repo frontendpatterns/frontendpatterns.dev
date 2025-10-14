@@ -7,8 +7,6 @@ description: "Chain API requests where subsequent calls depend on previous resul
 ---
 # Dependent Query
 
-Chain API requests where subsequent calls depend on previous results.
-
 ## Problem
 
 Without this pattern, the premise that chaining API requests where subsequent calls depend on previous results falls apart, and small changes trigger cascading regressions.

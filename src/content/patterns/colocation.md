@@ -7,8 +7,6 @@ description: "Place related files (tests, styles, types) next to the components 
 ---
 # Colocation
 
-Place related files (tests, styles, types) next to the components they support for easier discovery. (See also: State Colocation Pattern)
-
 ## Problem
 
 Without this pattern, the premise that placing related files (tests, styles, types) next to the components they support for easier discovery. (See also: State Colocation Pattern) falls apart, and small changes trigger cascading regressions.

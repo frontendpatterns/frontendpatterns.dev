@@ -7,8 +7,6 @@ description: "Format code automatically to eliminate style debates and merge con
 ---
 # Code Formatting
 
-Format code automatically to eliminate style debates and merge conflicts.
-
 ## Problem
 
 Without this pattern, the premise that automatically formatting code to eliminate style debates and merge conflicts falls apart, and small changes trigger cascading regressions.

@@ -7,8 +7,6 @@ description: "Generate routes programmatically based on data or configuration."
 ---
 # Dynamic Route
 
-Generate routes programmatically based on data or configuration.
-
 ## Problem
 
 Without this pattern, the premise that generating routes programmatically based on data or configuration falls apart, and small changes trigger cascading regressions.

@@ -7,8 +7,6 @@ description: "Break application code into smaller bundles loaded on demand to re
 ---
 # Code Splitting
 
-Break application code into smaller bundles loaded on demand to reduce initial load time.
-
 ## Problem
 
 Without this pattern, the premise that breaking application code into smaller bundles loaded on demand to reduce initial load time falls apart, and small changes trigger cascading regressions.

@@ -7,8 +7,6 @@ description: "Protect routes with authentication, authorization, or validation c
 ---
 # Route Guard
 
-Protect routes with authentication, authorization, or validation checks before rendering.
-
 ## Problem
 
 Without this pattern, the premise that protecting routes with authentication, authorization, or validation checks before rendering falls apart, and small changes trigger cascading regressions.

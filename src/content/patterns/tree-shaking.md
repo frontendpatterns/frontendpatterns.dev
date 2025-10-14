@@ -7,8 +7,6 @@ description: "Eliminate unused code from bundles during the build process."
 ---
 # Tree Shaking
 
-Eliminate unused code from bundles during the build process.
-
 ## Problem
 
 Without this pattern, the premise that eliminating unused code from bundles during the build process falls apart, and small changes trigger cascading regressions.

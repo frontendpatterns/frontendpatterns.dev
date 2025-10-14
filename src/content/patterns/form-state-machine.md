@@ -7,8 +7,6 @@ description: "Model form states (pristine, dirty, submitting, error) as explicit
 ---
 # Form State Machine
 
-Model form states (pristine, dirty, submitting, error) as explicit state transitions.
-
 ## Problem
 
 Without this pattern, the premise that modeling form states (pristine, dirty, submitting, error) as explicit state transitions falls apart, and small changes trigger cascading regressions.

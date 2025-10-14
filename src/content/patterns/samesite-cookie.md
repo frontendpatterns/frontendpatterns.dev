@@ -7,8 +7,6 @@ description: "Configure cookie SameSite attributes to control cross-site cookie 
 ---
 # SameSite Cookie
 
-Configure cookie SameSite attributes to control cross-site cookie behavior and prevent CSRF attacks.
-
 ## Problem
 
 Browsers send authentication cookies with every request to a domain, even when the request originates from a malicious third-party site. This enables CSRF attacks where attackers trick users into performing authenticated actions without their knowledge or consent.

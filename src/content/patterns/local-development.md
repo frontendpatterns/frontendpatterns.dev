@@ -7,8 +7,6 @@ description: "Optimize the developer experience with fast builds, hot reload, an
 ---
 # Local Development
 
-Optimize the developer experience with fast builds, hot reload, and debugging tools.
-
 ## Problem
 
 Without this pattern, the premise that optimizing the developer experience with fast builds, hot reload, and debugging tools falls apart, and small changes trigger cascading regressions.

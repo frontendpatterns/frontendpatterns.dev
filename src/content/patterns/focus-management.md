@@ -7,8 +7,6 @@ description: "Control focus flow for modal dialogs, route changes, and dynamic c
 ---
 # Focus Management
 
-Control focus flow for modal dialogs, route changes, and dynamic content insertion.
-
 ## Problem
 
 Without this pattern, the premise that controlling focus flow for modal dialogs, route changes, and dynamic content insertion falls apart, and small changes trigger cascading regressions.

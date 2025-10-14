@@ -7,8 +7,6 @@ description: "Transform nested API responses into flat, relational structures fo
 ---
 # REST Response Normalization
 
-Transform nested API responses into flat, relational structures for efficient updates.
-
 ## Problem
 
 Without this pattern, the premise that transforming nested API responses into flat, relational structures for efficient updates falls apart, and small changes trigger cascading regressions.

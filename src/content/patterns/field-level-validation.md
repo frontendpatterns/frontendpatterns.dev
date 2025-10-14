@@ -7,8 +7,6 @@ description: "Validate individual form fields as users interact with them for im
 ---
 # Field-Level Validation
 
-Validate individual form fields as users interact with them for immediate feedback.
-
 ## Problem
 
 Without this pattern, the premise that validating individual form fields as users interact with them for immediate feedback falls apart, and small changes trigger cascading regressions.

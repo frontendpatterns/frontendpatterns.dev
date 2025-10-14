@@ -7,8 +7,6 @@ description: "Defer loading of non-critical resources until they're needed."
 ---
 # Lazy Loading
 
-Defer loading of non-critical resources until they're needed.
-
 ## Problem
 
 Without this pattern, the premise that deferring loading of non-critical resources until they're needed falls apart, and small changes trigger cascading regressions.

@@ -7,8 +7,6 @@ description: "Detect hover or focus on links to preload destinations before clic
 ---
 # Link Preloading
 
-Detect hover or focus on links to preload destinations before clicks.
-
 ## Problem
 
 Without this pattern, the premise that detecting hover or focus on links to preload destinations before clicks falls apart, and small changes trigger cascading regressions.

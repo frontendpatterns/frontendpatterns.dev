@@ -7,8 +7,6 @@ description: "Test explicitly how components handle errors and edge cases."
 ---
 # Error State Testing
 
-Test explicitly how components handle errors and edge cases.
-
 ## Problem
 
 Components only get tested with happy-path data, so error states, loading failures, and edge cases crash in production. Network errors show blank screens, validation failures break forms, and null data causes uncaught exceptions because these scenarios were never tested.

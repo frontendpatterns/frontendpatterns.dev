@@ -7,8 +7,6 @@ description: "Run automated checks before commits or pushes to catch issues earl
 ---
 # Git Hooks
 
-Run automated checks before commits or pushes to catch issues early.
-
 ## Problem
 
 Without this pattern, the premise that running automated checks before commits or pushes to catch issues early falls apart, and small changes trigger cascading regressions.

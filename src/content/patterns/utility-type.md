@@ -7,8 +7,6 @@ description: "Leverage built-in or custom utility types to transform and manipul
 ---
 # Utility Type
 
-Leverage built-in or custom utility types to transform and manipulate types.
-
 ## Problem
 
 Without this pattern, the premise that leveraging built-in or custom utility types to transform and manipulate types falls apart, and small changes trigger cascading regressions.

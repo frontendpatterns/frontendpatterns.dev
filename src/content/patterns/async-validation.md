@@ -7,8 +7,6 @@ description: "Perform server-side validation checks without blocking user intera
 ---
 # Async Validation
 
-Perform server-side validation checks without blocking user interaction.
-
 ## Problem
 
 Without this pattern, the premise that performing server-side validation checks without blocking user interaction falls apart, and small changes trigger cascading regressions.

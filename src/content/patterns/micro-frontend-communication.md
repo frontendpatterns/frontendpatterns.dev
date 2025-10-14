@@ -7,8 +7,6 @@ description: "Establish communication protocols between independently deployed f
 ---
 # Micro-Frontend Communication
 
-Establish communication protocols between independently deployed frontend applications.
-
 ## Problem
 
 Without this pattern, the premise that establishing communication protocols between independently deployed frontend applications falls apart, and small changes trigger cascading regressions.

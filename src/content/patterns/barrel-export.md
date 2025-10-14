@@ -7,8 +7,6 @@ description: "Aggregate multiple exports into a single entry point using index f
 ---
 # Barrel Export
 
-Aggregate multiple exports into a single entry point using index files to create clean public APIs and simplify import paths.
-
 ## Problem
 
 Without this pattern, the premise that aggregating multiple exports into a single entry point using index files to create clean public APIs and simplify import paths falls apart, and small changes trigger cascading regressions.

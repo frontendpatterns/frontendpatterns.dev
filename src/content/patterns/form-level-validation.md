@@ -7,8 +7,6 @@ description: "Validate entire forms on submission to check cross-field rules and
 ---
 # Form-Level Validation
 
-Validate entire forms on submission to check cross-field rules and constraints.
-
 ## Problem
 
 Without this pattern, the premise that validating entire forms on submission to check cross-field rules and constraints falls apart, and small changes trigger cascading regressions.

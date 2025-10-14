@@ -7,8 +7,6 @@ description: "Enforce code quality and consistency rules automatically during de
 ---
 # Linting
 
-Enforce code quality and consistency rules automatically during development.
-
 ## Problem
 
 Without this pattern, the premise that enforcing code quality and consistency rules automatically during development falls apart, and small changes trigger cascading regressions.

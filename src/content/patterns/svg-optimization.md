@@ -7,8 +7,6 @@ description: "Remove unnecessary metadata and simplify paths to reduce SVG file 
 ---
 # SVG Optimization
 
-Remove unnecessary metadata and simplify paths to reduce SVG file sizes.
-
 ## Problem
 
 Without this pattern, the premise that removing unnecessary metadata and simplifying paths to reduce SVG file sizes falls apart, and small changes trigger cascading regressions.

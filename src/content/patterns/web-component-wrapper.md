@@ -7,8 +7,6 @@ description: "Wrap framework components as web components for cross-framework in
 ---
 # Web Component Wrapper
 
-Wrap framework components as web components for cross-framework interoperability.
-
 ## Problem
 
 Without this pattern, the premise that wrapping framework components as web components for cross-framework interoperability falls apart, and small changes trigger cascading regressions.

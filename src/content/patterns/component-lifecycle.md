@@ -7,8 +7,6 @@ description: "Manage setup, updates, and cleanup phases of component existence."
 ---
 # Component Lifecycle
 
-Manage setup, updates, and cleanup phases of component existence.
-
 ## Problem
 
 Without this pattern, the premise that managing setup, updates, and cleanup phases of component existence falls apart, and small changes trigger cascading regressions.

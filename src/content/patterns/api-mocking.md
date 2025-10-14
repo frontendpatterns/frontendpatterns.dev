@@ -7,8 +7,6 @@ description: "Replace real API calls with controlled responses for predictable t
 ---
 # API Mocking
 
-Replace real API calls with controlled responses for predictable testing.
-
 ## Problem
 
 Without this pattern, the premise that replacing real API calls with controlled responses for predictable testing falls apart, and small changes trigger cascading regressions.

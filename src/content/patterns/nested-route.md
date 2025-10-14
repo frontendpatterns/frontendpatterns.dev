@@ -7,8 +7,6 @@ description: "Compose routes hierarchically to match UI component structure."
 ---
 # Nested Route
 
-Compose routes hierarchically to match UI component structure.
-
 ## Problem
 
 Without this pattern, the premise that composing routes hierarchically to match UI component structure falls apart, and small changes trigger cascading regressions.

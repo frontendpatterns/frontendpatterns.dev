@@ -7,8 +7,6 @@ description: "Leverage third-party form libraries to handle complex validation a
 ---
 # Form Library Integration
 
-Leverage third-party form libraries to handle complex validation and submission logic.
-
 ## Problem
 
 Without this pattern, the premise that leveraging third-party form libraries to handle complex validation and submission logic falls apart, and small changes trigger cascading regressions.

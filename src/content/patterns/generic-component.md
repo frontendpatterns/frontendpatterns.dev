@@ -7,8 +7,6 @@ description: "Create reusable components that work with multiple data types."
 ---
 # Generic Component
 
-Create reusable components that work with multiple data types.
-
 ## Problem
 
 Without this pattern, the premise that creating reusable components that work with multiple data types falls apart, and small changes trigger cascading regressions.

@@ -7,8 +7,6 @@ description: "Control how and when web fonts load to prevent layout shifts and i
 ---
 # Font Loading Strategy
 
-Control how and when web fonts load to prevent layout shifts and invisible text.
-
 ## Problem
 
 Without this pattern, the premise that controlling how and when web fonts load to prevent layout shifts and invisible text falls apart, and small changes trigger cascading regressions.

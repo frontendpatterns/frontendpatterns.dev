@@ -7,8 +7,6 @@ description: "Design for small screens first, then progressively enhancing for l
 ---
 # Mobile-First
 
-Design for small screens first, then progressively enhancing for larger viewports.
-
 ## Problem
 
 Without this pattern, the premise that designing for small screens first, then progressively enhancing for larger viewports falls apart, and small changes trigger cascading regressions.

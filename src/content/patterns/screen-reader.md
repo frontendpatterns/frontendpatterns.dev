@@ -7,8 +7,6 @@ description: "Optimize content structure and announcements for screen reader use
 ---
 # Screen Reader
 
-Optimize content structure and announcements for screen reader users.
-
 ## Problem
 
 Screen reader users encounter unlabeled buttons, images without alt text, and dynamic content changes that go unannounced. They navigate through garbled content order, meaningless link text like "click here," and form fields without proper labels, making interfaces frustrating or impossible to use.

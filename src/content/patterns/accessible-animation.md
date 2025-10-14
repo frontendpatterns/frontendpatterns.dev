@@ -7,8 +7,6 @@ description: "Combine motion preferences with safe easing curves and timing to c
 ---
 # Accessible Animation
 
-Combine motion preferences with safe easing curves and timing to create animations that work for all users.
-
 ## Problem
 
 Animations trigger nausea, dizziness, or vestibular issues for users with motion sensitivity. Rapid movements, parallax scrolling, or auto-playing animations can cause physical discomfort or make interfaces completely unusable for people with vestibular disorders.

@@ -7,8 +7,6 @@ description: "Centralize design tokens and enabling runtime theme switching acro
 ---
 # Theme Provider
 
-Centralize design tokens and enabling runtime theme switching across an application.
-
 ## Problem
 
 Without this pattern, the premise that centralizing design tokens and enabling runtime theme switching across an application falls apart, and small changes trigger cascading regressions.

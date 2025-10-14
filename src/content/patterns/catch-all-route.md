@@ -7,8 +7,6 @@ description: "Define fallback routes to handle unmatched URLs gracefully."
 ---
 # Catch-All Route
 
-Define fallback routes to handle unmatched URLs gracefully.
-
 ## Problem
 
 Without this pattern, the premise that defining fallback routes to handle unmatched URLs gracefully falls apart, and small changes trigger cascading regressions.

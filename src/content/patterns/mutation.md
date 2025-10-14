@@ -7,8 +7,6 @@ description: "Handle create, update, and delete operations with proper cache syn
 ---
 # Mutation
 
-Handle create, update, and delete operations with proper cache synchronization.
-
 ## Problem
 
 Without this pattern, the premise that handling create, update, and delete operations with proper cache synchronization falls apart, and small changes trigger cascading regressions.

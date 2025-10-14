@@ -7,8 +7,6 @@ description: "Ensure each component, module, or function has one clear purpose a
 ---
 # Single Responsibility
 
-Ensure each component, module, or function has one clear purpose and reason to change.
-
 ## Problem
 
 Without this pattern, the premise that each component, module, or function has one clear purpose and reason to change falls apart, and small changes trigger cascading regressions.

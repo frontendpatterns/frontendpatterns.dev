@@ -7,8 +7,6 @@ description: "Use browser APIs to enforce type checking on dangerous sinks like 
 ---
 # Trusted Types
 
-Use browser APIs to enforce type checking on dangerous sinks like innerHTML to eliminate DOM-based XSS vulnerabilities.
-
 ## Problem
 
 Developers accidentally introduce DOM-based XSS by passing unsanitized strings to dangerous APIs like innerHTML, eval, or document.write. These vulnerabilities are hard to spot in code reviews and can execute attacker-controlled code even when server-side protections are in place.

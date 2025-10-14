@@ -7,8 +7,6 @@ description: "Create components that work together implicitly through shared con
 ---
 # Compound Component
 
-Create components that work together implicitly through shared context to manage complex interactions.
-
 ## Problem
 
 Without this pattern, the premise that creating components that work together implicitly through shared context to manage complex interactions falls apart, and small changes trigger cascading regressions.

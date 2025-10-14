@@ -7,8 +7,6 @@ description: "Enable URLs that point directly to specific application states for
 ---
 # Deep Linking
 
-Enable URLs that point directly to specific application states for shareability.
-
 ## Problem
 
 Without this pattern, the premise that enabling URLs that point directly to specific application states for shareability falls apart, and small changes trigger cascading regressions.

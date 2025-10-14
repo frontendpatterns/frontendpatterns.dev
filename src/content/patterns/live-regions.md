@@ -7,8 +7,6 @@ description: "Announce dynamic content updates to screen readers using ARIA live
 ---
 # Live Regions
 
-Announce dynamic content updates to screen readers using ARIA live regions without disrupting user flow.
-
 ## Problem
 
 Without this pattern, the premise that announcing dynamic content updates to screen readers using ARIA live regions without disrupting user flow falls apart, and small changes trigger cascading regressions.

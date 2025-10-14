@@ -7,8 +7,6 @@ description: "Distinguish between data owned by the server (cached temporarily) 
 ---
 # Server State vs Client State
 
-Distinguish between data owned by the server (cached temporarily) and local UI state for proper management strategies.
-
 ## Problem
 
 Treating server data like local state leads to stale caches and unnecessary refetching. User profile data stored in Redux doesn't update when changed on another device. Loading states and cache invalidation logic gets tangled with UI state. Developers manually implement refetching, polling, and optimistic updates for every API call, reinventing the wheel each time.

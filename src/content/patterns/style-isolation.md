@@ -7,8 +7,6 @@ description: "Prevent style leakage between components through encapsulation tec
 ---
 # Style Isolation
 
-Prevent style leakage between components through encapsulation techniques.
-
 ## Problem
 
 Without this pattern, the premise that preventing style leakage between components through encapsulation techniques falls apart, and small changes trigger cascading regressions.

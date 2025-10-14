@@ -7,8 +7,6 @@ description: "Collect usage analytics and performance metrics to inform product 
 ---
 # Telemetry
 
-Collect usage analytics and performance metrics to inform product decisions.
-
 ## Problem
 
 Without this pattern, the premise that collecting usage analytics and performance metrics to inform product decisions falls apart, and small changes trigger cascading regressions.

@@ -7,8 +7,6 @@ description: "Execute logic before, during, or after navigation events."
 ---
 # Navigation Middleware
 
-Execute logic before, during, or after navigation events.
-
 ## Problem
 
 Without this pattern, the premise that executing logic before, during, or after navigation events falls apart, and small changes trigger cascading regressions.

@@ -7,8 +7,6 @@ description: "Execute multiple independent API calls simultaneously to reduce to
 ---
 # Parallel Request
 
-Execute multiple independent API calls simultaneously to reduce total load time.
-
 ## Problem
 
 Without this pattern, the premise that executing multiple independent API calls simultaneously to reduce total load time falls apart, and small changes trigger cascading regressions.

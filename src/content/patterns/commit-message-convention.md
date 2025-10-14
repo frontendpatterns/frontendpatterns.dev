@@ -7,8 +7,6 @@ description: "Standardize commit messages for clear history and automated change
 ---
 # Commit Message Convention
 
-Standardize commit messages for clear history and automated changelog generation.
-
 ## Problem
 
 Without this pattern, the premise that standardizing commit messages for clear history and automated changelog generation falls apart, and small changes trigger cascading regressions.

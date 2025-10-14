@@ -7,8 +7,6 @@ description: "Use ARIA roles and attributes to provide semantic information to a
 ---
 # ARIA Roles and Attributes
 
-Use ARIA roles and attributes to provide semantic information to assistive technologies when HTML semantics are insufficient.
-
 ## Problem
 
 When semantic HTML alone cannot convey the full meaning or state of UI components, assistive technologies like screen readers lack the information needed to help users navigate and interact with the interface. Custom widgets, dynamic content, and complex interactions become inaccessible to users who rely on these technologies.

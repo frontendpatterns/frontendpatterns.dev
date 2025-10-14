@@ -7,8 +7,6 @@ description: "Compare screenshots to detect unintended visual changes automatica
 ---
 # Visual Regression
 
-Compare screenshots to detect unintended visual changes automatically.
-
 ## Problem
 
 CSS changes, dependency updates, or component refactors introduce subtle visual bugs that go unnoticed until users report them. Layouts shift unexpectedly, colors change, spacing breaks, or responsive breakpoints fail without anyone catching it during development.

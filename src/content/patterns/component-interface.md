@@ -7,8 +7,6 @@ description: "Define clear contracts for component inputs and outputs."
 ---
 # Component Interface
 
-Define clear contracts for component inputs and outputs.
-
 ## Problem
 
 Without this pattern, the premise that defining clear contracts for component inputs and outputs falls apart, and small changes trigger cascading regressions.

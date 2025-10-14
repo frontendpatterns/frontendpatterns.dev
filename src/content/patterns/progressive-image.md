@@ -7,8 +7,6 @@ description: "Load low-quality image placeholders first, then replacing with hig
 ---
 # Progressive Image
 
-Load low-quality image placeholders first, then replacing with high-quality versions.
-
 ## Problem
 
 Without this pattern, the premise that loading low-quality image placeholders first, then replacing with high-quality versions falls apart, and small changes trigger cascading regressions.

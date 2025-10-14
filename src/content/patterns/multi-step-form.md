@@ -7,8 +7,6 @@ description: "Break long forms into sequential steps with progress tracking and 
 ---
 # Multi-Step Form
 
-Break long forms into sequential steps with progress tracking and navigation.
-
 ## Problem
 
 Without this pattern, the premise that breaking long forms into sequential steps with progress tracking and navigation falls apart, and small changes trigger cascading regressions.

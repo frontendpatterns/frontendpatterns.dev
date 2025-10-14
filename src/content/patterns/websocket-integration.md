@@ -7,8 +7,6 @@ description: "Establish persistent connections for real-time bidirectional commu
 ---
 # WebSocket Integration
 
-Establish persistent connections for real-time bidirectional communication.
-
 ## Problem
 
 Without this pattern, the premise that establishing persistent connections for real-time bidirectional communication falls apart, and small changes trigger cascading regressions.

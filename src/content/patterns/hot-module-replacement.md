@@ -7,8 +7,6 @@ description: "Update code in running applications without full page reloads for 
 ---
 # Hot Module Replacement
 
-Update code in running applications without full page reloads for faster iteration.
-
 ## Problem
 
 Without this pattern, the premise that updating code in running applications without full page reloads for faster iteration falls apart, and small changes trigger cascading regressions.

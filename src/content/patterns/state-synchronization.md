@@ -7,8 +7,6 @@ description: "Keep component state in sync with external data sources or other c
 ---
 # State Synchronization
 
-Keep component state in sync with external data sources or other components.
-
 ## Problem
 
 Component state drifts out of sync with external data sources or other components, showing stale information. URL parameters don't match the UI state, causing broken bookmarks and back button behavior. Local storage updates don't reflect in the UI until refresh. WebSocket messages arrive but the interface doesn't update, leaving users looking at outdated data.

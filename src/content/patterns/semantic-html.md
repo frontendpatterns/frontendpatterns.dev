@@ -7,8 +7,6 @@ description: "Use correct HTML elements to convey meaning and structure before r
 ---
 # Semantic HTML
 
-Use correct HTML elements to convey meaning and structure before reaching for ARIA attributes.
-
 ## Problem
 
 Without this pattern, the premise that using correct HTML elements to convey meaning and structure before reaching for ARIA attributes falls apart, and small changes trigger cascading regressions.

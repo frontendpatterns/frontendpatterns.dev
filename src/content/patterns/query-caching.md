@@ -7,8 +7,6 @@ description: "Store fetched data to avoid redundant network requests and improve
 ---
 # Query Caching
 
-Store fetched data to avoid redundant network requests and improve performance.
-
 ## Problem
 
 Without this pattern, the premise that storing fetched data to avoid redundant network requests and improve performance falls apart, and small changes trigger cascading regressions.

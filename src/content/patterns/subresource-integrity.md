@@ -7,8 +7,6 @@ description: "Use integrity hashes on external scripts and stylesheets to ensure
 ---
 # Subresource Integrity
 
-Use integrity hashes on external scripts and stylesheets to ensure resources haven't been tampered with.
-
 ## Problem
 
 Without this pattern, the premise that using integrity hashes on external scripts and stylesheets to ensure resources haven't been tampered with falls apart, and small changes trigger cascading regressions.

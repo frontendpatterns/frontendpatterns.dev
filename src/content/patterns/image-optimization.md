@@ -7,8 +7,6 @@ description: "Compressing, resizing, and serving images in modern formats to red
 ---
 # Image Optimization
 
-Compressing, resizing, and serving images in modern formats to reduce bandwidth usage.
-
 ## Problem
 
 Without this pattern, the premise that compressing, resizing, and serving images in modern formats to reduce bandwidth falls apart, and small changes trigger cascading regressions.

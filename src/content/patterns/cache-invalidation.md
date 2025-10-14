@@ -7,8 +7,6 @@ description: "Clear or update cached data strategically when underlying informat
 ---
 # Cache Invalidation
 
-Clear or update cached data strategically when underlying information changes.
-
 ## Problem
 
 Without this pattern, the premise that strategically clearing or updating cached data when underlying information changes falls apart, and small changes trigger cascading regressions.

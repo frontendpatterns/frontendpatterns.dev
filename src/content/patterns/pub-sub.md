@@ -7,8 +7,6 @@ description: "Decouple components through event-based communication without dire
 ---
 # Pub/Sub
 
-Decouple components through event-based communication without direct references.
-
 ## Problem
 
 Without this pattern, the premise that decoupling components through event-based communication without direct references falls apart, and small changes trigger cascading regressions.

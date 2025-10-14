@@ -7,8 +7,6 @@ description: "Intercept network requests at the service worker level for realist
 ---
 # Mock Service Worker
 
-Intercept network requests at the service worker level for realistic testing.
-
 ## Problem
 
 Without this pattern, the premise that intercepting network requests at the service worker level for realistic testing falls apart, and small changes trigger cascading regressions.

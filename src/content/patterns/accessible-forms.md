@@ -7,8 +7,6 @@ description: "Create forms with proper labels, error messages, and state announc
 ---
 # Accessible Forms
 
-Create forms with proper labels, error messages, and state announcements for all users.
-
 ## Problem
 
 Screen reader users can't determine what each form field is asking for, keyboard-only users struggle to navigate between inputs, and error messages appear visually but aren't announced to assistive technology. This excludes millions of users from completing critical tasks like sign-up, checkout, or profile updates.

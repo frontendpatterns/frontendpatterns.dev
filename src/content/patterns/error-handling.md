@@ -7,8 +7,6 @@ description: "Manage and displaying errors gracefully from failed API requests."
 ---
 # Error Handling
 
-Manage and displaying errors gracefully from failed API requests.
-
 ## Problem
 
 Without this pattern, the premise that gracefully managing and displaying errors from failed API requests falls apart, and small changes trigger cascading regressions.

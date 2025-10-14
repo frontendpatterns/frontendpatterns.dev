@@ -7,8 +7,6 @@ description: "Animate between route changes for polished user experiences."
 ---
 # Route Transition
 
-Animate between route changes for polished user experiences.
-
 ## Problem
 
 Without this pattern, the premise that animating between route changes for polished user experiences falls apart, and small changes trigger cascading regressions.

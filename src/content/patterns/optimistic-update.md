@@ -7,8 +7,6 @@ description: "Update UI immediately with expected results before server confirma
 ---
 # Optimistic Update
 
-Update UI immediately with expected results before server confirmation for perceived speed.
-
 ## Problem
 
 Without this pattern, the premise that immediately updating UI with expected results before server confirmation for perceived speed falls apart, and small changes trigger cascading regressions.

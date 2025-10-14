@@ -7,8 +7,6 @@ description: "Manage data that only affects a single component internally."
 ---
 # Component State
 
-Manage data that only affects a single component internally.
-
 ## Problem
 
 Without this pattern, the premise that managing data that only affects a single component internally falls apart, and small changes trigger cascading regressions.

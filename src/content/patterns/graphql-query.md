@@ -7,8 +7,6 @@ description: "Request precisely the data needed using GraphQL's declarative quer
 ---
 # GraphQL Query
 
-Request precisely the data needed using GraphQL's declarative query language.
-
 ## Problem
 
 Without this pattern, the premise that requesting precisely the data needed using GraphQL's declarative query language falls apart, and small changes trigger cascading regressions.

@@ -7,8 +7,6 @@ description: "Specify required and optional properties with their expected types
 ---
 # Props Contract
 
-Specify required and optional properties with their expected types.
-
 ## Problem
 
 Without this pattern, the premise that specifying required and optional properties with their expected types falls apart, and small changes trigger cascading regressions.
