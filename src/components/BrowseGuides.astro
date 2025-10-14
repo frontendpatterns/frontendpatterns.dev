@@ -39,8 +39,8 @@ const guides = (
 									) : (
 										<span>Guide</span>
 									)}
-									<span aria-hidden="true">•</span>
-									<time dateTime={publishedDate.toISOString()}>
+									<time class="sr-only" dateTime={publishedDate.toISOString()}>
+										Published on{" "}
 										{publishedDate.toLocaleDateString("en-GB", {
 											year: "numeric",
 											month: "short",

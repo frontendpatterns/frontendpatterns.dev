@@ -1,0 +1,697 @@
+---
+const { slug, title } = Astro.props;
+
+const illustrations = new Map([
+	[
+		"accessibility",
+		{
+			gradient: "from-amber-300 via-rose-400 to-fuchsia-500",
+			paths: [
+				{ d: "M32 14a18 18 0 1 1 0 36 18 18 0 0 1 0-36z", opacity: 0.18 },
+				{ d: "M32 20a12 12 0 1 1 0 24 12 12 0 0 1 0-24z", opacity: 0.12 },
+			],
+			strokes: [
+				{
+					d: "M32 14a18 18 0 1 1 0 36 18 18 0 0 1 0-36z",
+					strokeWidth: 1.8,
+					opacity: 0.85,
+				},
+				{
+					d: "M22 28h20",
+					strokeWidth: 1.6,
+					opacity: 0.7,
+					strokeLinecap: "round",
+				},
+				{
+					d: "M32 20v24",
+					strokeWidth: 1.6,
+					opacity: 0.7,
+					strokeLinecap: "round",
+				},
+				{
+					d: "M26 24l12 12",
+					strokeWidth: 1.3,
+					opacity: 0.55,
+					strokeLinecap: "round",
+				},
+				{
+					d: "M38 24l-12 12",
+					strokeWidth: 1.3,
+					opacity: 0.55,
+					strokeLinecap: "round",
+				},
+				{
+					d: "M24 36l-6 6",
+					strokeWidth: 1.2,
+					opacity: 0.45,
+					strokeLinecap: "round",
+				},
+				{
+					d: "M40 36l6 6",
+					strokeWidth: 1.2,
+					opacity: 0.45,
+					strokeLinecap: "round",
+				},
+			],
+			circles: [
+				{ cx: 32, cy: 28, r: 4, opacity: 0.7 },
+				{ cx: 32, cy: 36, r: 3, opacity: 0.55 },
+			],
+		},
+	],
+	[
+		"styling",
+		{
+			gradient: "from-sky-400 via-cyan-400 to-indigo-500",
+			paths: [
+				{
+					d: "M20 16h16l12 12v20a4 4 0 0 1-4 4H20a4 4 0 0 1-4-4V20a4 4 0 0 1 4-4z",
+					opacity: 0.18,
+				},
+			],
+			strokes: [
+				{
+					d: "M20 16h16l12 12v20a4 4 0 0 1-4 4H20a4 4 0 0 1-4-4V20a4 4 0 0 1 4-4z",
+					strokeWidth: 1.8,
+					opacity: 0.85,
+					strokeLinejoin: "round",
+				},
+				{
+					d: "M36 16v10h10",
+					strokeWidth: 1.6,
+					opacity: 0.7,
+					strokeLinejoin: "round",
+				},
+				{
+					d: "M24 26h8",
+					strokeWidth: 1.4,
+					opacity: 0.6,
+					strokeLinecap: "round",
+				},
+				{
+					d: "M24 32h16",
+					strokeWidth: 1.4,
+					opacity: 0.6,
+					strokeLinecap: "round",
+				},
+				{
+					d: "M24 38h16",
+					strokeWidth: 1.4,
+					opacity: 0.6,
+					strokeLinecap: "round",
+				},
+				{
+					d: "M24 44h10",
+					strokeWidth: 1.3,
+					opacity: 0.55,
+					strokeLinecap: "round",
+				},
+			],
+			circles: [{ cx: 40, cy: 44, r: 2.5, opacity: 0.65 }],
+		},
+	],
+	[
+		"performance",
+		{
+			gradient: "from-orange-400 via-amber-500 to-rose-500",
+			paths: [{ d: "M32 14a18 18 0 1 1 0 36 18 18 0 0 1 0-36z", opacity: 0.18 }],
+			strokes: [
+				{
+					d: "M32 14a18 18 0 1 1 0 36 18 18 0 0 1 0-36z",
+					strokeWidth: 1.8,
+					opacity: 0.85,
+				},
+				{
+					d: "M32 20a12 12 0 0 1 12 12",
+					strokeWidth: 1.4,
+					opacity: 0.65,
+					strokeLinecap: "round",
+				},
+				{
+					d: "M32 20a12 12 0 0 0-12 12",
+					strokeWidth: 1.4,
+					opacity: 0.65,
+					strokeLinecap: "round",
+				},
+				{
+					d: "M32 20v10l10 10",
+					strokeWidth: 1.8,
+					opacity: 0.8,
+					strokeLinecap: "round",
+					strokeLinejoin: "round",
+				},
+				{
+					d: "M22 34h8",
+					strokeWidth: 1.3,
+					opacity: 0.55,
+					strokeLinecap: "round",
+				},
+				{
+					d: "M34 40h6",
+					strokeWidth: 1.3,
+					opacity: 0.5,
+					strokeLinecap: "round",
+				},
+			],
+			circles: [{ cx: 42, cy: 32, r: 3, opacity: 0.7 }],
+		},
+	],
+	[
+		"security-and-privacy",
+		{
+			gradient: "from-emerald-400 via-teal-500 to-cyan-500",
+			paths: [
+				{
+					d: "M32 16a10 10 0 0 1 10 10v6h4a4 4 0 0 1 4 4v12a6 6 0 0 1-6 6H22a6 6 0 0 1-6-6V36a4 4 0 0 1 4-4h4v-6a10 10 0 0 1 10-10z",
+					opacity: 0.18,
+				},
+			],
+			strokes: [
+				{
+					d: "M32 16a10 10 0 0 1 10 10v6h4a4 4 0 0 1 4 4v12a6 6 0 0 1-6 6H22a6 6 0 0 1-6-6V36a4 4 0 0 1 4-4h4v-6a10 10 0 0 1 10-10z",
+					strokeWidth: 1.8,
+					opacity: 0.85,
+					strokeLinejoin: "round",
+				},
+				{
+					d: "M28 40a4 4 0 1 0 8 0 4 4 0 0 0-8 0z",
+					strokeWidth: 1.8,
+					opacity: 0.85,
+				},
+				{
+					d: "M32 44v4",
+					strokeWidth: 1.6,
+					opacity: 0.7,
+					strokeLinecap: "round",
+				},
+			],
+			circles: [{ cx: 32, cy: 40, r: 2, opacity: 0.55 }],
+		},
+	],
+	[
+		"routing-and-navigation",
+		{
+			gradient: "from-violet-500 via-purple-500 to-sky-500",
+			paths: [
+				{
+					d: "M18 18h18l10 10v18a4 4 0 0 1-4 4H18a4 4 0 0 1-4-4V22a4 4 0 0 1 4-4z",
+					opacity: 0.18,
+				},
+			],
+			strokes: [
+				{
+					d: "M18 18h18l10 10v18a4 4 0 0 1-4 4H18a4 4 0 0 1-4-4V22a4 4 0 0 1 4-4z",
+					strokeWidth: 1.8,
+					opacity: 0.82,
+					strokeLinejoin: "round",
+				},
+				{
+					d: "M36 18v10h10",
+					strokeWidth: 1.6,
+					opacity: 0.7,
+					strokeLinejoin: "round",
+				},
+				{
+					d: "M24 26h14",
+					strokeWidth: 1.3,
+					opacity: 0.55,
+					strokeLinecap: "round",
+				},
+				{
+					d: "M24 32h8",
+					strokeWidth: 1.3,
+					opacity: 0.5,
+					strokeLinecap: "round",
+				},
+				{
+					d: "M24 38h16",
+					strokeWidth: 1.4,
+					opacity: 0.6,
+					strokeLinecap: "round",
+				},
+				{
+					d: "M38 38l6 6-6 6",
+					strokeWidth: 1.8,
+					opacity: 0.7,
+					strokeLinecap: "round",
+					strokeLinejoin: "round",
+				},
+				{
+					d: "M24 38l-6 6 6 6",
+					strokeWidth: 1.8,
+					opacity: 0.7,
+					strokeLinecap: "round",
+					strokeLinejoin: "round",
+				},
+			],
+		},
+	],
+	[
+		"data-fetching",
+		{
+			gradient: "from-blue-500 via-sky-500 to-emerald-500",
+			paths: [
+				{
+					d: "M18 18h28a4 4 0 0 1 4 4v24H18a4 4 0 0 1-4-4V22a4 4 0 0 1 4-4z",
+					opacity: 0.18,
+				},
+			],
+			strokes: [
+				{
+					d: "M18 18h28a4 4 0 0 1 4 4v24H18a4 4 0 0 1-4-4V22a4 4 0 0 1 4-4z",
+					strokeWidth: 1.8,
+					opacity: 0.85,
+					strokeLinejoin: "round",
+				},
+				{
+					d: "M18 24h32",
+					strokeWidth: 1.3,
+					opacity: 0.6,
+					strokeLinecap: "round",
+				},
+				{
+					d: "M24 30h20",
+					strokeWidth: 1.6,
+					opacity: 0.7,
+					strokeLinecap: "round",
+				},
+				{
+					d: "M24 36h16",
+					strokeWidth: 1.6,
+					opacity: 0.7,
+					strokeLinecap: "round",
+				},
+				{
+					d: "M24 42h12",
+					strokeWidth: 1.6,
+					opacity: 0.6,
+					strokeLinecap: "round",
+				},
+				{
+					d: "M32 30v8",
+					strokeWidth: 1.6,
+					opacity: 0.75,
+					strokeLinecap: "round",
+				},
+			],
+			circles: [
+				{ cx: 24, cy: 22, r: 1.5, opacity: 0.6 },
+				{ cx: 28, cy: 22, r: 1.5, opacity: 0.5 },
+				{ cx: 32, cy: 22, r: 1.5, opacity: 0.4 },
+			],
+		},
+	],
+	[
+		"state-management",
+		{
+			gradient: "from-indigo-500 via-blue-600 to-cyan-500",
+			paths: [
+				{
+					d: "M32 18a12 12 0 0 1 12 12c0 4-2 7-5 9 3 2 5 5 5 9a12 12 0 1 1-24 0c0-4 2-7 5-9-3-2-5-5-5-9a12 12 0 0 1 12-12z",
+					opacity: 0.16,
+				},
+			],
+			strokes: [
+				{
+					d: "M32 18a12 12 0 0 1 12 12c0 4-2 7-5 9 3 2 5 5 5 9a12 12 0 1 1-24 0c0-4 2-7 5-9-3-2-5-5-5-9a12 12 0 0 1 12-12z",
+					strokeWidth: 1.8,
+					opacity: 0.85,
+				},
+				{
+					d: "M32 26v12l8 6",
+					strokeWidth: 1.6,
+					opacity: 0.75,
+					strokeLinecap: "round",
+					strokeLinejoin: "round",
+				},
+				{
+					d: "M24 32h16",
+					strokeWidth: 1.3,
+					opacity: 0.6,
+					strokeLinecap: "round",
+				},
+				{
+					d: "M26 38l12 8",
+					strokeWidth: 1.3,
+					opacity: 0.6,
+					strokeLinecap: "round",
+				},
+			],
+			circles: [
+				{ cx: 32, cy: 26, r: 3, opacity: 0.7 },
+				{ cx: 32, cy: 44, r: 3, opacity: 0.7 },
+			],
+		},
+	],
+	[
+		"component",
+		{
+			gradient: "from-rose-400 via-purple-400 to-indigo-500",
+			paths: [
+				{ d: "M18 18h28a4 4 0 0 1 4 4v24H18a4 4 0 0 1-4-4V22a4 4 0 0 1 4-4z", opacity: 0.18 },
+				{ d: "M22 24h20v24H22z", opacity: 0.12 },
+			],
+			strokes: [
+				{
+					d: "M18 18h28a4 4 0 0 1 4 4v24H18a4 4 0 0 1-4-4V22a4 4 0 0 1 4-4z",
+					strokeWidth: 1.8,
+					opacity: 0.85,
+					strokeLinejoin: "round",
+				},
+				{
+					d: "M22 26h20",
+					strokeWidth: 1.5,
+					opacity: 0.7,
+					strokeLinecap: "round",
+				},
+				{
+					d: "M22 34h20",
+					strokeWidth: 1.5,
+					opacity: 0.7,
+					strokeLinecap: "round",
+				},
+				{
+					d: "M24 42h16",
+					strokeWidth: 1.5,
+					opacity: 0.65,
+					strokeLinecap: "round",
+				},
+				{
+					d: "M24 30h8",
+					strokeWidth: 1.3,
+					opacity: 0.55,
+					strokeLinecap: "round",
+				},
+				{
+					d: "M32 30h10",
+					strokeWidth: 1.3,
+					opacity: 0.55,
+					strokeLinecap: "round",
+				},
+				{
+					d: "M24 38h10",
+					strokeWidth: 1.3,
+					opacity: 0.55,
+					strokeLinecap: "round",
+				},
+				{
+					d: "M36 38h6",
+					strokeWidth: 1.3,
+					opacity: 0.55,
+					strokeLinecap: "round",
+				},
+				{
+					d: "M22 46h20",
+					strokeWidth: 1.2,
+					opacity: 0.5,
+					strokeLinecap: "round",
+				},
+			],
+			circles: [
+				{ cx: 26, cy: 22, r: 1.4, opacity: 0.6 },
+				{ cx: 30, cy: 22, r: 1.4, opacity: 0.5 },
+				{ cx: 34, cy: 22, r: 1.4, opacity: 0.4 },
+			],
+		},
+	],
+	[
+		"testing",
+		{
+			gradient: "from-slate-500 via-slate-600 to-slate-900",
+			paths: [
+				{
+					d: "M20 18h24a4 4 0 0 1 4 4v24H16V22a4 4 0 0 1 4-4z",
+					opacity: 0.18,
+				},
+			],
+			strokes: [
+				{
+					d: "M20 18h24a4 4 0 0 1 4 4v24H16V22a4 4 0 0 1 4-4z",
+					strokeWidth: 1.8,
+					opacity: 0.85,
+					strokeLinejoin: "round",
+				},
+				{
+					d: "M32 30l8 8-8 8",
+					strokeWidth: 1.6,
+					opacity: 0.75,
+					strokeLinecap: "round",
+					strokeLinejoin: "round",
+				},
+				{
+					d: "M24 30l-8 8 8 8",
+					strokeWidth: 1.6,
+					opacity: 0.75,
+					strokeLinecap: "round",
+					strokeLinejoin: "round",
+				},
+				{
+					d: "M26 38h12",
+					strokeWidth: 1.4,
+					opacity: 0.6,
+					strokeLinecap: "round",
+				},
+			],
+			circles: [
+				{ cx: 32, cy: 30, r: 2.2, opacity: 0.55 },
+				{ cx: 32, cy: 46, r: 2.2, opacity: 0.55 },
+			],
+		},
+	],
+	[
+		"type-safety-and-contracts",
+		{
+			gradient: "from-emerald-400 via-emerald-500 to-slate-600",
+			paths: [
+				{
+					d: "M22 16h20l8 8v24a4 4 0 0 1-4 4H22a4 4 0 0 1-4-4V20a4 4 0 0 1 4-4z",
+					opacity: 0.18,
+				},
+			],
+			strokes: [
+				{
+					d: "M22 16h20l8 8v24a4 4 0 0 1-4 4H22a4 4 0 0 1-4-4V20a4 4 0 0 1 4-4z",
+					strokeWidth: 1.8,
+					opacity: 0.85,
+					strokeLinejoin: "round",
+				},
+				{
+					d: "M40 16v8h8",
+					strokeWidth: 1.6,
+					opacity: 0.7,
+					strokeLinejoin: "round",
+				},
+				{
+					d: "M26 26h12",
+					strokeWidth: 1.4,
+					opacity: 0.6,
+					strokeLinecap: "round",
+				},
+				{
+					d: "M26 32h12",
+					strokeWidth: 1.4,
+					opacity: 0.6,
+					strokeLinecap: "round",
+				},
+				{
+					d: "M26 38h12",
+					strokeWidth: 1.4,
+					opacity: 0.6,
+					strokeLinecap: "round",
+				},
+				{
+					d: "M26 44h12",
+					strokeWidth: 1.3,
+					opacity: 0.55,
+					strokeLinecap: "round",
+				},
+				{
+					d: "M30 48l4 4 8-8",
+					strokeWidth: 1.6,
+					opacity: 0.75,
+					strokeLinecap: "round",
+					strokeLinejoin: "round",
+				},
+			],
+		},
+	],
+	[
+		"developer-experience",
+		{
+			gradient: "from-sky-400 via-blue-500 to-slate-700",
+			paths: [
+				{
+					d: "M18 18h28a4 4 0 0 1 4 4v20H14V22a4 4 0 0 1 4-4z",
+					opacity: 0.18,
+				},
+				{
+					d: "M18 46h28a4 4 0 0 0 4-4v6a4 4 0 0 1-4 4H18a4 4 0 0 1-4-4v-6a4 4 0 0 0 4 4z",
+					opacity: 0.1,
+				},
+			],
+			strokes: [
+				{
+					d: "M18 18h28a4 4 0 0 1 4 4v20H14V22a4 4 0 0 1 4-4z",
+					strokeWidth: 1.8,
+					opacity: 0.85,
+					strokeLinejoin: "round",
+				},
+				{
+					d: "M16 46h32",
+					strokeWidth: 1.6,
+					opacity: 0.7,
+					strokeLinecap: "round",
+				},
+				{
+					d: "M20 26h8",
+					strokeWidth: 1.4,
+					opacity: 0.6,
+					strokeLinecap: "round",
+				},
+				{
+					d: "M20 32h16",
+					strokeWidth: 1.4,
+					opacity: 0.6,
+					strokeLinecap: "round",
+				},
+				{
+					d: "M20 38h20",
+					strokeWidth: 1.4,
+					opacity: 0.6,
+					strokeLinecap: "round",
+				},
+				{
+					d: "M24 50h16",
+					strokeWidth: 1.3,
+					opacity: 0.55,
+					strokeLinecap: "round",
+				},
+			],
+		},
+	],
+	[
+		"project-structure",
+		{
+			gradient: "from-slate-400 via-slate-500 to-slate-700",
+			paths: [
+				{
+					d: "M18 18h28a4 4 0 0 1 4 4v20H14V22a4 4 0 0 1 4-4z",
+					opacity: 0.18,
+				},
+			],
+			strokes: [
+				{
+					d: "M18 18h28a4 4 0 0 1 4 4v20H14V22a4 4 0 0 1 4-4z",
+					strokeWidth: 1.8,
+					opacity: 0.85,
+					strokeLinejoin: "round",
+				},
+				{
+					d: "M18 26h12",
+					strokeWidth: 1.4,
+					opacity: 0.6,
+					strokeLinecap: "round",
+				},
+				{
+					d: "M32 26h12",
+					strokeWidth: 1.4,
+					opacity: 0.6,
+					strokeLinecap: "round",
+				},
+				{
+					d: "M18 32h26",
+					strokeWidth: 1.4,
+					opacity: 0.6,
+					strokeLinecap: "round",
+				},
+				{
+					d: "M18 38h20",
+					strokeWidth: 1.4,
+					opacity: 0.6,
+					strokeLinecap: "round",
+				},
+				{
+					d: "M40 38h4",
+					strokeWidth: 1.4,
+					opacity: 0.6,
+					strokeLinecap: "round",
+				},
+				{
+					d: "M22 46h12",
+					strokeWidth: 1.2,
+					opacity: 0.5,
+					strokeLinecap: "round",
+				},
+			],
+			circles: [
+				{ cx: 22, cy: 22, r: 1.4, opacity: 0.6 },
+				{ cx: 26, cy: 22, r: 1.4, opacity: 0.5 },
+				{ cx: 30, cy: 22, r: 1.4, opacity: 0.4 },
+			],
+		},
+	],
+]);
+
+const fallback = {
+	gradient: "from-slate-400 via-slate-500 to-slate-700",
+	paths: [{ d: "M18 18h28v6H18z", opacity: 0.4 }],
+	strokes: [
+		{
+			d: "M20 30h24",
+			strokeWidth: 1.6,
+			opacity: 0.6,
+			strokeLinecap: "round",
+		},
+	],
+};
+
+const illustration = { ...fallback, ...(illustrations.get(slug) ?? {}) };
+const paths = illustration.paths ?? [];
+const strokes = illustration.strokes ?? [];
+const circles = illustration.circles ?? [];
+---
+
+<figure
+	class={`relative flex h-20 w-20 shrink-0 items-center justify-center overflow-hidden rounded-xl bg-gradient-to-br md:h-24 md:w-24 ${illustration.gradient}`}
+	aria-hidden="true"
+>
+	<svg
+		viewBox="0 0 64 64"
+		xmlns="http://www.w3.org/2000/svg"
+		class="h-full w-full p-3 text-white/70"
+		fill="none"
+		preserveAspectRatio="xMidYMid meet"
+	>
+		{paths.map((path, index) => (
+			<path
+				key={`path-${index}`}
+				d={path.d}
+				fill="currentColor"
+				fill-opacity={path.opacity ?? 0.4}
+			/>
+		))}
+		{strokes.map((stroke, index) => (
+			<path
+				key={`stroke-${index}`}
+				d={stroke.d}
+				stroke="currentColor"
+				stroke-opacity={stroke.opacity ?? 0.6}
+				stroke-width={stroke.strokeWidth ?? 1.5}
+				stroke-linecap={stroke.strokeLinecap ?? "round"}
+				stroke-linejoin={stroke.strokeLinejoin ?? "round"}
+				stroke-dasharray={stroke.strokeDasharray}
+			/>
+		))}
+		{circles.map((circle, index) => (
+			<circle
+				key={`circle-${index}`}
+				cx={circle.cx}
+				cy={circle.cy}
+				r={circle.r}
+				fill="currentColor"
+				fill-opacity={circle.opacity ?? 0.5}
+			/>
+		))}
+	</svg>
+</figure>
+<span class="sr-only">Decorative illustration for {title}</span>

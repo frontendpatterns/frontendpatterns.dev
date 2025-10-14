@@ -3,6 +3,8 @@ import { getCollection } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { render } from "astro:content";
 import EmailSignup from "../../components/EmailSignup.astro";
+import CategoryIllustration from "../../components/CategoryIllustration.astro";
+import GuideIllustration from "../../components/GuideIllustration.astro";
 
 const { slug } = Astro.params;
 
@@ -18,12 +20,30 @@ export async function getStaticPaths() {
 
 const { tags } = Astro.props;
 const { Content } = await render(tags);
+const normalize = (value) =>
+  value?.toLocaleLowerCase()?.replace(/\s/g, "-") ?? "";
+
+const formatDate = (value) => {
+  if (!value) return "";
+  const date = value instanceof Date ? value : new Date(value);
+  return date.toLocaleDateString("en-GB", {
+    year: "numeric",
+    month: "short",
+    day: "numeric",
+  });
+};
+
+const toIsoString = (value) => {
+  if (!value) return "";
+  const date = value instanceof Date ? value : new Date(value);
+  return date.toISOString();
+};
+
 const patterns = (
   await getCollection("patterns", (pattern) => {
     if (pattern.data.draft) return false;
     return (
-      pattern.data.tags?.toLocaleLowerCase()?.replace(/\s/g, "-") ===
-      slug.toLocaleLowerCase()
+      normalize(pattern.data.tags) === slug.toLocaleLowerCase()
     );
   })
 ).sort((a, b) => a.data.title.localeCompare(b.data.title));
@@ -32,15 +52,17 @@ const guides = (
   await getCollection("guides", (guide) => {
     if (guide.data.draft) return false;
     return (
-      guide.data.tags?.toLocaleLowerCase()?.replace(/\s/g, "-") ===
-      slug.toLocaleLowerCase()
+      normalize(guide.data.tags) === slug.toLocaleLowerCase()
     );
   })
 ).sort((a, b) => a.data.title.localeCompare(b.data.title));
+
+const isNew = (date) =>
+  Date.now() - new Date(date).getTime() < 30 * 24 * 60 * 60 * 1000;
 ---
 
 <BaseLayout>
-  <section class="space-y-3 pt-10 text-balance">
+  <section class="space-y-6 pt-10 text-balance">
     <nav
       aria-label="Breadcrumb"
       class="text-xs font-semibold uppercase tracking-[0.15em] text-slate-500 dark:text-slate-400"
@@ -56,137 +78,180 @@ const guides = (
       </ol>
     </nav>
 
-    <h1
-      class="text-5xl md:text-6xl font-bold tracking-tight text-slate-900 dark:text-slate-100"
-    >
-      {tags.data.title}
-    </h1>
+    <div class="flex flex-col gap-6 md:flex-row md:items-start md:gap-8">
+      <CategoryIllustration slug={tags.id} title={tags.data.title} />
 
-    <article
-      class="prose prose-slate max-w-none dark:prose-invert prose-h1:hidden"
-    >
-      <Content />
-    </article>
+      <div class="flex-1 space-y-4">
+        <h1
+          class="text-5xl md:text-6xl font-bold tracking-tight text-slate-900 dark:text-slate-100"
+        >
+          {tags.data.title}
+        </h1>
+
+        <article
+          class="prose prose-slate max-w-none dark:prose-invert prose-h1:hidden"
+        >
+          <h1>{tags.data.title}</h1>
+          <Content />
+        </article>
+      </div>
+    </div>
   </section>
 
-  <section class="space-y-4">
-    <h2
-      class="text-2xl font-semibold tracking-tight text-slate-900 dark:text-slate-100"
-    >
-      {tags.data.title} Guides
-    </h2>
+  <section class="space-y-4 pt-8">
+    <div class="flex flex-col gap-2">
+      <h2
+        class="text-2xl font-semibold tracking-tight text-slate-900 dark:text-slate-100"
+      >
+        {tags.data.title} Guides
+      </h2>
+      <p class="text-sm text-slate-600 dark:text-slate-300">
+        Framework-level thinking before you pick a pattern.
+      </p>
+    </div>
 
     {
       guides.length ? (
-        <div class="overflow-x-auto rounded-xl border border-slate-200 bg-white shadow-sm shadow-slate-900/5 dark:border-slate-800 dark:bg-slate-900/60 dark:shadow-none">
-          <table class="min-w-full divide-y divide-slate-200 text-left text-sm dark:divide-slate-800">
-            <thead class="bg-slate-50/80 dark:bg-slate-900">
-              <tr>
-                <th
-                  scope="col"
-                  class="px-4 py-3 font-semibold text-slate-600 dark:text-slate-300"
-                >
-                  Guide
-                </th>
-              </tr>
-            </thead>
-            <tbody class="divide-y divide-slate-100 dark:divide-slate-800">
-              {guides.map((guide) => (
-                <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/70">
-                  <td class="px-4 py-3 w-full">
-                    <a
-                      class="font-semibold text-sky-700 underline-offset-2 transition hover:text-sky-900 hover:underline dark:text-sky-300 dark:hover:text-sky-200"
-                      href={`/guides/${guide.id}`}
-                    >
-                      {guide.data.title}
-                      {new Date() - new Date(guide.data.publishedAt) <
-                      30 * 24 * 60 * 60 * 1000 ? (
-                        <span class="ml-2 inline-block rounded-full bg-sky-100 px-2 py-0.5 text-xs font-semibold text-sky-800 dark:bg-sky-800/20 dark:text-sky-200">
+        <ul class="grid gap-4 md:gap-6 md:grid-cols-2 xl:grid-cols-3">
+          {guides.map((guide) => (
+            <li>
+              <a
+                href={`/guides/${guide.id}`}
+                class="block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:focus-visible:ring-offset-slate-900"
+              >
+                <article class="group flex h-full flex-col gap-4 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg dark:border-slate-800 dark:bg-slate-900 md:flex-row md:items-start md:gap-6">
+                  <div class="flex shrink-0 items-start">
+                    <GuideIllustration slug={guide.id} title={guide.data.title} />
+                  </div>
+                  <div class="flex flex-1 flex-col gap-3">
+                    <div class="flex items-center justify-between text-xs uppercase tracking-wide text-slate-500 dark:text-slate-400">
+                      <time
+                        class="sr-only"
+                        dateTime={toIsoString(guide.data.publishedAt)}
+                      >
+                        Published on {formatDate(guide.data.publishedAt)}
+                      </time>
+                      {isNew(guide.data.publishedAt) ? (
+                        <span class="inline-flex items-center rounded-full bg-sky-100 px-2 py-0.5 text-[10px] font-semibold text-sky-800 dark:bg-sky-800/20 dark:text-sky-200">
                           NEW
                         </span>
                       ) : null}
-                    </a>
-                    {guide.data.description && (
-                      <p class="mt-1 text-xs text-slate-600 dark:text-slate-400">
+                    </div>
+                    <h3 class="text-base font-semibold text-slate-900 transition-colors group-hover:text-sky-700 dark:text-slate-100 dark:group-hover:text-sky-300">
+                      {guide.data.title}
+                    </h3>
+                    {guide.data.description ? (
+                      <p class="text-sm leading-relaxed text-slate-600 dark:text-slate-300">
                         {guide.data.description}
                       </p>
-                    )}
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+                    ) : null}
+                    <div class="mt-auto flex items-center gap-2 text-sm font-medium text-sky-700 transition group-hover:text-sky-800 dark:text-sky-300 dark:group-hover:text-sky-200">
+                      Read guide
+                      <svg
+                        class="h-4 w-4 transition-transform group-hover:translate-x-1"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.293 3.293a1 1 0 0 1 1.414 0l5 5a1 1 0 0 1 0 1.414l-5 5a1 1 0 1 1-1.414-1.414L13.586 10H4a1 1 0 1 1 0-2h9.586l-3.293-3.293a1 1 0 0 1 0-1.414z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </article>
+              </a>
+            </li>
+          ))}
+        </ul>
       ) : (
-        <p class="rounded-lg border border-dashed border-slate-300 bg-slate-100/60 px-4 py-6 text-sm text-slate-600 dark:border-slate-700 dark:bg-slate-900/40 dark:text-slate-400">
+        <p class="rounded-xl border border-dashed border-slate-300 bg-slate-100/60 px-4 py-6 text-sm text-slate-600 dark:border-slate-700 dark:bg-slate-900/40 dark:text-slate-400">
           No guides have been published in this category yet.
         </p>
       )
     }
   </section>
 
-  <section class="space-y-4">
-    <h2
-      class="text-2xl font-semibold tracking-tight text-slate-900 dark:text-slate-100"
-    >
-      {tags.data.title} Patterns
-    </h2>
+  <section class="space-y-4 pt-8">
+    <div class="flex flex-col gap-2">
+      <h2
+        class="text-2xl font-semibold tracking-tight text-slate-900 dark:text-slate-100"
+      >
+        {tags.data.title} Patterns
+      </h2>
+      <p class="text-sm text-slate-600 dark:text-slate-300">
+        Specific, reusable techniques you can drop into production.
+      </p>
+    </div>
 
     {
       patterns.length ? (
-        <div class="overflow-x-auto rounded-xl border border-slate-200 bg-white shadow-sm shadow-slate-900/5 dark:border-slate-800 dark:bg-slate-900/60 dark:shadow-none">
-          <table class="min-w-full divide-y divide-slate-200 text-left text-sm dark:divide-slate-800">
-            <thead class="bg-slate-50/80 dark:bg-slate-900">
-              <tr>
-                <th
-                  scope="col"
-                  class="px-4 py-3 font-semibold text-slate-600 dark:text-slate-300"
-                >
-                  Pattern
-                </th>
-              </tr>
-            </thead>
-            <tbody class="divide-y divide-slate-100 dark:divide-slate-800">
-              {patterns.map((pattern) => (
-                <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/70">
-                  <td class="px-4 py-3 w-full">
-                    <a
-                      class="font-semibold text-sky-700 underline-offset-2 transition hover:text-sky-900 hover:underline dark:text-sky-300 dark:hover:text-sky-200"
-                      href={`/${pattern.id}`}
+        <ul class="grid gap-4 md:gap-6 md:grid-cols-2 xl:grid-cols-3">
+          {patterns.map((pattern) => (
+            <li>
+              <a
+                href={`/${pattern.id}`}
+                class="block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:focus-visible:ring-offset-slate-900"
+              >
+                <article class="group flex h-full flex-col gap-3 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm transition hover:-translate-y-1 hover:shadow-lg dark:border-slate-800 dark:bg-slate-900">
+                  <div class="flex items-center justify-between text-xs uppercase tracking-wide text-slate-500 dark:text-slate-400">
+                    <span>Pattern</span>
+                    <time
+                      class="sr-only"
+                      dateTime={toIsoString(pattern.data.added)}
                     >
-                      {pattern.data.title}
-                      {new Date() - new Date(pattern.data.added) <
-                      30 * 24 * 60 * 60 * 1000 ? (
-                        <span class="ml-2 inline-block rounded-full bg-sky-100 px-2 py-0.5 text-xs font-semibold text-sky-800 dark:bg-sky-800/20 dark:text-sky-200">
-                          NEW
-                        </span>
-                      ) : null}
-                    </a>
-                    {pattern.data.description && (
-                      <p class="mt-1 text-xs text-slate-600 dark:text-slate-400">
-                        {pattern.data.description}
-                      </p>
-                    )}
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+                      Added on {formatDate(pattern.data.added)}
+                    </time>
+                    {pattern.data.added && isNew(pattern.data.added) ? (
+                      <span class="inline-flex items-center rounded-full bg-sky-100 px-2 py-0.5 text-[10px] font-semibold text-sky-800 dark:bg-sky-800/20 dark:text-sky-200">
+                        NEW
+                      </span>
+                    ) : null}
+                  </div>
+                  <h3 class="text-base font-semibold text-slate-900 transition-colors group-hover:text-sky-700 dark:text-slate-100 dark:group-hover:text-sky-300">
+                    {pattern.data.title}
+                  </h3>
+                  {pattern.data.description ? (
+                    <p class="text-sm leading-relaxed text-slate-600 dark:text-slate-300">
+                      {pattern.data.description}
+                    </p>
+                  ) : null}
+                  <div class="mt-auto flex items-center gap-2 text-sm font-medium text-sky-700 transition group-hover:text-sky-800 dark:text-sky-300 dark:group-hover:text-sky-200">
+                    View pattern
+                    <svg
+                      class="h-4 w-4 transition-transform group-hover:translate-x-1"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M10.293 3.293a1 1 0 0 1 1.414 0l5 5a1 1 0 0 1 0 1.414l-5 5a1 1 0 1 1-1.414-1.414L13.586 10H4a1 1 0 1 1 0-2h9.586l-3.293-3.293a1 1 0 0 1 0-1.414z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                </article>
+              </a>
+            </li>
+          ))}
+        </ul>
       ) : (
-        <p class="rounded-lg border border-dashed border-slate-300 bg-slate-100/60 px-4 py-6 text-sm text-slate-600 dark:border-slate-700 dark:bg-slate-900/40 dark:text-slate-400">
+        <p class="rounded-xl border border-dashed border-slate-300 bg-slate-100/60 px-4 py-6 text-sm text-slate-600 dark:border-slate-700 dark:bg-slate-900/40 dark:text-slate-400">
           No patterns have been published in this category yet.
         </p>
       )
     }
   </section>
 
-  <div>
+  <section class="pt-12">
     <h2
       class="text-2xl font-semibold tracking-tight text-slate-900 dark:text-slate-100"
     >
       Get new patterns in your inbox
     </h2>
     <EmailSignup />
-  </div>
+  </section>
 </BaseLayout>

@@ -32,6 +32,7 @@ const patternRows = patterns.map((pattern) => {
       month: "short",
       day: "numeric",
     }),
+    addedIso: addedDate.toISOString(),
     isNew: now - addedDate.getTime() < 30 * 24 * 60 * 60 * 1000,
   };
 });
@@ -81,9 +82,6 @@ const patternRows = patterns.map((pattern) => {
             <tr>
               <th class="px-3 py-2 font-semibold md:px-6 md:py-3">Pattern</th>
               <th class="px-3 py-2 font-semibold md:px-6 md:py-3">tags</th>
-              <th class="px-3 py-2 font-semibold text-right md:px-6 md:py-3">
-                Added
-              </th>
             </tr>
           </thead>
           <tbody class="divide-y divide-slate-200 text-sm dark:divide-slate-800">
@@ -95,6 +93,9 @@ const patternRows = patterns.map((pattern) => {
                     class="font-semibold text-slate-900 underline decoration-slate-200 decoration-2 underline-offset-4 transition hover:text-sky-700 hover:decoration-sky-500 dark:text-slate-100 dark:decoration-slate-700 dark:hover:text-sky-300 dark:hover:decoration-sky-400"
                   >
                     {pattern.title}
+                    <time class="sr-only" dateTime={pattern.addedIso}>
+                      Added on {pattern.addedDisplay}
+                    </time>
                     {pattern.isNew ? (
                       <span class="ml-2 inline-block rounded-full bg-sky-100 px-2 py-0.5 text-xs font-semibold text-sky-800 dark:bg-sky-800/20 dark:text-sky-200">
                         NEW
@@ -113,9 +114,6 @@ const patternRows = patterns.map((pattern) => {
                   ) : (
                     pattern.tags
                   )}
-                </td>
-                <td class="px-3 py-3 text-right text-slate-500 dark:text-slate-400 md:px-6">
-                  {pattern.addedDisplay}
                 </td>
               </tr>
             ))}

@@ -94,9 +94,8 @@ const guideCards = guides.map((guide) => {
                           {guide.tagLabel}
                         </span>
                       )}
-                      <span aria-hidden="true">•</span>
-                      <time dateTime={guide.publishedIso}>
-                        {guide.publishedDisplay}
+                      <time class="sr-only" dateTime={guide.publishedIso}>
+                        Published on {guide.publishedDisplay}
                       </time>
                       {guide.isNew ? (
                         <span class="ml-1 inline-flex items-center rounded-full bg-sky-100 px-2 py-0.5 text-[10px] font-semibold text-sky-800 dark:bg-sky-800/20 dark:text-sky-200">
