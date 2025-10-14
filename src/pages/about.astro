@@ -1,0 +1,32 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import AboutContent from "../content/about.md";
+---
+
+<BaseLayout
+	title="About"
+	metaDescription="Learn why Frontend Patterns exists, who it's for, and how it helps engineers build better web applications."
+>
+	<section class="space-y-3 pt-10 text-balance">
+		<nav
+			aria-label="Breadcrumb"
+			class="text-xs font-semibold uppercase tracking-[0.15em] text-slate-500 dark:text-slate-400"
+		>
+			<ol class="flex flex-wrap items-center gap-1">
+				<li>
+					<a href="/">Home</a>
+				</li>
+				<li aria-hidden="true">/</li>
+				<li aria-current="page">
+					<span>About</span>
+				</li>
+			</ol>
+		</nav>
+	</section>
+
+	<article
+		class="prose prose-slate max-w-none dark:prose-invert prose-h1:mt-0 prose-headings:font-semibold prose-headings:text-slate-900 dark:prose-headings:text-slate-100 prose-a:text-sky-700 hover:prose-a:text-sky-800 dark:prose-a:text-sky-300 dark:hover:prose-a:text-sky-200"
+	>
+		<AboutContent />
+	</article>
+</BaseLayout>
