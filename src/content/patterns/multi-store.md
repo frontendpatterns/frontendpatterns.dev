@@ -11,7 +11,7 @@ Divide application state into multiple independent stores for better separation 
 
 ## Problem
 
-Without this pattern, the premise that dividing application state into multiple independent stores for better separation of concerns falls apart, and small changes trigger cascading regressions.
+A monolithic store becomes an unmaintainable mess as the application grows. Unrelated state changes trigger re-renders across the entire app. Team members conflict when editing the same massive state file. Authentication state, UI state, and business data are tangled together, making it hard to reason about each domain independently.
 
 ## Solution
 

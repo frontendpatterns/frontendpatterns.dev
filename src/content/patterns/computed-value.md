@@ -11,7 +11,7 @@ Derive values from state only when dependencies change rather than on every rend
 
 ## Problem
 
-Without this pattern, the premise that deriving values from state only when dependencies change rather than on every render falls apart, and small changes trigger cascading regressions.
+Expensive calculations run on every render even when their inputs haven't changed, causing performance degradation. Filtering large lists, sorting data, or formatting values repeats unnecessarily. Components freeze during typing because each keystroke triggers heavy computations. The CPU spins doing the same work over and over with identical inputs.
 
 ## Solution
 

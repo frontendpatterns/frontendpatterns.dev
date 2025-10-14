@@ -11,7 +11,7 @@ Capture component output and detecting unintended changes over time.
 
 ## Problem
 
-Without this pattern, the premise that capturing component output and detecting unintended changes over time falls apart, and small changes trigger cascading regressions.
+Component refactoring accidentally changes output structure, breaking downstream consumers or causing subtle rendering differences. Developers don't realize a "harmless" change altered the DOM structure, class names, or data attributes that other code depends on.
 
 ## Solution
 

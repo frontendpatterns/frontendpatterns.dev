@@ -11,7 +11,7 @@ Test components in isolation to verify their behavior and output.
 
 ## Problem
 
-Without this pattern, the premise that testing components in isolation to verify their behavior and output falls apart, and small changes trigger cascading regressions.
+Components break in subtle ways that only appear in production. Developers manually click through the UI repeatedly to verify changes, wasting hours on repetitive testing. Regression bugs slip through because there's no automated verification that components render correctly or handle user interactions properly.
 
 ## Solution
 

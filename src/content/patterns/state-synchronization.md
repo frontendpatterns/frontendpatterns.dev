@@ -11,7 +11,7 @@ Keep component state in sync with external data sources or other components.
 
 ## Problem
 
-Without this pattern, the premise that keeping component state in sync with external data sources or other components falls apart, and small changes trigger cascading regressions.
+Component state drifts out of sync with external data sources or other components, showing stale information. URL parameters don't match the UI state, causing broken bookmarks and back button behavior. Local storage updates don't reflect in the UI until refresh. WebSocket messages arrive but the interface doesn't update, leaving users looking at outdated data.
 
 ## Solution
 

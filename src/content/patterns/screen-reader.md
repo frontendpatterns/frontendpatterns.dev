@@ -11,7 +11,7 @@ Optimize content structure and announcements for screen reader users.
 
 ## Problem
 
-Without this pattern, the premise that optimizing content structure and announcements for screen reader users falls apart, and small changes trigger cascading regressions.
+Screen reader users encounter unlabeled buttons, images without alt text, and dynamic content changes that go unannounced. They navigate through garbled content order, meaningless link text like "click here," and form fields without proper labels, making interfaces frustrating or impossible to use.
 
 ## Solution
 

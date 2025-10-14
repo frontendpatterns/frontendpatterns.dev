@@ -11,7 +11,7 @@ Compute derived data from state and memoizing results to optimize re-renders.
 
 ## Problem
 
-Without this pattern, the premise that computing derived data from state and memoizing results to optimize re-renders falls apart, and small changes trigger cascading regressions.
+Components re-render unnecessarily when accessing derived data from state, even when the specific slice they need hasn't changed. Transforming store data in render functions repeats expensive computations. Every state update triggers recalculations across all subscribed components. Components can't efficiently subscribe to just the portion of state they actually need.
 
 ## Solution
 

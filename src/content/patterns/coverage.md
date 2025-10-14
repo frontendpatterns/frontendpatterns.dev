@@ -11,7 +11,7 @@ Define meaningful code coverage targets that reflect actual risk areas.
 
 ## Problem
 
-Without this pattern, the premise that defining meaningful code coverage targets that reflect actual risk areas falls apart, and small changes trigger cascading regressions.
+Teams chase 100% coverage on trivial code while ignoring critical paths, or have no coverage strategy at all. Coverage metrics become a checkbox exercise that doesn't correlate with actual confidence, allowing high-risk features to ship untested while trivial getters have full coverage.
 
 ## Solution
 

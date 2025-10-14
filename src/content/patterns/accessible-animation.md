@@ -11,7 +11,7 @@ Combine motion preferences with safe easing curves and timing to create animatio
 
 ## Problem
 
-Without this pattern, the premise that combining motion preferences with safe easing curves and timing to create animations that work for all users falls apart, and small changes trigger cascading regressions.
+Animations trigger nausea, dizziness, or vestibular issues for users with motion sensitivity. Rapid movements, parallax scrolling, or auto-playing animations can cause physical discomfort or make interfaces completely unusable for people with vestibular disorders.
 
 ## Solution
 

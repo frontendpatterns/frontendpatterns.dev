@@ -11,7 +11,7 @@ Escape data properly when rendering to prevent XSS by ensuring user input is tre
 
 ## Problem
 
-Without this pattern, the premise that properly escaping data when rendering to prevent XSS by ensuring user input is treated as data, not executable code falls apart, and small changes trigger cascading regressions.
+User-provided data containing special characters like `<`, `>`, or `"` is interpreted as HTML or JavaScript when rendered. Attackers inject malicious scripts through form inputs, URL parameters, or API responses that execute when displayed to other users.
 
 ## Solution
 

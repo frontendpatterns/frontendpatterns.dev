@@ -11,7 +11,7 @@ Define allowed sources for scripts, styles, and resources through HTTP headers t
 
 ## Problem
 
-Without this pattern, the premise that defining allowed sources for scripts, styles, and resources through HTTP headers to prevent XSS and injection attacks falls apart, and small changes trigger cascading regressions.
+Any injected script can execute freely, stealing user data or modifying the page. Third-party dependencies or compromised CDNs can load malicious code without detection. Inline scripts from XSS attacks bypass all other security measures.
 
 ## Solution
 

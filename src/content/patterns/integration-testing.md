@@ -11,7 +11,7 @@ Test multiple components working together as a cohesive unit.
 
 ## Problem
 
-Without this pattern, the premise that testing multiple components working together as a cohesive unit falls apart, and small changes trigger cascading regressions.
+Individual components work in isolation but fail when combined. Data doesn't flow correctly between parent and child components, context providers break, or routing transitions cause unexpected state loss. These integration bugs only surface when users follow real workflows.
 
 ## Solution
 

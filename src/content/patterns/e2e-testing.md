@@ -11,7 +11,7 @@ Test complete user flows through the application in a browser environment.
 
 ## Problem
 
-Without this pattern, the premise that testing complete user flows through the application in a browser environment falls apart, and small changes trigger cascading regressions.
+Critical user journeys like checkout, signup, or data submission break in production despite passing unit tests. Network timing issues, browser-specific quirks, or third-party service failures cause workflows to fail in ways that isolated tests can't detect.
 
 ## Solution
 

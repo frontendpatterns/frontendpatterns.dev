@@ -11,7 +11,7 @@ Verify that components correctly consume and provide context values.
 
 ## Problem
 
-Without this pattern, the premise that verifying that components correctly consume and provide context values falls apart, and small changes trigger cascading regressions.
+Components that rely on context break when tested in isolation because the required context providers aren't available. Tests pass with mocked context values that don't match production, hiding bugs where components misuse or incorrectly consume context data.
 
 ## Solution
 

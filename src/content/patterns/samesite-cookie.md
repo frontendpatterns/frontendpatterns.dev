@@ -11,7 +11,7 @@ Configure cookie SameSite attributes to control cross-site cookie behavior and p
 
 ## Problem
 
-Without this pattern, the premise that configuring cookie SameSite attributes to control cross-site cookie behavior and prevent CSRF attacks falls apart, and small changes trigger cascading regressions.
+Browsers send authentication cookies with every request to a domain, even when the request originates from a malicious third-party site. This enables CSRF attacks where attackers trick users into performing authenticated actions without their knowledge or consent.
 
 ## Solution
 

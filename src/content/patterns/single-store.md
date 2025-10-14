@@ -11,7 +11,7 @@ Centralize all application state in one location for predictable updates.
 
 ## Problem
 
-Without this pattern, the premise that centralizing all application state in one location for predictable updates falls apart, and small changes trigger cascading regressions.
+State scattered across multiple locations makes it impossible to understand the full application state at any given time. Debugging requires checking countless component instances and context providers. Time-travel debugging and state persistence become impractical. Coordinating updates across different state containers leads to race conditions and inconsistent UI.
 
 ## Solution
 

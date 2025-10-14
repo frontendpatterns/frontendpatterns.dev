@@ -11,7 +11,7 @@ Treat state as immutable and creating new copies when making changes for predict
 
 ## Problem
 
-Without this pattern, the premise that treating state as immutable and creating new copies when making changes for predictability falls apart, and small changes trigger cascading regressions.
+Directly mutating state objects breaks React's change detection, causing components to show stale data. Array.push() or object property assignments don't trigger re-renders. Debugging becomes impossible when state changes happen without clear tracking. Time-travel debugging and undo/redo features can't work because there's no history of immutable states.
 
 ## Solution
 

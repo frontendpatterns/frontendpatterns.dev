@@ -11,7 +11,7 @@ Implement anti-CSRF tokens or SameSite cookies to prevent cross-site request for
 
 ## Problem
 
-Without this pattern, the premise that implementing anti-CSRF tokens or SameSite cookies to prevent cross-site request forgery attacks falls apart, and small changes trigger cascading regressions.
+Attackers trick authenticated users into performing unwanted actions by embedding malicious requests in external sites. Users unknowingly transfer money, change passwords, or delete data simply by clicking a link or visiting a compromised page while logged in.
 
 ## Solution
 

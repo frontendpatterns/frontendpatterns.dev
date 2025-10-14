@@ -11,7 +11,7 @@ Verify that interfaces work with assistive technologies and meet WCAG standards.
 
 ## Problem
 
-Without this pattern, the premise that verifying that interfaces work with assistive technologies and meet WCAG standards falls apart, and small changes trigger cascading regressions.
+Accessibility violations ship to production because manual testing with screen readers is time-consuming and easy to skip. Missing alt text, poor color contrast, keyboard traps, and ARIA errors exclude users with disabilities and create legal compliance risks.
 
 ## Solution
 

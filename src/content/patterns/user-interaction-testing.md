@@ -11,7 +11,7 @@ Simulate user events like clicks and typing to test real-world behavior.
 
 ## Problem
 
-Without this pattern, the premise that simulating user events like clicks and typing to test real-world behavior falls apart, and small changes trigger cascading regressions.
+Tests that directly manipulate component state miss bugs that users encounter. Event handlers break, form submissions fail, or click interactions don't trigger the expected behavior because tests bypass the actual DOM event system that users interact with.
 
 ## Solution
 

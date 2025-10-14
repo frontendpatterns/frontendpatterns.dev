@@ -11,7 +11,7 @@ Ensure sufficient contrast ratios between text and backgrounds for readability.
 
 ## Problem
 
-Without this pattern, the premise that ensuring sufficient contrast ratios between text and backgrounds for readability falls apart, and small changes trigger cascading regressions.
+Users with low vision or color blindness can't read text against backgrounds with insufficient contrast. Light gray text on white backgrounds, or subtle color variations become invisible to many users, making content inaccessible regardless of how well-written it is.
 
 ## Solution
 

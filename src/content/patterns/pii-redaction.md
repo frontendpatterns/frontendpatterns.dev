@@ -11,7 +11,7 @@ Remove or mask personally identifiable information systematically from logs, ana
 
 ## Problem
 
-Without this pattern, the premise that systematically removing or masking personally identifiable information from logs, analytics, and error reports falls apart, and small changes trigger cascading regressions.
+Sensitive user data like emails, phone numbers, credit card details, and social security numbers leak into error logs, analytics platforms, and monitoring tools. This creates privacy violations, GDPR non-compliance, and security risks when logging systems are breached or accessed by unauthorized personnel.
 
 ## Solution
 

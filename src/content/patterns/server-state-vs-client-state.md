@@ -11,7 +11,7 @@ Distinguish between data owned by the server (cached temporarily) and local UI s
 
 ## Problem
 
-Without this pattern, the premise that distinguishing between data owned by the server (cached temporarily) and local UI state for proper management strategies falls apart, and small changes trigger cascading regressions.
+Treating server data like local state leads to stale caches and unnecessary refetching. User profile data stored in Redux doesn't update when changed on another device. Loading states and cache invalidation logic gets tangled with UI state. Developers manually implement refetching, polling, and optimistic updates for every API call, reinventing the wheel each time.
 
 ## Solution
 

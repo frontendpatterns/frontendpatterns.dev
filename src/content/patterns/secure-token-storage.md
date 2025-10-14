@@ -11,7 +11,7 @@ Store authentication tokens safely using httpOnly cookies, secure flags, or encr
 
 ## Problem
 
-Without this pattern, the premise that safely storing authentication tokens using httpOnly cookies, secure flags, or encrypted storage to prevent token theft falls apart, and small changes trigger cascading regressions.
+Authentication tokens stored in localStorage or sessionStorage are accessible to any JavaScript code, including malicious scripts from XSS attacks. Stolen tokens allow attackers to impersonate users, access protected resources, and maintain persistent access even after the original session ends.
 
 ## Solution
 

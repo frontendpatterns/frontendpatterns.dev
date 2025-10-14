@@ -11,7 +11,7 @@ Structure state as flat lookup tables to avoid data duplication and simplify upd
 
 ## Problem
 
-Without this pattern, the premise that structuring state as flat lookup tables to avoid data duplication and simplify updates falls apart, and small changes trigger cascading regressions.
+Nested data structures lead to duplicated entities scattered throughout state, causing sync nightmares when updating a single item. Updating a user's name requires searching through multiple arrays and objects. Deeply nested updates are verbose and error-prone. The same blog post appears in multiple places with different versions, showing inconsistent data to users.
 
 ## Solution
 

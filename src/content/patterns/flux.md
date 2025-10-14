@@ -11,7 +11,7 @@ Implement unidirectional data flow architecture with actions, dispatchers, store
 
 ## Problem
 
-Without this pattern, the premise that unidirectional data flow architecture with actions, dispatchers, stores, and views falls apart, and small changes trigger cascading regressions.
+Bidirectional data flow creates unpredictable update cycles where views update models, models update other models, and the cascade becomes impossible to trace. State changes can come from anywhere, making bugs hard to reproduce. Multiple components directly mutating shared data leads to race conditions and inconsistent UI state across the application.
 
 ## Solution
 

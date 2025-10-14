@@ -11,7 +11,7 @@ Create forms with proper labels, error messages, and state announcements for all
 
 ## Problem
 
-Without this pattern, the premise that creating forms with proper labels, error messages, and state announcements for all users falls apart, and small changes trigger cascading regressions.
+Screen reader users can't determine what each form field is asking for, keyboard-only users struggle to navigate between inputs, and error messages appear visually but aren't announced to assistive technology. This excludes millions of users from completing critical tasks like sign-up, checkout, or profile updates.
 
 ## Solution
 

@@ -11,7 +11,7 @@ Test explicitly how components handle errors and edge cases.
 
 ## Problem
 
-Without this pattern, the premise that explicitly testing how components handle errors and edge cases falls apart, and small changes trigger cascading regressions.
+Components only get tested with happy-path data, so error states, loading failures, and edge cases crash in production. Network errors show blank screens, validation failures break forms, and null data causes uncaught exceptions because these scenarios were never tested.
 
 ## Solution
 

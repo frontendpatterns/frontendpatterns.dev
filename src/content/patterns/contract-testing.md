@@ -11,7 +11,7 @@ Verify that components and APIs adhere to their defined interfaces.
 
 ## Problem
 
-Without this pattern, the premise that verifying that components and APIs adhere to their defined interfaces falls apart, and small changes trigger cascading regressions.
+Frontend and backend teams evolve interfaces independently, causing runtime failures when APIs change. Components expect fields that no longer exist, or type mismatches between what the API returns and what the frontend expects go undetected until production.
 
 ## Solution
 

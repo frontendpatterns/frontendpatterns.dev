@@ -11,7 +11,7 @@ Test state management logic independently from presentation.
 
 ## Problem
 
-Without this pattern, the premise that testing state management logic independently from presentation falls apart, and small changes trigger cascading regressions.
+Complex state logic embedded in components becomes difficult to test thoroughly without rendering entire component trees. Reducers, selectors, or custom hooks contain business logic that needs comprehensive testing, but testing through UI interactions is slow and brittle.
 
 ## Solution
 

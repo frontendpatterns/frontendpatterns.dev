@@ -11,7 +11,7 @@ Allow keyboard users to bypass repetitive navigation elements and jump to main c
 
 ## Problem
 
-Without this pattern, the premise that allowing keyboard users to bypass repetitive navigation elements and jump to main content falls apart, and small changes trigger cascading regressions.
+Keyboard and screen reader users must tab through dozens of navigation links on every page load before reaching the main content. This wastes time and creates frustration, especially on content-heavy sites where users just want to read an article or complete a task.
 
 ## Solution
 
