@@ -3,6 +3,7 @@ import { getCollection } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { render } from "astro:content";
 import EmailSignup from "../../components/EmailSignup.astro";
+import GuideIllustration from "../../components/GuideIllustration.astro";
 
 const { slug } = Astro.params;
 
@@ -43,7 +44,7 @@ const structuredData = JSON.stringify({
 <BaseLayout title={post.data.title} metaDescription={post.data.metaDescription}>
   <script is:inline type="application/ld+json" set:html={structuredData} />
 
-  <section class="space-y-3 pt-10 text-balance">
+  <section class="space-y-6 pt-10 text-balance">
     <nav
       aria-label="Breadcrumb"
       class="text-xs font-semibold uppercase tracking-[0.15em] text-slate-500 dark:text-slate-400"
@@ -62,34 +63,43 @@ const structuredData = JSON.stringify({
       </ol>
     </nav>
 
-    <h1
-      class="text-5xl md:text-6xl font-bold tracking-tight text-slate-900 dark:text-slate-100"
-    >
-      {post.data.title}
-    </h1>
+    <div class="flex flex-col gap-6 md:flex-row md:items-start md:gap-8">
+      <GuideIllustration slug={post.id} title={post.data.title} />
 
-    <article
-      class="prose prose-slate max-w-none dark:prose-invert prose-h1:hidden"
-    >
-      <h1>{post.data.title}</h1>
-      <p>{post.data.description}</p>
-    </article>
+      <div class="flex-1 space-y-4">
+        <h1
+          class="text-5xl md:text-6xl font-bold tracking-tight text-slate-900 dark:text-slate-100"
+        >
+          {post.data.title}
+        </h1>
 
-    <div class="flex flex-wrap items-center gap-3 pt-2">
-      <a
-        href={`/t/${post.data.tags?.toLocaleLowerCase()?.replace(/\s/g, "-")}`}
-        class="inline-flex items-center rounded-full border border-sky-200 bg-sky-50 px-3 py-1.5 text-sm font-semibold uppercase tracking-wider text-sky-700 transition-colors hover:bg-sky-100 dark:border-sky-900 dark:bg-sky-950/50 dark:text-sky-300 dark:hover:bg-sky-900/70"
-      >
-        {post.data.tags}
-      </a>
-      {
-        post.data.difficulty && (
-          <span class="inline-flex items-center rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-sm font-medium text-slate-600 dark:border-slate-700 dark:bg-slate-900/50 dark:text-slate-300">
-            {post.data.difficulty}
-          </span>
-        )
-      }
+        <article
+          class="prose prose-slate max-w-none dark:prose-invert prose-h1:hidden"
+        >
+          <h1>{post.data.title}</h1>
+          <p>{post.data.description}</p>
+        </article>
+
+        <div class="flex flex-wrap items-center gap-3 pt-2">
+          {post.data.tags ? (
+            <a
+              href={`/t/${post.data.tags
+                ?.toLocaleLowerCase()
+                ?.replace(/\s/g, "-")}`}
+              class="inline-flex items-center rounded-full border border-sky-200 bg-sky-50 px-3 py-1.5 text-sm font-semibold uppercase tracking-wider text-sky-700 transition-colors hover:bg-sky-100 dark:border-sky-900 dark:bg-sky-950/50 dark:text-sky-300 dark:hover:bg-sky-900/70"
+            >
+              {post.data.tags}
+            </a>
+          ) : null}
+          {post.data.difficulty && (
+            <span class="inline-flex items-center rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-sm font-medium text-slate-600 dark:border-slate-700 dark:bg-slate-900/50 dark:text-slate-300">
+              {post.data.difficulty}
+            </span>
+          )}
+        </div>
+      </div>
     </div>
+
   </section>
 
   <article
