@@ -13,10 +13,6 @@ Control how and when web fonts load to prevent layout shifts and invisible text.
 
 Without this pattern, the premise that controlling how and when web fonts load to prevent layout shifts and invisible text falls apart, and small changes trigger cascading regressions.
 
-## Context
-
-Use it whenever you're working on performance concerns in a codebase that multiple engineers touch daily.
-
 ## Solution
 
 Apply the Font Loading Strategy pattern by controlling how and when web fonts load to prevent layout shifts and invisible text, and reinforce it with concise examples or tests. For example, memoize the transformed dataset before rendering a 500-row analytics grid so scrolling stays smooth.

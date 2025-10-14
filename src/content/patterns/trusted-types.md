@@ -13,10 +13,6 @@ Use browser APIs to enforce type checking on dangerous sinks like innerHTML to e
 
 Without this pattern, the premise that using browser APIs to enforce type checking on dangerous sinks like innerHTML to eliminate DOM-based XSS vulnerabilities falls apart, and small changes trigger cascading regressions.
 
-## Context
-
-Use it whenever you're working on security and privacy concerns in a codebase that multiple engineers touch daily.
-
 ## Solution
 
 Apply the Trusted Types pattern by using browser APIs to enforce type checking on dangerous sinks like innerHTML to eliminate DOM-based XSS vulnerabilities, and reinforce it with concise examples or tests. For example, lock down the marketing-site CSP so injected scripts can't touch dashboard session cookies.

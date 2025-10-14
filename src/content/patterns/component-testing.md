@@ -13,10 +13,6 @@ Test components in isolation to verify their behavior and output.
 
 Without this pattern, the premise that testing components in isolation to verify their behavior and output falls apart, and small changes trigger cascading regressions.
 
-## Context
-
-Use it whenever you're working on testing concerns in a codebase that multiple engineers touch daily.
-
 ## Solution
 
 Apply the Component Testing pattern by testing components in isolation to verify their behavior and output, and reinforce it with concise examples or tests. For example, run an integration test that fills the checkout form, submits it, and asserts on the rendered receipt.

@@ -13,10 +13,6 @@ Defer expensive state calculations until the first render when they're needed.
 
 Without this pattern, the premise that deferring expensive state calculations until the first render when they're needed falls apart, and small changes trigger cascading regressions.
 
-## Context
-
-Use it whenever you're working on state management concerns in a codebase that multiple engineers touch daily.
-
 ## Solution
 
 Apply the Lazy Initialization pattern by deferring expensive state calculations until the first render when they're needed, and reinforce it with concise examples or tests. For example, separate a cart totals reducer from modal visibility state so analytics remains deterministic.

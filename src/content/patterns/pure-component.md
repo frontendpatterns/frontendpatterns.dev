@@ -13,10 +13,6 @@ Create components that render the same output for the same inputs without side e
 
 Without this pattern, the premise that creating components that render the same output for the same inputs without side effects falls apart, and small changes trigger cascading regressions.
 
-## Context
-
-Use it whenever you're working on component concerns in a codebase that multiple engineers touch daily.
-
 ## Solution
 
 Apply the Pure Component pattern by creating components that render the same output for the same inputs without side effects, and reinforce it with concise examples or tests. For example, keep a `UserCard` component focused on presentation while a `useUserCard` hook fetches and normalizes its data.

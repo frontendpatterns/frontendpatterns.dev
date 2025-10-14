@@ -13,10 +13,6 @@ Handle navigation without full page reloads for seamless single-page application
 
 Without this pattern, the premise that handling navigation without full page reloads for seamless single-page application experiences falls apart, and small changes trigger cascading regressions.
 
-## Context
-
-Use it whenever you're working on routing and navigation concerns in a codebase that multiple engineers touch daily.
-
 ## Solution
 
 Apply the Client-Side Routing pattern by handling navigation without full page reloads for seamless single-page application experiences, and reinforce it with concise examples or tests. For example, map `/settings/profile` and `/settings/security` to nested layouts so URLs mirror what users see.

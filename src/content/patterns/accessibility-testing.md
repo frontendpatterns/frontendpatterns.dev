@@ -13,10 +13,6 @@ Verify that interfaces work with assistive technologies and meet WCAG standards.
 
 Without this pattern, the premise that verifying that interfaces work with assistive technologies and meet WCAG standards falls apart, and small changes trigger cascading regressions.
 
-## Context
-
-Use it whenever you're working on testing concerns in a codebase that multiple engineers touch daily.
-
 ## Solution
 
 Apply the Accessibility Testing pattern by verifying that interfaces work with assistive technologies and meet WCAG standards, and reinforce it with concise examples or tests. For example, run an integration test that fills the checkout form, submits it, and asserts on the rendered receipt.

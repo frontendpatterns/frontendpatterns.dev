@@ -13,10 +13,6 @@ Collect usage analytics and performance metrics to inform product decisions.
 
 Without this pattern, the premise that collecting usage analytics and performance metrics to inform product decisions falls apart, and small changes trigger cascading regressions.
 
-## Context
-
-Use it whenever you're working on developer experience concerns in a codebase that multiple engineers touch daily.
-
 ## Solution
 
 Apply the Telemetry pattern by collecting usage analytics and performance metrics to inform product decisions, and reinforce it with concise examples or tests. For example, add a lint rule that rejects feature-flag commits without the cleanup task attached.

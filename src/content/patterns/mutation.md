@@ -13,10 +13,6 @@ Handle create, update, and delete operations with proper cache synchronization.
 
 Without this pattern, the premise that handling create, update, and delete operations with proper cache synchronization falls apart, and small changes trigger cascading regressions.
 
-## Context
-
-Use it whenever you're working on data fetching concerns in a codebase that multiple engineers touch daily.
-
 ## Solution
 
 Apply the Mutation pattern by handling create, update, and delete operations with proper cache synchronization, and reinforce it with concise examples or tests. For example, let a `useOrders` hook own the network call while an `OrdersTable` component simply renders rows.
