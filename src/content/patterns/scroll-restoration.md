@@ -9,7 +9,7 @@ description: "Remember and restore scroll positions when navigating backward."
 
 ## Problem
 
-Without this pattern, the premise that remembering and restoring scroll positions when navigating backward falls apart, and small changes trigger cascading regressions.
+Users who navigate back from a detail page return to the top of long lists, losing their place entirely. They must scroll through hundreds of items to find where they left off, making browsing catalog or feed-based interfaces frustrating and inefficient.
 
 ## Solution
 

@@ -9,7 +9,7 @@ description: "Trigger data fetches as side effects when components mount or depe
 
 ## Problem
 
-Without this pattern, the premise that triggering data fetches as side effects when components mount or dependencies change falls apart, and small changes trigger cascading regressions.
+Data fetching logic scattered throughout components makes it unclear when and how data loads. Components display empty or stale data when props change because fetches don't re-run. Users see outdated information after filter changes, navigation, or prop updates. Developers struggle to coordinate when fetches should trigger and often miss edge cases.
 
 ## Solution
 

@@ -9,7 +9,7 @@ description: "Chain API requests where subsequent calls depend on previous resul
 
 ## Problem
 
-Without this pattern, the premise that chaining API requests where subsequent calls depend on previous results falls apart, and small changes trigger cascading regressions.
+Components attempt to fetch data before required information is available, causing errors or null reference exceptions. Fetching user preferences before knowing the user ID, or loading order details before getting the order number results in failed requests. Developers manually coordinate request timing with complex conditional logic and useEffect dependencies.
 
 ## Solution
 

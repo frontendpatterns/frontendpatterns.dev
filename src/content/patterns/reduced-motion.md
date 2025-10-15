@@ -9,7 +9,7 @@ description: "Respect user preferences for reduced animations and motion effects
 
 ## Problem
 
-Without this pattern, the premise that respecting user preferences for reduced animations and motion effects falls apart, and small changes trigger cascading regressions.
+Users with motion sensitivity experience nausea or dizziness from animations. Parallax scrolling or auto-playing animations can make interfaces completely unusable for people with vestibular disorders. Users have set a system preference to reduce motion, but websites ignore it, causing physical discomfort.
 
 ## Solution
 

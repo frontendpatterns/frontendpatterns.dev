@@ -9,7 +9,7 @@ description: "Manage data that only affects a single component internally."
 
 ## Problem
 
-Without this pattern, the premise that managing data that only affects a single component internally falls apart, and small changes trigger cascading regressions.
+Local UI state like toggle visibility, form input values, or hover states gets lifted into global stores or prop-drilled through multiple layers, creating unnecessary complexity. Simple interactions become tangled with application-wide state management, making components harder to reuse and test.
 
 ## Solution
 

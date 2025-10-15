@@ -9,7 +9,7 @@ description: "Establish communication protocols between independently deployed f
 
 ## Problem
 
-Without this pattern, the premise that establishing communication protocols between independently deployed frontend applications falls apart, and small changes trigger cascading regressions.
+Independently deployed micro-frontends need to share state and coordinate behavior, but they can't import each other's modules. One team's shopping cart needs to notify another team's header when items are added. Global variables create tight coupling and version conflicts. Without clear communication protocols, micro-frontends become isolated silos.
 
 ## Solution
 

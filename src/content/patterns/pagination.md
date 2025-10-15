@@ -9,7 +9,7 @@ description: "Load large datasets in discrete pages to manage memory and network
 
 ## Problem
 
-Without this pattern, the premise that loading large datasets in discrete pages to manage memory and network usage falls apart, and small changes trigger cascading regressions.
+Loading thousands of records at once overwhelms the browser, causing slow initial loads, high memory consumption, and sluggish rendering. Users rarely need to see all data at once, but fetching everything upfront wastes bandwidth and makes the application feel unresponsive. Large datasets need to be broken into manageable chunks.
 
 ## Solution
 

@@ -9,7 +9,7 @@ description: "Build interfaces using small, single-purpose utility classes rathe
 
 ## Problem
 
-Without this pattern, the premise that building interfaces using small, single-purpose utility classes rather than semantic class names falls apart, and small changes trigger cascading regressions.
+Creating custom CSS classes for every component variation leads to bloated stylesheets and decision fatigue. Developers spend time naming classes like "card-header-large-bold-centered" only to need similar styles elsewhere, resulting in duplicated CSS and inconsistent spacing or colors across the interface.
 
 ## Solution
 

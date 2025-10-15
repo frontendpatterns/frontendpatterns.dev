@@ -9,7 +9,7 @@ description: "Define fallback routes to handle unmatched URLs gracefully."
 
 ## Problem
 
-Without this pattern, the premise that defining fallback routes to handle unmatched URLs gracefully falls apart, and small changes trigger cascading regressions.
+Users who mistype URLs, follow broken links, or access deleted pages see browser error pages or blank screens. There's no way to handle 404s gracefully within the application, leaving users stranded without helpful navigation or error messages.
 
 ## Solution
 

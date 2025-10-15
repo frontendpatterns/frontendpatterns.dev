@@ -9,7 +9,7 @@ description: "Use URL query parameters for optional filters, search, and paginat
 
 ## Problem
 
-Without this pattern, the premise that using URL query parameters for optional filters, search, and pagination state falls apart, and small changes trigger cascading regressions.
+Filter and search settings are stored only in component state, so refreshing the page or sharing links loses all applied filters. Users can't bookmark searches, and browser back/forward buttons don't preserve filter state, breaking expected navigation behavior.
 
 ## Solution
 

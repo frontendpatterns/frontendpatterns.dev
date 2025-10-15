@@ -9,7 +9,7 @@ description: "Wrap components with additional functionality through function com
 
 ## Problem
 
-Without this pattern, the premise that wrapping components with additional functionality through function composition falls apart, and small changes trigger cascading regressions.
+You copy-paste the same logic across multiple components - authentication checks, data fetching, analytics tracking, or error handling. Every component duplicates this behavior, making updates tedious and error-prone as you hunt down every instance to keep them in sync.
 
 ## Solution
 

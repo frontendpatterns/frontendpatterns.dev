@@ -9,7 +9,7 @@ description: "Format code automatically to eliminate style debates and merge con
 
 ## Problem
 
-Without this pattern, the premise that automatically formatting code to eliminate style debates and merge conflicts falls apart, and small changes trigger cascading regressions.
+Code style is inconsistent across the codebase, causing merge conflicts and wasted time in code reviews debating formatting. Different developers use different indentation, quote styles, or bracket placement, making diffs noisy and harder to review for meaningful changes.
 
 ## Solution
 

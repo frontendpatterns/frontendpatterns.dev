@@ -9,7 +9,7 @@ description: "Compose routes hierarchically to match UI component structure."
 
 ## Problem
 
-Without this pattern, the premise that composing routes hierarchically to match UI component structure falls apart, and small changes trigger cascading regressions.
+Complex layouts with shared navigation, sidebars, or headers require duplicating markup across every route. URL structure doesn't reflect the visual hierarchy, making it difficult to maintain consistent layouts as the application grows. Each route must manually re-render common UI elements.
 
 ## Solution
 

@@ -9,7 +9,7 @@ description: "Handle create, update, and delete operations with proper cache syn
 
 ## Problem
 
-Without this pattern, the premise that handling create, update, and delete operations with proper cache synchronization falls apart, and small changes trigger cascading regressions.
+Creating, updating, or deleting data leaves the UI showing stale information until a manual refresh. Users add items to a list but don't see them appear, edit records but still see old values, or delete items that remain visible. The displayed data becomes out of sync with the server, forcing users to refresh the page to see their changes take effect.
 
 ## Solution
 

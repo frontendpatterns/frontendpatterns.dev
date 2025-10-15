@@ -9,7 +9,7 @@ description: "Show cached data immediately while fetching fresh data in the back
 
 ## Problem
 
-Without this pattern, the premise that showing cached data immediately while fetching fresh data in the background falls apart, and small changes trigger cascading regressions.
+Users see loading spinners every time they revisit a page, even when cached data exists. Interfaces feel slow because they wait for fresh data before showing anything, despite having perfectly usable cached information. Users must choose between seeing instant but potentially stale data or waiting for fresh data, creating a false trade-off between speed and freshness.
 
 ## Solution
 

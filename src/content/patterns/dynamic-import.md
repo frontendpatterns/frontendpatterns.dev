@@ -9,7 +9,7 @@ description: "Load modules asynchronously at runtime rather than bundling everyt
 
 ## Problem
 
-Without this pattern, the premise that loading modules asynchronously at runtime rather than bundling everything upfront falls apart, and small changes trigger cascading regressions.
+Heavy dependencies load synchronously at startup even if they're only needed for specific user actions. Date picker libraries, chart renderers, or PDF generators block initial page load despite most users never triggering the features that need them. The main bundle balloons with rarely-used utilities.
 
 ## Solution
 

@@ -9,7 +9,7 @@ description: "Break application code into smaller bundles loaded on demand to re
 
 ## Problem
 
-Without this pattern, the premise that breaking application code into smaller bundles loaded on demand to reduce initial load time falls apart, and small changes trigger cascading regressions.
+Applications ship a single massive JavaScript bundle containing all routes, features, and dependencies. Users downloading the homepage must wait for the entire admin dashboard, checkout flow, and analytics code to download and parse. First contentful paint is delayed by hundreds of kilobytes of unused code, especially painful on slow networks.
 
 ## Solution
 

@@ -9,7 +9,7 @@ description: "Manage icons as a cohesive system using SVG sprites, icon fonts, o
 
 ## Problem
 
-Without this pattern, the premise that managing icons as a cohesive system using SVG sprites, icon fonts, or component libraries falls apart, and small changes trigger cascading regressions.
+Icons are scattered across the codebase as individual image files, inline SVGs copied and pasted with inconsistent sizes and colors, or multiple icon libraries loaded simultaneously. Changing an icon requires finding all instances, designers struggle to maintain visual consistency, and bundle sizes bloat with duplicate icon code and unused glyphs.
 
 ## Solution
 

@@ -9,7 +9,7 @@ description: "Avoid passing props through many intermediate components unnecessa
 
 ## Problem
 
-Without this pattern, the premise that techniques to avoid passing props through many intermediate components unnecessarily falls apart, and small changes trigger cascading regressions.
+Deeply nested components require data from the top of the tree, forcing you to thread props through every intermediate layer. Components that don't need the data become coupled to it. Adding a new prop means updating five or more components that simply pass it along unchanged.
 
 ## Solution
 

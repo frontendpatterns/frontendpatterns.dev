@@ -9,7 +9,7 @@ description: "Structure CSS class names with Block, Element, Modifier methodolog
 
 ## Problem
 
-Without this pattern, the premise that structuring CSS class names with Block, Element, Modifier methodology for clarity and reusability falls apart, and small changes trigger cascading regressions.
+CSS class names lack consistent structure, making it unclear which elements belong together or how they relate. Developers create names like "btn-primary", "button-large", and "big-blue-button" for the same component, leading to confusion about which classes to use and difficulty understanding the codebase hierarchy.
 
 ## Solution
 

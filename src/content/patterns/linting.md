@@ -9,7 +9,7 @@ description: "Enforce code quality and consistency rules automatically during de
 
 ## Problem
 
-Without this pattern, the premise that enforcing code quality and consistency rules automatically during development falls apart, and small changes trigger cascading regressions.
+Code quality issues slip through to production: unused variables, missing error handling, accessibility violations, and subtle bugs that could be caught automatically. Developers discover these issues too late in code review or worse, in production, requiring costly fixes and rework.
 
 ## Solution
 

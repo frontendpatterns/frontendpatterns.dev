@@ -9,7 +9,7 @@ description: "Aggregate multiple exports into a single entry point using index f
 
 ## Problem
 
-Without this pattern, the premise that aggregating multiple exports into a single entry point using index files to create clean public APIs and simplify import paths falls apart, and small changes trigger cascading regressions.
+Import statements are verbose and expose internal file structure: import { Button } from './components/atoms/buttons/Button/Button.tsx'. Consumers need to know the exact file location and structure, making imports brittle and refactoring difficult. Moving a file requires updating imports throughout the codebase.
 
 ## Solution
 

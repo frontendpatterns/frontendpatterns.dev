@@ -9,7 +9,7 @@ description: "Validate individual form fields as users interact with them for im
 
 ## Problem
 
-Without this pattern, the premise that validating individual form fields as users interact with them for immediate feedback falls apart, and small changes trigger cascading regressions.
+Users filling out forms expect immediate feedback when they enter invalid data. Waiting until form submission to show all errors at once is jarring and forces users to hunt through the form to find and fix problems. This creates a poor experience, especially on long forms where errors might be scattered across multiple sections.
 
 ## Solution
 

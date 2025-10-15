@@ -9,7 +9,7 @@ description: "Use libraries like Zod, Yup, or JSON Schema to validate data again
 
 ## Problem
 
-Without this pattern, the premise that using libraries like Zod, Yup, or JSON Schema to validate data against schemas falls apart, and small changes trigger cascading regressions.
+Runtime validation is hand-written with manual type guards, creating verbose boilerplate that's error-prone and hard to maintain. Validation logic and TypeScript types diverge over time because they're defined separately, leading to mismatches between runtime checks and compile-time types. Complex nested objects require deeply nested validation code that's difficult to read and test.
 
 ## Solution
 

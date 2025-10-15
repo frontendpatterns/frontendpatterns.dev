@@ -9,7 +9,7 @@ description: "Implement consistent, searchable logging for production debugging 
 
 ## Problem
 
-Without this pattern, the premise that implementing consistent, searchable logging for production debugging and monitoring falls apart, and small changes trigger cascading regressions.
+Logs are inconsistent plain text with no structure: different formats, missing context, and no way to filter or search effectively. When production issues occur, developers grep through thousands of unstructured log lines trying to piece together what happened. Critical information like user IDs, request IDs, or error codes are buried in freeform text.
 
 ## Solution
 

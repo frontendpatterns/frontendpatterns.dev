@@ -9,7 +9,7 @@ description: "Defer loading of non-critical resources until they're needed."
 
 ## Problem
 
-Without this pattern, the premise that deferring loading of non-critical resources until they're needed falls apart, and small changes trigger cascading regressions.
+Initial page load downloads megabytes of JavaScript that users may never use. Critical first-page interactions are delayed because the browser is busy parsing code for admin panels, settings pages, or rarely-accessed features. Time-to-interactive suffers, especially on mobile devices.
 
 ## Solution
 

@@ -9,7 +9,7 @@ description: "Show placeholder content that mimics the layout of incoming data f
 
 ## Problem
 
-Without this pattern, the premise that showing placeholder content that mimics the layout of incoming data for perceived performance falls apart, and small changes trigger cascading regressions.
+Blank screens or generic spinners during data loading make applications feel sluggish and unresponsive. Users have no sense of what content is coming or how the page will look, creating uncertainty and frustration. The sudden appearance of content causes jarring layout shifts that disrupt the reading experience.
 
 ## Solution
 

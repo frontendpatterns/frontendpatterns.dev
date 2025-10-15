@@ -9,7 +9,7 @@ description: "Centralize design tokens and enabling runtime theme switching acro
 
 ## Problem
 
-Without this pattern, the premise that centralizing design tokens and enabling runtime theme switching across an application falls apart, and small changes trigger cascading regressions.
+Each component fetches and manages its own theme values, leading to duplicated theme logic and inconsistent colors when some components miss theme updates. Implementing dark mode or allowing users to switch themes requires modifying every component individually, and there's no single source of truth for the current theme state.
 
 ## Solution
 

@@ -9,7 +9,7 @@ description: "Execute logic before, during, or after navigation events."
 
 ## Problem
 
-Without this pattern, the premise that executing logic before, during, or after navigation events falls apart, and small changes trigger cascading regressions.
+Cross-cutting concerns like analytics tracking, logging, or state cleanup are scattered throughout route handlers. Common navigation logic gets duplicated across routes, making it difficult to ensure consistent behavior or update global navigation handling.
 
 ## Solution
 

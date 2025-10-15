@@ -9,7 +9,7 @@ description: "Execute multiple independent API calls simultaneously to reduce to
 
 ## Problem
 
-Without this pattern, the premise that executing multiple independent API calls simultaneously to reduce total load time falls apart, and small changes trigger cascading regressions.
+Pages load slowly as each API request waits for the previous one to complete, even when the data is independent. A dashboard needing user info, notifications, and analytics takes 6 seconds to load when each 2-second request runs sequentially. Users wait unnecessarily while independent data fetches happen one at a time instead of concurrently.
 
 ## Solution
 

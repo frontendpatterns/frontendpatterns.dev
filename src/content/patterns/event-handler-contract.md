@@ -9,7 +9,7 @@ description: "Type event handlers to ensure type-safe event handling."
 
 ## Problem
 
-Without this pattern, the premise that typing event handlers to ensure type-safe event handling falls apart, and small changes trigger cascading regressions.
+Event handlers are untyped, allowing functions with wrong signatures to be passed without warning. Developers access event properties that don't exist, mistype event types, or pass handlers that expect different event shapes. Callback parameters are unclear, making it hard to know what data is available when handling clicks, form submissions, or custom events.
 
 ## Solution
 

@@ -9,7 +9,7 @@ description: "Replace real API calls with controlled responses for predictable t
 
 ## Problem
 
-Without this pattern, the premise that replacing real API calls with controlled responses for predictable testing falls apart, and small changes trigger cascading regressions.
+Tests that depend on real APIs are slow, flaky, and fragile. They fail when the network is down, break when backend endpoints change, and make it impossible to test error states or edge cases. Running the test suite requires a fully functioning backend, slowing down development and CI pipelines.
 
 ## Solution
 

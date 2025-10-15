@@ -9,7 +9,7 @@ description: "Remove unnecessary metadata and simplify paths to reduce SVG file 
 
 ## Problem
 
-Without this pattern, the premise that removing unnecessary metadata and simplifying paths to reduce SVG file sizes falls apart, and small changes trigger cascading regressions.
+SVG files exported from design tools contain bloated metadata, comments, and unnecessary attributes that balloon file sizes. Icon libraries accumulate hundreds of kilobytes from unoptimized vectors. Complex paths with excessive precision make files larger than needed. Pages load slowly because SVG assets haven't been compressed or cleaned.
 
 ## Solution
 

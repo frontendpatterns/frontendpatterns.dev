@@ -9,7 +9,7 @@ description: "Provide a centralized registry for accessing shared services throu
 
 ## Problem
 
-Without this pattern, the premise that centralized registry for accessing shared services throughout the application falls apart, and small changes trigger cascading regressions.
+Passing shared services like analytics, logging, or feature flags through every component creates deep prop chains. Components become tightly coupled to specific service implementations. Changing how services are created or configured requires touching dozens of files across the codebase.
 
 ## Solution
 

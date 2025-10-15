@@ -9,7 +9,7 @@ description: "Store fetched data to avoid redundant network requests and improve
 
 ## Problem
 
-Without this pattern, the premise that storing fetched data to avoid redundant network requests and improve performance falls apart, and small changes trigger cascading regressions.
+Every component mounting or re-rendering triggers new network requests for the same data. Users see loading spinners repeatedly for information they've already fetched moments ago. Navigating between pages or toggling UI elements causes the app to refetch identical data, wasting bandwidth and making the app feel sluggish. The same API calls fire dozens of times during a single user session.
 
 ## Solution
 

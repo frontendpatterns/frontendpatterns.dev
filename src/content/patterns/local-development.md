@@ -9,7 +9,7 @@ description: "Optimize the developer experience with fast builds, hot reload, an
 
 ## Problem
 
-Without this pattern, the premise that optimizing the developer experience with fast builds, hot reload, and debugging tools falls apart, and small changes trigger cascading regressions.
+Slow build times and missing hot reload force developers to wait seconds or minutes after every code change to see results. Without proper debugging tools, developers resort to console.log debugging and manual browser refreshes, making the development cycle frustratingly slow and unproductive.
 
 ## Solution
 

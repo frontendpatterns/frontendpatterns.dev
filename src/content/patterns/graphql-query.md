@@ -9,7 +9,7 @@ description: "Request precisely the data needed using GraphQL's declarative quer
 
 ## Problem
 
-Without this pattern, the premise that requesting precisely the data needed using GraphQL's declarative query language falls apart, and small changes trigger cascading regressions.
+REST endpoints return massive payloads with unnecessary nested data, forcing clients to download hundreds of fields when only a few are needed. Components requiring different data combinations force developers to create numerous custom endpoints or accept over-fetching. Mobile users waste bandwidth downloading unused data, and backend teams struggle to maintain endpoint explosion.
 
 ## Solution
 

@@ -9,7 +9,7 @@ description: "Control focus flow for modal dialogs, route changes, and dynamic c
 
 ## Problem
 
-Without this pattern, the premise that controlling focus flow for modal dialogs, route changes, and dynamic content insertion falls apart, and small changes trigger cascading regressions.
+Keyboard users get lost when focus isn't managed properly. Opening a modal leaves focus on the trigger button beneath it, forcing users to tab through the entire page to reach modal controls. After navigating to a new route, focus stays at the bottom of the previous page. Screen reader users have no indication that new content appeared.
 
 ## Solution
 

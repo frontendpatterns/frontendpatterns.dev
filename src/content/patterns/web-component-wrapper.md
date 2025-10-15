@@ -9,7 +9,7 @@ description: "Wrap framework components as web components for cross-framework in
 
 ## Problem
 
-Without this pattern, the premise that wrapping framework components as web components for cross-framework interoperability falls apart, and small changes trigger cascading regressions.
+Design systems built in one framework can't be used in applications built with different frameworks. Teams are forced to rebuild the same components multiple times or lock into a single framework. Migrating from one framework to another requires rewriting every component, making incremental migration impossible.
 
 ## Solution
 

@@ -9,7 +9,7 @@ description: "Track JavaScript bundle sizes over time to prevent performance reg
 
 ## Problem
 
-Without this pattern, the premise that tracking JavaScript bundle sizes over time to prevent performance regressions falls apart, and small changes trigger cascading regressions.
+JavaScript bundles grow unnoticed until users complain about slow load times. A single dependency addition can balloon bundle size by hundreds of kilobytes, but no one realizes until it's deployed. Performance degrades gradually with each release as dead code and duplicate dependencies accumulate.
 
 ## Solution
 

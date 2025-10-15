@@ -9,7 +9,7 @@ description: "Define fallback UI to show while asynchronous components or data a
 
 ## Problem
 
-Without this pattern, the premise that defining fallback UI to show while asynchronous components or data are loading falls apart, and small changes trigger cascading regressions.
+Components flash between loading states inconsistently, showing jarring skeleton screens or leaving parts of the UI frozen while data loads. Without centralized loading boundaries, every component must manage its own loading state, creating a chaotic user experience with spinners appearing and disappearing randomly across the page.
 
 ## Solution
 

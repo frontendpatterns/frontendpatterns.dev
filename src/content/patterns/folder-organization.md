@@ -9,7 +9,7 @@ description: "Choose between shallow folder structures for simplicity or deep ne
 
 ## Problem
 
-Without this pattern, the premise that choosing between shallow folder structures for simplicity or deep nesting for organization based on project scale falls apart, and small changes trigger cascading regressions.
+The project structure is either too flat with hundreds of files in one directory, making it impossible to find anything, or too deeply nested with excessive folders that force developers to navigate through many levels to reach a single file. Both extremes slow down development and make the codebase harder to navigate.
 
 ## Solution
 

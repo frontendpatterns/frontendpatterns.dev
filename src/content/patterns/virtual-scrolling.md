@@ -9,7 +9,7 @@ description: "Render only visible list items in the viewport to handle massive d
 
 ## Problem
 
-Without this pattern, the premise that rendering only visible list items in the viewport to handle massive datasets efficiently falls apart, and small changes trigger cascading regressions.
+Rendering thousands of list items creates massive DOM trees that freeze the browser. Scrolling becomes janky as React reconciles updates across hundreds of nodes. Memory usage spikes when displaying large datasets like transaction histories, chat logs, or product catalogs. The page becomes unresponsive with just a few thousand items.
 
 ## Solution
 

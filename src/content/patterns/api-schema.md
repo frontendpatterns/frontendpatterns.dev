@@ -9,7 +9,7 @@ description: "Define and enforcing contracts for API request and response struct
 
 ## Problem
 
-Without this pattern, the premise that defining and enforcing contracts for API request and response structures falls apart, and small changes trigger cascading regressions.
+Backend changes silently break frontend code because there's no contract enforcement. Runtime errors appear in production when API fields are renamed, types change, or required fields become optional. Mock data and tests use different shapes than actual API responses, making bugs hard to catch until production deployment.
 
 ## Solution
 

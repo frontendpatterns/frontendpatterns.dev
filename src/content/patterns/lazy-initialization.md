@@ -9,7 +9,7 @@ description: "Defer expensive state calculations until the first render when the
 
 ## Problem
 
-Without this pattern, the premise that deferring expensive state calculations until the first render when they're needed falls apart, and small changes trigger cascading regressions.
+State initialization runs expensive calculations on every component mount, even when recreating the same values. Reading from localStorage, parsing JSON, or filtering large arrays happens repeatedly during development with hot reloads. Component instantiation becomes a performance bottleneck as initialization logic grows.
 
 ## Solution
 

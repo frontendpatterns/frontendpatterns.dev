@@ -9,7 +9,7 @@ description: "Show loading indicators while asynchronous operations are in progr
 
 ## Problem
 
-Without this pattern, the premise that showing loading indicators while asynchronous operations are in progress falls apart, and small changes trigger cascading regressions.
+Users click buttons and see no feedback, wondering if the app is broken or if they should click again. Interfaces flash from empty to full instantly, creating jarring visual jumps. Users can't tell whether data is loading, failed to load, or if there's simply nothing to show.
 
 ## Solution
 

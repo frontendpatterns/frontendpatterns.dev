@@ -9,7 +9,7 @@ description: "Use tagged unions to model mutually exclusive state variants safel
 
 ## Problem
 
-Without this pattern, the premise that using tagged unions to model mutually exclusive state variants safely falls apart, and small changes trigger cascading regressions.
+State objects contain mutually exclusive combinations of fields, leading to impossible states like having both error and success data simultaneously. Developers must remember which fields are valid together, making null checks scattered throughout the code. When handling different states, TypeScript can't verify all cases are covered, allowing unhandled states to slip through.
 
 ## Solution
 

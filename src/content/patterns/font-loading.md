@@ -9,7 +9,7 @@ description: "Control how and when web fonts load to prevent layout shifts and i
 
 ## Problem
 
-Without this pattern, the premise that controlling how and when web fonts load to prevent layout shifts and invisible text falls apart, and small changes trigger cascading regressions.
+Text remains invisible for seconds while custom fonts download, leaving users staring at blank pages. Font swaps cause jarring layout shifts mid-read as text suddenly changes size. Slow font loading blocks all text rendering, making content inaccessible. Flash of unstyled text disrupts the visual experience as fonts load inconsistently.
 
 ## Solution
 

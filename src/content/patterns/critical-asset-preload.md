@@ -9,7 +9,7 @@ description: "Instruct browsers to prioritize loading essential resources for fa
 
 ## Problem
 
-Without this pattern, the premise that instructing browsers to prioritize loading essential resources for faster initial renders falls apart, and small changes trigger cascading regressions.
+Critical fonts, stylesheets, and scripts load too late because browsers discover them only after parsing HTML. The page flashes unstyled content while essential CSS downloads. Above-the-fold content can't render because key resources aren't prioritized. Browsers waste time downloading low-priority assets while critical ones wait in the queue.
 
 ## Solution
 

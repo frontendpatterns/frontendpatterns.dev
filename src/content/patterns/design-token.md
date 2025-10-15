@@ -9,7 +9,7 @@ description: "Define visual design decisions as reusable variables for consisten
 
 ## Problem
 
-Without this pattern, the premise that defining visual design decisions as reusable variables for consistency across platforms falls apart, and small changes trigger cascading regressions.
+Brand colors, spacing values, and typography settings are hardcoded throughout the codebase with slight variations like "#3B82F6", "#3b81f5", and "rgb(59, 130, 246)" for the same blue. Rebranding or design system updates require finding and changing hundreds of magic numbers across web, mobile, and email templates, inevitably missing some and creating inconsistent user experiences.
 
 ## Solution
 

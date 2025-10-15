@@ -9,7 +9,7 @@ description: "Use preload, prefetch, and preconnect to optimize resource loading
 
 ## Problem
 
-Without this pattern, the premise that using preload, prefetch, and preconnect to optimize resource loading timing falls apart, and small changes trigger cascading regressions.
+Browsers wait until they parse HTML to discover which resources to load, wasting precious milliseconds. DNS lookups and connection handshakes for third-party domains happen at render-time instead of proactively. Resources that will definitely be needed sit idle while the browser slowly discovers dependencies. Network waterfalls show avoidable gaps and sequential loading.
 
 ## Solution
 

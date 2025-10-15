@@ -9,7 +9,7 @@ description: "Eliminate unused code from bundles during the build process."
 
 ## Problem
 
-Without this pattern, the premise that eliminating unused code from bundles during the build process falls apart, and small changes trigger cascading regressions.
+Bundles include entire libraries even when only one function is used. Importing a single utility from lodash ships the entire 70KB library. Dead code from refactored features remains in production bundles indefinitely. Users download and parse thousands of unused functions on every page load.
 
 ## Solution
 

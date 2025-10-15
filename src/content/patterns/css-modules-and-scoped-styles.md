@@ -9,7 +9,7 @@ description: "Scope CSS automatically to specific components to prevent global s
 
 ## Problem
 
-Without this pattern, the premise that automatically scoping CSS to specific components to prevent global style conflicts falls apart, and small changes trigger cascading regressions.
+CSS class names collide across components, causing button styles to leak into cards or typography changes to affect unrelated pages. Developers resort to increasingly specific selectors or !important to override conflicts, making stylesheets unmaintainable and fragile.
 
 ## Solution
 

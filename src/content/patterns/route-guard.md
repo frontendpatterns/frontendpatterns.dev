@@ -9,7 +9,7 @@ description: "Protect routes with authentication, authorization, or validation c
 
 ## Problem
 
-Without this pattern, the premise that protecting routes with authentication, authorization, or validation checks before rendering falls apart, and small changes trigger cascading regressions.
+Protected content briefly flashes on screen before auth checks redirect users, creating security concerns and poor user experience. Each route must manually check permissions, leading to scattered authentication logic and easy-to-miss security holes.
 
 ## Solution
 

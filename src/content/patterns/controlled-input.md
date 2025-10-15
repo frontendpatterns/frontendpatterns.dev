@@ -9,7 +9,7 @@ description: "Synchronize form inputs with component state for full programmatic
 
 ## Problem
 
-Without this pattern, the premise that synchronizing form inputs with component state for full programmatic control falls apart, and small changes trigger cascading regressions.
+You can't validate, format, or transform user input as they type because the DOM manages the input value directly. Features like real-time validation, input masking, or syncing multiple inputs become impossible or require awkward workarounds involving refs and manual DOM manipulation.
 
 ## Solution
 

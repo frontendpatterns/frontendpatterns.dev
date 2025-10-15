@@ -9,7 +9,7 @@ description: "Load route code and data before users navigate for instant transit
 
 ## Problem
 
-Without this pattern, the premise that loading route code and data before users navigate for instant transitions falls apart, and small changes trigger cascading regressions.
+Every navigation triggers loading spinners as code and data are fetched, making the application feel sluggish. Users wait for resources that could have been loaded during idle time, especially frustrating for predictable navigation patterns like pagination or common workflows.
 
 ## Solution
 

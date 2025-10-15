@@ -9,7 +9,7 @@ description: "Expose only necessary interfaces while keeping implementation deta
 
 ## Problem
 
-Without this pattern, the premise that exposing only necessary interfaces while keeping implementation details private and flexible falls apart, and small changes trigger cascading regressions.
+Consumers import implementation details directly from deep within modules, creating tight coupling that makes refactoring dangerous. Any internal reorganization or implementation change breaks dozens of imports across the codebase. There's no clear boundary between public interfaces and private implementation, leading to unintended dependencies.
 
 ## Solution
 

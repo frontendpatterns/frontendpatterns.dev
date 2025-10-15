@@ -9,7 +9,7 @@ description: "Intercept network requests at the service worker level for realist
 
 ## Problem
 
-Without this pattern, the premise that intercepting network requests at the service worker level for realistic testing falls apart, and small changes trigger cascading regressions.
+Traditional API mocking requires duplicating mock logic between tests and development, tightly coupling tests to implementation details. Mocks that stub at the function level miss entire layers of the network stack, failing to catch serialization bugs, CORS issues, or incorrect request headers.
 
 ## Solution
 

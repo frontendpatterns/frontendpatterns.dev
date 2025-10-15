@@ -9,7 +9,7 @@ description: "Abort in-flight requests when components unmount or dependencies c
 
 ## Problem
 
-Without this pattern, the premise that aborting in-flight requests when components unmount or dependencies change falls apart, and small changes trigger cascading regressions.
+Fast-typing users trigger multiple search requests, with slow responses overwriting newer results. Users navigate away from pages but abandoned requests continue consuming bandwidth and updating unmounted components, causing memory leaks and errors. Race conditions occur when outdated responses arrive after fresher data, showing stale results.
 
 ## Solution
 

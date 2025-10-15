@@ -9,7 +9,7 @@ description: "Create components that render the same output for the same inputs 
 
 ## Problem
 
-Without this pattern, the premise that creating components that render the same output for the same inputs without side effects falls apart, and small changes trigger cascading regressions.
+Components re-render unpredictably with the same props, making performance optimization impossible and introducing subtle bugs. Testing becomes unreliable because components produce different output or trigger unexpected side effects even when given identical inputs.
 
 ## Solution
 

@@ -9,7 +9,7 @@ description: "Run automated checks before commits or pushes to catch issues earl
 
 ## Problem
 
-Without this pattern, the premise that running automated checks before commits or pushes to catch issues early falls apart, and small changes trigger cascading regressions.
+Broken code gets committed to the repository: failing tests, linting errors, unformatted code, and type errors make it to the main branch. CI pipelines fail after the fact, blocking other developers and requiring additional commits to fix issues that should have been caught locally.
 
 ## Solution
 

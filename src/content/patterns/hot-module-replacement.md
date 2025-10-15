@@ -9,7 +9,7 @@ description: "Update code in running applications without full page reloads for 
 
 ## Problem
 
-Without this pattern, the premise that updating code in running applications without full page reloads for faster iteration falls apart, and small changes trigger cascading regressions.
+Every code change triggers a full page reload, losing application state and forcing developers to manually recreate their working context. Form inputs reset, modals close, and navigation state disappears with each edit. Development velocity suffers as developers waste time clicking through the same flows repeatedly. Multi-step workflows become tedious to test during active development.
 
 ## Solution
 

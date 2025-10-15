@@ -9,7 +9,7 @@ description: "Standardize commit messages for clear history and automated change
 
 ## Problem
 
-Without this pattern, the premise that standardizing commit messages for clear history and automated changelog generation falls apart, and small changes trigger cascading regressions.
+Commit messages are cryptic and inconsistent: "fix stuff", "updates", "wip" provide no context about what changed or why. Developers waste time digging through code diffs to understand commit history, and generating changelogs becomes a manual, error-prone process of interpreting vague commit messages.
 
 ## Solution
 

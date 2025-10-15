@@ -9,7 +9,7 @@ description: "Load low-quality image placeholders first, then replacing with hig
 
 ## Problem
 
-Without this pattern, the premise that loading low-quality image placeholders first, then replacing with high-quality versions falls apart, and small changes trigger cascading regressions.
+Users stare at blank white rectangles while high-resolution images load, creating a jarring experience. Layout shifts occur when images suddenly pop in after several seconds. Slow connections leave pages feeling broken with missing content. Users can't tell if images are loading or failed to load entirely.
 
 ## Solution
 

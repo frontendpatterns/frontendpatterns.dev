@@ -9,7 +9,7 @@ description: "Provide dependencies from the outside rather than creating them in
 
 ## Problem
 
-Without this pattern, the premise that providing dependencies from the outside rather than creating them internally for better testability falls apart, and small changes trigger cascading regressions.
+Components that instantiate their own dependencies are impossible to test in isolation. You can't test a component that hardcodes API calls without hitting real endpoints. You can't swap a real analytics service for a mock one. Every test requires complex setup to stub global dependencies or mock modules.
 
 ## Solution
 

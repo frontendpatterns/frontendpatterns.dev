@@ -9,7 +9,7 @@ description: "Write functions that narrow types at runtime for safe type asserti
 
 ## Problem
 
-Without this pattern, the premise that writing functions that narrow types at runtime for safe type assertions falls apart, and small changes trigger cascading regressions.
+TypeScript can't infer specific types from conditional checks, forcing developers to use unsafe type assertions or ignore type errors. Union types remain too broad after validation, requiring casts that bypass type safety. Runtime checks exist but don't help the type system, leaving code littered with type assertions and potential runtime crashes.
 
 ## Solution
 

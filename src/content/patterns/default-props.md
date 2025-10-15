@@ -9,7 +9,7 @@ description: "Define fallback values for optional component inputs to ensure pre
 
 ## Problem
 
-Without this pattern, the premise that defining fallback values for optional component inputs to ensure predictable behavior falls apart, and small changes trigger cascading regressions.
+Components crash with "Cannot read property of undefined" errors when optional props aren't provided. Every consumer has to remember to pass values for optional properties, and the component behaves unpredictably across different usage contexts, forcing defensive null checks throughout the code.
 
 ## Solution
 

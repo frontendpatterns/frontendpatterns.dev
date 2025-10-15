@@ -9,7 +9,7 @@ description: "Receive server-pushed updates over HTTP for one-way real-time data
 
 ## Problem
 
-Without this pattern, the premise that receiving server-pushed updates over HTTP for one-way real-time data streams falls apart, and small changes trigger cascading regressions.
+Applications that need real-time updates often resort to polling, repeatedly asking the server for new data at fixed intervals. This wastes bandwidth, increases server load, and introduces latency since updates only arrive when the next poll happens. For one-way data streams like live notifications or stock prices, polling is inefficient compared to having the server push updates as they occur.
 
 ## Solution
 

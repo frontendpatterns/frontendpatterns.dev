@@ -9,7 +9,7 @@ description: "Detect hover or focus on links to preload destinations before clic
 
 ## Problem
 
-Without this pattern, the premise that detecting hover or focus on links to preload destinations before clicks falls apart, and small changes trigger cascading regressions.
+Navigation feels sluggish because pages only start loading after users click. Every route transition shows a loading spinner while JavaScript chunks download. Users experience noticeable delays between clicking links and seeing content. The app feels slower than it needs to be despite having code splitting implemented.
 
 ## Solution
 

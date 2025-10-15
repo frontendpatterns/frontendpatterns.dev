@@ -9,7 +9,7 @@ description: "Display hierarchical navigation trail showing user's location in t
 
 ## Problem
 
-Without this pattern, the premise that displaying hierarchical navigation trail showing user's location in the application falls apart, and small changes trigger cascading regressions.
+Users deep in nested views have no sense of where they are in the application hierarchy or how to navigate back up levels. They rely solely on browser back buttons, which may skip intermediate levels or take them completely out of the current section.
 
 ## Solution
 

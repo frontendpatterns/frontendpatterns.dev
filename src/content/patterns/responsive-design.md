@@ -9,7 +9,7 @@ description: "Create layouts that adapt gracefully to different screen sizes and
 
 ## Problem
 
-Without this pattern, the premise that creating layouts that adapt gracefully to different screen sizes and devices falls apart, and small changes trigger cascading regressions.
+Interfaces look broken on mobile devices with text cut off, buttons unreachable, and horizontal scrolling required. Desktop-optimized layouts force mobile users to pinch and zoom constantly, while fixed-width designs overflow on tablets. Each device size creates a different broken experience, frustrating users and hurting engagement.
 
 ## Solution
 

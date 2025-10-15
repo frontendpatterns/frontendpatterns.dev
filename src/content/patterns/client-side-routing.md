@@ -9,7 +9,7 @@ description: "Handle navigation without full page reloads for seamless single-pa
 
 ## Problem
 
-Without this pattern, the premise that handling navigation without full page reloads for seamless single-page application experiences falls apart, and small changes trigger cascading regressions.
+Every navigation reloads the entire page, destroying application state and causing jarring white flashes. Users lose their place in forms, scroll positions reset, and interactive features restart from scratch. The experience feels slow and broken compared to native applications.
 
 ## Solution
 

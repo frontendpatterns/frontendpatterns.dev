@@ -9,7 +9,7 @@ description: "Retire outdated components gracefully with warnings, codemods, and
 
 ## Problem
 
-Without this pattern, the premise that gracefully retiring outdated components with warnings, codemods, and migration guides to move consumers to newer alternatives falls apart, and small changes trigger cascading regressions.
+Outdated components linger in the codebase with no clear migration path. Developers unknowingly use deprecated components because there are no warnings, causing technical debt to accumulate. When old components are finally removed, it breaks dozens of places across the application with no guidance on how to migrate.
 
 ## Solution
 

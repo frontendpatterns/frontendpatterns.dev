@@ -9,7 +9,7 @@ description: "Pass data and configuration into components through properties or 
 
 ## Problem
 
-Without this pattern, the premise that passing data and configuration into components through properties or attributes falls apart, and small changes trigger cascading regressions.
+Components hardcode their data and behavior, making them impossible to reuse across different contexts. Every variation requires duplicating the entire component, and testing becomes painful because you can't easily inject different values to verify edge cases.
 
 ## Solution
 

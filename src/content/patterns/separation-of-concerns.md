@@ -9,7 +9,7 @@ description: "Divide code into distinct sections for logic, presentation, and st
 
 ## Problem
 
-Without this pattern, the premise that dividing code into distinct sections for logic, presentation, and styling to improve maintainability falls apart, and small changes trigger cascading regressions.
+Business logic, UI markup, styles, and data fetching are intertwined in single files, making it impossible to change one without risking breaks in others. Developers must understand the entire codebase to make simple changes, and reusing logic or styling across different contexts requires extensive refactoring.
 
 ## Solution
 

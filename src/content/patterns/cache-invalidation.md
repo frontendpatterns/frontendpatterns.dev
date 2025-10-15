@@ -9,7 +9,7 @@ description: "Clear or update cached data strategically when underlying informat
 
 ## Problem
 
-Without this pattern, the premise that strategically clearing or updating cached data when underlying information changes falls apart, and small changes trigger cascading regressions.
+Users see stale data after creating, updating, or deleting records. A user adds an item to their cart but the count doesn't update. They delete a comment but it still appears in the list. The cache provides speed but shows outdated information, creating a confusing and broken experience.
 
 ## Solution
 

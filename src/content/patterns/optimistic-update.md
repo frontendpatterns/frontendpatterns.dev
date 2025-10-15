@@ -9,7 +9,7 @@ description: "Update UI immediately with expected results before server confirma
 
 ## Problem
 
-Without this pattern, the premise that immediately updating UI with expected results before server confirmation for perceived speed falls apart, and small changes trigger cascading regressions.
+UI freezes or shows spinners after every user action, waiting for server confirmation. Simple interactions like liking a post, adding to cart, or marking items complete feel sluggish and unresponsive. Users perceive the app as slow even when the network is fast.
 
 ## Solution
 

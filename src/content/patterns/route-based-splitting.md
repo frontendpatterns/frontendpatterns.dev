@@ -9,7 +9,7 @@ description: "Split code automatically at route boundaries for natural loading c
 
 ## Problem
 
-Without this pattern, the premise that automatically splitting code at route boundaries for natural loading chunks falls apart, and small changes trigger cascading regressions.
+Every route's code loads upfront even though users only visit one page at a time. Navigating to the homepage downloads JavaScript for the profile page, settings panel, and every other route. Bundle sizes grow linearly with each new route added, making initial load times progressively worse.
 
 ## Solution
 

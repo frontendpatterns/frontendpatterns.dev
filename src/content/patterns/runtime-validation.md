@@ -9,7 +9,7 @@ description: "Validate data at runtime to ensure it matches expected schemas."
 
 ## Problem
 
-Without this pattern, the premise that validating data at runtime to ensure it matches expected schemas falls apart, and small changes trigger cascading regressions.
+Data from external sources like APIs, user input, or local storage is assumed to match expected types without verification. Invalid data crashes the application when accessed, causes silent bugs when used in calculations, or corrupts state when stored. TypeScript types provide no protection at runtime, allowing malformed data to flow through the system unchecked.
 
 ## Solution
 

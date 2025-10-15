@@ -9,7 +9,7 @@ description: "Load data before it's needed based on predicted user actions."
 
 ## Problem
 
-Without this pattern, the premise that loading data before it's needed based on predicted user actions falls apart, and small changes trigger cascading regressions.
+Users click into detail pages and wait while data fetches from scratch every time. Common navigation paths like viewing orders or profiles always trigger loading states. Users see spinners for data that could have loaded proactively during idle time. The app feels reactive instead of anticipatory, creating unnecessary friction.
 
 ## Solution
 

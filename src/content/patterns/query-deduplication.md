@@ -9,7 +9,7 @@ description: "Prevent duplicate network requests when multiple components simult
 
 ## Problem
 
-Without this pattern, the premise that preventing duplicate network requests when multiple components simultaneously request the same data falls apart, and small changes trigger cascading regressions.
+Multiple components needing the same data fire identical API requests simultaneously. A dashboard with five widgets showing user stats sends five parallel requests for the same user data. The browser network tab fills with duplicate requests, overwhelming the server and wasting bandwidth. Developers manually coordinate which component should fetch data, creating fragile coupling between components.
 
 ## Solution
 

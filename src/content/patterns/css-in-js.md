@@ -9,7 +9,7 @@ description: "Write styles in JavaScript to enable dynamic styling and component
 
 ## Problem
 
-Without this pattern, the premise that writing styles in JavaScript to enable dynamic styling and component co-location falls apart, and small changes trigger cascading regressions.
+Styles live in separate CSS files disconnected from component logic, making it difficult to pass dynamic values like props or state into styling. Developers manually toggle classes or inline styles based on conditions, leading to verbose code and maintenance overhead when styling needs to respond to runtime data.
 
 ## Solution
 

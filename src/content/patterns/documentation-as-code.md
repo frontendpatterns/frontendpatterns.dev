@@ -9,7 +9,7 @@ description: "Maintain documentation alongside code with version control and aut
 
 ## Problem
 
-Without this pattern, the premise that maintaining documentation alongside code with version control and automated publishing workflows falls apart, and small changes trigger cascading regressions.
+Documentation lives in separate wikis, Google Docs, or Confluence pages that quickly become outdated. When code changes, documentation doesn't, leaving developers with inaccurate guides that waste time and cause confusion. There's no easy way to review documentation changes alongside code changes or ensure they stay in sync.
 
 ## Solution
 

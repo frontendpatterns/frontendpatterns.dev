@@ -9,7 +9,7 @@ description: "Cache expensive computation results to avoid recalculating with id
 
 ## Problem
 
-Without this pattern, the premise that caching expensive computation results to avoid recalculating with identical inputs falls apart, and small changes trigger cascading regressions.
+Components recalculate expensive operations on every render, even when inputs haven't changed. This causes visible lag during typing, scrolling, or interactions. Sorting large datasets, complex filtering, or data transformations happen dozens of times per second unnecessarily.
 
 ## Solution
 

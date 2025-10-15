@@ -9,7 +9,7 @@ description: "Allow parent components to inject content into designated areas of
 
 ## Problem
 
-Without this pattern, the premise that allowing parent components to inject content into designated areas of child components falls apart, and small changes trigger cascading regressions.
+Components hardcode their entire structure, forcing you to create new variants for each content combination. Layout components can't be reused because you can't inject custom content into specific areas like headers, footers, or sidebars without modifying the component itself.
 
 ## Solution
 

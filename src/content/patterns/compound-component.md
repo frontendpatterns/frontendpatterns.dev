@@ -9,7 +9,7 @@ description: "Create components that work together implicitly through shared con
 
 ## Problem
 
-Without this pattern, the premise that creating components that work together implicitly through shared context to manage complex interactions falls apart, and small changes trigger cascading regressions.
+Complex UI components like tabs, accordions, or select menus require passing dozens of props through multiple levels to coordinate behavior. Parent components become cluttered with implementation details, and consumers struggle to understand which props go where, leading to brittle, hard-to-maintain component APIs.
 
 ## Solution
 

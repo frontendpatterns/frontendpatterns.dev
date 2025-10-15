@@ -9,7 +9,7 @@ description: "Select DOM elements using accessible queries that mirror user inte
 
 ## Problem
 
-Without this pattern, the premise that selecting DOM elements using accessible queries that mirror user interaction falls apart, and small changes trigger cascading regressions.
+Tests that select DOM elements using implementation details like CSS classes, IDs, or test-specific attributes break whenever markup changes. These brittle tests don't reflect how users interact with your application, making them poor indicators of actual functionality. When tests query elements in ways users never would, they fail to catch real accessibility issues and user-facing bugs.
 
 ## Solution
 

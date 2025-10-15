@@ -9,7 +9,7 @@ description: "Establish persistent connections for real-time bidirectional commu
 
 ## Problem
 
-Without this pattern, the premise that establishing persistent connections for real-time bidirectional communication falls apart, and small changes trigger cascading regressions.
+Polling APIs for updates is inefficient and slow, creating noticeable delays. Chat messages appear late, collaborative editing lags, and live dashboards show stale data. Short polling wastes bandwidth with constant requests, while long polling creates complex connection management and doesn't support true server-push notifications.
 
 ## Solution
 

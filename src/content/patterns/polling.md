@@ -9,7 +9,7 @@ description: "Fetch data repeatedly at regular intervals to keep information cur
 
 ## Problem
 
-Without this pattern, the premise that repeatedly fetching data at regular intervals to keep information current falls apart, and small changes trigger cascading regressions.
+Data becomes stale and outdated as soon as it's displayed, requiring manual refreshes to see updates. Users monitoring dashboards, order statuses, or real-time metrics have no way to see changes without repeatedly clicking refresh. Critical updates like payment confirmations or stock levels don't appear until users manually reload the page.
 
 ## Solution
 

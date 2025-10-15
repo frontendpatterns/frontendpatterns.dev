@@ -9,7 +9,7 @@ description: "Manage and displaying errors gracefully from failed API requests."
 
 ## Problem
 
-Without this pattern, the premise that gracefully managing and displaying errors from failed API requests falls apart, and small changes trigger cascading regressions.
+Failed API requests leave users staring at loading spinners indefinitely or crash components with unhandled promise rejections. There's no consistent way to show error messages, retry failed requests, or gracefully degrade functionality when backend services are unavailable.
 
 ## Solution
 

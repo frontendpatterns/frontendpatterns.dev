@@ -9,7 +9,7 @@ description: "Describe object shapes with interfaces for documentation and type 
 
 ## Problem
 
-Without this pattern, the premise that describing object shapes with interfaces for documentation and type checking falls apart, and small changes trigger cascading regressions.
+Objects are passed around with implicit structures, making it unclear what properties exist or what types they should have. Developers access non-existent properties, mistype field names, and pass wrong data types, all without any compile-time warnings. Refactoring becomes dangerous because there's no way to track which code depends on specific object shapes.
 
 ## Solution
 

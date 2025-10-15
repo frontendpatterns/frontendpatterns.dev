@@ -9,7 +9,7 @@ description: "Manage setup, updates, and cleanup phases of component existence."
 
 ## Problem
 
-Without this pattern, the premise that managing setup, updates, and cleanup phases of component existence falls apart, and small changes trigger cascading regressions.
+Event listeners accumulate without being removed, subscriptions leak memory, and API calls fire at the wrong time. Components that don't properly manage their lifecycle phases create performance issues, memory leaks, and race conditions where stale data overwrites fresh updates.
 
 ## Solution
 

@@ -9,7 +9,7 @@ description: "Ensure each component, module, or function has one clear purpose a
 
 ## Problem
 
-Without this pattern, the premise that each component, module, or function has one clear purpose and reason to change falls apart, and small changes trigger cascading regressions.
+Components grow into thousand-line files that handle data fetching, validation, formatting, UI rendering, and business logic simultaneously. Changes to one aspect require understanding and potentially breaking everything else, and testing becomes impossible because every feature is tangled together.
 
 ## Solution
 

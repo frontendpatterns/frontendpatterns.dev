@@ -9,7 +9,7 @@ description: "Leverage third-party form libraries to handle complex validation a
 
 ## Problem
 
-Without this pattern, the premise that leveraging third-party form libraries to handle complex validation and submission logic falls apart, and small changes trigger cascading regressions.
+Form state becomes tangled with component rendering, making it difficult to validate, reset, or debug. Complex forms with conditional fields and multi-step flows become unmaintainable. Custom validation logic is scattered across components, leading to inconsistent error handling and duplicate code.
 
 ## Solution
 

@@ -9,7 +9,7 @@ description: "Leverage built-in or custom utility types to transform and manipul
 
 ## Problem
 
-Without this pattern, the premise that leveraging built-in or custom utility types to transform and manipulate types falls apart, and small changes trigger cascading regressions.
+Types are duplicated across the codebase with manual modifications, creating drift when the original type changes. Developers manually mark all fields as optional for partial updates, manually remove readonly modifiers for internal mutations, or manually extract specific properties into new interfaces. These manual type transformations become outdated, leading to type mismatches and maintenance burden.
 
 ## Solution
 

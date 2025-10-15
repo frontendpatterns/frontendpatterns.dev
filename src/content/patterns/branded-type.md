@@ -9,7 +9,7 @@ description: "Create distinct types from primitives to prevent mixing incompatib
 
 ## Problem
 
-Without this pattern, the premise that creating distinct types from primitives to prevent mixing incompatible values falls apart, and small changes trigger cascading regressions.
+Functions accept any string or number value, allowing invalid inputs like negative IDs, malformed email addresses, or mixing up user IDs with product IDs. TypeScript treats all strings and numbers as interchangeable, so passing a user ID where a product ID is expected compiles successfully but causes bugs at runtime.
 
 ## Solution
 

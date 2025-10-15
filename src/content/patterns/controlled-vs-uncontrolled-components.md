@@ -9,7 +9,7 @@ description: "Choose between parent-managed state or component-internal state fo
 
 ## Problem
 
-Without this pattern, the premise that choosing between parent-managed state or component-internal state for form inputs falls apart, and small changes trigger cascading regressions.
+Form inputs behave inconsistently across the application, with some managed by React state and others by the DOM. This creates confusion about where form data lives, makes validation and submission logic unpredictable, and causes bugs when inputs don't update as expected or lose their values unexpectedly.
 
 ## Solution
 

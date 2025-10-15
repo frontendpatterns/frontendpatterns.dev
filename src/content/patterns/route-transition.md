@@ -9,7 +9,7 @@ description: "Animate between route changes for polished user experiences."
 
 ## Problem
 
-Without this pattern, the premise that animating between route changes for polished user experiences falls apart, and small changes trigger cascading regressions.
+Navigation feels abrupt and jarring, with content instantly swapping out without visual continuity. Users lose spatial awareness of where they are in the application as pages suddenly appear and disappear. The experience feels mechanical rather than fluid.
 
 ## Solution
 

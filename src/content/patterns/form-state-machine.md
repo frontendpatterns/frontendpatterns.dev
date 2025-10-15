@@ -9,7 +9,7 @@ description: "Model form states (pristine, dirty, submitting, error) as explicit
 
 ## Problem
 
-Without this pattern, the premise that modeling form states (pristine, dirty, submitting, error) as explicit state transitions falls apart, and small changes trigger cascading regressions.
+Form state logic becomes a tangled mess of boolean flags and conditional checks. A form can be both "submitting" and "dirty" or "validating" and "error", but the code doesn't prevent impossible states. Submit buttons stay enabled during submission, or validation runs after successful submission, creating bugs and race conditions.
 
 ## Solution
 

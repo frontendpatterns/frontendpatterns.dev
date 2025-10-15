@@ -9,7 +9,7 @@ description: "Define clear contracts for component inputs and outputs."
 
 ## Problem
 
-Without this pattern, the premise that defining clear contracts for component inputs and outputs falls apart, and small changes trigger cascading regressions.
+Components become fragile black boxes where it's unclear what props are required, what types they expect, or what they return. Changes to one component silently break others, and bugs only surface at runtime when users encounter "undefined is not a function" or receive malformed data.
 
 ## Solution
 

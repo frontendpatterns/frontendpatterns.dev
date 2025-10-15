@@ -9,7 +9,7 @@ description: "Build complex components by combining simpler ones rather than usi
 
 ## Problem
 
-Without this pattern, the premise that building complex components by combining simpler ones rather than using class hierarchies falls apart, and small changes trigger cascading regressions.
+Deep inheritance hierarchies make components fragile and hard to understand. Changes to a base class ripple through all subclasses unpredictably, and you can't mix behaviors from multiple parents without complex multiple inheritance or awkward workarounds that create tight coupling.
 
 ## Solution
 

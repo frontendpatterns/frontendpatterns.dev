@@ -9,7 +9,7 @@ description: "Create reusable factories for generating test data with sensible d
 
 ## Problem
 
-Without this pattern, the premise that creating reusable factories for generating test data with sensible defaults falls apart, and small changes trigger cascading regressions.
+Test data setup becomes verbose and brittle when each test manually constructs complex objects. When a required field is added, dozens of tests break. Tests become hard to read because most of the data is irrelevant boilerplate, obscuring what the test is actually verifying.
 
 ## Solution
 

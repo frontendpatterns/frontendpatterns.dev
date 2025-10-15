@@ -9,7 +9,7 @@ description: "Break long forms into sequential steps with progress tracking and 
 
 ## Problem
 
-Without this pattern, the premise that breaking long forms into sequential steps with progress tracking and navigation falls apart, and small changes trigger cascading regressions.
+Long forms overwhelm users with dozens of fields at once, leading to abandonment. Managing validation across all fields simultaneously becomes complex. Users can't save progress and return later, and it's unclear how much of the form remains incomplete or which sections have errors.
 
 ## Solution
 

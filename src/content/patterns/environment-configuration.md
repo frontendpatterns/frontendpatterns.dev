@@ -9,7 +9,7 @@ description: "Configure applications differently across development, staging, an
 
 ## Problem
 
-Without this pattern, the premise that configuring applications differently across development, staging, and production environments falls apart, and small changes trigger cascading regressions.
+Configuration values are hardcoded or scattered throughout the codebase: API URLs, feature flags, and API keys mixed into application code. Deploying to different environments requires code changes, and accidentally using production credentials in development or vice versa causes dangerous mistakes and security risks.
 
 ## Solution
 

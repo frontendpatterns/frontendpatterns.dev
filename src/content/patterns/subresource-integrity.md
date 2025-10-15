@@ -9,7 +9,7 @@ description: "Use integrity hashes on external scripts and stylesheets to ensure
 
 ## Problem
 
-Without this pattern, the premise that using integrity hashes on external scripts and stylesheets to ensure resources haven't been tampered with falls apart, and small changes trigger cascading regressions.
+Loading scripts and stylesheets from external CDNs introduces a security risk: if the CDN is compromised or serves malicious content, your application executes that code without verification. Users trust your site, but you have no guarantee that external resources remain unchanged. A tampered script can steal user data, inject malware, or compromise your entire application.
 
 ## Solution
 

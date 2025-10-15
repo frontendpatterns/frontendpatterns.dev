@@ -9,7 +9,7 @@ description: "Re-attempt failed requests automatically with exponential backoff 
 
 ## Problem
 
-Without this pattern, the premise that automatically re-attempting failed requests with exponential backoff strategies falls apart, and small changes trigger cascading regressions.
+Temporary network blips or server timeouts immediately show error messages to users. Operations that could succeed if retried force users to manually refresh or try again. Transient failures get treated as permanent errors, degrading the user experience during normal internet hiccups.
 
 ## Solution
 

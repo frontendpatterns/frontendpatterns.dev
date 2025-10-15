@@ -9,7 +9,7 @@ description: "Use browser DevTools to identify performance bottlenecks and memor
 
 ## Problem
 
-Without this pattern, the premise that using browser DevTools to identify performance bottlenecks and memory leaks falls apart, and small changes trigger cascading regressions.
+Performance issues remain mysterious because developers lack visibility into what's slowing down the application. Users report sluggishness but the root cause is unclear. Memory leaks accumulate over time, degrading performance until the tab crashes. Optimization efforts are guesswork without data showing where time is actually spent.
 
 ## Solution
 

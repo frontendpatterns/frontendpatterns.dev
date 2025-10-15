@@ -9,7 +9,7 @@ description: "Create reusable components that work with multiple data types."
 
 ## Problem
 
-Without this pattern, the premise that creating reusable components that work with multiple data types falls apart, and small changes trigger cascading regressions.
+You create separate Table, List, or Select components for each data type - UserTable, ProductTable, OrderTable - duplicating the same logic with minor type differences. Type safety breaks when components pass data around because TypeScript can't infer the specific type being used.
 
 ## Solution
 

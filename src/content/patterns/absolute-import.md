@@ -9,7 +9,7 @@ description: "Configure absolute imports from a base directory to avoid complex 
 
 ## Problem
 
-Without this pattern, the premise that configuring absolute imports from a base directory to avoid complex relative path navigation falls apart, and small changes trigger cascading regressions.
+Import paths become fragile chains of ../../../ that break when files move. Developers waste time counting dots and navigating folder hierarchies, and refactoring becomes risky because changing a file's location requires updating all relative paths throughout the codebase.
 
 ## Solution
 

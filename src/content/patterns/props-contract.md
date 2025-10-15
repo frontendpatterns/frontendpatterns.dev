@@ -9,7 +9,7 @@ description: "Specify required and optional properties with their expected types
 
 ## Problem
 
-Without this pattern, the premise that specifying required and optional properties with their expected types falls apart, and small changes trigger cascading regressions.
+Components accept props without clear contracts, making it unclear which properties are required, optional, or what types they should be. Parent components pass wrong prop names, forget required props, or pass incorrect types, all without compile-time errors. Documentation becomes stale because there's no single source of truth for component APIs.
 
 ## Solution
 

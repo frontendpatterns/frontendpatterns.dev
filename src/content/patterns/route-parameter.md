@@ -9,7 +9,7 @@ description: "Pass dynamic values through URL paths to load specific resources."
 
 ## Problem
 
-Without this pattern, the premise that passing dynamic values through URL paths to load specific resources falls apart, and small changes trigger cascading regressions.
+URLs can't capture specific resources or entities, forcing applications to use generic paths with client-side state management. Users can't bookmark or share links to specific items, and refreshing the page loses context about which resource was being viewed.
 
 ## Solution
 

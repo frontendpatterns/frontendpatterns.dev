@@ -9,7 +9,7 @@ description: "Type form data structures strongly to prevent validation errors."
 
 ## Problem
 
-Without this pattern, the premise that strongly typing form data structures to prevent validation errors falls apart, and small changes trigger cascading regressions.
+Form data flows through validation, transformation, and submission logic with inconsistent types. Required fields get forgotten, validation rules drift from actual requirements, and submission payloads silently fail due to type mismatches. Refactoring forms is risky because there's no compile-time safety.
 
 ## Solution
 

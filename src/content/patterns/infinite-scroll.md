@@ -9,7 +9,7 @@ description: "Load more content automatically as users scroll to create seamless
 
 ## Problem
 
-Without this pattern, the premise that automatically loading more content as users scroll to create seamless browsing experiences falls apart, and small changes trigger cascading regressions.
+Traditional pagination forces users to click "Next" repeatedly, breaking flow and adding unnecessary interactions. Loading all content upfront overwhelms the browser with thousands of items. Users lose their scroll position when navigating back from detail pages. Feed-style interfaces feel clunky with manual page controls.
 
 ## Solution
 

@@ -9,7 +9,7 @@ description: "Compressing, resizing, and serving images in modern formats to red
 
 ## Problem
 
-Without this pattern, the premise that compressing, resizing, and serving images in modern formats to reduce bandwidth falls apart, and small changes trigger cascading regressions.
+Unoptimized images account for megabytes of page weight, dominating load times on slow connections. Designers export full-resolution PNGs that are 10x larger than necessary. Mobile users download desktop-sized images, wasting bandwidth and battery. Pages visually load but remain sluggish while massive hero images trickle in.
 
 ## Solution
 

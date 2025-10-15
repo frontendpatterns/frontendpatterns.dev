@@ -9,7 +9,7 @@ description: "Use functions to dynamically generate component output based on st
 
 ## Problem
 
-Without this pattern, the premise that using functions to dynamically generate component output based on state and props falls apart, and small changes trigger cascading regressions.
+Components require static markup that can't adapt to different data structures or render variations. You end up creating separate components for minor rendering differences, or embedding complex conditional logic directly in JSX that becomes difficult to read and maintain.
 
 ## Solution
 

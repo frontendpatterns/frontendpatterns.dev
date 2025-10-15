@@ -9,7 +9,7 @@ description: "Separate components that handle UI rendering from those that manag
 
 ## Problem
 
-Without this pattern, the premise that separating components that handle UI rendering from those that manage data and business logic falls apart, and small changes trigger cascading regressions.
+Components tightly couple UI rendering with data fetching, state management, and business logic, making them impossible to reuse with different data sources or test independently. Changes to the API or business rules require modifying components that should only care about presentation.
 
 ## Solution
 

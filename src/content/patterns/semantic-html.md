@@ -9,7 +9,7 @@ description: "Use correct HTML elements to convey meaning and structure before r
 
 ## Problem
 
-Without this pattern, the premise that using correct HTML elements to convey meaning and structure before reaching for ARIA attributes falls apart, and small changes trigger cascading regressions.
+Screen readers can't understand page structure when everything is a div. Users can't navigate by landmarks or skip to main content. Buttons built from divs don't work with keyboard navigation or assistive technology. Search engines and browser tools can't parse semantic meaning from generic elements, hurting SEO and user experience.
 
 ## Solution
 

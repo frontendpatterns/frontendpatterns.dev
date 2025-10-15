@@ -9,7 +9,7 @@ description: "Enable URLs that point directly to specific application states for
 
 ## Problem
 
-Without this pattern, the premise that enabling URLs that point directly to specific application states for shareability falls apart, and small changes trigger cascading regressions.
+URLs can't capture specific views or states, making it impossible to bookmark or share links to exact locations. Users who refresh the page or share links land on generic views instead of the content they intended, forcing them to manually recreate complex application states.
 
 ## Solution
 

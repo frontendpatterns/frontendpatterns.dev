@@ -9,7 +9,7 @@ description: "Prevent style leakage between components through encapsulation tec
 
 ## Problem
 
-Without this pattern, the premise that preventing style leakage between components through encapsulation techniques falls apart, and small changes trigger cascading regressions.
+Styles from one component unexpectedly affect others, causing buttons in a modal to inherit card styles or global typography rules to break specific components. Third-party widgets clash with app styles, and developers spend hours debugging why a simple CSS change breaks layouts in different parts of the application.
 
 ## Solution
 
