@@ -13,4 +13,4 @@ Passing shared services like analytics, logging, or feature flags through every 
 
 ## Solution
 
-Apply the Service Locator pattern by centralized registry for accessing shared services throughout the application, and reinforce it with concise examples or tests. For example, separate a cart totals reducer from modal visibility state so analytics remains deterministic.
+Centralized registry for accessing shared services throughout the application. For example, separate a cart totals reducer from modal visibility state so analytics remains deterministic.

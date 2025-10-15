@@ -13,4 +13,4 @@ When multiple users edit the same data simultaneously, their changes can conflic
 
 ## Solution
 
-Apply the Conflict Resolution pattern by handling concurrent updates and data conflicts in distributed systems with last-write-wins, operational transforms, or CRDTs, and reinforce it with concise examples or tests. For example, separate a cart totals reducer from modal visibility state so analytics remains deterministic.
+Handle concurrent updates and data conflicts in distributed systems with last-write-wins, operational transforms, or CRDTs. For example, separate a cart totals reducer from modal visibility state so analytics remains deterministic.

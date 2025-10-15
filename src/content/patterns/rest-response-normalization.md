@@ -13,4 +13,4 @@ Deeply nested API responses containing duplicate data make updates complex and e
 
 ## Solution
 
-Apply the REST Response Normalization pattern by transforming nested API responses into flat, relational structures for efficient updates, and reinforce it with concise examples or tests. For example, let a `useOrders` hook own the network call while an `OrdersTable` component simply renders rows.
+Transform nested API responses into flat, relational structures for efficient updates. For example, let a `useOrders` hook own the network call while an `OrdersTable` component simply renders rows.

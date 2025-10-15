@@ -13,4 +13,4 @@ Treating server data like local state leads to stale caches and unnecessary refe
 
 ## Solution
 
-Apply the Server State vs Client State pattern by distinguishing between data owned by the server (cached temporarily) and local UI state for proper management strategies, and reinforce it with concise examples or tests. For example, separate a cart totals reducer from modal visibility state so analytics remains deterministic.
+Distinguish between data owned by the server (cached temporarily) and local UI state for proper management strategies. For example, separate a cart totals reducer from modal visibility state so analytics remains deterministic.

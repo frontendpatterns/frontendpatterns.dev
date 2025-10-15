@@ -13,4 +13,4 @@ Components that directly reference each other create tight coupling, making the 
 
 ## Solution
 
-Apply the Pub/Sub pattern by decoupling components through event-based communication without direct references, and reinforce it with concise examples or tests. For example, separate a cart totals reducer from modal visibility state so analytics remains deterministic.
+Decouple components through event-based communication without direct references. For example, separate a cart totals reducer from modal visibility state so analytics remains deterministic.

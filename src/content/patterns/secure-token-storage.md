@@ -13,4 +13,4 @@ Authentication tokens stored in localStorage or sessionStorage are accessible to
 
 ## Solution
 
-Apply the Secure Token Storage pattern by safely storing authentication tokens using httpOnly cookies, secure flags, or encrypted storage to prevent token theft, and reinforce it with concise examples or tests. For example, lock down the marketing-site CSP so injected scripts can't touch dashboard session cookies.
+Safely storing authentication tokens using httpOnly cookies, secure flags, or encrypted storage to prevent token theft. For example, lock down the marketing-site CSP so injected scripts can't touch dashboard session cookies.

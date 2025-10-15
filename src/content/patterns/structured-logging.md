@@ -13,4 +13,4 @@ Logs are inconsistent plain text with no structure: different formats, missing c
 
 ## Solution
 
-Apply the Structured Logging pattern by implementing consistent, searchable logging for production debugging and monitoring, and reinforce it with concise examples or tests. For example, add a lint rule that rejects feature-flag commits without the cleanup task attached.
+Implement consistent, searchable logging for production debugging and monitoring. For example, add a lint rule that rejects feature-flag commits without the cleanup task attached.

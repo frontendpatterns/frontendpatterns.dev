@@ -13,4 +13,4 @@ Expensive calculations run on every render even when their inputs haven't change
 
 ## Solution
 
-Apply the Computed Value pattern by deriving values from state only when dependencies change rather than on every render, and reinforce it with concise examples or tests. For example, memoize the transformed dataset before rendering a 500-row analytics grid so scrolling stays smooth.
+Derive values from state only when dependencies change rather than on every render. For example, memoize the transformed dataset before rendering a 500-row analytics grid so scrolling stays smooth.

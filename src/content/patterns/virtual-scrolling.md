@@ -13,4 +13,4 @@ Rendering thousands of list items creates massive DOM trees that freeze the brow
 
 ## Solution
 
-Apply the Virtual Scrolling pattern by rendering only visible list items in the viewport to handle massive datasets efficiently, and reinforce it with concise examples or tests. For example, memoize the transformed dataset before rendering a 500-row analytics grid so scrolling stays smooth.
+Render only visible list items in the viewport to handle massive datasets efficiently. For example, memoize the transformed dataset before rendering a 500-row analytics grid so scrolling stays smooth.

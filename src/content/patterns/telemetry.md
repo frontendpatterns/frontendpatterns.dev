@@ -13,4 +13,4 @@ Product decisions are based on guesses rather than data. Teams don't know which 
 
 ## Solution
 
-Apply the Telemetry pattern by collecting usage analytics and performance metrics to inform product decisions, and reinforce it with concise examples or tests. For example, add a lint rule that rejects feature-flag commits without the cleanup task attached.
+Collect usage analytics and performance metrics to inform product decisions. For example, add a lint rule that rejects feature-flag commits without the cleanup task attached.

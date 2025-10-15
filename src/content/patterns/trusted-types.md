@@ -13,4 +13,4 @@ Developers accidentally introduce DOM-based XSS by passing unsanitized strings t
 
 ## Solution
 
-Apply the Trusted Types pattern by using browser APIs to enforce type checking on dangerous sinks like innerHTML to eliminate DOM-based XSS vulnerabilities, and reinforce it with concise examples or tests. For example, lock down the marketing-site CSP so injected scripts can't touch dashboard session cookies.
+Use browser APIs to enforce type checking on dangerous sinks like innerHTML to eliminate DOM-based XSS vulnerabilities. For example, lock down the marketing-site CSP so injected scripts can't touch dashboard session cookies.

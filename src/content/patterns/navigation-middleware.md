@@ -13,4 +13,4 @@ Cross-cutting concerns like analytics tracking, logging, or state cleanup are sc
 
 ## Solution
 
-Apply the Navigation Middleware pattern by executing logic before, during, or after navigation events, and reinforce it with concise examples or tests. For example, map `/settings/profile` and `/settings/security` to nested layouts so URLs mirror what users see.
+Execute logic before, during, or after navigation events. For example, map `/settings/profile` and `/settings/security` to nested layouts so URLs mirror what users see.

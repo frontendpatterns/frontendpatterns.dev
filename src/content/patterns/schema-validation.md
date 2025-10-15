@@ -13,4 +13,4 @@ Runtime validation is hand-written with manual type guards, creating verbose boi
 
 ## Solution
 
-Apply the Schema Validation pattern by using libraries like Zod, Yup, or JSON Schema to validate data against schemas, and reinforce it with concise examples or tests. For example, share a TypeScript interface between the API client and the `OrderSummary` component so breaking changes fail fast.
+Use libraries like Zod, Yup, or JSON Schema to validate data against schemas. For example, share a TypeScript interface between the API client and the `OrderSummary` component so breaking changes fail fast.

@@ -13,4 +13,4 @@ Component refactoring accidentally changes output structure, breaking downstream
 
 ## Solution
 
-Apply the Snapshot Testing pattern by capturing component output and detecting unintended changes over time, and reinforce it with concise examples or tests. For example, run an integration test that fills the checkout form, submits it, and asserts on the rendered receipt.
+Capture component output and detecting unintended changes over time. For example, run an integration test that fills the checkout form, submits it, and asserts on the rendered receipt.

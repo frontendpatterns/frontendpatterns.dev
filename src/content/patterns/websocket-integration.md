@@ -13,4 +13,4 @@ Polling APIs for updates is inefficient and slow, creating noticeable delays. Ch
 
 ## Solution
 
-Apply the WebSocket Integration pattern by establishing persistent connections for real-time bidirectional communication, and reinforce it with concise examples or tests. For example, let a `useOrders` hook own the network call while an `OrdersTable` component simply renders rows.
+Establish persistent connections for real-time bidirectional communication. For example, let a `useOrders` hook own the network call while an `OrdersTable` component simply renders rows.

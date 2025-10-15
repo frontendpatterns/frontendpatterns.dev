@@ -13,4 +13,4 @@ Configuration values are hardcoded or scattered throughout the codebase: API URL
 
 ## Solution
 
-Apply the Environment Configuration pattern by configuring applications differently across development, staging, and production environments, and reinforce it with concise examples or tests. For example, add a lint rule that rejects feature-flag commits without the cleanup task attached.
+Configure applications differently across development, staging, and production environments. For example, add a lint rule that rejects feature-flag commits without the cleanup task attached.

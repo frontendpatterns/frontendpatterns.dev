@@ -13,4 +13,4 @@ Deploying incomplete features to production is risky, but keeping long-running f
 
 ## Solution
 
-Apply the Feature Toggle pattern by conditionally enabling or disabling features without code deployments, and reinforce it with concise examples or tests. For example, add a lint rule that rejects feature-flag commits without the cleanup task attached.
+Conditionally enabling or disabling features without code deployments. For example, add a lint rule that rejects feature-flag commits without the cleanup task attached.

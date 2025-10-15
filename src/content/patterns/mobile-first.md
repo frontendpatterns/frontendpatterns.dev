@@ -13,4 +13,4 @@ Desktop-first designs require stripping away features and cramming content for m
 
 ## Solution
 
-Apply the Mobile-First pattern by designing for small screens first, then progressively enhancing for larger viewports, and reinforce it with concise examples or tests. For example, isolate a `Button` component's look with scoped classes while brand tokens stay in a shared theme file.
+Design for small screens first, then progressively enhance for larger viewports. For example, isolate a `Button` component's look with scoped classes while brand tokens stay in a shared theme file.

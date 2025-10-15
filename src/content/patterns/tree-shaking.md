@@ -13,4 +13,4 @@ Bundles include entire libraries even when only one function is used. Importing 
 
 ## Solution
 
-Apply the Tree Shaking pattern by eliminating unused code from bundles during the build process, and reinforce it with concise examples or tests. For example, memoize the transformed dataset before rendering a 500-row analytics grid so scrolling stays smooth.
+Eliminate unused code from bundles during the build process. For example, memoize the transformed dataset before rendering a 500-row analytics grid so scrolling stays smooth.

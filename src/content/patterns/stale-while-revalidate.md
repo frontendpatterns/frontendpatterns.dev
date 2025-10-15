@@ -13,4 +13,4 @@ Users see loading spinners every time they revisit a page, even when cached data
 
 ## Solution
 
-Apply the Stale-While-Revalidate pattern by showing cached data immediately while fetching fresh data in the background, and reinforce it with concise examples or tests. For example, let a `useOrders` hook own the network call while an `OrdersTable` component simply renders rows.
+Show cached data immediately while fetching fresh data in the background. For example, let a `useOrders` hook own the network call while an `OrdersTable` component simply renders rows.

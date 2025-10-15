@@ -13,4 +13,4 @@ Components require static markup that can't adapt to different data structures o
 
 ## Solution
 
-Apply the Render Function pattern by using functions to dynamically generate component output based on state and props, and reinforce it with concise examples or tests. For example, keep a `UserCard` component focused on presentation while a `useUserCard` hook fetches and normalizes its data.
+Use functions to dynamically generate component output based on state and props. For example, keep a `UserCard` component focused on presentation while a `useUserCard` hook fetches and normalizes its data.

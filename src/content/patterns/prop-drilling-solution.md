@@ -13,4 +13,4 @@ Deeply nested components require data from the top of the tree, forcing you to t
 
 ## Solution
 
-Apply the Prop Drilling Solution pattern by techniques to avoid passing props through many intermediate components unnecessarily, and reinforce it with concise examples or tests. For example, keep a `UserCard` component focused on presentation while a `useUserCard` hook fetches and normalizes its data.
+Techniques to avoid passing props through many intermediate components unnecessarily. For example, keep a `UserCard` component focused on presentation while a `useUserCard` hook fetches and normalizes its data.

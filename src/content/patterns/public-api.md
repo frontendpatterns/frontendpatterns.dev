@@ -13,4 +13,4 @@ Consumers import implementation details directly from deep within modules, creat
 
 ## Solution
 
-Apply the Public API pattern by exposing only necessary interfaces while keeping implementation details private and flexible, and reinforce it with concise examples or tests. For example, split a billing feature so API clients, hooks, and UI elements live in distinct folders with explicit boundaries.
+Expose only necessary interfaces while keeping implementation details private and flexible. For example, split a billing feature so API clients, hooks, and UI elements live in distinct folders with explicit boundaries.

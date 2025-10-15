@@ -13,4 +13,4 @@ Performance issues remain mysterious because developers lack visibility into wha
 
 ## Solution
 
-Apply the Performance Profiling pattern by using browser DevTools to identify performance bottlenecks and memory leaks, and reinforce it with concise examples or tests. For example, add a lint rule that rejects feature-flag commits without the cleanup task attached.
+Use browser DevTools to identify performance bottlenecks and memory leaks. For example, add a lint rule that rejects feature-flag commits without the cleanup task attached.

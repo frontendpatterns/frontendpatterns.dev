@@ -13,4 +13,4 @@ Nested data structures lead to duplicated entities scattered throughout state, c
 
 ## Solution
 
-Apply the Normalized State pattern by structuring state as flat lookup tables to avoid data duplication and simplify updates, and reinforce it with concise examples or tests. For example, separate a cart totals reducer from modal visibility state so analytics remains deterministic.
+Structure state as flat lookup tables to avoid data duplication and simplify updates. For example, separate a cart totals reducer from modal visibility state so analytics remains deterministic.

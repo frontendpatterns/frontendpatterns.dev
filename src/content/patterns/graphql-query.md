@@ -13,4 +13,4 @@ REST endpoints return massive payloads with unnecessary nested data, forcing cli
 
 ## Solution
 
-Apply the GraphQL Query pattern by requesting precisely the data needed using GraphQL's declarative query language, and reinforce it with concise examples or tests. For example, let a `useOrders` hook own the network call while an `OrdersTable` component simply renders rows.
+Request precisely the data needed using GraphQL's declarative query language. For example, let a `useOrders` hook own the network call while an `OrdersTable` component simply renders rows.

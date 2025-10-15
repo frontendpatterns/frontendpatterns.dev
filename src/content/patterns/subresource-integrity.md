@@ -13,4 +13,4 @@ Loading scripts and stylesheets from external CDNs introduces a security risk: i
 
 ## Solution
 
-Apply the Subresource Integrity pattern by using integrity hashes on external scripts and stylesheets to ensure resources haven't been tampered with, and reinforce it with concise examples or tests. For example, lock down the marketing-site CSP so injected scripts can't touch dashboard session cookies.
+Use integrity hashes on external scripts and stylesheets to ensure resources haven't been tampered with. For example, lock down the marketing-site CSP so injected scripts can't touch dashboard session cookies.

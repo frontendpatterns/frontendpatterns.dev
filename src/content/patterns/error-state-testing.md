@@ -13,4 +13,4 @@ Components only get tested with happy-path data, so error states, loading failur
 
 ## Solution
 
-Apply the Error State Testing pattern by explicitly testing how components handle errors and edge cases, and reinforce it with concise examples or tests. For example, run an integration test that fills the checkout form, submits it, and asserts on the rendered receipt.
+Explicitly testing how components handle errors and edge cases. For example, run an integration test that fills the checkout form, submits it, and asserts on the rendered receipt.

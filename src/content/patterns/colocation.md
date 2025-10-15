@@ -13,4 +13,4 @@ Related files are scattered across distant folders: tests in /tests, styles in /
 
 ## Solution
 
-Apply the Colocation pattern by placing related files (tests, styles, types) next to the components they support for easier discovery. (See also: State Colocation Pattern), and reinforce it with concise examples or tests. For example, split a billing feature so API clients, hooks, and UI elements live in distinct folders with explicit boundaries.
+Place related files (tests, styles, types) next to the components they support for easier discovery. (See also: State Colocation Pattern). For example, split a billing feature so API clients, hooks, and UI elements live in distinct folders with explicit boundaries.

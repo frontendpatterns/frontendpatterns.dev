@@ -13,4 +13,4 @@ Sensitive user data like emails, phone numbers, credit card details, and social 
 
 ## Solution
 
-Apply the PII Redaction pattern by systematically removing or masking personally identifiable information from logs, analytics, and error reports, and reinforce it with concise examples or tests. For example, lock down the marketing-site CSP so injected scripts can't touch dashboard session cookies.
+Systematically remove or mask personally identifiable information from logs, analytics, and error reports. For example, lock down the marketing-site CSP so injected scripts can't touch dashboard session cookies.

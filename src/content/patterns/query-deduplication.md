@@ -13,4 +13,4 @@ Multiple components needing the same data fire identical API requests simultaneo
 
 ## Solution
 
-Apply the Query Deduplication pattern by preventing duplicate network requests when multiple components simultaneously request the same data, and reinforce it with concise examples or tests. For example, let a `useOrders` hook own the network call while an `OrdersTable` component simply renders rows.
+Prevent duplicate network requests when multiple components simultaneously request the same data. For example, let a `useOrders` hook own the network call while an `OrdersTable` component simply renders rows.

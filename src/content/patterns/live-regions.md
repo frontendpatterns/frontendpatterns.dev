@@ -13,4 +13,4 @@ Screen reader users miss critical updates when content changes dynamically. Toas
 
 ## Solution
 
-Apply the Live Regions pattern by announcing dynamic content updates to screen readers using ARIA live regions without disrupting user flow, and reinforce it with concise examples or tests. For example, wire a modal so focus jumps to the primary action and returns to the trigger when it closes.
+Announce dynamic content updates to screen readers using ARIA live regions without disrupting user flow. For example, wire a modal so focus jumps to the primary action and returns to the trigger when it closes.

@@ -13,4 +13,4 @@ CSS class names collide across components, causing button styles to leak into ca
 
 ## Solution
 
-Apply the CSS Modules & Scoped Styles pattern by automatically scoping CSS to specific components to prevent global style conflicts, and reinforce it with concise examples or tests. For example, isolate a `Button` component's look with scoped classes while brand tokens stay in a shared theme file.
+Automatically scope CSS to specific components to prevent global style conflicts. For example, isolate a `Button` component's look with scoped classes while brand tokens stay in a shared theme file.

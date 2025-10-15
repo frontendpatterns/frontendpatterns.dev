@@ -13,4 +13,4 @@ Browsers send authentication cookies with every request to a domain, even when t
 
 ## Solution
 
-Apply the SameSite Cookie pattern by configuring cookie SameSite attributes to control cross-site cookie behavior and prevent CSRF attacks, and reinforce it with concise examples or tests. For example, lock down the marketing-site CSP so injected scripts can't touch dashboard session cookies.
+Configure cookie SameSite attributes to control cross-site cookie behavior and prevent CSRF attacks. For example, lock down the marketing-site CSP so injected scripts can't touch dashboard session cookies.

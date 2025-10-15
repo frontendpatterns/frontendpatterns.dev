@@ -13,4 +13,4 @@ Components break in subtle ways that only appear in production. Developers manua
 
 ## Solution
 
-Apply the Component Testing pattern by testing components in isolation to verify their behavior and output, and reinforce it with concise examples or tests. For example, run an integration test that fills the checkout form, submits it, and asserts on the rendered receipt.
+Test components in isolation to verify their behavior and output. For example, run an integration test that fills the checkout form, submits it, and asserts on the rendered receipt.

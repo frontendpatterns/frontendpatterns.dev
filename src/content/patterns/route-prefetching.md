@@ -13,4 +13,4 @@ Every navigation triggers loading spinners as code and data are fetched, making 
 
 ## Solution
 
-Apply the Route Prefetching pattern by loading route code and data before users navigate for instant transitions, and reinforce it with concise examples or tests. For example, map `/settings/profile` and `/settings/security` to nested layouts so URLs mirror what users see.
+Load route code and data before users navigate for instant transitions. For example, map `/settings/profile` and `/settings/security` to nested layouts so URLs mirror what users see.

@@ -13,4 +13,4 @@ Components need to manually check for state changes through polling or prop dril
 
 ## Solution
 
-Apply the Observer pattern by allowing multiple components to subscribe and react to state changes automatically, and reinforce it with concise examples or tests. For example, separate a cart totals reducer from modal visibility state so analytics remains deterministic.
+Allow multiple components to subscribe and react to state changes automatically. For example, separate a cart totals reducer from modal visibility state so analytics remains deterministic.

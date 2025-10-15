@@ -13,4 +13,4 @@ Developers waste hours adding console.log statements, refreshing browsers, and m
 
 ## Solution
 
-Apply the Debugging Setup pattern by setting up debugging tools and breakpoints for efficient problem solving, and reinforce it with concise examples or tests. For example, add a lint rule that rejects feature-flag commits without the cleanup task attached.
+Set up debugging tools and breakpoints for efficient problem solving. For example, add a lint rule that rejects feature-flag commits without the cleanup task attached.

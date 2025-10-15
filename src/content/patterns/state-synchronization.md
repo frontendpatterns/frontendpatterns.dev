@@ -13,4 +13,4 @@ Component state drifts out of sync with external data sources or other component
 
 ## Solution
 
-Apply the State Synchronization pattern by keeping component state in sync with external data sources or other components, and reinforce it with concise examples or tests. For example, separate a cart totals reducer from modal visibility state so analytics remains deterministic.
+Keep component state in sync with external data sources or other components. For example, separate a cart totals reducer from modal visibility state so analytics remains deterministic.

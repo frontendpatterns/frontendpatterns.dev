@@ -13,4 +13,4 @@ SVG files exported from design tools contain bloated metadata, comments, and unn
 
 ## Solution
 
-Apply the SVG Optimization pattern by removing unnecessary metadata and simplifying paths to reduce SVG file sizes, and reinforce it with concise examples or tests. For example, memoize the transformed dataset before rendering a 500-row analytics grid so scrolling stays smooth.
+Remove unnecessary metadata and simplifying paths to reduce SVG file sizes. For example, memoize the transformed dataset before rendering a 500-row analytics grid so scrolling stays smooth.

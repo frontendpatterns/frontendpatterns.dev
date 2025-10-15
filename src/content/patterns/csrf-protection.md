@@ -13,4 +13,4 @@ Attackers trick authenticated users into performing unwanted actions by embeddin
 
 ## Solution
 
-Apply the CSRF Protection pattern by implementing anti-CSRF tokens or SameSite cookies to prevent cross-site request forgery attacks, and reinforce it with concise examples or tests. For example, lock down the marketing-site CSP so injected scripts can't touch dashboard session cookies.
+Implement anti-CSRF tokens or SameSite cookies to prevent cross-site request forgery attacks. For example, lock down the marketing-site CSP so injected scripts can't touch dashboard session cookies.

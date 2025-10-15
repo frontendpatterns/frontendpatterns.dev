@@ -13,4 +13,4 @@ Navigation feels sluggish because pages only start loading after users click. Ev
 
 ## Solution
 
-Apply the Link Preloading pattern by detecting hover or focus on links to preload destinations before clicks, and reinforce it with concise examples or tests. For example, map `/settings/profile` and `/settings/security` to nested layouts so URLs mirror what users see.
+Detect hover or focus on links to preload destinations before clicks. For example, map `/settings/profile` and `/settings/security` to nested layouts so URLs mirror what users see.

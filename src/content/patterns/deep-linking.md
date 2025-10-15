@@ -13,4 +13,4 @@ URLs can't capture specific views or states, making it impossible to bookmark or
 
 ## Solution
 
-Apply the Deep Linking pattern by enabling URLs that point directly to specific application states for shareability, and reinforce it with concise examples or tests. For example, map `/settings/profile` and `/settings/security` to nested layouts so URLs mirror what users see.
+Enable URLs that point directly to specific application states for shareability. For example, map `/settings/profile` and `/settings/security` to nested layouts so URLs mirror what users see.

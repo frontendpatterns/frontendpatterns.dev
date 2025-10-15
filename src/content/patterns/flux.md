@@ -13,4 +13,4 @@ Bidirectional data flow creates unpredictable update cycles where views update m
 
 ## Solution
 
-Apply the Flux pattern by unidirectional data flow architecture with actions, dispatchers, stores, and views, and reinforce it with concise examples or tests. For example, separate a cart totals reducer from modal visibility state so analytics remains deterministic.
+Implement unidirectional data flow architecture with actions, dispatchers, stores, and views. For example, separate a cart totals reducer from modal visibility state so analytics remains deterministic.

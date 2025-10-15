@@ -13,4 +13,4 @@ Critical user journeys like checkout, signup, or data submission break in produc
 
 ## Solution
 
-Apply the E2E Testing pattern by testing complete user flows through the application in a browser environment, and reinforce it with concise examples or tests. For example, run an integration test that fills the checkout form, submits it, and asserts on the rendered receipt.
+Test complete user flows through the application in a browser environment. For example, run an integration test that fills the checkout form, submits it, and asserts on the rendered receipt.

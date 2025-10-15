@@ -13,4 +13,4 @@ CSS class names lack consistent structure, making it unclear which elements belo
 
 ## Solution
 
-Apply the BEM Class Naming pattern by structuring CSS class names with Block, Element, Modifier methodology for clarity and reusability, and reinforce it with concise examples or tests. For example, isolate a `Button` component's look with scoped classes while brand tokens stay in a shared theme file.
+Structure CSS class names with Block, Element, Modifier methodology for clarity and reusability. For example, isolate a `Button` component's look with scoped classes while brand tokens stay in a shared theme file.

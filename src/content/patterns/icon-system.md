@@ -13,4 +13,4 @@ Icons are scattered across the codebase as individual image files, inline SVGs c
 
 ## Solution
 
-Apply the Icon System pattern by managing icons as a cohesive system using SVG sprites, icon fonts, or component libraries, and reinforce it with concise examples or tests. For example, memoize the transformed dataset before rendering a 500-row analytics grid so scrolling stays smooth.
+Manage icons as a cohesive system using SVG sprites, icon fonts, or component libraries. For example, memoize the transformed dataset before rendering a 500-row analytics grid so scrolling stays smooth.

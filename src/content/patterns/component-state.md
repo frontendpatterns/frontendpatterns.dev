@@ -13,4 +13,4 @@ Local UI state like toggle visibility, form input values, or hover states gets l
 
 ## Solution
 
-Apply the Component State pattern by managing data that only affects a single component internally, and reinforce it with concise examples or tests. For example, separate a cart totals reducer from modal visibility state so analytics remains deterministic.
+Manage data that only affects a single component internally. For example, separate a cart totals reducer from modal visibility state so analytics remains deterministic.

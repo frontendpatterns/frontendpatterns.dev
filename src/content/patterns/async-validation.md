@@ -13,4 +13,4 @@ Some validation rules require server-side checks, such as verifying that a usern
 
 ## Solution
 
-Apply the Async Validation pattern by performing server-side validation checks without blocking user interaction, and reinforce it with concise examples or tests. For example, separate a cart totals reducer from modal visibility state so analytics remains deterministic.
+Perform server-side validation checks without blocking user interaction. For example, separate a cart totals reducer from modal visibility state so analytics remains deterministic.

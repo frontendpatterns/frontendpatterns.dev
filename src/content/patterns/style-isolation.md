@@ -13,4 +13,4 @@ Styles from one component unexpectedly affect others, causing buttons in a modal
 
 ## Solution
 
-Apply the Style Isolation pattern by preventing style leakage between components through encapsulation techniques, and reinforce it with concise examples or tests. For example, isolate a `Button` component's look with scoped classes while brand tokens stay in a shared theme file.
+Prevent style leakage between components through encapsulation techniques. For example, isolate a `Button` component's look with scoped classes while brand tokens stay in a shared theme file.

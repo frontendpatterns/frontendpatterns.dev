@@ -13,4 +13,4 @@ User-provided data containing special characters like `<`, `>`, or `"` is interp
 
 ## Solution
 
-Apply the Output Encoding pattern by properly escaping data when rendering to prevent XSS by ensuring user input is treated as data, not executable code, and reinforce it with concise examples or tests. For example, lock down the marketing-site CSP so injected scripts can't touch dashboard session cookies.
+Properly escape data when rendering to prevent XSS by ensuring user input is treated as data, not executable code. For example, lock down the marketing-site CSP so injected scripts can't touch dashboard session cookies.

@@ -13,4 +13,4 @@ Sibling components that need to share data have no way to communicate. Developer
 
 ## Solution
 
-Apply the State Lifting pattern by moving state up the component tree to share it between sibling components, and reinforce it with concise examples or tests. For example, separate a cart totals reducer from modal visibility state so analytics remains deterministic.
+Move state up the component tree to share it between sibling components. For example, separate a cart totals reducer from modal visibility state so analytics remains deterministic.

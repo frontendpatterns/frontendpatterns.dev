@@ -13,4 +13,4 @@ Keyboard users can tab out of modal dialogs and interact with content behind the
 
 ## Solution
 
-Apply the Focus Trap pattern by constraining keyboard focus within modal dialogs and overlays to prevent focus from escaping to background content, and reinforce it with concise examples or tests. For example, wire a modal so focus jumps to the primary action and returns to the trigger when it closes.
+Constrain keyboard focus within modal dialogs and overlays to prevent focus from escaping to background content. For example, wire a modal so focus jumps to the primary action and returns to the trigger when it closes.

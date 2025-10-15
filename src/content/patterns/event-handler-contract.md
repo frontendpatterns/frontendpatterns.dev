@@ -13,4 +13,4 @@ Event handlers are untyped, allowing functions with wrong signatures to be passe
 
 ## Solution
 
-Apply the Event Handler Contract pattern by typing event handlers to ensure type-safe event handling, and reinforce it with concise examples or tests. For example, share a TypeScript interface between the API client and the `OrderSummary` component so breaking changes fail fast.
+Type event handlers to ensure type-safe event handling. For example, share a TypeScript interface between the API client and the `OrderSummary` component so breaking changes fail fast.

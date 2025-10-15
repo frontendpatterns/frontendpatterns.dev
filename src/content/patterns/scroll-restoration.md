@@ -13,4 +13,4 @@ Users who navigate back from a detail page return to the top of long lists, losi
 
 ## Solution
 
-Apply the Scroll Restoration pattern by remembering and restoring scroll positions when navigating backward, and reinforce it with concise examples or tests. For example, map `/settings/profile` and `/settings/security` to nested layouts so URLs mirror what users see.
+Remember and restore scroll positions when navigating backward. For example, map `/settings/profile` and `/settings/security` to nested layouts so URLs mirror what users see.

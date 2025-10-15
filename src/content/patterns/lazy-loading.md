@@ -13,4 +13,4 @@ Initial page load downloads megabytes of JavaScript that users may never use. Cr
 
 ## Solution
 
-Apply the Lazy Loading pattern by deferring loading of non-critical resources until they're needed, and reinforce it with concise examples or tests. For example, memoize the transformed dataset before rendering a 500-row analytics grid so scrolling stays smooth.
+Defer loading of non-critical resources until they're needed. For example, memoize the transformed dataset before rendering a 500-row analytics grid so scrolling stays smooth.

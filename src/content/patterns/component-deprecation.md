@@ -13,4 +13,4 @@ Outdated components linger in the codebase with no clear migration path. Develop
 
 ## Solution
 
-Apply the Component Deprecation Strategy pattern by gracefully retiring outdated components with warnings, codemods, and migration guides to move consumers to newer alternatives, and reinforce it with concise examples or tests. For example, add a lint rule that rejects feature-flag commits without the cleanup task attached.
+Gracefully retire outdated components with warnings, codemods, and migration guides to move consumers to newer alternatives. For example, add a lint rule that rejects feature-flag commits without the cleanup task attached.

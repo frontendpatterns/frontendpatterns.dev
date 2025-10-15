@@ -13,4 +13,4 @@ URLs can't capture specific resources or entities, forcing applications to use g
 
 ## Solution
 
-Apply the Route Parameter pattern by passing dynamic values through URL paths to load specific resources, and reinforce it with concise examples or tests. For example, map `/settings/profile` and `/settings/security` to nested layouts so URLs mirror what users see.
+Pass dynamic values through URL paths to load specific resources. For example, map `/settings/profile` and `/settings/security` to nested layouts so URLs mirror what users see.

@@ -13,4 +13,4 @@ Interfaces look broken on mobile devices with text cut off, buttons unreachable,
 
 ## Solution
 
-Apply the Responsive Design pattern by creating layouts that adapt gracefully to different screen sizes and devices, and reinforce it with concise examples or tests. For example, isolate a `Button` component's look with scoped classes while brand tokens stay in a shared theme file.
+Create layouts that adapt gracefully to different screen sizes and devices. For example, isolate a `Button` component's look with scoped classes while brand tokens stay in a shared theme file.

@@ -13,4 +13,4 @@ TypeScript can't infer specific types from conditional checks, forcing developer
 
 ## Solution
 
-Apply the Type Guard pattern by writing functions that narrow types at runtime for safe type assertions, and reinforce it with concise examples or tests. For example, share a TypeScript interface between the API client and the `OrderSummary` component so breaking changes fail fast.
+Write functions that narrow types at runtime for safe type assertions. For example, share a TypeScript interface between the API client and the `OrderSummary` component so breaking changes fail fast.

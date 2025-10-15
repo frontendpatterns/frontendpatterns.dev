@@ -13,4 +13,4 @@ Test data setup becomes verbose and brittle when each test manually constructs c
 
 ## Solution
 
-Apply the Test Data Builder pattern by creating reusable factories for generating test data with sensible defaults, and reinforce it with concise examples or tests. For example, run an integration test that fills the checkout form, submits it, and asserts on the rendered receipt.
+Create reusable factories for generating test data with sensible defaults. For example, run an integration test that fills the checkout form, submits it, and asserts on the rendered receipt.

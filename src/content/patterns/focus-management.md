@@ -13,4 +13,4 @@ Keyboard users get lost when focus isn't managed properly. Opening a modal leave
 
 ## Solution
 
-Apply the Focus Management pattern by controlling focus flow for modal dialogs, route changes, and dynamic content insertion, and reinforce it with concise examples or tests. For example, wire a modal so focus jumps to the primary action and returns to the trigger when it closes.
+Control focus flow for modal dialogs, route changes, and dynamic content insertion. For example, wire a modal so focus jumps to the primary action and returns to the trigger when it closes.

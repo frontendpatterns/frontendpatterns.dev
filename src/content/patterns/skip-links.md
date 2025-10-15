@@ -13,4 +13,4 @@ Keyboard and screen reader users must tab through dozens of navigation links on 
 
 ## Solution
 
-Apply the Skip Links pattern by allowing keyboard users to bypass repetitive navigation elements and jump to main content, and reinforce it with concise examples or tests. For example, wire a modal so focus jumps to the primary action and returns to the trigger when it closes.
+Allow keyboard users to bypass repetitive navigation elements and jump to main content. For example, wire a modal so focus jumps to the primary action and returns to the trigger when it closes.

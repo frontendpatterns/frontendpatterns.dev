@@ -13,4 +13,4 @@ Some validation rules depend on multiple fields working together - like ensuring
 
 ## Solution
 
-Apply the Form-Level Validation pattern by validating entire forms on submission to check cross-field rules and constraints, and reinforce it with concise examples or tests. For example, separate a cart totals reducer from modal visibility state so analytics remains deterministic.
+Validate entire forms on submission to check cross-field rules and constraints. For example, separate a cart totals reducer from modal visibility state so analytics remains deterministic.

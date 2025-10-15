@@ -13,4 +13,4 @@ Teams often make product changes based on intuition or assumptions rather than d
 
 ## Solution
 
-Apply the A/B Testing pattern by running controlled experiments to compare different implementations and measure impact, and reinforce it with concise examples or tests. For example, add a lint rule that rejects feature-flag commits without the cleanup task attached.
+Run controlled experiments to compare different implementations and measure impact. For example, add a lint rule that rejects feature-flag commits without the cleanup task attached.

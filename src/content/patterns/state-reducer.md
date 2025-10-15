@@ -13,4 +13,4 @@ Complex state transitions scattered across multiple useState calls become imposs
 
 ## Solution
 
-Apply the State Reducer pattern by using reducer functions to handle complex state transitions with predictable logic, and reinforce it with concise examples or tests. For example, separate a cart totals reducer from modal visibility state so analytics remains deterministic.
+Use reducer functions to handle complex state transitions with predictable logic. For example, separate a cart totals reducer from modal visibility state so analytics remains deterministic.

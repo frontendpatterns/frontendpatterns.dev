@@ -13,4 +13,4 @@ Accessibility violations ship to production because manual testing with screen r
 
 ## Solution
 
-Apply the Accessibility Testing pattern by verifying that interfaces work with assistive technologies and meet WCAG standards, and reinforce it with concise examples or tests. For example, run an integration test that fills the checkout form, submits it, and asserts on the rendered receipt.
+Verify that interfaces work with assistive technologies and meet WCAG standards. For example, run an integration test that fills the checkout form, submits it, and asserts on the rendered receipt.

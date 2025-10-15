@@ -13,4 +13,4 @@ Documentation lives in separate wikis, Google Docs, or Confluence pages that qui
 
 ## Solution
 
-Apply the Documentation as Code pattern by maintaining documentation alongside code with version control and automated publishing workflows, and reinforce it with concise examples or tests. For example, add a lint rule that rejects feature-flag commits without the cleanup task attached.
+Maintain documentation alongside code with version control and automated publishing workflows. For example, add a lint rule that rejects feature-flag commits without the cleanup task attached.

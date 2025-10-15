@@ -13,4 +13,4 @@ Every code change triggers a full page reload, losing application state and forc
 
 ## Solution
 
-Apply the Hot Module Replacement pattern by updating code in running applications without full page reloads for faster iteration, and reinforce it with concise examples or tests. For example, add a lint rule that rejects feature-flag commits without the cleanup task attached.
+Update code in running applications without full page reloads for faster iteration. For example, add a lint rule that rejects feature-flag commits without the cleanup task attached.

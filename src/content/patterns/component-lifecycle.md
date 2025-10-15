@@ -13,4 +13,4 @@ Event listeners accumulate without being removed, subscriptions leak memory, and
 
 ## Solution
 
-Apply the Component Lifecycle pattern by managing setup, updates, and cleanup phases of component existence, and reinforce it with concise examples or tests. For example, keep a `UserCard` component focused on presentation while a `useUserCard` hook fetches and normalizes its data.
+Manage setup, updates, and cleanup phases of component existence. For example, keep a `UserCard` component focused on presentation while a `useUserCard` hook fetches and normalizes its data.

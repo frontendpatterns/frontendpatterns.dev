@@ -13,4 +13,4 @@ Components re-render unpredictably with the same props, making performance optim
 
 ## Solution
 
-Apply the Pure Component pattern by creating components that render the same output for the same inputs without side effects, and reinforce it with concise examples or tests. For example, keep a `UserCard` component focused on presentation while a `useUserCard` hook fetches and normalizes its data.
+Create components that render the same output for the same inputs without side effects. For example, keep a `UserCard` component focused on presentation while a `useUserCard` hook fetches and normalizes its data.

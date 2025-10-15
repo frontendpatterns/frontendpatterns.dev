@@ -13,4 +13,4 @@ Applications are vulnerable to XSS attacks where malicious scripts execute in us
 
 ## Solution
 
-Apply the Input Sanitization pattern by cleaning and validating user-provided data before rendering or processing to prevent injection attacks, and reinforce it with concise examples or tests. For example, lock down the marketing-site CSP so injected scripts can't touch dashboard session cookies.
+Clean and validate user-provided data before rendering or processing to prevent injection attacks. For example, lock down the marketing-site CSP so injected scripts can't touch dashboard session cookies.

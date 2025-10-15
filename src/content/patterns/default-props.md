@@ -13,4 +13,4 @@ Components crash with "Cannot read property of undefined" errors when optional p
 
 ## Solution
 
-Apply the Default Props pattern by defining fallback values for optional component inputs to ensure predictable behavior, and reinforce it with concise examples or tests. For example, keep a `UserCard` component focused on presentation while a `useUserCard` hook fetches and normalizes its data.
+Define fallback values for optional component inputs to ensure predictable behavior. For example, keep a `UserCard` component focused on presentation while a `useUserCard` hook fetches and normalizes its data.

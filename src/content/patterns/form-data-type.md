@@ -13,4 +13,4 @@ Form data flows through validation, transformation, and submission logic with in
 
 ## Solution
 
-Apply the Form Data Type pattern by strongly typing form data structures to prevent validation errors, and reinforce it with concise examples or tests. For example, share a TypeScript interface between the API client and the `OrderSummary` component so breaking changes fail fast.
+Strongly type form data structures to prevent validation errors. For example, share a TypeScript interface between the API client and the `OrderSummary` component so breaking changes fail fast.

@@ -13,4 +13,4 @@ Components recalculate expensive operations on every render, even when inputs ha
 
 ## Solution
 
-Apply the Memoization pattern by caching expensive computation results to avoid recalculating with identical inputs, and reinforce it with concise examples or tests. For example, memoize the transformed dataset before rendering a 500-row analytics grid so scrolling stays smooth.
+Cache expensive computation results to avoid recalculating with identical inputs. For example, memoize the transformed dataset before rendering a 500-row analytics grid so scrolling stays smooth.

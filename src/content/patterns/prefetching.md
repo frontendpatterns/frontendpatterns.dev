@@ -13,4 +13,4 @@ Users click into detail pages and wait while data fetches from scratch every tim
 
 ## Solution
 
-Apply the Prefetching pattern by loading data before it's needed based on predicted user actions, and reinforce it with concise examples or tests. For example, let a `useOrders` hook own the network call while an `OrdersTable` component simply renders rows.
+Load data before it's needed based on predicted user actions. For example, let a `useOrders` hook own the network call while an `OrdersTable` component simply renders rows.

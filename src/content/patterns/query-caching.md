@@ -13,4 +13,4 @@ Every component mounting or re-rendering triggers new network requests for the s
 
 ## Solution
 
-Apply the Query Caching pattern by storing fetched data to avoid redundant network requests and improve performance, and reinforce it with concise examples or tests. For example, let a `useOrders` hook own the network call while an `OrdersTable` component simply renders rows.
+Store fetched data to avoid redundant network requests and improve performance. For example, let a `useOrders` hook own the network call while an `OrdersTable` component simply renders rows.

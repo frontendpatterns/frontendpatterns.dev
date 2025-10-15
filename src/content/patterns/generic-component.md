@@ -13,4 +13,4 @@ You create separate Table, List, or Select components for each data type - UserT
 
 ## Solution
 
-Apply the Generic Component pattern by creating reusable components that work with multiple data types, and reinforce it with concise examples or tests. For example, share a TypeScript interface between the API client and the `OrderSummary` component so breaking changes fail fast.
+Create reusable components that work with multiple data types. For example, share a TypeScript interface between the API client and the `OrderSummary` component so breaking changes fail fast.

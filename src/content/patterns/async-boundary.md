@@ -13,4 +13,4 @@ Components flash between loading states inconsistently, showing jarring skeleton
 
 ## Solution
 
-Apply the Async Boundary pattern by defining fallback UI to show while asynchronous components or data are loading, and reinforce it with concise examples or tests. For example, memoize the transformed dataset before rendering a 500-row analytics grid so scrolling stays smooth.
+Define fallback UI to show while asynchronous components or data are loading. For example, memoize the transformed dataset before rendering a 500-row analytics grid so scrolling stays smooth.

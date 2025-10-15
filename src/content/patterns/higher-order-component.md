@@ -13,4 +13,4 @@ You copy-paste the same logic across multiple components - authentication checks
 
 ## Solution
 
-Apply the Higher-Order Component pattern by wrapping components with additional functionality through function composition, and reinforce it with concise examples or tests. For example, keep a `UserCard` component focused on presentation while a `useUserCard` hook fetches and normalizes its data.
+Wrap components with additional functionality through function composition. For example, keep a `UserCard` component focused on presentation while a `useUserCard` hook fetches and normalizes its data.

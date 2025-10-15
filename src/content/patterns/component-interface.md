@@ -13,4 +13,4 @@ Components become fragile black boxes where it's unclear what props are required
 
 ## Solution
 
-Apply the Component Interface pattern by defining clear contracts for component inputs and outputs, and reinforce it with concise examples or tests. For example, share a TypeScript interface between the API client and the `OrderSummary` component so breaking changes fail fast.
+Define clear contracts for component inputs and outputs. For example, share a TypeScript interface between the API client and the `OrderSummary` component so breaking changes fail fast.

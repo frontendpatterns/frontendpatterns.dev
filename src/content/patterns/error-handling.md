@@ -13,4 +13,4 @@ Failed API requests leave users staring at loading spinners indefinitely or cras
 
 ## Solution
 
-Apply the Error Handling pattern by gracefully managing and displaying errors from failed API requests, and reinforce it with concise examples or tests. For example, let a `useOrders` hook own the network call while an `OrdersTable` component simply renders rows.
+Gracefully manage and display errors from failed API requests. For example, let a `useOrders` hook own the network call while an `OrdersTable` component simply renders rows.

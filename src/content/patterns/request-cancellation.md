@@ -13,4 +13,4 @@ Fast-typing users trigger multiple search requests, with slow responses overwrit
 
 ## Solution
 
-Apply the Request Cancellation pattern by aborting in-flight requests when components unmount or dependencies change, and reinforce it with concise examples or tests. For example, let a `useOrders` hook own the network call while an `OrdersTable` component simply renders rows.
+Abort in-flight requests when components unmount or dependencies change. For example, let a `useOrders` hook own the network call while an `OrdersTable` component simply renders rows.

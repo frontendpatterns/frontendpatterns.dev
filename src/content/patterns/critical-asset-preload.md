@@ -13,4 +13,4 @@ Critical fonts, stylesheets, and scripts load too late because browsers discover
 
 ## Solution
 
-Apply the Critical Asset Preload pattern by instructing browsers to prioritize loading essential resources for faster initial renders, and reinforce it with concise examples or tests. For example, memoize the transformed dataset before rendering a 500-row analytics grid so scrolling stays smooth.
+Instruct browsers to prioritize loading essential resources for faster initial renders. For example, memoize the transformed dataset before rendering a 500-row analytics grid so scrolling stays smooth.

@@ -13,4 +13,4 @@ Users with low vision or color blindness can't read text against backgrounds wit
 
 ## Solution
 
-Apply the Color Contrast pattern by ensuring sufficient contrast ratios between text and backgrounds for readability, and reinforce it with concise examples or tests. For example, wire a modal so focus jumps to the primary action and returns to the trigger when it closes.
+Ensure sufficient contrast ratios between text and backgrounds for readability. For example, wire a modal so focus jumps to the primary action and returns to the trigger when it closes.

@@ -13,4 +13,4 @@ Loading thousands of records at once overwhelms the browser, causing slow initia
 
 ## Solution
 
-Apply the Pagination pattern by loading large datasets in discrete pages to manage memory and network usage, and reinforce it with concise examples or tests. For example, let a `useOrders` hook own the network call while an `OrdersTable` component simply renders rows.
+Load large datasets in discrete pages to manage memory and network usage. For example, let a `useOrders` hook own the network call while an `OrdersTable` component simply renders rows.

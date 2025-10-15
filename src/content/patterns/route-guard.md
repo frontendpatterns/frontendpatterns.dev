@@ -13,4 +13,4 @@ Protected content briefly flashes on screen before auth checks redirect users, c
 
 ## Solution
 
-Apply the Route Guard pattern by protecting routes with authentication, authorization, or validation checks before rendering, and reinforce it with concise examples or tests. For example, map `/settings/profile` and `/settings/security` to nested layouts so URLs mirror what users see.
+Protect routes with authentication, authorization, or validation checks before rendering. For example, map `/settings/profile` and `/settings/security` to nested layouts so URLs mirror what users see.

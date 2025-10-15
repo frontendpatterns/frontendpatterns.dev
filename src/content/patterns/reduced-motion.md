@@ -13,4 +13,4 @@ Users with motion sensitivity experience nausea or dizziness from animations. Pa
 
 ## Solution
 
-Apply the Reduced Motion pattern by respecting user preferences for reduced animations and motion effects, and reinforce it with concise examples or tests. For example, wire a modal so focus jumps to the primary action and returns to the trigger when it closes.
+Respect user preferences for reduced animations and motion effects. For example, wire a modal so focus jumps to the primary action and returns to the trigger when it closes.

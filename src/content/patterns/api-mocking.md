@@ -13,4 +13,4 @@ Tests that depend on real APIs are slow, flaky, and fragile. They fail when the 
 
 ## Solution
 
-Apply the API Mocking pattern by replacing real API calls with controlled responses for predictable testing, and reinforce it with concise examples or tests. For example, run an integration test that fills the checkout form, submits it, and asserts on the rendered receipt.
+Replace real API calls with controlled responses for predictable testing. For example, run an integration test that fills the checkout form, submits it, and asserts on the rendered receipt.

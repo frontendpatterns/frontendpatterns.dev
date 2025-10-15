@@ -13,4 +13,4 @@ Users who mistype URLs, follow broken links, or access deleted pages see browser
 
 ## Solution
 
-Apply the Catch-All Route pattern by defining fallback routes to handle unmatched URLs gracefully, and reinforce it with concise examples or tests. For example, map `/settings/profile` and `/settings/security` to nested layouts so URLs mirror what users see.
+Define fallback routes to handle unmatched URLs gracefully. For example, map `/settings/profile` and `/settings/security` to nested layouts so URLs mirror what users see.

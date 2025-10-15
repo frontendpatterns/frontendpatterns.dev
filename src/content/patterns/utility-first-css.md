@@ -13,4 +13,4 @@ Creating custom CSS classes for every component variation leads to bloated style
 
 ## Solution
 
-Apply the Utility-First CSS pattern by building interfaces using small, single-purpose utility classes rather than semantic class names, and reinforce it with concise examples or tests. For example, isolate a `Button` component's look with scoped classes while brand tokens stay in a shared theme file.
+Build interfaces using small, single-purpose utility classes rather than semantic class names. For example, isolate a `Button` component's look with scoped classes while brand tokens stay in a shared theme file.

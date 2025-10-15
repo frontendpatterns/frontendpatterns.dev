@@ -13,4 +13,4 @@ Data becomes stale and outdated as soon as it's displayed, requiring manual refr
 
 ## Solution
 
-Apply the Polling pattern by repeatedly fetching data at regular intervals to keep information current, and reinforce it with concise examples or tests. For example, let a `useOrders` hook own the network call while an `OrdersTable` component simply renders rows.
+Repeatedly fetch data at regular intervals to keep information current. For example, let a `useOrders` hook own the network call while an `OrdersTable` component simply renders rows.

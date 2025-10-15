@@ -13,4 +13,4 @@ Tests that directly manipulate component state miss bugs that users encounter. E
 
 ## Solution
 
-Apply the User Interaction Testing pattern by simulating user events like clicks and typing to test real-world behavior, and reinforce it with concise examples or tests. For example, run an integration test that fills the checkout form, submits it, and asserts on the rendered receipt.
+Simulate user events like clicks and typing to test real-world behavior. For example, run an integration test that fills the checkout form, submits it, and asserts on the rendered receipt.

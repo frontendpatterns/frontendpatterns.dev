@@ -13,4 +13,4 @@ Browser back and forward buttons behave unexpectedly in complex workflows like m
 
 ## Solution
 
-Apply the History Management pattern by programmatically controlling browser history for custom back/forward behavior, and reinforce it with concise examples or tests. For example, map `/settings/profile` and `/settings/security` to nested layouts so URLs mirror what users see.
+Programmatically controlling browser history for custom back/forward behavior. For example, map `/settings/profile` and `/settings/security` to nested layouts so URLs mirror what users see.

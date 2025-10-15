@@ -13,4 +13,4 @@ Styles live in separate CSS files disconnected from component logic, making it d
 
 ## Solution
 
-Apply the CSS-in-JS pattern by writing styles in JavaScript to enable dynamic styling and component co-location, and reinforce it with concise examples or tests. For example, isolate a `Button` component's look with scoped classes while brand tokens stay in a shared theme file.
+Write styles in JavaScript to enable dynamic styling and component co-location. For example, isolate a `Button` component's look with scoped classes while brand tokens stay in a shared theme file.

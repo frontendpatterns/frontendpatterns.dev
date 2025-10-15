@@ -13,4 +13,4 @@ Applications that need real-time updates often resort to polling, repeatedly ask
 
 ## Solution
 
-Apply the Server-Sent Events pattern by receiving server-pushed updates over HTTP for one-way real-time data streams, and reinforce it with concise examples or tests. For example, let a `useOrders` hook own the network call while an `OrdersTable` component simply renders rows.
+Receive server-pushed updates over HTTP for one-way real-time data streams. For example, let a `useOrders` hook own the network call while an `OrdersTable` component simply renders rows.

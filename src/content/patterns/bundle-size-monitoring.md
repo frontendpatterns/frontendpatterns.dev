@@ -13,4 +13,4 @@ JavaScript bundles grow unnoticed until users complain about slow load times. A 
 
 ## Solution
 
-Apply the Bundle Size Monitoring pattern by tracking JavaScript bundle sizes over time to prevent performance regressions, and reinforce it with concise examples or tests. For example, memoize the transformed dataset before rendering a 500-row analytics grid so scrolling stays smooth.
+Track JavaScript bundle sizes over time to prevent performance regressions. For example, memoize the transformed dataset before rendering a 500-row analytics grid so scrolling stays smooth.

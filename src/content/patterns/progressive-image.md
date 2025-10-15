@@ -13,4 +13,4 @@ Users stare at blank white rectangles while high-resolution images load, creatin
 
 ## Solution
 
-Apply the Progressive Image pattern by loading low-quality image placeholders first, then replacing with high-quality versions, and reinforce it with concise examples or tests. For example, memoize the transformed dataset before rendering a 500-row analytics grid so scrolling stays smooth.
+Load low-quality image placeholders first, then replacing with high-quality versions. For example, memoize the transformed dataset before rendering a 500-row analytics grid so scrolling stays smooth.

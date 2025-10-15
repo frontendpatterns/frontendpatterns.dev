@@ -13,4 +13,4 @@ Components grow into thousand-line files that handle data fetching, validation, 
 
 ## Solution
 
-Apply the Single Responsibility pattern by ensuring each component, module, or function has one clear purpose and reason to change, and reinforce it with concise examples or tests. For example, split a billing feature so API clients, hooks, and UI elements live in distinct folders with explicit boundaries.
+Ensure each component, module, or function has one clear purpose and reason to change. For example, split a billing feature so API clients, hooks, and UI elements live in distinct folders with explicit boundaries.

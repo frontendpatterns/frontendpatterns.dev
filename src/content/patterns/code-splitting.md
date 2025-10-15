@@ -13,4 +13,4 @@ Applications ship a single massive JavaScript bundle containing all routes, feat
 
 ## Solution
 
-Apply the Code Splitting pattern by breaking application code into smaller bundles loaded on demand to reduce initial load time, and reinforce it with concise examples or tests. For example, memoize the transformed dataset before rendering a 500-row analytics grid so scrolling stays smooth.
+Break application code into smaller bundles loaded on demand to reduce initial load time. For example, memoize the transformed dataset before rendering a 500-row analytics grid so scrolling stays smooth.

@@ -13,4 +13,4 @@ Components that rely on context break when tested in isolation because the requi
 
 ## Solution
 
-Apply the Context Testing pattern by verifying that components correctly consume and provide context values, and reinforce it with concise examples or tests. For example, run an integration test that fills the checkout form, submits it, and asserts on the rendered receipt.
+Verify that components correctly consume and provide context values. For example, run an integration test that fills the checkout form, submits it, and asserts on the rendered receipt.

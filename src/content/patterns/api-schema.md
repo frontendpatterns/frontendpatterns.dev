@@ -13,4 +13,4 @@ Backend changes silently break frontend code because there's no contract enforce
 
 ## Solution
 
-Apply the API Schema pattern by defining and enforcing contracts for API request and response structures, and reinforce it with concise examples or tests. For example, share a TypeScript interface between the API client and the `OrderSummary` component so breaking changes fail fast.
+Define and enforce contracts for API request and response structures. For example, share a TypeScript interface between the API client and the `OrderSummary` component so breaking changes fail fast.

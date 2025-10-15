@@ -13,4 +13,4 @@ State initialization runs expensive calculations on every component mount, even 
 
 ## Solution
 
-Apply the Lazy Initialization pattern by deferring expensive state calculations until the first render when they're needed, and reinforce it with concise examples or tests. For example, separate a cart totals reducer from modal visibility state so analytics remains deterministic.
+Defer expensive state calculations until the first render when they're needed. For example, separate a cart totals reducer from modal visibility state so analytics remains deterministic.

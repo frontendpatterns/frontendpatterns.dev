@@ -13,4 +13,4 @@ Any injected script can execute freely, stealing user data or modifying the page
 
 ## Solution
 
-Apply the Content Security Policy (CSP) pattern by defining allowed sources for scripts, styles, and resources through HTTP headers to prevent XSS and injection attacks, and reinforce it with concise examples or tests. For example, lock down the marketing-site CSP so injected scripts can't touch dashboard session cookies.
+Define allowed sources for scripts, styles, and resources through HTTP headers to prevent XSS and injection attacks. For example, lock down the marketing-site CSP so injected scripts can't touch dashboard session cookies.

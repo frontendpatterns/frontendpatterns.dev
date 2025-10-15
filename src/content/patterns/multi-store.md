@@ -13,4 +13,4 @@ A monolithic store becomes an unmaintainable mess as the application grows. Unre
 
 ## Solution
 
-Apply the Multi-Store pattern by dividing application state into multiple independent stores for better separation of concerns, and reinforce it with concise examples or tests. For example, separate a cart totals reducer from modal visibility state so analytics remains deterministic.
+Divide application state into multiple independent stores for better separation of concerns. For example, separate a cart totals reducer from modal visibility state so analytics remains deterministic.

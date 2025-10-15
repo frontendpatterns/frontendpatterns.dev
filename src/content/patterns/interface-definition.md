@@ -13,4 +13,4 @@ Objects are passed around with implicit structures, making it unclear what prope
 
 ## Solution
 
-Apply the Interface Definition pattern by describing object shapes with interfaces for documentation and type checking, and reinforce it with concise examples or tests. For example, share a TypeScript interface between the API client and the `OrderSummary` component so breaking changes fail fast.
+Describe object shapes with interfaces for documentation and type checking. For example, share a TypeScript interface between the API client and the `OrderSummary` component so breaking changes fail fast.

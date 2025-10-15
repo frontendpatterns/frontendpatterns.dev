@@ -13,4 +13,4 @@ Teams chase 100% coverage on trivial code while ignoring critical paths, or have
 
 ## Solution
 
-Apply the Coverage Strategy pattern by defining meaningful code coverage targets that reflect actual risk areas, and reinforce it with concise examples or tests. For example, run an integration test that fills the checkout form, submits it, and asserts on the rendered receipt.
+Define meaningful code coverage targets that reflect actual risk areas. For example, run an integration test that fills the checkout form, submits it, and asserts on the rendered receipt.

@@ -13,4 +13,4 @@ Users filling out forms expect immediate feedback when they enter invalid data. 
 
 ## Solution
 
-Apply the Field-Level Validation pattern by validating individual form fields as users interact with them for immediate feedback, and reinforce it with concise examples or tests. For example, separate a cart totals reducer from modal visibility state so analytics remains deterministic.
+Validate individual form fields as users interact with them for immediate feedback. For example, separate a cart totals reducer from modal visibility state so analytics remains deterministic.

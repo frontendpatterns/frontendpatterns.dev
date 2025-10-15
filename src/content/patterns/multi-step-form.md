@@ -13,4 +13,4 @@ Long forms overwhelm users with dozens of fields at once, leading to abandonment
 
 ## Solution
 
-Apply the Multi-Step Form pattern by breaking long forms into sequential steps with progress tracking and navigation, and reinforce it with concise examples or tests. For example, separate a cart totals reducer from modal visibility state so analytics remains deterministic.
+Break long forms into sequential steps with progress tracking and navigation. For example, separate a cart totals reducer from modal visibility state so analytics remains deterministic.

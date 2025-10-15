@@ -13,4 +13,4 @@ Pages load slowly as each API request waits for the previous one to complete, ev
 
 ## Solution
 
-Apply the Parallel Request pattern by executing multiple independent API calls simultaneously to reduce total load time, and reinforce it with concise examples or tests. For example, let a `useOrders` hook own the network call while an `OrdersTable` component simply renders rows.
+Execute multiple independent API calls simultaneously to reduce total load time. For example, let a `useOrders` hook own the network call while an `OrdersTable` component simply renders rows.

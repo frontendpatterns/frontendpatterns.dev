@@ -13,4 +13,4 @@ Blank screens or generic spinners during data loading make applications feel slu
 
 ## Solution
 
-Apply the Skeleton Loading pattern by showing placeholder content that mimics the layout of incoming data for perceived performance, and reinforce it with concise examples or tests. For example, memoize the transformed dataset before rendering a 500-row analytics grid so scrolling stays smooth.
+Show placeholder content that mimics the layout of incoming data for perceived performance. For example, memoize the transformed dataset before rendering a 500-row analytics grid so scrolling stays smooth.

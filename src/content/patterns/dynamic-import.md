@@ -13,4 +13,4 @@ Heavy dependencies load synchronously at startup even if they're only needed for
 
 ## Solution
 
-Apply the Dynamic Import pattern by loading modules asynchronously at runtime rather than bundling everything upfront, and reinforce it with concise examples or tests. For example, memoize the transformed dataset before rendering a 500-row analytics grid so scrolling stays smooth.
+Load modules asynchronously at runtime rather than bundling everything upfront. For example, memoize the transformed dataset before rendering a 500-row analytics grid so scrolling stays smooth.

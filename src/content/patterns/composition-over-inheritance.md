@@ -13,4 +13,4 @@ Deep inheritance hierarchies make components fragile and hard to understand. Cha
 
 ## Solution
 
-Apply the Composition over Inheritance pattern by building complex components by combining simpler ones rather than using class hierarchies, and reinforce it with concise examples or tests. For example, keep a `UserCard` component focused on presentation while a `useUserCard` hook fetches and normalizes its data.
+Build complex components by combining simpler ones rather than using class hierarchies. For example, keep a `UserCard` component focused on presentation while a `useUserCard` hook fetches and normalizes its data.

@@ -13,4 +13,4 @@ Users click buttons and see no feedback, wondering if the app is broken or if th
 
 ## Solution
 
-Apply the Loading State pattern by showing loading indicators while asynchronous operations are in progress, and reinforce it with concise examples or tests. For example, let a `useOrders` hook own the network call while an `OrdersTable` component simply renders rows.
+Show loading indicators while asynchronous operations are in progress. For example, let a `useOrders` hook own the network call while an `OrdersTable` component simply renders rows.

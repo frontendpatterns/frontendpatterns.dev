@@ -13,4 +13,4 @@ Screen reader users can't determine what each form field is asking for, keyboard
 
 ## Solution
 
-Apply the Accessible Forms pattern by creating forms with proper labels, error messages, and state announcements for all users, and reinforce it with concise examples or tests. For example, wire a modal so focus jumps to the primary action and returns to the trigger when it closes.
+Create forms with proper labels, error messages, and state announcements for all users. For example, wire a modal so focus jumps to the primary action and returns to the trigger when it closes.

@@ -13,4 +13,4 @@ Slow build times and missing hot reload force developers to wait seconds or minu
 
 ## Solution
 
-Apply the Local Development pattern by optimizing the developer experience with fast builds, hot reload, and debugging tools, and reinforce it with concise examples or tests. For example, add a lint rule that rejects feature-flag commits without the cleanup task attached.
+Optimize the developer experience with fast builds, hot reload, and debugging tools. For example, add a lint rule that rejects feature-flag commits without the cleanup task attached.

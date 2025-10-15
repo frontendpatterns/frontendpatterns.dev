@@ -13,4 +13,4 @@ Form inputs behave inconsistently across the application, with some managed by R
 
 ## Solution
 
-Apply the Controlled vs. Uncontrolled Components pattern by choosing between parent-managed state or component-internal state for form inputs, and reinforce it with concise examples or tests. For example, keep a `UserCard` component focused on presentation while a `useUserCard` hook fetches and normalizes its data.
+Choose between parent-managed state or component-internal state for form inputs. For example, keep a `UserCard` component focused on presentation while a `useUserCard` hook fetches and normalizes its data.

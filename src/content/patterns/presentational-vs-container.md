@@ -13,4 +13,4 @@ Components tightly couple UI rendering with data fetching, state management, and
 
 ## Solution
 
-Apply the Presentational vs. Container pattern by separating components that handle UI rendering from those that manage data and business logic, and reinforce it with concise examples or tests. For example, keep a `UserCard` component focused on presentation while a `useUserCard` hook fetches and normalizes its data.
+Separate components that handle UI rendering from those that manage data and business logic. For example, keep a `UserCard` component focused on presentation while a `useUserCard` hook fetches and normalizes its data.

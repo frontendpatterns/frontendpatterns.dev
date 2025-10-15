@@ -13,4 +13,4 @@ Complex layouts with shared navigation, sidebars, or headers require duplicating
 
 ## Solution
 
-Apply the Nested Route pattern by composing routes hierarchically to match UI component structure, and reinforce it with concise examples or tests. For example, map `/settings/profile` and `/settings/security` to nested layouts so URLs mirror what users see.
+Compose routes hierarchically to match UI component structure. For example, map `/settings/profile` and `/settings/security` to nested layouts so URLs mirror what users see.

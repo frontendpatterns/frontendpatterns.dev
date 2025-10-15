@@ -13,4 +13,4 @@ State objects contain mutually exclusive combinations of fields, leading to impo
 
 ## Solution
 
-Apply the Discriminated Union pattern by using tagged unions to model mutually exclusive state variants safely, and reinforce it with concise examples or tests. For example, share a TypeScript interface between the API client and the `OrderSummary` component so breaking changes fail fast.
+Use tagged unions to model mutually exclusive state variants safely. For example, share a TypeScript interface between the API client and the `OrderSummary` component so breaking changes fail fast.

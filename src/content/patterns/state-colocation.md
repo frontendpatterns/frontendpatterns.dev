@@ -13,4 +13,4 @@ State stored far from where it's actually used creates unnecessary coupling and 
 
 ## Solution
 
-Apply the State Colocation pattern by keeping state as close as possible to where it's used to reduce complexity. (See also: Colocation Pattern), and reinforce it with concise examples or tests. For example, separate a cart totals reducer from modal visibility state so analytics remains deterministic.
+Keep state as close as possible to where it's used to reduce complexity. (See also: Colocation Pattern). For example, separate a cart totals reducer from modal visibility state so analytics remains deterministic.

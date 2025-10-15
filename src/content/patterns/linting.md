@@ -13,4 +13,4 @@ Code quality issues slip through to production: unused variables, missing error 
 
 ## Solution
 
-Apply the Linting pattern by enforcing code quality and consistency rules automatically during development, and reinforce it with concise examples or tests. For example, add a lint rule that rejects feature-flag commits without the cleanup task attached.
+Enforce code quality and consistency rules automatically during development. For example, add a lint rule that rejects feature-flag commits without the cleanup task attached.

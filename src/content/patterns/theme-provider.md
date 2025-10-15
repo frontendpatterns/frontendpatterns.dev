@@ -13,4 +13,4 @@ Each component fetches and manages its own theme values, leading to duplicated t
 
 ## Solution
 
-Apply the Theme Provider pattern by centralizing design tokens and enabling runtime theme switching across an application, and reinforce it with concise examples or tests. For example, isolate a `Button` component's look with scoped classes while brand tokens stay in a shared theme file.
+Centralize design tokens and enabling runtime theme switching across an application. For example, isolate a `Button` component's look with scoped classes while brand tokens stay in a shared theme file.

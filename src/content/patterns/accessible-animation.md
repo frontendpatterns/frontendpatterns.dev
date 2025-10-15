@@ -13,4 +13,4 @@ Animations trigger nausea, dizziness, or vestibular issues for users with motion
 
 ## Solution
 
-Apply the Accessible Animation pattern by combining motion preferences with safe easing curves and timing to create animations that work for all users, and reinforce it with concise examples or tests. For example, wire a modal so focus jumps to the primary action and returns to the trigger when it closes.
+Combine motion preferences with safe easing curves and timing to create animations that work for all users. For example, wire a modal so focus jumps to the primary action and returns to the trigger when it closes.

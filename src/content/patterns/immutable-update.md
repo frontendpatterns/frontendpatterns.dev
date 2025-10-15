@@ -13,4 +13,4 @@ Directly mutating state objects breaks React's change detection, causing compone
 
 ## Solution
 
-Apply the Immutable Update pattern by treating state as immutable and creating new copies when making changes for predictability, and reinforce it with concise examples or tests. For example, separate a cart totals reducer from modal visibility state so analytics remains deterministic.
+Treat state as immutable and create new copies when making changes for predictability. For example, separate a cart totals reducer from modal visibility state so analytics remains deterministic.

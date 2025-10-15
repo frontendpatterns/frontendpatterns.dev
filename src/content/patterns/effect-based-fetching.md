@@ -13,4 +13,4 @@ Data fetching logic scattered throughout components makes it unclear when and ho
 
 ## Solution
 
-Apply the Effect-Based Fetching pattern by triggering data fetches as side effects when components mount or dependencies change, and reinforce it with concise examples or tests. For example, let a `useOrders` hook own the network call while an `OrdersTable` component simply renders rows.
+Trigger data fetches as side effects when components mount or dependencies change. For example, let a `useOrders` hook own the network call while an `OrdersTable` component simply renders rows.

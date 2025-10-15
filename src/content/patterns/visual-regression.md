@@ -13,4 +13,4 @@ CSS changes, dependency updates, or component refactors introduce subtle visual 
 
 ## Solution
 
-Apply the Visual Regression pattern by comparing screenshots to detect unintended visual changes automatically, and reinforce it with concise examples or tests. For example, run an integration test that fills the checkout form, submits it, and asserts on the rendered receipt.
+Compare screenshots to detect unintended visual changes automatically. For example, run an integration test that fills the checkout form, submits it, and asserts on the rendered receipt.

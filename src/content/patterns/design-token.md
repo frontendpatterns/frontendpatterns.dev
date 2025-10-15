@@ -13,4 +13,4 @@ Brand colors, spacing values, and typography settings are hardcoded throughout t
 
 ## Solution
 
-Apply the Design Token pattern by defining visual design decisions as reusable variables for consistency across platforms, and reinforce it with concise examples or tests. For example, isolate a `Button` component's look with scoped classes while brand tokens stay in a shared theme file.
+Define visual design decisions as reusable variables for consistency across platforms. For example, isolate a `Button` component's look with scoped classes while brand tokens stay in a shared theme file.

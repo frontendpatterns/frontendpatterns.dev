@@ -13,4 +13,4 @@ You can't validate, format, or transform user input as they type because the DOM
 
 ## Solution
 
-Apply the Controlled Input pattern by synchronizing form inputs with component state for full programmatic control, and reinforce it with concise examples or tests. For example, separate a cart totals reducer from modal visibility state so analytics remains deterministic.
+Synchronize form inputs with component state for full programmatic control. For example, separate a cart totals reducer from modal visibility state so analytics remains deterministic.

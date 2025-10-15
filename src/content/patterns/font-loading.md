@@ -13,4 +13,4 @@ Text remains invisible for seconds while custom fonts download, leaving users st
 
 ## Solution
 
-Apply the Font Loading Strategy pattern by controlling how and when web fonts load to prevent layout shifts and invisible text, and reinforce it with concise examples or tests. For example, memoize the transformed dataset before rendering a 500-row analytics grid so scrolling stays smooth.
+Control how and when web fonts load to prevent layout shifts and invisible text. For example, memoize the transformed dataset before rendering a 500-row analytics grid so scrolling stays smooth.

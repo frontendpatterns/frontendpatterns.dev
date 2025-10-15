@@ -13,4 +13,4 @@ Design systems built in one framework can't be used in applications built with d
 
 ## Solution
 
-Apply the Web Component Wrapper pattern by wrapping framework components as web components for cross-framework interoperability, and reinforce it with concise examples or tests. For example, add a lint rule that rejects feature-flag commits without the cleanup task attached.
+Wrap framework components as web components for cross-framework interoperability. For example, add a lint rule that rejects feature-flag commits without the cleanup task attached.

@@ -13,4 +13,4 @@ Navigation feels abrupt and jarring, with content instantly swapping out without
 
 ## Solution
 
-Apply the Route Transition pattern by animating between route changes for polished user experiences, and reinforce it with concise examples or tests. For example, map `/settings/profile` and `/settings/security` to nested layouts so URLs mirror what users see.
+Animate between route changes for polished user experiences. For example, map `/settings/profile` and `/settings/security` to nested layouts so URLs mirror what users see.

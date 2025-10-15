@@ -13,4 +13,4 @@ Unoptimized images account for megabytes of page weight, dominating load times o
 
 ## Solution
 
-Apply the Image Optimization pattern by compressing, resizing, and serving images in modern formats to reduce bandwidth, and reinforce it with concise examples or tests. For example, memoize the transformed dataset before rendering a 500-row analytics grid so scrolling stays smooth.
+Compressing, resizing, and serving images in modern formats to reduce bandwidth. For example, memoize the transformed dataset before rendering a 500-row analytics grid so scrolling stays smooth.

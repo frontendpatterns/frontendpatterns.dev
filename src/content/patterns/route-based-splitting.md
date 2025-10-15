@@ -13,4 +13,4 @@ Every route's code loads upfront even though users only visit one page at a time
 
 ## Solution
 
-Apply the Route-Based Splitting pattern by automatically splitting code at route boundaries for natural loading chunks, and reinforce it with concise examples or tests. For example, memoize the transformed dataset before rendering a 500-row analytics grid so scrolling stays smooth.
+Automatically splitting code at route boundaries for natural loading chunks. For example, memoize the transformed dataset before rendering a 500-row analytics grid so scrolling stays smooth.

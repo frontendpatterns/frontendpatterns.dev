@@ -13,4 +13,4 @@ Individual components work in isolation but fail when combined. Data doesn't flo
 
 ## Solution
 
-Apply the Integration Testing pattern by testing multiple components working together as a cohesive unit, and reinforce it with concise examples or tests. For example, run an integration test that fills the checkout form, submits it, and asserts on the rendered receipt.
+Test multiple components working together as a cohesive unit. For example, run an integration test that fills the checkout form, submits it, and asserts on the rendered receipt.

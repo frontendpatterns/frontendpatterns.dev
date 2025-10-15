@@ -13,4 +13,4 @@ Types are duplicated across the codebase with manual modifications, creating dri
 
 ## Solution
 
-Apply the Utility Type pattern by leveraging built-in or custom utility types to transform and manipulate types, and reinforce it with concise examples or tests. For example, share a TypeScript interface between the API client and the `OrderSummary` component so breaking changes fail fast.
+Leverage built-in or custom utility types to transform and manipulate types. For example, share a TypeScript interface between the API client and the `OrderSummary` component so breaking changes fail fast.

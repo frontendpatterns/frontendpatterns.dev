@@ -13,4 +13,4 @@ Independently deployed micro-frontends need to share state and coordinate behavi
 
 ## Solution
 
-Apply the Micro-Frontend Communication pattern by establishing communication protocols between independently deployed frontend applications, and reinforce it with concise examples or tests. For example, add a lint rule that rejects feature-flag commits without the cleanup task attached.
+Establish communication protocols between independently deployed frontend applications. For example, add a lint rule that rejects feature-flag commits without the cleanup task attached.

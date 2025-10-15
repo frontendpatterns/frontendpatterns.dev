@@ -13,4 +13,4 @@ Broken code gets committed to the repository: failing tests, linting errors, unf
 
 ## Solution
 
-Apply the Git Hooks pattern by running automated checks before commits or pushes to catch issues early, and reinforce it with concise examples or tests. For example, add a lint rule that rejects feature-flag commits without the cleanup task attached.
+Run automated checks before commits or pushes to catch issues early. For example, add a lint rule that rejects feature-flag commits without the cleanup task attached.

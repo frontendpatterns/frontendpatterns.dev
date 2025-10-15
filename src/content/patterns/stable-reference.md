@@ -13,4 +13,4 @@ React components recreate objects and functions on every render, causing child c
 
 ## Solution
 
-Apply the Stable Reference pattern by maintaining consistent object and function references across renders to prevent unnecessary updates, and reinforce it with concise examples or tests. For example, memoize the transformed dataset before rendering a 500-row analytics grid so scrolling stays smooth.
+Maintain consistent object and function references across renders to prevent unnecessary updates. For example, memoize the transformed dataset before rendering a 500-row analytics grid so scrolling stays smooth.

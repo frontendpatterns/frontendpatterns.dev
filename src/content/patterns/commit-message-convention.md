@@ -13,4 +13,4 @@ Commit messages are cryptic and inconsistent: "fix stuff", "updates", "wip" prov
 
 ## Solution
 
-Apply the Commit Message Convention pattern by standardizing commit messages for clear history and automated changelog generation, and reinforce it with concise examples or tests. For example, add a lint rule that rejects feature-flag commits without the cleanup task attached.
+Standardize commit messages for clear history and automated changelog generation. For example, add a lint rule that rejects feature-flag commits without the cleanup task attached.

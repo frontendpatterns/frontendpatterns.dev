@@ -13,4 +13,4 @@ Screen readers can't understand page structure when everything is a div. Users c
 
 ## Solution
 
-Apply the Semantic HTML pattern by using correct HTML elements to convey meaning and structure before reaching for ARIA attributes, and reinforce it with concise examples or tests. For example, wire a modal so focus jumps to the primary action and returns to the trigger when it closes.
+Use correct HTML elements to convey meaning and structure before reaching for ARIA attributes. For example, wire a modal so focus jumps to the primary action and returns to the trigger when it closes.

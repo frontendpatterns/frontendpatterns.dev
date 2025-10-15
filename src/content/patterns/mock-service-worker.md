@@ -13,4 +13,4 @@ Traditional API mocking requires duplicating mock logic between tests and develo
 
 ## Solution
 
-Apply the Mock Service Worker pattern by intercepting network requests at the service worker level for realistic testing, and reinforce it with concise examples or tests. For example, run an integration test that fills the checkout form, submits it, and asserts on the rendered receipt.
+Intercept network requests at the service worker level for realistic testing. For example, run an integration test that fills the checkout form, submits it, and asserts on the rendered receipt.

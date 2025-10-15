@@ -13,4 +13,4 @@ Keyboard users get trapped in modal dialogs or can't reach interactive elements.
 
 ## Solution
 
-Apply the Keyboard Navigation pattern by supporting full keyboard interaction for users who can't or don't use pointing devices, and reinforce it with concise examples or tests. For example, wire a modal so focus jumps to the primary action and returns to the trigger when it closes.
+Support full keyboard interaction for users who can't or don't use pointing devices. For example, wire a modal so focus jumps to the primary action and returns to the trigger when it closes.

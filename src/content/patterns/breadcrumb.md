@@ -13,4 +13,4 @@ Users deep in nested views have no sense of where they are in the application hi
 
 ## Solution
 
-Apply the Breadcrumb pattern by displaying hierarchical navigation trail showing user's location in the application, and reinforce it with concise examples or tests. For example, map `/settings/profile` and `/settings/security` to nested layouts so URLs mirror what users see.
+Display hierarchical navigation trail showing user's location in the application. For example, map `/settings/profile` and `/settings/security` to nested layouts so URLs mirror what users see.

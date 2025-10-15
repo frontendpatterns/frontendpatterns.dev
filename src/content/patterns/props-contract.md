@@ -13,4 +13,4 @@ Components accept props without clear contracts, making it unclear which propert
 
 ## Solution
 
-Apply the Props Contract pattern by specifying required and optional properties with their expected types, and reinforce it with concise examples or tests. For example, share a TypeScript interface between the API client and the `OrderSummary` component so breaking changes fail fast.
+Specify required and optional properties with their expected types. For example, share a TypeScript interface between the API client and the `OrderSummary` component so breaking changes fail fast.

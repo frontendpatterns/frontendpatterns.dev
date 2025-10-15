@@ -13,4 +13,4 @@ Components that instantiate their own dependencies are impossible to test in iso
 
 ## Solution
 
-Apply the Dependency Injection pattern by providing dependencies from the outside rather than creating them internally for better testability, and reinforce it with concise examples or tests. For example, separate a cart totals reducer from modal visibility state so analytics remains deterministic.
+Provide dependencies from the outside rather than creating them internally for better testability. For example, separate a cart totals reducer from modal visibility state so analytics remains deterministic.

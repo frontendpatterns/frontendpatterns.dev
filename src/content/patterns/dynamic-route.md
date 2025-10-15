@@ -13,4 +13,4 @@ Routes must be manually defined one by one, even when they follow predictable pa
 
 ## Solution
 
-Apply the Dynamic Route pattern by generating routes programmatically based on data or configuration, and reinforce it with concise examples or tests. For example, map `/settings/profile` and `/settings/security` to nested layouts so URLs mirror what users see.
+Generate routes programmatically based on data or configuration. For example, map `/settings/profile` and `/settings/security` to nested layouts so URLs mirror what users see.

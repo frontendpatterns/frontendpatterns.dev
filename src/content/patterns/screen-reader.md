@@ -13,4 +13,4 @@ Screen reader users encounter unlabeled buttons, images without alt text, and dy
 
 ## Solution
 
-Apply the Screen Reader pattern by optimizing content structure and announcements for screen reader users, and reinforce it with concise examples or tests. For example, wire a modal so focus jumps to the primary action and returns to the trigger when it closes.
+Optimize content structure and announcements for screen reader users. For example, wire a modal so focus jumps to the primary action and returns to the trigger when it closes.

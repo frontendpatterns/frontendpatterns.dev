@@ -13,4 +13,4 @@ Multiple state updates in rapid succession trigger separate re-renders for each 
 
 ## Solution
 
-Apply the State Batching pattern by grouping multiple state updates together to minimize re-renders and improve performance, and reinforce it with concise examples or tests. For example, separate a cart totals reducer from modal visibility state so analytics remains deterministic.
+Group multiple state updates together to minimize re-renders and improve performance. For example, separate a cart totals reducer from modal visibility state so analytics remains deterministic.

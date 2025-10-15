@@ -13,4 +13,4 @@ Complex state logic embedded in components becomes difficult to test thoroughly 
 
 ## Solution
 
-Apply the Stateful Logic Testing pattern by testing state management logic independently from presentation, and reinforce it with concise examples or tests. For example, run an integration test that fills the checkout form, submits it, and asserts on the rendered receipt.
+Test state management logic independently from presentation. For example, run an integration test that fills the checkout form, submits it, and asserts on the rendered receipt.

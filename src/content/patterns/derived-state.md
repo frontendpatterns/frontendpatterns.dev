@@ -13,4 +13,4 @@ Storing computed values as separate state creates sync bugs where derived data b
 
 ## Solution
 
-Apply the Derived State pattern by computing values from existing state rather than storing redundant data, and reinforce it with concise examples or tests. For example, separate a cart totals reducer from modal visibility state so analytics remains deterministic.
+Compute values from existing state rather than storing redundant data. For example, separate a cart totals reducer from modal visibility state so analytics remains deterministic.

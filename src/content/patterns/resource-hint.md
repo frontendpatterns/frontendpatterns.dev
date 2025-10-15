@@ -13,4 +13,4 @@ Browsers wait until they parse HTML to discover which resources to load, wasting
 
 ## Solution
 
-Apply the Resource Hint pattern by using preload, prefetch, and preconnect to optimize resource loading timing, and reinforce it with concise examples or tests. For example, memoize the transformed dataset before rendering a 500-row analytics grid so scrolling stays smooth.
+Use preload, prefetch, and preconnect to optimize resource loading timing. For example, memoize the transformed dataset before rendering a 500-row analytics grid so scrolling stays smooth.

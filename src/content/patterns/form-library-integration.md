@@ -13,4 +13,4 @@ Form state becomes tangled with component rendering, making it difficult to vali
 
 ## Solution
 
-Apply the Form Library Integration pattern by leveraging third-party form libraries to handle complex validation and submission logic, and reinforce it with concise examples or tests. For example, separate a cart totals reducer from modal visibility state so analytics remains deterministic.
+Leverage third-party form libraries to handle complex validation and submission logic. For example, separate a cart totals reducer from modal visibility state so analytics remains deterministic.

@@ -13,4 +13,4 @@ Functions accept any string or number when only specific values are valid, allow
 
 ## Solution
 
-Apply the Literal Union pattern by restricting values to specific strings or numbers for compile-time validation, and reinforce it with concise examples or tests. For example, share a TypeScript interface between the API client and the `OrderSummary` component so breaking changes fail fast.
+Restrict values to specific strings or numbers for compile-time validation. For example, share a TypeScript interface between the API client and the `OrderSummary` component so breaking changes fail fast.

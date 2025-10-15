@@ -13,4 +13,4 @@ Components re-render unnecessarily when accessing derived data from state, even 
 
 ## Solution
 
-Apply the Selector pattern by computing derived data from state and memoizing results to optimize re-renders, and reinforce it with concise examples or tests. For example, separate a cart totals reducer from modal visibility state so analytics remains deterministic.
+Compute derived data from state and memoizing results to optimize re-renders. For example, separate a cart totals reducer from modal visibility state so analytics remains deterministic.

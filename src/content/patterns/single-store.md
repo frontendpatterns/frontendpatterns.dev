@@ -13,4 +13,4 @@ State scattered across multiple locations makes it impossible to understand the 
 
 ## Solution
 
-Apply the Single Store pattern by centralizing all application state in one location for predictable updates, and reinforce it with concise examples or tests. For example, separate a cart totals reducer from modal visibility state so analytics remains deterministic.
+Centralize all application state in one location for predictable updates. For example, separate a cart totals reducer from modal visibility state so analytics remains deterministic.

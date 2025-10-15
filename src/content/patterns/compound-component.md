@@ -13,4 +13,4 @@ Complex UI components like tabs, accordions, or select menus require passing doz
 
 ## Solution
 
-Apply the Compound Component pattern by creating components that work together implicitly through shared context to manage complex interactions, and reinforce it with concise examples or tests. For example, keep a `UserCard` component focused on presentation while a `useUserCard` hook fetches and normalizes its data.
+Create components that work together implicitly through shared context to manage complex interactions. For example, keep a `UserCard` component focused on presentation while a `useUserCard` hook fetches and normalizes its data.

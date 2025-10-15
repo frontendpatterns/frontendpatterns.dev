@@ -13,4 +13,4 @@ Tests that select DOM elements using implementation details like CSS classes, ID
 
 ## Solution
 
-Apply the Query Strategy pattern by selecting DOM elements using accessible queries that mirror user interaction, and reinforce it with concise examples or tests. For example, run an integration test that fills the checkout form, submits it, and asserts on the rendered receipt.
+Select DOM elements using accessible queries that mirror user interaction. For example, run an integration test that fills the checkout form, submits it, and asserts on the rendered receipt.

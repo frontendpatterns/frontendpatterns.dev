@@ -13,4 +13,4 @@ Creating, updating, or deleting data leaves the UI showing stale information unt
 
 ## Solution
 
-Apply the Mutation pattern by handling create, update, and delete operations with proper cache synchronization, and reinforce it with concise examples or tests. For example, let a `useOrders` hook own the network call while an `OrdersTable` component simply renders rows.
+Handle create, update, and delete operations with proper cache synchronization. For example, let a `useOrders` hook own the network call while an `OrdersTable` component simply renders rows.

@@ -13,4 +13,4 @@ Form state logic becomes a tangled mess of boolean flags and conditional checks.
 
 ## Solution
 
-Apply the Form State Machine pattern by modeling form states (pristine, dirty, submitting, error) as explicit state transitions, and reinforce it with concise examples or tests. For example, separate a cart totals reducer from modal visibility state so analytics remains deterministic.
+Model form states (pristine, dirty, submitting, error) as explicit state transitions. For example, separate a cart totals reducer from modal visibility state so analytics remains deterministic.

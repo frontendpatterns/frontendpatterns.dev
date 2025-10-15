@@ -13,4 +13,4 @@ Design values like colors, spacing, and font sizes are hardcoded throughout styl
 
 ## Solution
 
-Apply the CSS Custom Properties pattern by using CSS variables for dynamic styling and easy theme customization, and reinforce it with concise examples or tests. For example, isolate a `Button` component's look with scoped classes while brand tokens stay in a shared theme file.
+Use CSS variables for dynamic styling and easy theme customization. For example, isolate a `Button` component's look with scoped classes while brand tokens stay in a shared theme file.

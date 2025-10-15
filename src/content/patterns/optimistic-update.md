@@ -13,4 +13,4 @@ UI freezes or shows spinners after every user action, waiting for server confirm
 
 ## Solution
 
-Apply the Optimistic Update pattern by immediately updating UI with expected results before server confirmation for perceived speed, and reinforce it with concise examples or tests. For example, let a `useOrders` hook own the network call while an `OrdersTable` component simply renders rows.
+Immediately updating UI with expected results before server confirmation for perceived speed. For example, let a `useOrders` hook own the network call while an `OrdersTable` component simply renders rows.
