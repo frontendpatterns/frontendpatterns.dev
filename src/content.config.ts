@@ -40,6 +40,22 @@ const guides = defineCollection({
 		}),
 });
 
+const foundations = defineCollection({
+	loader: glob({ pattern: "**/[^_]*.md", base: "./src/content/foundations" }),
+	markdown: markdownOptions,
+	schema: () =>
+		z.object({
+			title: z.string(),
+			description: z.string().optional(),
+			publishDate: z.date().optional(),
+			updatedDate: z.date().optional(),
+			author: z.string().optional(),
+			tags: z.array(z.string()).optional(),
+			readingTime: z.string().optional(),
+			draft: z.boolean().optional().default(false),
+		}),
+});
+
 const categories = defineCollection({
 	loader: glob({ pattern: "**/[^_]*.md", base: "./src/content/categories" }),
 	markdown: markdownOptions,
@@ -51,4 +67,4 @@ const categories = defineCollection({
 		}),
 });
 
-export const collections = { patterns, guides, categories };
+export const collections = { patterns, guides, foundations, categories };
