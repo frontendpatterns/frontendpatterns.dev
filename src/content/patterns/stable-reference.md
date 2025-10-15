@@ -9,7 +9,7 @@ description: "Maintain consistent object and function references across renders 
 
 ## Problem
 
-React components recreate objects and functions on every render, causing child components to re-render unnecessarily when these values are passed as props or used as dependency array items. This triggers expensive recalculations, redundant API calls, and sluggish UI updates. Components that should only update when meaningful data changes instead update constantly, hurting performance.
+Components recreate objects and functions on every render, causing child components to re-render unnecessarily when these values are passed as properties or used as dependency array items. This triggers expensive recalculations, redundant API calls, and sluggish UI updates. Components that should only update when meaningful data changes instead update constantly, hurting performance.
 
 ## Solution
 

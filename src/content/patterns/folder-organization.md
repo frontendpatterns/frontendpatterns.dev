@@ -13,4 +13,4 @@ The project structure is either too flat with hundreds of files in one directory
 
 ## Solution
 
-Choose between shallow folder structures for simplicity or deep nesting for organization based on project scale. For example, split a billing feature so API clients, hooks, and UI elements live in distinct folders with explicit boundaries.
+Choose between shallow folder structures for simplicity or deep nesting for organization based on project scale. For example, split a billing feature so API clients, data fetching logic, and UI elements live in distinct folders with explicit boundaries.

@@ -13,4 +13,4 @@ Users see stale data after creating, updating, or deleting records. A user adds 
 
 ## Solution
 
-Strategically clear or update cached data when underlying information changes. For example, let a `useOrders` hook own the network call while an `OrdersTable` component simply renders rows.
+Strategically clear or update cached data when underlying information changes. For example, let a data fetching layer own the network call while a table component simply renders rows.

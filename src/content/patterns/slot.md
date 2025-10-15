@@ -13,4 +13,4 @@ Components hardcode their entire structure, forcing you to create new variants f
 
 ## Solution
 
-Allow parent components to inject content into designated areas of child components. For example, keep a `UserCard` component focused on presentation while a `useUserCard` hook fetches and normalizes its data.
+Allow parent components to inject content into designated areas of child components. For example, keep a `UserCard` component focused on presentation while a data fetching layer fetches and normalizes its data.

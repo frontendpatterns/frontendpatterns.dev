@@ -13,4 +13,4 @@ Pages load slowly as each API request waits for the previous one to complete, ev
 
 ## Solution
 
-Execute multiple independent API calls simultaneously to reduce total load time. For example, let a `useOrders` hook own the network call while an `OrdersTable` component simply renders rows.
+Execute multiple independent API calls simultaneously to reduce total load time. For example, let a data fetching layer own the network call while a table component simply renders rows.

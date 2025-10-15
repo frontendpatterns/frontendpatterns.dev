@@ -9,7 +9,7 @@ description: "Restrict values to specific strings or numbers for compile-time va
 
 ## Problem
 
-Functions accept any string or number when only specific values are valid, allowing typos and invalid values to pass compilation. Status fields accept "Pending" instead of "pending", color props accept "red" when only "primary" and "secondary" are supported, and theme values can be any string instead of the three defined themes. These bugs only surface at runtime when the values are used.
+Functions accept any string or number when only specific values are valid, allowing typos and invalid values to pass compilation. Status fields accept "Pending" instead of "pending", color properties accept "red" when only "primary" and "secondary" are supported, and theme values can be any string instead of the three defined themes. These bugs only surface at runtime when the values are used.
 
 ## Solution
 

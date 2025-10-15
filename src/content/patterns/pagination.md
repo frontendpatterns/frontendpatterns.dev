@@ -13,4 +13,4 @@ Loading thousands of records at once overwhelms the browser, causing slow initia
 
 ## Solution
 
-Load large datasets in discrete pages to manage memory and network usage. For example, let a `useOrders` hook own the network call while an `OrdersTable` component simply renders rows.
+Load large datasets in discrete pages to manage memory and network usage. For example, let a data fetching layer own the network call while a table component simply renders rows.

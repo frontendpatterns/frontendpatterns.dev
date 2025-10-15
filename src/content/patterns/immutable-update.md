@@ -9,7 +9,7 @@ description: "Treat state as immutable and creating new copies when making chang
 
 ## Problem
 
-Directly mutating state objects breaks React's change detection, causing components to show stale data. Array.push() or object property assignments don't trigger re-renders. Debugging becomes impossible when state changes happen without clear tracking. Time-travel debugging and undo/redo features can't work because there's no history of immutable states.
+Directly mutating state objects breaks change detection, causing components to show stale data. Array.push() or object property assignments don't trigger re-renders. Debugging becomes impossible when state changes happen without clear tracking. Time-travel debugging and undo/redo features can't work because there's no history of immutable states.
 
 ## Solution
 

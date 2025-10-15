@@ -9,8 +9,8 @@ description: "Create components that work together implicitly through shared con
 
 ## Problem
 
-Complex UI components like tabs, accordions, or select menus require passing dozens of props through multiple levels to coordinate behavior. Parent components become cluttered with implementation details, and consumers struggle to understand which props go where, leading to brittle, hard-to-maintain component APIs.
+Complex UI components like tabs, accordions, or select menus require passing dozens of properties through multiple levels to coordinate behavior. Parent components become cluttered with implementation details, and consumers struggle to understand which properties go where, leading to brittle, hard-to-maintain component APIs.
 
 ## Solution
 
-Create components that work together implicitly through shared context to manage complex interactions. For example, keep a `UserCard` component focused on presentation while a `useUserCard` hook fetches and normalizes its data.
+Create components that work together implicitly through shared context to manage complex interactions. For example, keep a `UserCard` component focused on presentation while a data fetching layer fetches and normalizes its data.

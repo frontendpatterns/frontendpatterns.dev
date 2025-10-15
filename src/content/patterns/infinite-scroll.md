@@ -13,4 +13,4 @@ Traditional pagination forces users to click "Next" repeatedly, breaking flow an
 
 ## Solution
 
-Automatically loading more content as users scroll to create seamless browsing experiences. For example, let a `useOrders` hook own the network call while an `OrdersTable` component simply renders rows.
+Automatically loading more content as users scroll to create seamless browsing experiences. For example, let a data fetching layer own the network call while a table component simply renders rows.

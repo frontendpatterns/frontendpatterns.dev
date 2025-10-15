@@ -13,4 +13,4 @@ Deep inheritance hierarchies make components fragile and hard to understand. Cha
 
 ## Solution
 
-Build complex components by combining simpler ones rather than using class hierarchies. For example, keep a `UserCard` component focused on presentation while a `useUserCard` hook fetches and normalizes its data.
+Build complex components by combining simpler ones rather than using class hierarchies. For example, keep a `UserCard` component focused on presentation while a data fetching layer fetches and normalizes its data.

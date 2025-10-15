@@ -13,4 +13,4 @@ UI freezes or shows spinners after every user action, waiting for server confirm
 
 ## Solution
 
-Immediately updating UI with expected results before server confirmation for perceived speed. For example, let a `useOrders` hook own the network call while an `OrdersTable` component simply renders rows.
+Immediately updating UI with expected results before server confirmation for perceived speed. For example, let a data fetching layer own the network call while a table component simply renders rows.

@@ -13,4 +13,4 @@ Creating, updating, or deleting data leaves the UI showing stale information unt
 
 ## Solution
 
-Handle create, update, and delete operations with proper cache synchronization. For example, let a `useOrders` hook own the network call while an `OrdersTable` component simply renders rows.
+Handle create, update, and delete operations with proper cache synchronization. For example, let a data fetching layer own the network call while a table component simply renders rows.

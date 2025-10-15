@@ -9,7 +9,7 @@ description: "Define clear contracts for component inputs and outputs."
 
 ## Problem
 
-Components become fragile black boxes where it's unclear what props are required, what types they expect, or what they return. Changes to one component silently break others, and bugs only surface at runtime when users encounter "undefined is not a function" or receive malformed data.
+Components become fragile black boxes where it's unclear what properties are required, what types they expect, or what they return. Changes to one component silently break others, and bugs only surface at runtime when users encounter "undefined is not a function" or receive malformed data.
 
 ## Solution
 

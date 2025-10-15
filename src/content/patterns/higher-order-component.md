@@ -13,4 +13,4 @@ You copy-paste the same logic across multiple components - authentication checks
 
 ## Solution
 
-Wrap components with additional functionality through function composition. For example, keep a `UserCard` component focused on presentation while a `useUserCard` hook fetches and normalizes its data.
+Wrap components with additional functionality through function composition. For example, keep a `UserCard` component focused on presentation while a data fetching layer fetches and normalizes its data.

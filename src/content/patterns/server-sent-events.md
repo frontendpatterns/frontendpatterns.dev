@@ -13,4 +13,4 @@ Applications that need real-time updates often resort to polling, repeatedly ask
 
 ## Solution
 
-Receive server-pushed updates over HTTP for one-way real-time data streams. For example, let a `useOrders` hook own the network call while an `OrdersTable` component simply renders rows.
+Receive server-pushed updates over HTTP for one-way real-time data streams. For example, let a data fetching layer own the network call while a table component simply renders rows.

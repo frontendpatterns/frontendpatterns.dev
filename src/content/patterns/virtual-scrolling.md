@@ -9,7 +9,7 @@ description: "Render only visible list items in the viewport to handle massive d
 
 ## Problem
 
-Rendering thousands of list items creates massive DOM trees that freeze the browser. Scrolling becomes janky as React reconciles updates across hundreds of nodes. Memory usage spikes when displaying large datasets like transaction histories, chat logs, or product catalogs. The page becomes unresponsive with just a few thousand items.
+Rendering thousands of list items creates massive DOM trees that freeze the browser. Scrolling becomes janky as the framework reconciles updates across hundreds of nodes. Memory usage spikes when displaying large datasets like transaction histories, chat logs, or product catalogs. The page becomes unresponsive with just a few thousand items.
 
 ## Solution
 

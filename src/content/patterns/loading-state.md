@@ -13,4 +13,4 @@ Users click buttons and see no feedback, wondering if the app is broken or if th
 
 ## Solution
 
-Show loading indicators while asynchronous operations are in progress. For example, let a `useOrders` hook own the network call while an `OrdersTable` component simply renders rows.
+Show loading indicators while asynchronous operations are in progress. For example, let a data fetching layer own the network call while a table component simply renders rows.

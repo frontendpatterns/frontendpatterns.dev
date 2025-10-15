@@ -13,4 +13,4 @@ Polling APIs for updates is inefficient and slow, creating noticeable delays. Ch
 
 ## Solution
 
-Establish persistent connections for real-time bidirectional communication. For example, let a `useOrders` hook own the network call while an `OrdersTable` component simply renders rows.
+Establish persistent connections for real-time bidirectional communication. For example, let a data fetching layer own the network call while a table component simply renders rows.

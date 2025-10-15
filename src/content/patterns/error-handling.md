@@ -13,4 +13,4 @@ Failed API requests leave users staring at loading spinners indefinitely or cras
 
 ## Solution
 
-Gracefully manage and display errors from failed API requests. For example, let a `useOrders` hook own the network call while an `OrdersTable` component simply renders rows.
+Gracefully manage and display errors from failed API requests. For example, let a data fetching layer own the network call while a table component simply renders rows.

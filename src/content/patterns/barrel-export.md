@@ -13,4 +13,4 @@ Import statements are verbose and expose internal file structure: import { Butto
 
 ## Solution
 
-Aggregate multiple exports into a single entry point using index files to create clean public APIs and simplify import paths. For example, split a billing feature so API clients, hooks, and UI elements live in distinct folders with explicit boundaries.
+Aggregate multiple exports into a single entry point using index files to create clean public APIs and simplify import paths. For example, split a billing feature so API clients, data fetching logic, and UI elements live in distinct folders with explicit boundaries.

@@ -13,4 +13,4 @@ Components tightly couple UI rendering with data fetching, state management, and
 
 ## Solution
 
-Separate components that handle UI rendering from those that manage data and business logic. For example, keep a `UserCard` component focused on presentation while a `useUserCard` hook fetches and normalizes its data.
+Separate components that handle UI rendering from those that manage data and business logic. For example, keep a `UserCard` component focused on presentation while a data fetching layer fetches and normalizes its data.

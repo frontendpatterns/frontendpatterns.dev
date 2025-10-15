@@ -13,4 +13,4 @@ Users see loading spinners every time they revisit a page, even when cached data
 
 ## Solution
 
-Show cached data immediately while fetching fresh data in the background. For example, let a `useOrders` hook own the network call while an `OrdersTable` component simply renders rows.
+Show cached data immediately while fetching fresh data in the background. For example, let a data fetching layer own the network call while a table component simply renders rows.

@@ -13,4 +13,4 @@ Fast-typing users trigger multiple search requests, with slow responses overwrit
 
 ## Solution
 
-Abort in-flight requests when components unmount or dependencies change. For example, let a `useOrders` hook own the network call while an `OrdersTable` component simply renders rows.
+Abort in-flight requests when components unmount or dependencies change. For example, let a data fetching layer own the network call while a table component simply renders rows.

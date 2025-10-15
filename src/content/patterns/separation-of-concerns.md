@@ -13,4 +13,4 @@ Business logic, UI markup, styles, and data fetching are intertwined in single f
 
 ## Solution
 
-Divide code into distinct sections for logic, presentation, and styling to improve maintainability. For example, split a billing feature so API clients, hooks, and UI elements live in distinct folders with explicit boundaries.
+Divide code into distinct sections for logic, presentation, and styling to improve maintainability. For example, split a billing feature so API clients, data fetching logic, and UI elements live in distinct folders with explicit boundaries.

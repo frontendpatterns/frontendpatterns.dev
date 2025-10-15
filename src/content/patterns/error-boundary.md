@@ -9,7 +9,7 @@ description: "Catch JavaScript errors in component trees and displaying fallback
 
 ## Problem
 
-Uncaught JavaScript errors crash the entire React app, leaving users with a blank white screen and no explanation. A single broken component can take down an entire page, even when 95% of the functionality is working fine, with no way to recover or show a helpful error message.
+Uncaught JavaScript errors crash the entire application, leaving users with a blank white screen and no explanation. A single broken component can take down an entire page, even when 95% of the functionality is working fine, with no way to recover or show a helpful error message.
 
 ## Solution
 

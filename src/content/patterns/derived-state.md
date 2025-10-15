@@ -9,7 +9,7 @@ description: "Compute values from existing state rather than storing redundant d
 
 ## Problem
 
-Storing computed values as separate state creates sync bugs where derived data becomes stale. Keeping cart total in state means updating it every time items change, and forgetting one update shows wrong totals. Multiple useState calls track values that should be calculated from other state, leading to impossible states where filtered list length doesn't match the actual filtered items.
+Storing computed values as separate state creates sync bugs where derived data becomes stale. Keeping cart total in state means updating it every time items change, and forgetting one update shows wrong totals. Multiple state declarations track values that should be calculated from other state, leading to impossible states where filtered list length doesn't match the actual filtered items.
 
 ## Solution
 

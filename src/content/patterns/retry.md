@@ -13,4 +13,4 @@ Temporary network blips or server timeouts immediately show error messages to us
 
 ## Solution
 
-Automatically re-attempting failed requests with exponential backoff strategies. For example, let a `useOrders` hook own the network call while an `OrdersTable` component simply renders rows.
+Automatically re-attempting failed requests with exponential backoff strategies. For example, let a data fetching layer own the network call while a table component simply renders rows.

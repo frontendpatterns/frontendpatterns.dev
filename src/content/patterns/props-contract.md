@@ -9,7 +9,7 @@ description: "Specify required and optional properties with their expected types
 
 ## Problem
 
-Components accept props without clear contracts, making it unclear which properties are required, optional, or what types they should be. Parent components pass wrong prop names, forget required props, or pass incorrect types, all without compile-time errors. Documentation becomes stale because there's no single source of truth for component APIs.
+Components accept properties without clear contracts, making it unclear which properties are required, optional, or what types they should be. Parent components pass wrong property names, forget required properties, or pass incorrect types, all without compile-time errors. Documentation becomes stale because there's no single source of truth for component APIs.
 
 ## Solution
 

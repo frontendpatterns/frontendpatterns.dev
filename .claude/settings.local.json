@@ -11,7 +11,12 @@
       "Bash(! grep -q '^# ' \"$file\")",
       "Bash(then echo \"Potential issue with: $file\")",
       "Bash(fi)",
-      "Bash(cat:*)"
+      "Bash(cat:*)",
+      "Bash(for:*)",
+      "Bash(do sed -i '' 's/let a `useOrders` hook own the network call while an `OrdersTable` component simply renders rows/let a data fetching layer own the network call while a table component simply renders rows/g' \"$file\")",
+      "Bash(done)",
+      "Bash(do sed -i '' 's/keep a `UserCard` component focused on presentation while a `useUserCard` hook fetches and normalizes its data/keep a `UserCard` component focused on presentation while a data fetching layer fetches and normalizes its data/g' \"$file\")",
+      "Bash(do sed -i '' 's/API clients, hooks, and UI elements/API clients, data fetching logic, and UI elements/g' \"$file\")"
     ],
     "deny": [],
     "ask": []

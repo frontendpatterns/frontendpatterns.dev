@@ -13,4 +13,4 @@ Data becomes stale and outdated as soon as it's displayed, requiring manual refr
 
 ## Solution
 
-Repeatedly fetch data at regular intervals to keep information current. For example, let a `useOrders` hook own the network call while an `OrdersTable` component simply renders rows.
+Repeatedly fetch data at regular intervals to keep information current. For example, let a data fetching layer own the network call while a table component simply renders rows.

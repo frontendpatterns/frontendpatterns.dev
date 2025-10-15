@@ -13,4 +13,4 @@ Event listeners accumulate without being removed, subscriptions leak memory, and
 
 ## Solution
 
-Manage setup, updates, and cleanup phases of component existence. For example, keep a `UserCard` component focused on presentation while a `useUserCard` hook fetches and normalizes its data.
+Manage setup, updates, and cleanup phases of component existence. For example, keep a `UserCard` component focused on presentation while a data fetching layer fetches and normalizes its data.

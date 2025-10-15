@@ -13,4 +13,4 @@ Components hardcode their data and behavior, making them impossible to reuse acr
 
 ## Solution
 
-Pass data and configuration into components through properties or attributes. For example, keep a `UserCard` component focused on presentation while a `useUserCard` hook fetches and normalizes its data.
+Pass data and configuration into components through properties or attributes. For example, keep a `UserCard` component focused on presentation while a data fetching layer fetches and normalizes its data.

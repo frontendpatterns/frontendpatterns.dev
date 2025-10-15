@@ -13,4 +13,4 @@ Deeply nested API responses containing duplicate data make updates complex and e
 
 ## Solution
 
-Transform nested API responses into flat, relational structures for efficient updates. For example, let a `useOrders` hook own the network call while an `OrdersTable` component simply renders rows.
+Transform nested API responses into flat, relational structures for efficient updates. For example, let a data fetching layer own the network call while a table component simply renders rows.

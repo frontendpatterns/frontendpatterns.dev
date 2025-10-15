@@ -13,4 +13,4 @@ Import paths become fragile chains of ../../../ that break when files move. Deve
 
 ## Solution
 
-Configure absolute imports from a base directory to avoid complex relative path navigation. For example, split a billing feature so API clients, hooks, and UI elements live in distinct folders with explicit boundaries.
+Configure absolute imports from a base directory to avoid complex relative path navigation. For example, split a billing feature so API clients, data fetching logic, and UI elements live in distinct folders with explicit boundaries.

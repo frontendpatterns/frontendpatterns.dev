@@ -13,4 +13,4 @@ Every component mounting or re-rendering triggers new network requests for the s
 
 ## Solution
 
-Store fetched data to avoid redundant network requests and improve performance. For example, let a `useOrders` hook own the network call while an `OrdersTable` component simply renders rows.
+Store fetched data to avoid redundant network requests and improve performance. For example, let a data fetching layer own the network call while a table component simply renders rows.
