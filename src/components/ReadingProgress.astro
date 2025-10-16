@@ -1,0 +1,63 @@
+---
+/**
+ * Reading Progress Indicator
+ *
+ * Displays a horizontal progress bar at the top of the page that fills
+ * as the user scrolls through an article. Provides visual feedback on
+ * reading progress.
+ */
+---
+
+<div
+	id="reading-progress"
+	class="fixed left-0 top-0 z-50 h-1 w-full bg-slate-100 dark:bg-slate-800"
+	aria-hidden="true"
+>
+	<div
+		id="reading-progress-bar"
+		class="h-full bg-gradient-to-r from-sky-500 to-sky-600 shadow-lg shadow-sky-500/25 transition-all duration-150 ease-out"
+		style="width: 0%"
+	>
+	</div>
+</div>
+
+<script>
+	function initReadingProgress() {
+		const progressBar = document.getElementById("reading-progress-bar");
+		if (!progressBar) return;
+
+		function updateProgress() {
+			// Calculate scroll progress
+			const windowHeight = window.innerHeight;
+			const documentHeight = document.documentElement.scrollHeight;
+			const scrollTop =
+				window.pageYOffset || document.documentElement.scrollTop;
+
+			// Calculate percentage (0-100)
+			const scrollableHeight = documentHeight - windowHeight;
+			const progress = scrollableHeight > 0 ? (scrollTop / scrollableHeight) * 100 : 0;
+
+			// Update progress bar width
+			progressBar.style.width = `${Math.min(progress, 100)}%`;
+		}
+
+		// Update on scroll with passive listener for better performance
+		window.addEventListener("scroll", updateProgress, { passive: true });
+
+		// Update on resize in case content changes
+		window.addEventListener("resize", updateProgress, { passive: true });
+
+		// Initial calculation
+		updateProgress();
+	}
+
+	// Initialize on page load
+	if (document.readyState === "loading") {
+		document.addEventListener("DOMContentLoaded", initReadingProgress);
+	} else {
+		initReadingProgress();
+	}
+
+	// Re-initialize after Astro view transitions (if enabled)
+	document.addEventListener("astro:after-swap", initReadingProgress);
+</script>
