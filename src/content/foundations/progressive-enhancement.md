@@ -1,214 +1,187 @@
 ---
 title: "The Progressive Enhancement Mindset"
-description: "Build resilient web applications that work for everyone by starting with HTML, enhancing with CSS, and adding JavaScript last. Learn why progressive enhancement isn’t optional and how to apply it in modern frameworks."
-tags: ["progressive-enhancement", "resilience", "accessibility", "performance", "html", "javascript"]
+description: "Build resilient web applications that work for everyone, even when failures occur."
 readingTime: 10 mins
 draft: false
 ---
-
 # The Progressive Enhancement Mindset
 
 :::tldr
 ## TL;DR
+Progressive enhancement is a philosophy of building web apps from the ground up. Start with HTML that works everywhere, layer CSS for presentation, add JavaScript for enhancement. Each layer is optional. When one fails, the others keep working. This mindset makes applications more resilient, accessible, and performant by treating enhancement as additive rather than fundamental.
 :::
 
-> "Simple can be harder than complex: You have to work hard to get your thinking clean to make it simple. But it’s worth it in the end because once you get there, you can move mountains." - Steve Jobs
+> "Simple can be harder than complex: You have to work hard to get your thinking clean to make it simple. But it's worth it in the end because once you get there, you can move mountains." - Steve Jobs
 
-If you’ve spent any time building for the web, you’ve probably heard the term "progressive enhancement" in discussions about best practices. But what does it mean?
+## What Progressive Enhancement Really Means
 
-Progressive enhancement means starting with a solid foundation of plain HTML that works everywhere, then adding layers of improvement for browsers and devices that can handle them. By beginning with HTML for structure, using CSS for styling, and adding JavaScript for advanced features, you end up with a site that adapts gracefully to different levels of browser capability and remains resilient when networks or scripts fail.
+_Progressive enhancement_ is a philosophy about how to approach building for the web. The concept behind it is straightforward: you build your foundation first, then you add enhancements on top of that foundation. So you start by building HTML that delivers content and core functionality to every user, regardless of their browser, device, or network conditions. Then you layer CSS on top to enhance the visual presentation. Finally, you add JavaScript to provide sophisticated interactive features for capable browsers.
 
-Think of it like building a house. You start with a solid foundation, add walls and a roof, then interior finishes, and finally the nice-to-have features like smart home technology. If the smart home system fails, you still have a functional house. That’s progressive enhancement.
+The critical insight here is that _each layer enhances what came before it_, but nothing depends on the layers above working correctly. If JavaScript fails to load, the CSS still makes your site presentable. Users may lose some functionality in the process, but nothing fundamental. If CSS does not load, the HTML still delivers all your content. At no point does a failure at one layer prevent the layers below from functioning.
 
-The order matters because HTML is the most reliable technology we have on the web. It’s been around since the beginning, and browsers have decades of experience parsing and displaying it. CSS is nearly as reliable, though rendering can vary across browsers. JavaScript, despite being essential for modern web development, is the most fragile layer. Networks drop packets. Users disable JavaScript for privacy or performance reasons. Scripts fail to load, throw errors, or conflict with browser extensions. These failures happen more often than you’d expect.
+This is fundamentally different from building JavaScript-first applications (e.g. SPAs) where nothing renders without scripts executing successfully. Progressive enhancement treats capability as a spectrum. Users get the best experience their browser and network can support.
 
-## The Reality of the Web
+## Why This Philosophy Matters
 
-Here’s something that might surprise you: according to GOV.UK’s research, about 1.1% of page requests fail to run JavaScript[1]. That might sound small until you realize that for a site with a million daily visitors, that’s 11,000 people who won’t see your content if you require JavaScript to render it.
+The web is unpredictable. JavaScript fails to execute far more often than most developers realize. Networks drop packets. CDNs experience outages. Corporate proxies block external scripts. Browser extensions conflict with code. Ad blockers strip out tracking-related content. Mobile connections timeout. One uncaught error can break everything that follows.
 
-And it’s not just about users who have deliberately disabled JavaScript. Networks fail mid-request. CDNs go down. Corporate firewalls block external scripts. Browser extensions interfere with page execution. Mobile connections drop packets. Ad blockers strip out code. Proxy servers modify responses. The list goes on.
+When you build your site to require JavaScript just to display content, any of these failures means users see nothing. The web is inherently unreliable, and pretending otherwise leads to fragile applications.
 
-The web is inherently unreliable, and that’s not a bug. It’s a feature. The internet was designed to route around failures, to be resilient in the face of problems. Your code should embrace this philosophy rather than fight it.
+Progressive enhancement improves accessibility by starting with semantic HTML that assistive technologies understand natively. It improves performance by reducing code required for core functionality. It improves maintainability through clear separation between structure, presentation, and behavior.
 
-Browsers themselves vary wildly in capability. A user on the latest Chrome has access to APIs that don’t exist in Safari. Mobile browsers have different constraints than desktop ones. Some users browse with assistive technologies that interpret your page differently than you might expect. These variations aren’t problems to be solved. They’re the nature of the medium we’re working in.
+Most importantly, it changes how you think about building for the web. Instead of asking "what features can I build?" you start asking "what is the core experience, and what can I layer on top?"
 
-## The Baseline Experience
+## The Layers of Enhancement
 
-When we talk about progressive enhancement, we need to define what the baseline experience looks like. This is the version of your site that works with just HTML, or with HTML and CSS but no JavaScript. This doesn’t mean it has to be ugly or unusable. It means it has to work.
+Consider how you would build a house. You lay the foundation first, build the frame, add walls and roof, finish the interior, then install the smart home system. If the automation breaks, you still have a livable house. Each layer builds on what came before.
 
-Ask yourself: what are the core tasks a user needs to accomplish on your site? If you’re building an e-commerce site, users need to browse products, add items to a cart, and complete checkout. If you’re building a blog, users need to read articles and navigate between posts. These core tasks should work without JavaScript.
+The same logic applies to web development. HTML is your foundation. It defines structure, content, and basic functionality. Forms submit data. Links navigate to pages. Headings create hierarchy. This layer works everywhere, always.
 
-This might seem limiting, but remember: the web worked before JavaScript was ubiquitous. Forms submitted via POST requests. Links navigated to new pages. Browsers displayed content. These fundamentals still work, and they work reliably.
+CSS is your presentation layer. It makes your foundation usable and appealing. Typography, layout, color, spacing all enhance the visual design. If CSS fails to load, the HTML still delivers all content to users.
 
-The minimum viable experience isn’t minimal in the sense of being stripped down or barely functional. It’s viable, meaning fully capable of serving its core purpose. Everything beyond that is an enhancement.
+JavaScript is your enhancement layer. It adds interactivity, real-time updates, sophisticated behaviors. But JavaScript is optional from a functional standpoint. Core functionality should exist without it.
 
-Consider a search form. At the baseline, it’s a form with a text input and a submit button. When submitted, it performs a full page navigation to display results. That works everywhere, for everyone, all the time. Now layer on JavaScript: intercept the form submission, fetch results via Ajax, update the page without a reload. Add CSS: style the form and results to match your design system. Each layer adds something, but the core functionality never depends on those layers working.
+This layering approach is not about building three separate versions. You build once, with each layer enhancing the previous one. The HTML works alone. CSS makes it look better. JavaScript makes it easier to use.
 
-## Why Progressive Enhancement Isn’t Optional
+## Graceful Degradation vs Progressive Enhancement
 
-There’s a common misconception that progressive enhancement is old-fashioned thinking, something relevant when we had to support Internet Explorer 6 but unnecessary now that "everyone has JavaScript." This couldn’t be further from the truth.
+Graceful degradation. Progressive enhancement. You might hear these terms used interchangeably. They are not the same, though the end result can look similar.
 
-Accessibility isn’t a feature you add at the end. It’s a requirement you build in from the start. When you build with progressive enhancement, accessibility often comes naturally. Semantic HTML is accessible by default. Forms that work without JavaScript work with screen readers. Keyboard navigation works when you don’t override default behavior.
+Graceful degradation means building the full-featured version first, then adding fallbacks. You design for the best-case scenario and work backwards. The mindset is "we will build this amazing experience, and if JavaScript is disabled, here is a fallback."
 
-The Web Content Accessibility Guidelines (WCAG) exist because people with disabilities have a legal right to access web content. Building without progressive enhancement makes accessibility harder and more expensive to retrofit. Building with progressive enhancement makes accessibility part of your foundation.
+Progressive enhancement means building the baseline version first, then adding features for browsers that support them. You design for the worst-case scenario and work upwards. The mindset is "we will make sure this works everywhere first, then make it amazing for capable browsers."
 
-Performance is another area where progressive enhancement shines. The fastest code is the code you don’t load. When your site works with just HTML and CSS, you’ve dramatically reduced the amount of code the browser needs to download, parse, and execute. JavaScript is expensive. Every kilobyte you send costs time on mobile networks, battery life on mobile devices, and processing power to execute.
+The difference is subtle but important. Graceful degradation treats the baseline as an afterthought. Progressive enhancement treats it as the foundation. When you start with the baseline, you ensure it works well, not just barely functions.
 
-Starting with a working baseline and enhancing from there forces you to think about what’s truly necessary. Do you really need 200KB of JavaScript to display a navigation menu? Or can you use HTML and CSS to handle the common case and enhance with JavaScript for more sophisticated interactions?
+See [Graceful Degradation](/principles/graceful-degradation) for a deeper look at how this principle relates to progressive enhancement.
 
-Resilience is perhaps the most important reason progressive enhancement matters. When you build systems that fail gracefully, you build systems that work in more situations, for more people, more reliably. A site built with progressive enhancement doesn’t break catastrophically when one layer fails. Instead, it degrades gracefully, maintaining core functionality even when enhanced features aren’t available.
+## Thinking in Layers, Not Components
 
-## Layering Enhancements
+Modern frontend development encourages thinking in components. A dropdown menu is a React component. A modal is a Vue component. This component-first thinking can obscure the layered nature of the web.
 
-The key to progressive enhancement is thinking in layers rather than components. Instead of building a dropdown menu as a single JavaScript component, think about it as a structure (HTML list), a presentation layer (CSS to position and style), and behavior (JavaScript to handle interactions).
+Instead, think about what each layer provides. A navigation menu is not just a JavaScript widget. It is an HTML list of links (structure), CSS positioning and styling (presentation), and JavaScript-enhanced interactions (behavior). Each layer stands alone.
 
-Each layer should assume nothing about the layers above it. Your HTML should be semantic and meaningful on its own. Your CSS should enhance the presentation without relying on JavaScript to add classes or modify the DOM. Your JavaScript should enhance behavior but fail gracefully if it doesn’t execute.
+Your HTML should make sense by itself. Use semantic elements that convey meaning. Create proper document structure. Write meaningful content. Do not rely on JavaScript to generate structure dynamically.
 
-Here’s how this works in practice. Start with HTML:
+Your CSS should enhance without requiring JavaScript. Use the cascade. Apply layout and styling that works with your HTML. Do not assume JavaScript will manipulate the DOM before CSS applies.
 
-```html
-<nav>
-  <ul>
-    <li><a href="/products">Products</a></li>
-    <li><a href="/about">About</a></li>
-    <li><a href="/contact">Contact</a></li>
-  </ul>
-</nav>
-```
+Your JavaScript should add behavior that makes sense but is not required. Intercept form submissions for better user experience, but let forms work normally if JavaScript fails. Enhance navigation with smooth transitions, but let links work as standard links.
 
-This is a perfectly functional navigation menu. Every link works. Screen readers understand it. Search engines can crawl it. Keyboard users can tab through it. Now add CSS to make it look like your design requires. Finally, add JavaScript if you need sophisticated behavior like mega-menus or touch-friendly interactions.
+When layers fail independently, your site remains functional. No CSS means unstyled but usable content. No JavaScript means styled but un-enhanced interactions.
 
-When layers fail independently, your site remains functional. If CSS doesn’t load, you get unstyled but usable content. If JavaScript fails, you get styled content without enhanced interactions. At no point does your site become completely unusable.
+> Learn more about implementing this in the practical guide [Building with Progressive Enhancement](/guides/building-with-progressive-enhancement).
 
-This layering approach also makes testing easier. You can test your HTML without worrying about CSS or JavaScript. You can test your styling without executing scripts. You can test your JavaScript enhancements knowing the baseline already works.
+## The Reliability Spectrum
 
-## Feature Detection vs Assumptions
+Each web technology has a different level of reliability in browsers. Understanding this spectrum helps explain why the order matters.
 
-Never assume browser capabilities. The moment you assume every user has JavaScript, or that every browser supports a particular API, you’ve created a potential failure point.
+HTML has been part of the web since 1991. Browsers have spent over three decades perfecting their handling of it. They are incredibly forgiving of errors. Missing closing tags get corrected automatically. Unconventional nesting gets parsed correctly. HTML is bulletproof.
 
-Feature detection is the practice of testing whether a browser supports a feature before using it. Instead of checking if the user is on a particular browser or version, you check if the feature itself exists. This requires nothing more than simple `if` statements:
+CSS came later and browsers handle it well. There are still rendering differences between browsers using different engines (Chromium, WebKit, etc) that require workarounds, but CSS failures are usually visual, not functional. When a browser encounters an unsupported property, it ignores that property and continues. The page still renders.
 
-```javascript
-if (’serviceWorker’ in navigator) {
-  // Register service worker
-}
+JavaScript is the most fragile layer. Scripts must download completely before executing. One syntax error prevents the entire file from running. Type mismatches cause runtime failures. Uncaught exceptions break everything after them. JavaScript has the most ways to fail and the most severe consequences.
 
-if (window.IntersectionObserver) {
-  // Use Intersection Observer
-}
-```
+This reliability spectrum maps directly to progressive enhancement. Build on the most reliable foundation (HTML), enhance with the fairly reliable layer (CSS), add the least reliable layer (JavaScript) last.
 
-This approach is more reliable than user agent sniffing and more honest than assuming support. It also makes your code more future-proof. If a new browser adds support for a feature, your code will automatically use it.
+## Feature Detection Over Assumptions
 
-But feature detection alone isn’t enough. You need graceful fallbacks when features aren’t available. If you detect that a browser doesn’t support the Intersection Observer API, what happens? Your page shouldn’t break, it should fall back to a simpler approach.
+Progressive enhancement requires a specific mindset: never assume browser capabilities, always detect them.
 
-There’s an important distinction between polyfills and proper fallbacks. A polyfill attempts to replicate missing functionality using JavaScript. This can work, but it adds weight to your page and introduces another failure point. A proper fallback accepts that the feature isn’t available and provides an alternative experience.
+When you assume every user has JavaScript enabled, or that every browser supports a particular API, you create a failure point. The reality is messier: some users disable JavaScript, some browsers lack support for newer APIs, and some network conditions prevent scripts from loading completely.
 
-For example, if you’re using the Intersection Observer to lazy-load images, a polyfill would add JavaScript to replicate the API. A fallback would simply load all images normally. The enhanced experience (lazy loading) isn’t available, but the core functionality (displaying images) still works.
+Feature detection means testing whether a browser supports a feature before using it. You check if the feature exists, not whether the user is on a particular browser or version. This approach is honest and future-proof. When a browser adds support for a feature, your code automatically uses it.
 
-## The JavaScript Dependency Problem
+Detection alone is not enough. You need fallbacks for when features do not exist. The page should not break, instead it should do something simpler that provides the same core functionality.
 
-The biggest failure point in modern web development is making JavaScript a requirement for your site to function at all. This includes single-page applications that render nothing without JavaScript, sites that show blank pages until scripts execute, and interfaces that break completely if one script fails to load.
+See [Feature Detection](/feature-detection) for implementation details.
 
-This approach ignores a fundamental truth: JavaScript is the least reliable part of your technology stack. It requires the most bandwidth, the most processing power, and has the most opportunities to fail. Building your entire site on this shaky foundation is architectural malpractice.
+## Defense in Depth
 
-Consider what happens when your site requires JavaScript to function. A user clicks a link on search results, eager to read your content. Their browser requests your page. Your server responds with a minimal HTML shell and references to multiple JavaScript files. The browser starts downloading scripts. One of those scripts is on a CDN that’s experiencing issues. The request hangs. Your page displays nothing. The user leaves.
+Progressive enhancement embodies the security principle of [defense in depth](/principles/defense-in-depth): do not rely on a single layer of protection. Build multiple layers so that when one fails, others remain intact.
 
-You’ve just lost a visitor because you made JavaScript a single point of failure.
+For web applications, this means critical functionality works at multiple levels. A form should work via traditional POST submission even if your fetch request fails. Navigation should work via standard HTML links even if your JavaScript router breaks. Content should be readable even if stylesheets fail to load.
 
-Defensive coding practices can mitigate this. Always have a non-JavaScript fallback for critical functionality. Use server-side rendering to deliver initial content. Load JavaScript asynchronously so script failures don’t block page rendering. Wrap risky operations in try-catch blocks. Test your site with JavaScript disabled.
+This is not about duplicating code, it is about building each layer to be functional on its own. Your HTML form works without JavaScript. Your JavaScript enhancement intercepts it to provide a better experience. When JavaScript fails, the form continues working.
 
-## Progressive Enhancement in Modern Frameworks
+Critical paths are the user flows that must work for your site to serve its purpose. For an e-commerce site: browse products, add to cart, checkout, purchase. Every step should be resilient to failure. Build these paths to work at the HTML level first, then enhance them.
 
-There’s a myth that you can’t use modern frameworks like React, Vue, or Svelte with progressive enhancement. This is false. You absolutely can build progressively enhanced applications with these tools, it just requires thinking about them differently.
+> Learn more about the [Defense in Depth](/principles/defense-in-depth) principle, and see it applied in the [Error Boundary Pattern](/error-boundary).
 
-Server-side rendering (SSR) is a progressive enhancement technique. Your framework renders HTML on the server and sends it to the browser. The page is visible and functional immediately. Then, JavaScript loads and "hydrates" the page, adding interactivity. If JavaScript fails, the user still gets the server-rendered content.
+## Modern Frameworks and Progressive Enhancement
 
-This is progressive enhancement in action. The baseline is server-rendered HTML. The enhancement is client-side interactivity. Each layer adds value, but the core content remains accessible regardless of whether JavaScript executes.
+There's a myth that modern JavaScript frameworks like React, Vue, or Svelte are incompatible with progressive enhancement. This is false. You can absolutely build progressively enhanced applications with these tools.
 
-The key is thinking about the spectrum between multi-page applications (MPAs) and single-page applications (SPAs). You don’t have to be purely one or the other. You can have a site that’s primarily server-rendered with JavaScript-enhanced interactions. You can have certain sections that behave like SPAs while others use traditional page navigation.
+Server-side rendering _is_ progressive enhancement; your framework renders HTML on the server and sends it to the browser. The page is visible and functional immediately. JavaScript loads and "hydrates" the page, adding interactivity. If JavaScript fails, the server-rendered content still displays.
 
-Modern frameworks like Next.js, Nuxt, and SvelteKit make this easier by supporting SSR out of the box. But even if you’re using a client-side only framework, you can still apply progressive enhancement principles by ensuring your server delivers meaningful content and using JavaScript to enhance rather than replace that content.
+The baseline is server HTML. The enhancement is client interactivity. Each layer adds value but doesn't create dependency.
 
-## Resilience Through Architecture
+You don't have to choose between multi-page applications (MPAs) and single-page applications (SPAs). Most real applications live somewhere in the middle. Server-rendered pages with JavaScript-enhanced interactions. Some sections behaving like SPAs while others use traditional navigation. Mix and match based on what makes sense.
 
-Building resilient systems requires thinking about failure from the start. When you design a feature, ask yourself: what happens if this fails? What happens if the network is slow? What happens if JavaScript doesn’t execute? What happens if the user closes the page mid-interaction?
+Meta-frameworks like Next.js, Nuxt, and SvelteKit support server-side rendering by default, making this approach easier, but the key is the mindset, not the tools. Your server should deliver meaningful content, and JavaScript should be used to enhance it rather than replace it.
 
-Defense in depth is the practice of building multiple layers of protection so that if one layer fails, others remain intact. For a web application, this means ensuring that critical functionality works at multiple levels. A form should work via traditional POST submission even if Ajax fails. Navigation should work via standard links even if your JavaScript router breaks.
+See [Building with Progressive Enhancement](/guides/building-with-progressive-enhancement) for practical implementation with modern frameworks.
 
-This isn’t about duplicating code. It’s about building each layer to be functional on its own. Your HTML form works without JavaScript. Your JavaScript enhancement doesn’t replace the form, it intercepts it and provides a better experience. If the JavaScript fails, the form still works.
+## The Performance Philosophy
 
-Critical paths are the user flows that absolutely must work for your site to serve its purpose. For an e-commerce site, the critical path might include: browse products, add to cart, checkout, and complete purchase. Every step in this path should be resilient to failure.
+Progressive enhancement is also a performance philosophy that leads to faster applications.
 
-How do you make critical paths bulletproof? Start with the basics: ensure they work without JavaScript. Then add layers of redundancy. If you’re using Ajax to update the cart, also support traditional form submissions as a fallback. If you’re using localStorage to persist the cart, also store it server-side. If one method fails, another succeeds.
+When you build from a working baseline and add enhancements on top, you naturally defer non-critical code. The critical rendering path includes only HTML and critical CSS. JavaScript is not on the critical path because it is not required for basic functionality.
 
-## Progressive Enhancement Patterns
+This means [first paint](https://web.dev/articles/fcp) happens faster. [Time to interactive](https://web.dev/articles/tti) drops. Perceived performance improves because users see content sooner, even while JavaScript downloads in the background.
 
-Let’s look at specific patterns for common interactions, starting with form handling. The progressively enhanced approach is to build a form that submits normally, then enhance it with JavaScript:
+Every framework and library you add increases bundle size, parse time, and execution cost. Progressive enhancement forces you to justify these costs. Do you need a large framework to display static content? Or can HTML and CSS handle it with selective enhancement?
 
-```html
-<form action="/search" method="get">
-  <input type="search" name="q" required>
-  <button type="submit">Search</button>
-</form>
-```
+The fastest code is the code you do not load. Progressive enhancement helps you identify what is necessary versus what is enhancement.
 
-This form works everywhere. Now enhance it:
+## The Testing Mindset
 
-```javascript
-form.addEventListener(’submit’, async (e) => {
-  e.preventDefault();
-  const results = await fetchResults(formData);
-  updateUI(results);
-});
-```
+Progressive enhancement changes how you test. You verify your site works at multiple levels, not just in ideal conditions.
 
-The baseline is a full page navigation. The enhancement is an Ajax-powered, no-reload search. If JavaScript fails, the form still works.
+Start by disabling JavaScript in developer tools. Load your site and try to use it. Can you navigate? Submit forms? Access critical content? If the page is blank or broken without JavaScript, you have no progressive enhancement.
 
-Navigation follows a similar pattern. Start with standard links that cause page navigations. Enhance with a client-side router that intercepts clicks and updates content without full reloads. If the router fails, the links still work.
+Test across browsers and devices. Chrome features might not work in Safari or Firefox. Desktop layouts might break on mobile. Mouse interactions might be impossible with keyboard navigation.
 
-Content loading is where many sites go wrong. If you’re loading content dynamically, ensure there’s a non-JavaScript fallback. This might mean server-side rendering initial content and using JavaScript only for subsequent loads. It might mean using pagination links that work without JavaScript and enhancing them with infinite scroll.
+Test under various network conditions. Throttle to 3G speeds. Try loading with intermittent connectivity. See what happens when scripts timeout. These tests show whether your site handles real-world conditions gracefully.
 
-State management gets tricky with progressive enhancement because client-side state doesn’t persist across page loads without JavaScript. The solution is to manage critical state server-side. User authentication, cart contents, and user preferences should all live on the server, with JavaScript providing a better interface for modifying them.
+The goal is resilience, not perfection at every layer. Core functionality should work regardless of circumstances. Enhanced experiences can fail without breaking everything.
 
-## Performance as Progressive Enhancement
+> Learn more in [Building with Progressive Enhancement](/guides/building-with-progressive-enhancement).
 
-Here’s something many developers miss: progressive enhancement is a performance technique. When you build from a working baseline and layer on enhancements, you naturally defer non-critical code.
+## Embracing Uncertainty
 
-The critical rendering path is everything required to display initial content. For a progressively enhanced site, this is just HTML and critical CSS. JavaScript isn’t on the critical path because it’s an enhancement, not a requirement. This means first paint happens faster, time to interactive is lower, and perceived performance is better.
+Progressive enhancement is about accepting the web's unpredictability. You cannot control what browser users have. You cannot control network quality. You cannot control corporate firewalls or browser extensions.
 
-Loading non-critical JavaScript asynchronously is a direct application of progressive enhancement. Mark your script tags with `async` or `defer` so they don’t block page rendering. Load enhancement scripts only after core content is visible. Use dynamic imports to load code on demand.
+What you can control is how your application responds. You can build systems that work in adverse conditions, create experiences that adapt to available capabilities, and write code that fails gracefully.
 
-Code splitting is another progressive enhancement technique. Instead of sending users one massive JavaScript bundle, split your code by feature or route. Users get only the code they need for the current page, reducing initial load time. As they navigate, additional code loads in the background.
+This requires a mindset shift. Instead of asking "will this work?" ask "what happens when this fails?" Instead of building for ideal scenarios, build for realistic ones. Instead of treating failures as edge cases, treat them as normal operation.
 
-The performance cost of over-engineering is real. Every framework, library, and abstraction you add increases bundle size, parsing time, and execution cost. Progressive enhancement forces you to justify these costs. Do you really need a JavaScript framework to display static content? Or can you use HTML and CSS and enhance selectively where it adds value?
+The web is fault-tolerant by design. HTTP handles failures. Browsers ignore unsupported CSS. HTML parsers recover from errors. Your code should embody the same philosophy.
 
-## Testing Progressive Enhancement
+When something fails, degrade gracefully. When a browser lacks support, provide a fallback. When the network is slow, show content progressively.
 
-How do you verify that your site works at multiple levels? Start by testing without JavaScript enabled. Most browsers let you disable JavaScript in developer tools. Load your site and try to use it. Can you navigate? Can you submit forms? Can you access critical content?
+## The Path Forward
 
-This will immediately reveal whether you’ve made JavaScript a hard requirement. If your page is blank or unusable without JavaScript, you haven’t built with progressive enhancement.
+Progressive enhancement makes the web more accessible, performant, and resilient. It works for more people in more situations.
 
-Simulating network failures is equally important. Use developer tools to throttle your connection to 3G speeds. Try loading your page with intermittent connectivity. See what happens when scripts timeout. These tests reveal whether your site is resilient to real-world network conditions.
+This approach takes practice. It requires thinking in layers rather than components. It means treating capability as a spectrum. It demands considering failure cases before success cases.
 
-Testing across capability levels means checking your site in different browsers, on different devices, with different assistive technologies. What works in Chrome might not work in Safari. What works on desktop might break on mobile. What works with a mouse might be impossible with a keyboard.
+The results are worth the effort. Applications that work reliably across browsers, devices, and network conditions. Experiences that adapt to users rather than demanding users adapt to technical choices. Code that respects the medium it was built for.
 
-Automated testing for progressive enhancement is harder than traditional testing, but not impossible. Write tests that check functionality without executing JavaScript. Write tests that simulate script failures. Write tests that verify fallback behavior. Tools like Playwright and Cypress can help with this.
+Start with HTML that delivers core functionality. Make sure it works. Add CSS to match your design. Test that styled HTML still works. Add JavaScript to enhance the experience. Test at each layer to ensure lower layers continue functioning when upper layers fail.
 
-## The Progressive Enhancement Mindset
+That is progressive enhancement. That is building for the real web.
 
-Progressive enhancement isn’t a checklist of techniques. It’s a mindset. It’s a way of thinking about building for the web that embraces uncertainty and plans for failure.
+:::summary
+## Summary
+1. Write HTML that works everywhere
+2. Add CSS to make it look right
+3. Add JavaScript to make it better
+4. Test at each layer
 
-Start every feature by asking: "What if this fails?" What if JavaScript doesn’t load? What if the network is slow? What if the user’s browser doesn’t support this API? These aren’t pessimistic questions. They’re realistic ones.
+Remember: each layer enhances what came before, but nothing depends on layers above.
+:::
 
-Build for resilience first, features second. Get the core functionality working reliably before adding enhancements. A site that works simply everywhere is better than a site that works amazingly for some users and not at all for others.
-
-The web is inherently fault-tolerant. HTTP includes mechanisms for handling failures. Browsers gracefully ignore CSS properties they don’t understand. HTML parsers recover from errors. These design decisions make the web robust and accessible.
-
-Your code should follow the same philosophy. When something fails, degrade gracefully rather than breaking completely. When a browser lacks support for a feature, provide a fallback rather than showing an error. When the network is slow, show content progressively rather than blocking on JavaScript.
-
-Progressive enhancement makes the web more accessible, more performant, and more resilient. It respects users by working in more situations for more people. It respects the medium by working with the grain of the web rather than against it.
-
-The next time you start building a feature, begin with HTML. Make it work. Then add CSS to make it beautiful. Then add JavaScript to make it delightful. At each layer, ensure that the layers beneath still function. That’s progressive enhancement. That’s building for the real web.
-
-[1]: https://gds.blog.gov.uk/2013/10/21/how-many-people-are-missing-out-on-javascript-enhancement/
+**Related Content:**
+- **Principles**: [Graceful Degradation](/principles/graceful-degradation), [Defense in Depth](/principles/defense-in-depth), [Baseline-First Thinking](/principles/baseline-first-thinking)
+- **Guides**: [Building with Progressive Enhancement](/guides/building-with-progressive-enhancement)
+- **Patterns**: [Feature Detection](/feature-detection), [Form Enhancement Pattern](/patterns/form-enhancement), [Navigation Enhancement Pattern](/patterns/navigation-enhancement), [Content Loading Pattern](/patterns/content-loading), [State Management Pattern](/patterns/state-management)

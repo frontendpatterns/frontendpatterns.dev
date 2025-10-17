@@ -6,11 +6,15 @@ import RecentUpdates from "../components/RecentUpdates.astro";
 import BrowsePatterns from "../components/BrowsePatterns.astro";
 import EmailSignup from "../components/EmailSignup.astro";
 import BrowseGuides from "../components/BrowseGuides.astro";
+import BrowseFoundations from "../components/BrowseFoundations.astro";
 
 const patterns = await getCollection("patterns", ({ data }) => {
   return data.draft !== true;
 });
 const guides = await getCollection("guides", ({ data }) => {
+  return data.draft !== true;
+});
+const foundations = await getCollection("foundations", ({ data }) => {
   return data.draft !== true;
 });
 const categories = await getCollection("categories", ({ data }) => {
@@ -43,21 +47,24 @@ const categories = await getCollection("categories", ({ data }) => {
       optimization.
     </p>
     <p class="text-xs md:text-sm">
-      {patterns.length} Patterns | {guides.length} Guides | {categories.length} Categories
+      {patterns.length} Patterns | {guides.length} Guides | {foundations.length} Foundations | {categories.length} Categories
       | Updated Weekly | Framework-Agnostic
     </p>
   </header>
 
   <Search />
 
-  <section>
-    <h2
-      class="text-3xl md:text-2xl font-semibold tracking-tight text-slate-900 dark:text-slate-100 pb-5"
-    >
-      Browse Patterns
-    </h2>
+  <section class="space-y-6">
+    <div class="flex flex-col gap-2">
+      <h2
+        class="text-2xl font-semibold tracking-tight text-slate-900 dark:text-slate-100"
+      >
+        Foundations
+      </h2>
+      <p>Build on solid principles. Learn the core concepts that underpin great frontend architecture:</p>
+    </div>
 
-    <BrowsePatterns />
+    <BrowseFoundations />
   </section>
 
   <section class="space-y-6">
@@ -71,6 +78,16 @@ const categories = await getCollection("categories", ({ data }) => {
     </div>
 
     <BrowseGuides />
+  </section>
+
+  <section>
+    <h2
+      class="text-3xl md:text-2xl font-semibold tracking-tight text-slate-900 dark:text-slate-100 pb-5"
+    >
+      Browse Patterns
+    </h2>
+
+    <BrowsePatterns />
   </section>
 
   <section class="space-y-6">

@@ -20,7 +20,7 @@ const foundationsCards = foundations.map((foundation) => {
       ? foundation.data.publishedAt
       : new Date(foundation.data.publishedAt ?? Date.now());
 
-  const tagLabel = foundation.data.tags ?? "Guide";
+  const tagLabel = foundation.data.tags ?? "Foundation";
   const tagSlug = foundation.data.tags
     ? foundation.data.tags?.[0].toLocaleLowerCase().replace(/\s/g, "-")
     : null;
@@ -54,7 +54,7 @@ const foundationsCards = foundations.map((foundation) => {
         </li>
         <li aria-hidden="true">/</li>
         <li aria-current="page">
-          <span>Guides</span>
+          <span>Foundations</span>
         </li>
       </ol>
     </nav>
